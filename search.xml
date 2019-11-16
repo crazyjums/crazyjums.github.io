@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>教你如何用Markdown引用网易云音乐</title>
+      <link href="/2019/11/16/music-test/"/>
+      <url>/2019/11/16/music-test/</url>
+      
+        <content type="html"><![CDATA[<p>复制下面的代码，到你的Markdown中，就可以实现音乐播放的功能，音乐源引用自网易云音乐。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=1295824647&amp;auto=1&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1295824647&auto=1&height=66"></iframe>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 玩艺 </tag>
+            
+            <tag> music </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>数字图像处理（dip）</title>
       <link href="/2019/11/16/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%EF%BC%88dip%EF%BC%89/"/>
       <url>/2019/11/16/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%EF%BC%88dip%EF%BC%89/</url>
