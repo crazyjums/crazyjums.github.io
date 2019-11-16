@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>深度学习-计算机视觉</title>
+    <url>/2019/11/15/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</url>
+    <content><![CDATA[<h3 id="计算机视觉"><a href="#计算机视觉" class="headerlink" title="计算机视觉"></a>计算机视觉</h3><h4 id="1-深度学习框架热度排名"><a href="#1-深度学习框架热度排名" class="headerlink" title="1.深度学习框架热度排名"></a>1.深度学习框架热度排名</h4><p><img alt="image" data-src="../../../../images/framework.png" class="lazyload"></p>
+<h4 id="2-计算机视觉领域算法发展史"><a href="#2-计算机视觉领域算法发展史" class="headerlink" title="2.计算机视觉领域算法发展史"></a>2.计算机视觉领域算法发展史</h4><p><img alt="image" data-src="../../../../images/deep_learning_object_detection_history.png" class="lazyload"></p>
+<h4 id="3-你应该具备的能力"><a href="#3-你应该具备的能力" class="headerlink" title="3.你应该具备的能力"></a>3.你应该具备的能力</h4><ul>
+<li><strong>算法能力</strong><ul>
+<li>机器学习-吴恩达，<a href="https://www.bilibili.com/video/av9912938" target="_blank" rel="noopener">course</a></li>
+<li>卷积神经网络（CNN） 是计算机视觉的基础中的基础，一定得了解透彻，不能一知半解，<a href="https://blog.csdn.net/weixin_42451919/article/details/81381294" target="_blank" rel="noopener">blog</a>/<a href="https://www.bilibili.com/video/av36381900?from=search&seid=3318225737780585556" target="_blank" rel="noopener">course</a></li>
+<li>R-CNN是计算机视觉算法鼻祖，先学透R-CNN，在学相关其他算法会好学很多。<a href="https://arxiv.org/abs/1311.2524" target="_blank" rel="noopener">paper</a>/<a href="https://www.jianshu.com/p/381ffa6e525a" target="_blank" rel="noopener">blog</a></li>
+</ul>
+</li>
+<li><strong>深度学习框架能力</strong><ul>
+<li>pytorch(<a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener">pytorch.org</a>)，<a href="https://www.bilibili.com/video/av15997678" target="_blank" rel="noopener">course</a></li>
+<li>TensorFlow(<a href="http://www.tensorfly.cn/" target="_blank" rel="noopener">chinese community</a>)</li>
+</ul>
+</li>
+<li><strong>编程能力</strong><ul>
+<li>Python编程能力</li>
+<li>MATLAB分析能力<h4 id="4-你已经具备的能力"><a href="#4-你已经具备的能力" class="headerlink" title="4.你已经具备的能力"></a>4.你已经具备的能力</h4></li>
+</ul>
+</li>
+<li><strong>编程能力</strong><ul>
+<li>Python编程能力（可以使用PurePython实现一些算法功能）</li>
+<li>Java编程能力（了解Java编程规范，会使用Java实现一些后端功能）</li>
+<li>HTML能力/CSS（可以编写静态网页）<a href="https://www.bilibili.com/video/av10298843" target="_blank" rel="noopener">course</a></li>
+<li>JavaScript能力（了解的不是很多，需要加强）<a href="https://www.bilibili.com/video/av29885002" target="_blank" rel="noopener">course</a></li>
+<li>git使用能力（仅会上传代码，不会追加代码，有待进一步加强）<a href="https://www.bilibili.com/video/av24441039?from=search&seid=10646578285914070658" target="_blank" rel="noopener">course</a>/<a href="http://www.uml.org.cn/pzgl/201902251.asp" target="_blank" rel="noopener">blog</a></li>
+</ul>
+</li>
+<li>图像预处理能力<ul>
+<li>数字图像处理<ul>
+<li>图像增强</li>
+<li>图像锐化</li>
+<li>灰度变换</li>
+<li>正交变换</li>
+<li>图像降噪</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>算法能力</strong><ul>
+<li>暂无</li>
+</ul>
+</li>
+<li><strong>深度学习框架能力</strong><ul>
+<li>暂无<h4 id="5-关于你的研究方向"><a href="#5-关于你的研究方向" class="headerlink" title="5.关于你的研究方向"></a>5.关于你的研究方向</h4></li>
+</ul>
+</li>
+<li><a href="https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/2803351?fr=aladdin#4" target="_blank" rel="noopener">计算机视觉</a>的<a href="http://www.elecfans.com/d/901496.html" target="_blank" rel="noopener">研究方向</a><ul>
+<li><strong>目标检测</strong>(Object detection)</li>
+<li>目标跟踪(Target tracking)</li>
+<li>语义分割(Sentiment segmention)</li>
+<li>生产对抗网络(Generated antagonistic network)</li>
+<li>图像检索(Image retrieval)</li>
+<li>图像增强(Image enhancement)</li>
+<li>图像滤波与降噪(Image filtering and noise reduction)</li>
+<li>三维重建(3D reconstruction)</li>
+<li>风格化(stylized)</li>
+<li>图像识别(image recognition)<ul>
+<li><strong>航拍图像识别</strong>（识别航拍图像中的人，毕业论文可与应急救援相结合）</li>
+<li>航拍公开数据集<a href="https://captain-whu.github.io/DOTA/dataset.html" target="_blank" rel="noopener">DOTA</a>，<a href="https://github.com/jessemelpolio/Faster_RCNN_for_DOTA" target="_blank" rel="noopener">Faster_RCNN_for_DOTA at github</a></li>
+<li><a href="https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201902&filename=1019042269.nh&v=MjUxODFyQ1VSTE9lWnVkdEZ5bmdVYnZLVkYyNkY3TzhITlBLcHBFYlBJUjhlWDFMdXhZUzdEaDFUM3FUcldNMUY=" target="_blank" rel="noopener">《基于卷积神经网络的无人机侦察图像识别》</a>，北邮硕士论文，2019</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>deep learning</tag>
+        <tag>computer vision</tag>
+        <tag>image recognition</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2019/11/15/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
