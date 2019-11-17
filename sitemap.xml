@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://crazyjums.github.io/photo/index.html</loc>
+    
+    <lastmod>2019-11-17T13:28:42.731Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/about/index.html</loc>
+    
+    <lastmod>2019-11-17T13:25:58.486Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://crazyjums.github.io/movie/index.html</loc>
     
     <lastmod>2019-11-17T12:49:10.623Z</lastmod>
@@ -37,13 +51,6 @@
   </url>
   
   <url>
-    <loc>https://crazyjums.github.io/about/index.html</loc>
-    
-    <lastmod>2019-11-17T11:41:25.007Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://crazyjums.github.io/2019/11/16/hello-world/</loc>
     
     <lastmod>2019-11-17T07:46:37.908Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>https://crazyjums.github.io/2019/11/16/dip/</loc>
     
     <lastmod>2019-11-16T15:16:55.897Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://crazyjums.github.io/photo/index.html</loc>
-    
-    <lastmod>2019-11-16T02:47:24.054Z</lastmod>
     
   </url>
   
