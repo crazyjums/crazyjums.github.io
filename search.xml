@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>学习计算机视觉，你必须了解的基础概念</title>
+      <link href="/2019/11/18/cv-concept-you-must-know/"/>
+      <url>/2019/11/18/cv-concept-you-must-know/</url>
+      
+        <content type="html"><![CDATA[<h4 id="1-图像的高频和低频成分"><a href="#1-图像的高频和低频成分" class="headerlink" title="1 图像的高频和低频成分"></a>1 图像的高频和低频成分</h4><blockquote><p>形象一点说：亮度或灰度变化激烈的地方对应高频成分，如边缘；变化不大的地方对于低频成分，如大片色块区画个直方图，大块区域是低频，小块或离散的是高频把图像看成二维函数，变化剧烈的地方就对应高频，反之低频。<br>举个通俗易懂的例子：<br>一幅图象，你戴上眼镜，盯紧了一个地方看到的是高频分量<br>摘掉眼镜，眯起眼睛，模模糊糊看到的就是低频分量。<br>图像的高低频是对图像各个位置之间强度变化的一种度量方法.<br>低频分量:主要对整副图像的强度的综合度量.<br>高频分量:主要是对图像边缘和轮廓的度量.<br>如果一副图像的各个位置的强度大小相等,则图像只存在低频分量,从图像的频谱图上看,只有一个主峰,且位于频率为零的位置.<br>如果一副图像的各个位置的强度变化剧烈,则图像不仅存在低频分量,同时也存在多种高频分量,从图像的频谱上看,不仅有一个主峰,同时也存在多个旁峰.<br>以上的现象可以通过对傅里叶变换的公式分析得出.<br>以下所说的积分是对x进行的.<br>exp(-jwx)的数值变化是均匀的,如果对exp(-jwx)进行积分,则积分值为零.如果对exp(-jwx)乘以一个加权函数f(x),则在对f(x)exp(-jwx)进行积分,积分值不一定为零.如果exp(-jwx)的取值为1时,则对f(x)exp(-jwx)积分,既为对f(x)积分,此时f(x)exp(-jwx)最大,既频谱中的主峰.如果f(x) 是常数则, 除w=0处f(x)exp(-jwx)的积分不为零外,在w不为零的其它处,f(x)exp(-jwx)的积分都为零.</p></blockquote><h4 id="2-低通滤波"><a href="#2-低通滤波" class="headerlink" title="2 低通滤波"></a>2 <a href="https://baike.baidu.com/item/%E4%BD%8E%E9%80%9A%E6%BB%A4%E6%B3%A2/3506429?fr=aladdin" target="_blank" rel="noopener">低通滤波</a></h4><blockquote><p>低通滤波(Low-pass filter) 是一种过滤方式，规则为低频信号能正常通过，而超过设定临界值的高频信号则被阻隔、减弱。但是阻隔、减弱的幅度则会依据不同的频率以及不同的滤波程序（目的）而改变。它有的时候也被叫做高频去除过滤（high-cut filter）或者最高去除过滤（treble-cut filter)。低通过滤是高通过滤的对立。</p></blockquote><h4 id="3-bounding-box"><a href="#3-bounding-box" class="headerlink" title="3 bounding-box"></a>3 <a href="https://blog.csdn.net/love1055259415/article/details/80041936" target="_blank" rel="noopener">bounding-box</a></h4><blockquote><p>如图所示，绿色的框为飞机的Ground Truth，红色的框是提取的Region Proposal。那么即便红色的框被分类器识别为飞机，但是由于红色的框定位不准(IoU&lt;0.5)，那么这张图相当于没有正确的检测出飞机。如果我们能对红色的框进行微调，使得经过微调后的窗口跟Ground Truth更接近，这样岂不是定位会更准确。确实，Bounding-box regression 就是用来微调这个窗口的。<br><img alt="image" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20161020131820060.png" class="lazyload"></p></blockquote><h4 id="4-R-CNN"><a href="#4-R-CNN" class="headerlink" title="4 R-CNN"></a>4 <a href="https://blog.csdn.net/ture_dream/article/details/52896452" target="_blank" rel="noopener">R-CNN</a></h4><p>R-CNN是计算机视觉中目标检测算法的鼻祖，很多的目标检测算法都是基于R-CNN的改进，这里有一篇<a href="https://blog.csdn.net/ture_dream/article/details/52896452" target="_blank" rel="noopener">很好的博客</a>，介绍了R-CNN,Fast R-CNN,Faster R-CNN的一个工作原理</p><h4 id="5-IoU"><a href="#5-IoU" class="headerlink" title="5 IoU"></a>5 <a href="https://blog.csdn.net/u014061630/article/details/82818112" target="_blank" rel="noopener">IoU</a></h4><blockquote><p>IoU 的全称为交并比（Intersection over Union），通过这个名称我们大概可以猜到 IoU 的计算方法。IoU 计算的是 “预测的边框” 和 “真实的边框” 的交集和并集的比值。<br><img alt="image" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20180922220708895.png" class="lazyload"></p></blockquote><h4 id="6-卷积"><a href="#6-卷积" class="headerlink" title="6 卷积"></a>6 卷积</h4><p>卷积在图像识别中的概念是提取一幅图像的特征，通常对一幅图像进行卷积会有一个卷积核，该卷积核是一个正方形矩阵。一般是奇数矩阵，这样做的目的是为了卷积核总是有一个中心。大部分情况使用的3x3或者5x5等</p><h4 id="7-池化（pooling）"><a href="#7-池化（pooling）" class="headerlink" title="7 池化（pooling）"></a>7 池化（pooling）</h4><p>上面介绍了卷积操作，卷积的目的是提取一幅图像的特征，也就是边缘部分。但是一幅图像往往很大，有的甚至几百万的像素，每一个像素对应一个参数，那就意味着会有几百万个参数，这对于计算机的内存处理来讲是一个很大的问题。那么为了减少参数，提升计算机的运行效率，这里提出一个pooling的概念，也就是较少一部分对图像影响较小的参数，从而使得计算机的运行效率能够提升。池化操作一般在卷积之后。<br>pooling有很多种，这里<a href="https://blog.csdn.net/danieljianfeng/article/details/42433475" target="_blank" rel="noopener">介绍几种</a>：   </p><ul><li>一般池化（general pooling）</li><li>重叠池化（OverlappingPooling）</li><li>空金字塔池化（Spatial Pyramid Pooling）<br>还有一些池化，这篇<a href="https://blog.csdn.net/nwu_NBL/article/details/80901427" target="_blank" rel="noopener">博客</a>有介绍</li></ul><p>pooling layer视频介绍：</p><iframe src="//player.bilibili.com/player.html?aid=16022575&cid=26141211&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="720" height="480"> </iframe><h5 id="7-1-General-pooling"><a href="#7-1-General-pooling" class="headerlink" title="7.1 General pooling"></a>7.1 General pooling</h5><blockquote><p>池化作用于图像中不重合的区域（这与卷积操作不同），过程如下图<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/Pooling_schematic.gif" class="lazyload"><br>我们定义池化窗口的大小为sizeX，即下图中红色正方形的边长，定义两个相邻池化窗口的水平位移/竖直位移为stride。一般池化由于每一池化窗口都是不重复的，所以sizeX=stride。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20150105213214237.png" class="lazyload">   </p></blockquote><blockquote><p>最常见的池化操作为平均池化mean pooling和最大池化max pooling：   </p><ul><li>平均池化：计算图像区域的平均值作为该区域池化后的值。   </li><li>最大池化：选图像区域的最大值作为该区域池化后的值。</li></ul></blockquote><h5 id="7-2-Overlapping-pooling"><a href="#7-2-Overlapping-pooling" class="headerlink" title="7.2 Overlapping pooling"></a>7.2 Overlapping pooling</h5><blockquote><p>重叠池化正如其名字所说的，相邻池化窗口之间会有重叠区域，此时sizeX&gt;stride</p></blockquote><h5 id="7-3-Spatial-Pyramid-Pooling"><a href="#7-3-Spatial-Pyramid-Pooling" class="headerlink" title="7.3 Spatial Pyramid Pooling"></a>7.3 Spatial Pyramid Pooling</h5><blockquote><p>空间金字塔池化可以把任何尺度的图像的卷积特征转化成相同维度，这不仅可以让CNN处理任意尺度的图像，还能避免cropping和warping操作，导致一些信息的丢失，具有非常重要的意义</p></blockquote><blockquote><p>一般的CNN都需要输入图像的大小是固定的，这是因为全连接层的输入需要固定输入维度，但在卷积操作是没有对图像尺度有限制，所有作者提出了空间金字塔池化，先让图像进行卷积操作，然后转化成维度相同的特征输入到全连接层，这个可以把CNN扩展到任意大小的图像。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20150105213450046.png" class="lazyload"><br>空间金字塔池化的思想来自于Spatial Pyramid Model，它一个pooling变成了多个scale的pooling。用不同大小池化窗口作用于卷积特征，我们可以得到1X1,2X2,4X4的池化结果，由于conv5中共有256个过滤器，所以得到1个256维的特征，4个256个特征，以及16个256维的特征，然后把这21个256维特征链接起来输入全连接层，通过这种方式把不同大小的图像转化成相同维度的特征。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20150105213522578.png" class="lazyload">   </p></blockquote><h5 id="7-4-Rol-pooling"><a href="#7-4-Rol-pooling" class="headerlink" title="7.4 Rol pooling"></a>7.4 <a href="https://blog.csdn.net/auto1993/article/details/78514071" target="_blank" rel="noopener">Rol pooling</a></h5><p>Rol(Region of Interest)是图像中我们感兴趣的区域的意思，也可以理解为region proposal（候选区域）。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191118150551.png" class="lazyload"><br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191118150631.png" class="lazyload"><br>ROI pooling总结：<br>（1）用于目标检测任务；<br>（2）允许我们对CNN中的feature map进行reuse；<br>（3）可以显著加速training和testing速度；<br>（4）允许end-to-end的形式训练目标检测系统。   </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
+            
+            <tag> 概念解释 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>手把手教你玩转hexo个人博客，自定义主题，博客发布，GitHub部署</title>
       <link href="/2019/11/18/conclusion-hexo-1/"/>
       <url>/2019/11/18/conclusion-hexo-1/</url>
@@ -121,9 +144,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 数字图像处理 </tag>
             
