@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://crazyjums.github.io/2019/11/18/conclusion-hexo-1/</loc>
+    
+    <lastmod>2019-11-18T02:55:36.663Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/2019/11/16/hello-world/</loc>
+    
+    <lastmod>2019-11-18T02:46:48.128Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/2019/11/17/video-1/</loc>
+    
+    <lastmod>2019-11-18T02:02:54.257Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://crazyjums.github.io/2019/11/18/note-master-1/</loc>
     
-    <lastmod>2019-11-18T01:59:37.400Z</lastmod>
+    <lastmod>2019-11-18T02:02:15.077Z</lastmod>
     
   </url>
   
@@ -58,23 +79,9 @@
   </url>
   
   <url>
-    <loc>https://crazyjums.github.io/2019/11/17/video-1/</loc>
-    
-    <lastmod>2019-11-17T12:32:16.483Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://crazyjums.github.io/tags/index.html</loc>
     
     <lastmod>2019-11-17T12:01:19.471Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://crazyjums.github.io/2019/11/16/hello-world/</loc>
-    
-    <lastmod>2019-11-17T07:46:37.908Z</lastmod>
     
   </url>
   
