@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://crazyjums.github.io/movie/index.html</loc>
+    
+    <lastmod>2019-11-20T15:47:21.207Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://crazyjums.github.io/2019/11/18/cv-concept-you-must-know/</loc>
     
-    <lastmod>2019-11-19T15:20:55.795Z</lastmod>
+    <lastmod>2019-11-20T02:56:45.734Z</lastmod>
     
   </url>
   
@@ -75,13 +82,6 @@
     <loc>https://crazyjums.github.io/about/index.html</loc>
     
     <lastmod>2019-11-17T13:25:58.486Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://crazyjums.github.io/movie/index.html</loc>
-    
-    <lastmod>2019-11-17T12:49:10.623Z</lastmod>
     
   </url>
   
