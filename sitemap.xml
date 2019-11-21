@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://crazyjums.github.io/2019/11/21/cnn/</loc>
+    <loc>https://crazyjums.github.io/2019/11/18/cv-concept-you-must-know/</loc>
     
-    <lastmod>2019-11-21T03:17:46.211Z</lastmod>
+    <lastmod>2019-11-21T03:25:38.646Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://crazyjums.github.io/2019/11/18/cv-concept-you-must-know/</loc>
+    <loc>https://crazyjums.github.io/2019/11/21/gradient-descent/</loc>
     
-    <lastmod>2019-11-21T03:05:41.705Z</lastmod>
+    <lastmod>2019-11-21T03:24:11.851Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/2019/11/21/cnn/</loc>
+    
+    <lastmod>2019-11-21T03:17:46.211Z</lastmod>
     
   </url>
   
