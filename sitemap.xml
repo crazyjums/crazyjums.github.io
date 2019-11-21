@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://crazyjums.github.io/2019/11/21/cnn/</loc>
+    
+    <lastmod>2019-11-21T06:44:39.970Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/2019/11/21/AlexNet/</loc>
+    
+    <lastmod>2019-11-21T06:44:27.107Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/2019/11/21/lrn/</loc>
+    
+    <lastmod>2019-11-21T06:42:46.788Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://crazyjums.github.io/2019/11/18/cv-concept-you-must-know/</loc>
     
-    <lastmod>2019-11-21T04:52:41.998Z</lastmod>
+    <lastmod>2019-11-21T06:41:37.582Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/2019/11/21/machine-learning-different-from-deep-learning/</loc>
+    
+    <lastmod>2019-11-21T06:40:58.397Z</lastmod>
     
   </url>
   
@@ -12,13 +40,6 @@
     <loc>https://crazyjums.github.io/2019/11/21/gradient-descent/</loc>
     
     <lastmod>2019-11-21T04:51:53.757Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://crazyjums.github.io/2019/11/21/cnn/</loc>
-    
-    <lastmod>2019-11-21T04:41:57.924Z</lastmod>
     
   </url>
   
