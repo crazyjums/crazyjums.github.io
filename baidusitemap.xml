@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://crazyjums.github.io/2019/11/22/tensorflow-log-level/</loc>
+    <lastmod>2019-11-22</lastmod>
+  </url>  <url>
     <loc>https://crazyjums.github.io/2019/11/21/cnn/</loc>
     <lastmod>2019-11-21</lastmod>
   </url>  <url>
-    <loc>https://crazyjums.github.io/2019/11/21/AlexNet/</loc>
+    <loc>https://crazyjums.github.io/2019/11/21/lrn/</loc>
     <lastmod>2019-11-21</lastmod>
   </url>  <url>
-    <loc>https://crazyjums.github.io/2019/11/21/lrn/</loc>
+    <loc>https://crazyjums.github.io/2019/11/21/AlexNet/</loc>
     <lastmod>2019-11-21</lastmod>
   </url>  <url>
     <loc>https://crazyjums.github.io/2019/11/18/cv-concept-you-must-know/</loc>

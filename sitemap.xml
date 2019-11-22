@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://crazyjums.github.io/2019/11/22/tensorflow-log-level/</loc>
+    
+    <lastmod>2019-11-22T10:16:32.601Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://crazyjums.github.io/2019/11/21/cnn/</loc>
     
-    <lastmod>2019-11-21T06:44:39.970Z</lastmod>
+    <lastmod>2019-11-21T06:58:39.051Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/2019/11/21/lrn/</loc>
+    
+    <lastmod>2019-11-21T06:47:53.376Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>https://crazyjums.github.io/2019/11/21/AlexNet/</loc>
     
     <lastmod>2019-11-21T06:44:27.107Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://crazyjums.github.io/2019/11/21/lrn/</loc>
-    
-    <lastmod>2019-11-21T06:42:46.788Z</lastmod>
     
   </url>
   
