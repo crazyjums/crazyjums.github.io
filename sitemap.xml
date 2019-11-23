@@ -2,93 +2,163 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jums.club/git-to-github-and-coding/</loc>
+    <loc>https://jums.club/about/index.html</loc>
     
-    <lastmod>2019-11-23T11:13:08.209Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/put-your-hexo-blog-to-baidu-sitmap/</loc>
-    
-    <lastmod>2019-11-23T07:07:38.017Z</lastmod>
+    <lastmod>2019-11-23T11:17:20.913Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jums.club/change-file-name-by-python/</loc>
+    <loc>https://jums.club/your-plan/</loc>
     
-    <lastmod>2019-11-23T06:57:18.014Z</lastmod>
+    <lastmod>2019-11-23T11:15:38.812Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/view-package-of-npm/</loc>
     
-    <lastmod>2019-11-23T05:53:45.929Z</lastmod>
+    <lastmod>2019-11-23T11:15:38.808Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jums.club/CNAME-github/</loc>
+    <loc>https://jums.club/video-1/</loc>
     
-    <lastmod>2019-11-23T05:43:45.637Z</lastmod>
+    <lastmod>2019-11-23T11:15:38.805Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/tensorflow-log-level/</loc>
     
-    <lastmod>2019-11-22T10:16:32.601Z</lastmod>
+    <lastmod>2019-11-23T11:15:38.801Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jums.club/cnn/</loc>
+    <loc>https://jums.club/put-your-hexo-blog-to-baidu-sitmap/</loc>
     
-    <lastmod>2019-11-21T06:58:39.051Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/lrn/</loc>
-    
-    <lastmod>2019-11-21T06:47:53.376Z</lastmod>
+    <lastmod>2019-11-23T11:15:38.796Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jums.club/AlexNet/</loc>
+    <loc>https://jums.club/note-master-1/</loc>
     
-    <lastmod>2019-11-21T06:44:27.107Z</lastmod>
+    <lastmod>2019-11-23T11:15:38.791Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jums.club/cv-concept-you-must-know/</loc>
+    <loc>https://jums.club/music-test/</loc>
     
-    <lastmod>2019-11-21T06:41:37.582Z</lastmod>
+    <lastmod>2019-11-23T11:15:38.782Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/machine-learning-different-from-deep-learning/</loc>
     
-    <lastmod>2019-11-21T06:40:58.397Z</lastmod>
+    <lastmod>2019-11-23T11:15:38.778Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/lrn/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.775Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/hexo-search-function/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.772Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/hello-world/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.769Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/gradient-descent/</loc>
     
-    <lastmod>2019-11-21T04:51:53.757Z</lastmod>
+    <lastmod>2019-11-23T11:15:38.765Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/git-to-github-and-coding/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.737Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/dip/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.734Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/cv-concept-you-must-know/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.728Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/conclusion-hexo-1/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.724Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/cnn/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.720Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/change-file-name-by-python/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/archor-for-markdown/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.710Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/SSPNet/</loc>
     
-    <lastmod>2019-11-21T04:41:10.796Z</lastmod>
+    <lastmod>2019-11-23T11:15:38.707Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/CNAME-github/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.705Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/AlexNet/</loc>
+    
+    <lastmod>2019-11-23T11:15:38.700Z</lastmod>
     
   </url>
   
@@ -100,72 +170,9 @@
   </url>
   
   <url>
-    <loc>https://jums.club/music-test/</loc>
-    
-    <lastmod>2019-11-19T15:16:41.124Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/archor-for-markdown/</loc>
-    
-    <lastmod>2019-11-19T01:42:13.347Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/note-master-1/</loc>
-    
-    <lastmod>2019-11-18T06:13:20.224Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/your-plan/</loc>
-    
-    <lastmod>2019-11-18T06:07:49.115Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/video-1/</loc>
-    
-    <lastmod>2019-11-18T06:05:36.515Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/conclusion-hexo-1/</loc>
-    
-    <lastmod>2019-11-18T03:06:19.256Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/hello-world/</loc>
-    
-    <lastmod>2019-11-18T02:46:48.128Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/dip/</loc>
-    
-    <lastmod>2019-11-17T14:06:54.959Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jums.club/photo/index.html</loc>
     
     <lastmod>2019-11-17T13:36:33.757Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/about/index.html</loc>
-    
-    <lastmod>2019-11-17T13:25:58.486Z</lastmod>
     
   </url>
   
@@ -194,13 +201,6 @@
     <loc>https://jums.club/categories/index.html</loc>
     
     <lastmod>2019-11-17T06:02:12.463Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/hexo-search-function/</loc>
-    
-    <lastmod>2019-11-16T15:16:55.898Z</lastmod>
     
   </url>
   
