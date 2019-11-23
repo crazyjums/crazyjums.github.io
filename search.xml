@@ -4,13 +4,19 @@
   
     
     <entry>
-      <title>put your hexo blog to baidu sitmap</title>
+      <title>如何让自己的hexo博客被Google和百度收录</title>
       <link href="/2019/11/23/put-your-hexo-blog-to-baidu-sitmap/"/>
       <url>/2019/11/23/put-your-hexo-blog-to-baidu-sitmap/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h3 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h3><blockquote><p><a href="https://www.jianshu.com/p/25145964abf3" target="_blank" rel="noopener">如何让自己的hexo博客被Google和百度收录</a></p></blockquote>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
       
     </entry>
     
@@ -107,9 +113,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> CNN </tag>
             
@@ -164,9 +170,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -187,9 +193,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -210,9 +216,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -256,9 +262,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -386,9 +392,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 数字图像处理 </tag>
             
