@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>hexo个人博客绑定个人域名</title>
+      <link href="/2019/11/23/CNAME-github/"/>
+      <url>/2019/11/23/CNAME-github/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-注册个人域名"><a href="#1-注册个人域名" class="headerlink" title="1 注册个人域名"></a>1 注册个人域名</h3><p>进入到腾讯云平台，自己注册一个账号（微信登录即可），下面是网址：<br><a href="https://cloud.tencent.com/act/domainsales?from=dnspodqcloud" target="_blank" rel="noopener">https://cloud.tencent.com/act/domainsales?from=dnspodqcloud</a><br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191123125246.png" class="lazyload">   </p><h3 id="2-开始域名解析"><a href="#2-开始域名解析" class="headerlink" title="2 开始域名解析"></a>2 开始域名解析</h3><p>自己按照步骤购买域名，第一年是1元，然后进入到控制台，进入域名解析界面，如下：<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191123125742.png" class="lazyload"><br>点击【解析】进入到域名解析界面，如下：<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191123125952.png" class="lazyload">   </p><h3 id="3-创建CNAME文件"><a href="#3-创建CNAME文件" class="headerlink" title="3 创建CNAME文件"></a>3 创建CNAME文件</h3><p>创建一个CNAME文件：   </p><ul><li>这几个字母必须是大写</li><li>没有后缀名</li><li>用记事本打开将自己的域名写在里面，如：<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191123130306.png" class="lazyload">   </li></ul><h3 id="4-部署到GitHub"><a href="#4-部署到GitHub" class="headerlink" title="4 部署到GitHub"></a>4 部署到GitHub</h3><p>将CNAME文件放到publics文件夹里面，然后上传到GitHub，命令如下：   </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>tensorflow如何控制输出控制台的日志等级</title>
       <link href="/2019/11/22/tensorflow-log-level/"/>
       <url>/2019/11/22/tensorflow-log-level/</url>
@@ -35,9 +54,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> CNN </tag>
             
@@ -92,9 +111,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -115,9 +134,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -138,9 +157,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -184,9 +203,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -207,9 +226,9 @@
       
         <tags>
             
-            <tag> 总结 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 总结 </tag>
             
         </tags>
       
@@ -314,9 +333,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 数字图像处理 </tag>
             
