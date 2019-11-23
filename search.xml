@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>如何同属将hexo代码部署到GitHub以及coding上</title>
+      <link href="/2019/11/23/git-to-github-and-coding/"/>
+      <url>/2019/11/23/git-to-github-and-coding/</url>
+      
+        <content type="html"><![CDATA[<p><strong>修改hexo根目录下的_config.yml文件，代码如下：</strong>   </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line">    <span class="attr">github:</span> <span class="string">git@github.com:crazyjums/crazyjums.github.io.git</span></span><br><span class="line">    <span class="attr">coding:</span> <span class="string">git@git.dev.tencent.com:dtid_f0ed6967903b604b/hexo_blog.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">baidu_url_submitter</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何让自己的hexo博客被Google和百度收录</title>
       <link href="/2019/11/23/put-your-hexo-blog-to-baidu-sitmap/"/>
       <url>/2019/11/23/put-your-hexo-blog-to-baidu-sitmap/</url>
