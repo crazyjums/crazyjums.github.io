@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/categories/index.html</loc>
+    
+    <lastmod>2019-11-23T15:44:54.849Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/about/index.html</loc>
     
     <lastmod>2019-11-23T11:17:20.913Z</lastmod>
@@ -149,7 +156,7 @@
   </url>
   
   <url>
-    <loc>https://jums.club/CNAME-github/</loc>
+    <loc>https://jums.club/personal-domain-for-github-page/</loc>
     
     <lastmod>2019-11-23T11:15:38.705Z</lastmod>
     
@@ -194,13 +201,6 @@
     <loc>https://jums.club/tags/index.html</loc>
     
     <lastmod>2019-11-17T12:01:19.471Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/categories/index.html</loc>
-    
-    <lastmod>2019-11-17T06:02:12.463Z</lastmod>
     
   </url>
   

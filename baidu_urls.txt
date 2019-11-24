@@ -2,7 +2,7 @@ https://jums.club/git-to-github-and-coding/
 https://jums.club/put-your-hexo-blog-to-baidu-sitmap/
 https://jums.club/change-file-name-by-python/
 https://jums.club/view-package-of-npm/
-https://jums.club/CNAME-github/
+https://jums.club/personal-domain-for-github-page/
 https://jums.club/tensorflow-log-level/
 https://jums.club/AlexNet/
 https://jums.club/lrn/
