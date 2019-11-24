@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>解决【Please make sure you have the correct access rights and the repository exists.】</title>
+      <link href="/ssh-connect-to-github/"/>
+      <url>/ssh-connect-to-github/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><blockquote><p>问题：Please make sure you have the correct access rights and the repository exists.<br>当你使用git工具向GitHub提交代码时，遇到了上述问题，那么没关系，该问题已经解决<br>问题的关键就是没有在GitHub配置ssh key</p></blockquote><h3 id="2-解决问题"><a href="#2-解决问题" class="headerlink" title="2 解决问题"></a>2 解决问题</h3><p>进入到你的GitHub账户的setting中，然后找到ssh key选项，添加自己的公钥即可。<br><strong>第一步：</strong><br>产生自己的公钥,执行如下命令：   </p><pre><code class="java">ssh-keygen -t rsa -C <span class="string">"your github account"</span>#比如：我的GitHub账户是123456@qq.com，那么命令如下：ssh-keygen -t rsa -C <span class="string">"123456@qq.com"</span></code></pre><p>一路默认即可，然后在cd到存放公钥的文件夹里面，使用cat命令查看，然后将其复制到GitHub的setting中：<br><img alt="ssh key" data-src="xxx%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191124130021.png" class="lazyload">  </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+            <tag> 问题解决 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>推荐一个免费图床，了解一下</title>
       <link href="/a-free-tuchuang-site/"/>
       <url>/a-free-tuchuang-site/</url>
