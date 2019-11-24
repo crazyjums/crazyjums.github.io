@@ -1,3 +1,4 @@
+https://jums.club/hexo-for-all/
 https://jums.club/config-ssh-for-github/
 https://jums.club/ssh-connect-to-github/
 https://jums.club/a-free-tuchuang-site/
