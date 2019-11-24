@@ -1,3 +1,4 @@
+https://jums.club/123/
 https://jums.club/ssh-connect-to-github/
 https://jums.club/a-free-tuchuang-site/
 https://jums.club/git-to-github-and-coding/
@@ -9,6 +10,7 @@ https://jums.club/tensorflow-log-level/
 https://jums.club/AlexNet/
 https://jums.club/lrn/
 https://jums.club/machine-learning-different-from-deep-learning/
+https://jums.club/SSPNet%20-%20%E5%89%AF%E6%9C%AC/
 https://jums.club/SSPNet/
 https://jums.club/gradient-descent/
 https://jums.club/cnn/
