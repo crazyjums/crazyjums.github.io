@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>npm/npmr文件的原始内容</title>
+      <link href="/npm-npmr-content/"/>
+      <url>/npm-npmr-content/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><p>今天我修改了node.js的安装路径下的一个文件的内容，后来发现不能npm运行了，然后无奈我就重新安装了一下，因为我要安装一个hexoEditer来编写我的hexo博客，因为采用git bash和Markdown编辑器太麻烦了，所以上GitHub上找到了hexo的编辑器，这里是下载安装地址：<a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">HexoEditer</a>。<br>该编辑器的界面如下，简洁大方：<br><img alt="HexoEditer main" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/main.png" class="lazyload"><br><img alt="HexoEditer side menu" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/side-menu.png" class="lazyload">   </p><p>在GitHub的readme中，有提到使用下面的语句进行配置全局变量：    </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//if use Windows:</span><br><span class="line">npm config set prefix &quot;C:/Program Files/nodejs/npm_global&quot;</span><br><span class="line">npm config set cache &quot;C:/Program Files/nodejs/npm_cache&quot; </span><br><span class="line"></span><br><span class="line">//if use Linux\Mac:</span><br><span class="line">npm config set prefix &quot;~/nodejs/npm_global&quot;</span><br><span class="line">npm config set cache &quot;~/nodejs/npm_cache&quot; </span><br><span class="line"></span><br><span class="line">//If In China, China, China, you can set mirror to speed up !</span><br><span class="line">npm config set registry &quot;https://registry.npm.taobao.org/&quot;</span><br><span class="line">npm config set electron_mirror &quot;https://npm.taobao.org/mirrors/electron/&quot;</span><br><span class="line"></span><br><span class="line">git clone https://github.com/zhuzhuyule/HexoEditor.git</span><br><span class="line">cd HexoEditor</span><br><span class="line">npm install</span><br><span class="line">npm start</span><br></pre></td></tr></table></figure><p>我用的Windows，执行完命令之后，并没有效果，然后我就按照网上的教程，修改了我的nodejs文件夹下的npmrc文件，<a href="https://blog.csdn.net/carechere/article/details/51279789" target="_blank" rel="noopener">参考博客</a>，此博客不可全信，只供参考。</p><h3 id="2-解决问题"><a href="#2-解决问题" class="headerlink" title="2 解决问题"></a>2 解决问题</h3><p>下面是<code>npm/npmrc</code>文件的原始内容，如果你修改了此文件，导致<code>npm</code>不能使用的话，那么可以修改回来,或者重新<a href="https://nodejs.org/en/" target="_blank" rel="noopener">安装</a>，或者再想想别的办法。   </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prefix=$&#123;APPDATA&#125;\npm</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 解决方案 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决【hexo博客绑定个人域名之后，每次hexo d之后，页面总是失效，需要重新配置】</title>
       <link href="/error-by-hexo-d-person-domain/"/>
       <url>/error-by-hexo-d-person-domain/</url>
@@ -237,9 +258,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> CNN </tag>
             
@@ -285,8 +306,8 @@
     
     <entry>
       <title>关于SSPNet（空间金字塔池化网络），了解一下</title>
-      <link href="/SSPNet%20-%20%E5%89%AF%E6%9C%AC/"/>
-      <url>/SSPNet%20-%20%E5%89%AF%E6%9C%AC/</url>
+      <link href="/SSPNet/"/>
+      <url>/SSPNet/</url>
       
         <content type="html"><![CDATA[<h3 id="1-SSPNet论文出处"><a href="#1-SSPNet论文出处" class="headerlink" title="1 SSPNet论文出处"></a>1 SSPNet论文出处</h3><p>SSPNet（Spatial Pyramid Pooling Network），中文名字是空间金字塔池化网络<br>SSPNet论文出自《<a href="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/pdf/Spatial_Pyramid_Pooling_in_Deep_Convolutional_Networks_for_Visual_Recognition.pdf" target="_blank" rel="noopener">Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition</a>》<br><a href="https://blog.csdn.net/tinyzhao/article/details/53717136" target="_blank" rel="noopener">一篇较好的解读SSPNet的博客</a></p><h4 id="1-1-为什么会提出SSPNet"><a href="#1-1-为什么会提出SSPNet" class="headerlink" title="1.1 为什么会提出SSPNet"></a>1.1 为什么会提出SSPNet</h4><p>SSPNet的中文名称是空间金字塔池化网络，SSPNet的提出，是为了解决R-CNN遇到的一个拼劲问题，也就是R-CNN在候选区提取时，每张图片都需要经过一次CNN，运行速度很慢。如果你有2000张图片的话，那么你需要经过2000次CNN网络，这样的计算速度是非常慢的。 在了解SSPNet之前，让我们先了解一下<a href="https://crazyjums.github.io/2019/11/18/cv-concept-you-must-know/#R-CNN的工作原理" target="_blank" rel="noopener">R-CNN的工作原理</a>，才能对其进行改进。  </p><p><strong>SSPNet完美解决上述R-CNN遗留的两个问题:</strong>   </p><blockquote><ul><li>R-CNN在生成了候选区域后，需要对每个区域进行统一尺寸的压缩或放大，当候选集的长与宽差别较大时强行压缩至比例为1:1时会使图像产生变形和丢失图像的原始特征</li><li>R-CNN生成了多个候选集后需要全部输入到CNN中，当生成了2000个候选集时，就需要对图片进行2000次单模型特征提取，这无疑是效率低下的</li></ul></blockquote><h4 id="1-2-SSPNet的解决方案"><a href="#1-2-SSPNet的解决方案" class="headerlink" title="1.2 SSPNet的解决方案"></a>1.2 SSPNet的解决方案</h4><p>针对R-CNN遗留的两个问题，SSPNet提出了如下的解决方案：   </p><blockquote><ul><li>SPPNet网络结构图如下所示，在输入时直接输入整张图像，只需要对整张图像做一次卷积操作，同时会生成整张图像的候选集特征映射(Feature Map)，这<strong>样候选集对应的特征图可以直接传递到下一层，这样一来对图像进行2000次的计算就变成了1次</strong>，大大增加了网络的效率。</li><li>SPPNet中另一关键模块就是金字塔池化层（Spatial Pyramid Pooling Layer），这一层的<strong>设计思路是通过池化操作将任意尺寸的输入都转换成固定大小输出</strong>，<strong>因为在池化层中只要池化的核结构不变，输入的维度就不会变化</strong>。Kaiming He等人正是利用了<strong>池化输出固定的原理</strong>避免了<strong>原始R-CNN模型中需要缩放图片候选集</strong>的操作   </li></ul></blockquote><p><strong>SPPNet在R-CNN拥有的区域提取、卷积层、池化层、全连接层、SVM分类器和Bounding-Box回归网络结构基础上，加入了候选集特征图映射和SPP Pooling层。将R-CNN网络的预测速度提升了数十倍，极大地优化了网络的计算法复杂度</strong><br>SSPNet的结构图如下所示：<br><img alt="image" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20150105213522578.png" class="lazyload"></p>]]></content>
       
@@ -294,9 +315,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -308,8 +329,8 @@
     
     <entry>
       <title>关于SSPNet（空间金字塔池化网络），了解一下</title>
-      <link href="/SSPNet/"/>
-      <url>/SSPNet/</url>
+      <link href="/SSPNet%20-%20%E5%89%AF%E6%9C%AC/"/>
+      <url>/SSPNet%20-%20%E5%89%AF%E6%9C%AC/</url>
       
         <content type="html"><![CDATA[<h3 id="1-SSPNet论文出处"><a href="#1-SSPNet论文出处" class="headerlink" title="1 SSPNet论文出处"></a>1 SSPNet论文出处</h3><p>SSPNet（Spatial Pyramid Pooling Network），中文名字是空间金字塔池化网络<br>SSPNet论文出自《<a href="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/pdf/Spatial_Pyramid_Pooling_in_Deep_Convolutional_Networks_for_Visual_Recognition.pdf" target="_blank" rel="noopener">Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition</a>》<br><a href="https://blog.csdn.net/tinyzhao/article/details/53717136" target="_blank" rel="noopener">一篇较好的解读SSPNet的博客</a></p><h4 id="1-1-为什么会提出SSPNet"><a href="#1-1-为什么会提出SSPNet" class="headerlink" title="1.1 为什么会提出SSPNet"></a>1.1 为什么会提出SSPNet</h4><p>SSPNet的中文名称是空间金字塔池化网络，SSPNet的提出，是为了解决R-CNN遇到的一个拼劲问题，也就是R-CNN在候选区提取时，每张图片都需要经过一次CNN，运行速度很慢。如果你有2000张图片的话，那么你需要经过2000次CNN网络，这样的计算速度是非常慢的。 在了解SSPNet之前，让我们先了解一下<a href="https://crazyjums.github.io/2019/11/18/cv-concept-you-must-know/#R-CNN的工作原理" target="_blank" rel="noopener">R-CNN的工作原理</a>，才能对其进行改进。  </p><p><strong>SSPNet完美解决上述R-CNN遗留的两个问题:</strong>   </p><blockquote><ul><li>R-CNN在生成了候选区域后，需要对每个区域进行统一尺寸的压缩或放大，当候选集的长与宽差别较大时强行压缩至比例为1:1时会使图像产生变形和丢失图像的原始特征</li><li>R-CNN生成了多个候选集后需要全部输入到CNN中，当生成了2000个候选集时，就需要对图片进行2000次单模型特征提取，这无疑是效率低下的</li></ul></blockquote><h4 id="1-2-SSPNet的解决方案"><a href="#1-2-SSPNet的解决方案" class="headerlink" title="1.2 SSPNet的解决方案"></a>1.2 SSPNet的解决方案</h4><p>针对R-CNN遗留的两个问题，SSPNet提出了如下的解决方案：   </p><blockquote><ul><li>SPPNet网络结构图如下所示，在输入时直接输入整张图像，只需要对整张图像做一次卷积操作，同时会生成整张图像的候选集特征映射(Feature Map)，这<strong>样候选集对应的特征图可以直接传递到下一层，这样一来对图像进行2000次的计算就变成了1次</strong>，大大增加了网络的效率。</li><li>SPPNet中另一关键模块就是金字塔池化层（Spatial Pyramid Pooling Layer），这一层的<strong>设计思路是通过池化操作将任意尺寸的输入都转换成固定大小输出</strong>，<strong>因为在池化层中只要池化的核结构不变，输入的维度就不会变化</strong>。Kaiming He等人正是利用了<strong>池化输出固定的原理</strong>避免了<strong>原始R-CNN模型中需要缩放图片候选集</strong>的操作   </li></ul></blockquote><p><strong>SPPNet在R-CNN拥有的区域提取、卷积层、池化层、全连接层、SVM分类器和Bounding-Box回归网络结构基础上，加入了候选集特征图映射和SPP Pooling层。将R-CNN网络的预测速度提升了数十倍，极大地优化了网络的计算法复杂度</strong><br>SSPNet的结构图如下所示：<br><img alt="image" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20150105213522578.png" class="lazyload"></p>]]></content>
       
@@ -317,9 +338,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -340,9 +361,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -363,9 +384,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -409,9 +430,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -539,9 +560,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 数字图像处理 </tag>
             
