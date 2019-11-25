@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/hexo-editor/</loc>
+    
+    <lastmod>2019-11-25T07:44:44.285Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/Untitled-1/</loc>
+    
+    <lastmod>2019-11-25T07:40:41.853Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/note-master-1/</loc>
+    
+    <lastmod>2019-11-25T06:51:44.872Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/hexo-admin-ehc-images.json</loc>
     
     <lastmod>2019-11-25T06:24:04.352Z</lastmod>
@@ -128,13 +149,6 @@
   </url>
   
   <url>
-    <loc>https://jums.club/note-master-1/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.791Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jums.club/music-test/</loc>
     
     <lastmod>2019-11-23T11:15:38.782Z</lastmod>
@@ -201,13 +215,6 @@
     <loc>https://jums.club/cnn/</loc>
     
     <lastmod>2019-11-23T11:15:38.720Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/SSPNet%2520-%2520%25E5%2589%25AF%25E6%259C%25AC/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.707Z</lastmod>
     
   </url>
   

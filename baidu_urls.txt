@@ -1,3 +1,5 @@
+https://jums.club/hexo-editor/
+https://jums.club/Untitled-1/
 https://jums.club/npm-npmr-content/
 https://jums.club/error-by-hexo-d-person-domain/
 https://jums.club/hexo-for-all/
@@ -13,7 +15,6 @@ https://jums.club/tensorflow-log-level/
 https://jums.club/AlexNet/
 https://jums.club/lrn/
 https://jums.club/machine-learning-different-from-deep-learning/
-https://jums.club/SSPNet%20-%20%E5%89%AF%E6%9C%AC/
 https://jums.club/SSPNet/
 https://jums.club/gradient-descent/
 https://jums.club/cnn/
