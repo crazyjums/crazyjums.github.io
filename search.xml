@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>markdownPad2下载以及破解</title>
+      <link href="/markdownPad2-break/"/>
+      <url>/markdownPad2-break/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1 下载"></a>1 下载</h3><p>链接：<a href="https://pan.baidu.com/s/1vsP_eEaiepAzuJKYnfTvNg" target="_blank" rel="noopener" title="https://pan.baidu.com/s/1vsP_eEaiepAzuJKYnfTvNg">https://pan.baidu.com/s/1vsP_eEaiepAzuJKYnfTvNg</a><br>提取码：3em7</p><h3 id="2-MarkdownPad2破解"><a href="#2-MarkdownPad2破解" class="headerlink" title="2 MarkdownPad2破解"></a>2 MarkdownPad2破解</h3><p>点击<code>Enter Key</code> 进入输入邮箱和<code>License key</code></p><p>Email address:<br><a href="mailto:Soar360@live.com" target="_blank" rel="noopener">Soar360@live.com</a></p><p>License key :  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</span><br></pre></td></tr></table></figure><h3 id="3-HTML渲染器下载"><a href="#3-HTML渲染器下载" class="headerlink" title="3 HTML渲染器下载"></a>3 HTML渲染器下载</h3><p>链接：<a href="https://pan.baidu.com/s/1GULFGwC8yLKlYa-9CIjmSQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1GULFGwC8yLKlYa-9CIjmSQ</a><br>提取码：43ja</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+            <tag> 软件破解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo绑定个人域名如何实现https访问</title>
+      <link href="/use-cloudfree-make-your-hexo-to-https/"/>
+      <url>/use-cloudfree-make-your-hexo-to-https/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><p>当我们使用<code>github</code>+<code>hexo</code>+<code>personal domain</code>做自己的博客时，会发现只有http访问，不能进行https访问，关于个人域名的申请，请参考<a href="https://jums.club/personal-domain-for-github-page/">这篇博客</a>，这里介绍一个网站<a href="https://dash.cloudflare.com/" target="_blank" rel="noopener">cloudflare</a>，他是国外的一个提供网站安全管理、性能优化及相关的技术支持的网站，<code>github</code>服务器在国外，所以有时候可能会被墙，这个时候<a href="https://dash.cloudflare.com/" target="_blank" rel="noopener">cloudflare</a>就发挥作用了。</p><h3 id="2-解决问题"><a href="#2-解决问题" class="headerlink" title="2 解决问题"></a>2 解决问题</h3><p>首先去<a href="https://dash.cloudflare.com/" target="_blank" rel="noopener">cloudflare</a>注册一个账号，建议用邮箱注册。然后去首页添加自己的域名，如下所示：<br><img alt="add site" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191126125256.png" class="lazyload"><br>然后在点击SSL/TLS按钮将加密模式选为<strong>flexible</strong>：<br><img alt="flexible" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191126125421.png" class="lazyload"><br>再然后就是点击page ranks按钮添加对应的域名，一个是www，另一个是域名本身，如下：<br><img alt="page ranks" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191126125633.png" class="lazyload"><br>再然后点击DNS按钮，填上下图所示的信息，你的域名本身以及带www的域名：<br><img alt="dns" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191126125913.png" class="lazyload"><br>最后，修改域名提供商上的nameserver地址，我是用的<a href="https://jums.club/personal-domain-for-github-page/">腾讯云域名</a>，如下所示：<br><img alt="alert nameserver" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191126130329.png" class="lazyload">   </p><h3 id="3-查看邮箱邮件"><a href="#3-查看邮箱邮件" class="headerlink" title="3 查看邮箱邮件"></a>3 查看邮箱邮件</h3><p>当你设置完之后，过一会（官方说是72小时内）你会收到一封邮件，内容如下：<br><img alt="status active" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191126130752.png" class="lazyload"><br>还有收到一封欢迎加入cloudflare的邮件，如下：<br><img alt="welcome to cloudflare" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191126130859.png" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo编辑器之HexoEditor安装以及闭坑教程</title>
       <link href="/hexo-editor/"/>
       <url>/hexo-editor/</url>
