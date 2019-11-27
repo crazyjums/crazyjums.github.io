@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/liner-regression-writen-by-tensorflow/</loc>
+    
+    <lastmod>2019-11-27T06:30:39.873Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</loc>
     
-    <lastmod>2019-11-27T05:20:55.552Z</lastmod>
+    <lastmod>2019-11-27T05:49:02.885Z</lastmod>
     
   </url>
   
