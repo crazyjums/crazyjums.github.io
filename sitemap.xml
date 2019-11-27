@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jums.club/markdownPad2-break/</loc>
+    <loc>https://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</loc>
     
-    <lastmod>2019-11-26T05:35:42.869Z</lastmod>
+    <lastmod>2019-11-27T05:20:55.552Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/about/index.html</loc>
+    
+    <lastmod>2019-11-26T10:32:08.770Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/tensorflow-learning-note/</loc>
+    
+    <lastmod>2019-11-26T09:32:31.385Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/use-cloudfree-make-your-hexo-to-https/</loc>
     
-    <lastmod>2019-11-26T05:11:47.401Z</lastmod>
+    <lastmod>2019-11-26T09:32:29.980Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/markdownPad2-break/</loc>
+    
+    <lastmod>2019-11-26T09:32:29.974Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/cv-concept-you-must-know/</loc>
+    
+    <lastmod>2019-11-26T08:00:46.341Z</lastmod>
     
   </url>
   
@@ -107,13 +135,6 @@
   </url>
   
   <url>
-    <loc>https://jums.club/cv-concept-you-must-know/</loc>
-    
-    <lastmod>2019-11-24T03:12:36.617Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jums.club/change-file-name-by-python/</loc>
     
     <lastmod>2019-11-24T03:11:33.315Z</lastmod>
@@ -131,13 +152,6 @@
     <loc>https://jums.club/categories/index.html</loc>
     
     <lastmod>2019-11-23T15:44:54.849Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/about/index.html</loc>
-    
-    <lastmod>2019-11-23T11:17:20.913Z</lastmod>
     
   </url>
   

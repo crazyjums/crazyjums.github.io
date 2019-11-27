@@ -1,3 +1,5 @@
+https://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/
+https://jums.club/tensorflow-learning-note/
 https://jums.club/markdownPad2-break/
 https://jums.club/use-cloudfree-make-your-hexo-to-https/
 https://jums.club/hexo-editor/

@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jums.club/markdownPad2-break/</loc>
+    <loc>https://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</loc>
+    <lastmod>2019-11-27</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/tensorflow-learning-note/</loc>
     <lastmod>2019-11-26</lastmod>
   </url>  <url>
     <loc>https://jums.club/use-cloudfree-make-your-hexo-to-https/</loc>
+    <lastmod>2019-11-26</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/markdownPad2-break/</loc>
+    <lastmod>2019-11-26</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/cv-concept-you-must-know/</loc>
     <lastmod>2019-11-26</lastmod>
   </url>  <url>
     <loc>https://jums.club/hexo-editor/</loc>
@@ -41,9 +50,6 @@
     <lastmod>2019-11-24</lastmod>
   </url>  <url>
     <loc>https://jums.club/view-package-of-npm/</loc>
-    <lastmod>2019-11-24</lastmod>
-  </url>  <url>
-    <loc>https://jums.club/cv-concept-you-must-know/</loc>
     <lastmod>2019-11-24</lastmod>
   </url>  <url>
     <loc>https://jums.club/change-file-name-by-python/</loc>
