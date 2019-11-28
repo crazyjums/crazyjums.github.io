@@ -1,3 +1,6 @@
+https://jums.club/tensorflow-reduce-mean/
+https://jums.club/tensorflow-s-placeholder/
+https://jums.club/tensorflow-mnist-full-connection/
 https://jums.club/liner-regression-writen-by-tensorflow/
 https://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/
 https://jums.club/tensorflow-learning-note/

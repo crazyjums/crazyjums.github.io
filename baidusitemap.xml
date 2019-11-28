@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://jums.club/tensorflow-mnist-full-connection/</loc>
+    <lastmod>2019-11-28</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/tensorflow-reduce-mean/</loc>
+    <lastmod>2019-11-28</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/tensorflow-s-placeholder/</loc>
+    <lastmod>2019-11-28</lastmod>
+  </url>  <url>
     <loc>https://jums.club/liner-regression-writen-by-tensorflow/</loc>
     <lastmod>2019-11-27</lastmod>
   </url>  <url>

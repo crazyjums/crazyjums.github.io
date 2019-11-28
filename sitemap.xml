@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/tensorflow-mnist-full-connection/</loc>
+    
+    <lastmod>2019-11-28T08:16:00.048Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/tensorflow-reduce-mean/</loc>
+    
+    <lastmod>2019-11-28T08:06:10.494Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/tensorflow-s-placeholder/</loc>
+    
+    <lastmod>2019-11-28T07:45:09.985Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/liner-regression-writen-by-tensorflow/</loc>
     
     <lastmod>2019-11-27T07:37:04.138Z</lastmod>
