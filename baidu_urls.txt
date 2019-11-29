@@ -1,3 +1,4 @@
+https://jums.club/how-to-access-google/
 https://jums.club/tensorflow-reduce-mean/
 https://jums.club/tensorflow-s-placeholder/
 https://jums.club/tensorflow-mnist-full-connection/
