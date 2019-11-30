@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/movie/index.html</loc>
+    
+    <lastmod>2019-11-30T14:59:50.005Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/how-to-access-google/</loc>
     
     <lastmod>2019-11-29T02:53:46.062Z</lastmod>
@@ -278,13 +285,6 @@
     <loc>https://jums.club/AlexNet/</loc>
     
     <lastmod>2019-11-23T11:15:38.700Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/movie/index.html</loc>
-    
-    <lastmod>2019-11-20T15:58:15.621Z</lastmod>
     
   </url>
   
