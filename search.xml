@@ -44,19 +44,6 @@
     
     
     <entry>
-      <title>tensorflow&#39;s placeholder</title>
-      <link href="/tensorflow-s-placeholder/"/>
-      <url>/tensorflow-s-placeholder/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>基于TensorFlow的mnist手写体识别</title>
       <link href="/tensorflow-mnist-full-connection/"/>
       <url>/tensorflow-mnist-full-connection/</url>
@@ -174,9 +161,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -235,9 +222,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -277,9 +264,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
