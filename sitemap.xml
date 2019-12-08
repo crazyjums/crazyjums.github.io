@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/github-project/</loc>
+    
+    <lastmod>2019-12-08T15:32:23.001Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/your-plan/</loc>
+    
+    <lastmod>2019-12-08T15:28:41.546Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/how-to-access-google/</loc>
     
     <lastmod>2019-12-07T15:04:31.471Z</lastmod>
@@ -229,13 +243,6 @@
     <loc>https://jums.club/tensorflow-log-level/</loc>
     
     <lastmod>2019-11-24T03:11:03.822Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/your-plan/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.812Z</lastmod>
     
   </url>
   
