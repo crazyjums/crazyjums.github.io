@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/books/index.html</loc>
+    
+    <lastmod>2019-12-17T16:02:42.938Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/gallery/index.html</loc>
+    
+    <lastmod>2019-12-17T15:46:35.403Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/github-project/</loc>
     
     <lastmod>2019-12-08T15:32:23.001Z</lastmod>
@@ -51,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://jums.club/movie/index.html</loc>
+    <loc>https://jums.club/movies/index.html</loc>
     
     <lastmod>2019-12-06T15:33:24.610Z</lastmod>
     
@@ -327,6 +341,13 @@
     <loc>https://jums.club/AlexNet/</loc>
     
     <lastmod>2019-11-23T11:15:38.700Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/gallery/sample/index.html</loc>
+    
+    <lastmod>2018-10-26T16:19:47.533Z</lastmod>
     
   </url>
   
