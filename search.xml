@@ -4,11 +4,45 @@
   
     
     <entry>
+      <title>解决hexo博客标题出错-》title: Python问题解决 re.error: unbalanced parenthesis at pos</title>
+      <link href="/sloved-hexo-title/"/>
+      <url>/sloved-hexo-title/</url>
+      
+        <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p><img alt="problem" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191228141835.png" class="lazyload">   </p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>完美解决：用<code>&quot;&quot;</code>将标题引用起来，如：<br><img alt="sloved" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191228141630.png" class="lazyload"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python问题解决:re.error: unbalanced parenthesis at position 88</title>
+      <link href="/re-sub/"/>
+      <url>/re-sub/</url>
+      
+        <content type="html"><![CDATA[<h4 id="问题：re-error-unbalanced-parenthesis-at-position-88"><a href="#问题：re-error-unbalanced-parenthesis-at-position-88" class="headerlink" title="问题：re.error: unbalanced parenthesis at position 88"></a>问题：re.error: unbalanced parenthesis at position 88</h4><p>在使用Python正则表达式的时候，用替换方法出现上述错误，</p><h3 id="下面是错误代码："><a href="#下面是错误代码：" class="headerlink" title="下面是错误代码："></a>下面是错误代码：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">new_url = <span class="string">"https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227161526664.png)"</span></span><br><span class="line">old_url = <span class="string">"https://img2018.cnblogs.com/blog/1212206/201912/1212206-20191227161526664-2133632479.png)"</span></span><br><span class="line">line = <span class="string">"![list example](https://img2018.cnblogs.com/blog/1212206/201912/1212206-20191227161526664-2133632479.png)"</span></span><br><span class="line">new_line = re.sub(old_url,new_url,line)</span><br><span class="line">print(new_line)</span><br></pre></td></tr></table></figure><h3 id="错误提示："><a href="#错误提示：" class="headerlink" title="错误提示："></a>错误提示：</h3><p><img alt="error" data-src="https://upload-images.jianshu.io/upload_images/621273-5780ef5219b1b55f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload">   </p><h3 id="错误原因："><a href="#错误原因：" class="headerlink" title="错误原因："></a>错误原因：</h3><p><img alt="reason" data-src="https://upload-images.jianshu.io/upload_images/621273-e6156da55498b8e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"><br>我们可以看到，需要替换的两个字符串末尾多出一个<code>)</code>来，导致匹配出错。我们去掉末尾那个<code>)</code>就可以了。</p><h3 id="更正代码："><a href="#更正代码：" class="headerlink" title="更正代码："></a>更正代码：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">line = <span class="string">'![list example](https://img2018.cnblogs.com/blog/1212206/201912/1212206-20191227161526664-2133632479.png)'</span></span><br><span class="line">old_url = <span class="string">"https://img2018.cnblogs.com/blog/1212206/201912/1212206-20191227161526664-2133632479.png"</span></span><br><span class="line">new_url = <span class="string">"https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227161526664.png"</span></span><br><span class="line">l = re.sub(old_url,new_url,line)</span><br><span class="line">print(line)</span><br><span class="line">print(l)</span><br></pre></td></tr></table></figure><h4 id="正确运行结果："><a href="#正确运行结果：" class="headerlink" title="正确运行结果："></a>正确运行结果：</h4><p><img alt="right result" data-src="https://upload-images.jianshu.io/upload_images/621273-cc9c055877a920b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python使用命令行参数的用法</title>
       <link href="/how-to-use-python-command-param/"/>
       <url>/how-to-use-python-command-param/</url>
       
-        <content type="html"><![CDATA[<h3 id="方法一（sys）"><a href="#方法一（sys）" class="headerlink" title="方法一（sys）"></a>方法一（<code>sys</code>）</h3><p>直接看代码：    </p><pre><code class="python"><span class="comment">#!/usr/bin/python    </span><span class="comment"># -*- coding: UTF-8 -*-    </span><span class="keyword">import</span> sys    <span class="keyword">print</span> (<span class="string">'参数个数为:'</span>, len(sys.argv), <span class="string">'个参数。'</span>)    <span class="keyword">print</span> (<span class="string">'参数列表:'</span>, str(sys.argv))    </code></pre><p>运行结果：<br><img alt="方法一运行结果" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191228112401.png" class="lazyload">    </p><h3 id="方法二（argparse）"><a href="#方法二（argparse）" class="headerlink" title="方法二（argparse）"></a>方法二（<code>argparse</code>）</h3><p>还是一样，直接看代码：    </p><pre><code class="python">parser = argparse.ArgumentParser(description=<span class="string">"给Markdown文件中的每一行末尾，添加三个空格和换行符"</span>)    parser.add_argument(<span class="string">"-f"</span>, <span class="string">"--filename"</span>, default=<span class="literal">None</span>)    args = parser.parse_args()    filename = args.filename    print(filename)    </code></pre><p>运行结果：<br><img alt="方法二运行结果" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191228112638.png" class="lazyload">    </p>]]></content>
+        <content type="html"><![CDATA[<h3 id="方法一（sys）"><a href="#方法一（sys）" class="headerlink" title="方法一（sys）"></a>方法一（<code>sys</code>）</h3><p>直接看代码： </p><pre><code class="python"><span class="comment">#!/usr/bin/python    </span><span class="comment"># -*- coding: UTF-8 -*-     </span><span class="keyword">import</span> sys    <span class="keyword">print</span> (<span class="string">'参数个数为:'</span>, len(sys.argv), <span class="string">'个参数。'</span>)    <span class="keyword">print</span> (<span class="string">'参数列表:'</span>, str(sys.argv))    </code></pre><p>运行结果：<br><img alt="方法一运行结果" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191228112401.png" class="lazyload">    </p><h3 id="方法二（argparse）"><a href="#方法二（argparse）" class="headerlink" title="方法二（argparse）"></a>方法二（<code>argparse</code>）</h3><p>还是一样，直接看代码：    </p><pre><code class="python">parser = argparse.ArgumentParser(description=<span class="string">"给Markdown文件中的每一行末尾，添加三个空格和换行符"</span>)    parser.add_argument(<span class="string">"-f"</span>, <span class="string">"--filename"</span>, default=<span class="literal">None</span>)    args = parser.parse_args()    filename = args.filename    print(filename)    </code></pre><p>运行结果：<br><img alt="方法二运行结果" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191228112638.png" class="lazyload">    </p>]]></content>
       
       
       
