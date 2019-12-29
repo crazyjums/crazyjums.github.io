@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>解决：Windows下，如何将MySQL的数据从C盘迁移到其他盘</title>
+      <link href="/mysql-to-another-disk/"/>
+      <url>/mysql-to-another-disk/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-关闭MySQL服务"><a href="#1-关闭MySQL服务" class="headerlink" title="1 关闭MySQL服务"></a>1 关闭MySQL服务</h3><p>右键点击【我的电脑】-》【管理】-》【服务和应用程序】-》【服务】-》关闭MySQL服务</p><h3 id="2-找到MySQL数据的存储位置"><a href="#2-找到MySQL数据的存储位置" class="headerlink" title="2 找到MySQL数据的存储位置"></a>2 找到MySQL数据的存储位置</h3><p><img alt="存储位置" data-src="https://upload-images.jianshu.io/upload_images/621273-ac528190b1b7bb0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"></p><h3 id="3-修改MySQL的配置文件"><a href="#3-修改MySQL的配置文件" class="headerlink" title="3 修改MySQL的配置文件"></a>3 修改MySQL的配置文件</h3><p>找到<code>my.ini</code>配置文件，找到其中的<code>datadir</code>，如下：<br><img alt="配置文件" data-src="https://upload-images.jianshu.io/upload_images/621273-508a25fcbd91f21b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"><br>将路径修改为你想要修改的路径即可。</p><h3 id="4-修改文件夹的权限"><a href="#4-修改文件夹的权限" class="headerlink" title="4 修改文件夹的权限"></a>4 修改文件夹的权限</h3><p>找到新的路径文件夹，右键-》【安全】-【编辑】-》【添加】-》【高级】-》【立即查找】-》选择【NETWORK_SERVICE】<br>如下图所示：<br><img alt="权限" data-src="https://upload-images.jianshu.io/upload_images/621273-944e5e7af127b2a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+            <tag> Windows </tag>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python spider crawl fund data</title>
       <link href="/python-spider-crawl-fund-data/"/>
       <url>/python-spider-crawl-fund-data/</url>
@@ -612,9 +635,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> CNN </tag>
             
@@ -669,9 +692,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -692,9 +715,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -715,9 +738,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -761,9 +784,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -891,9 +914,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 数字图像处理 </tag>
             
