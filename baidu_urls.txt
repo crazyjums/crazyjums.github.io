@@ -1,3 +1,5 @@
+https://jums.club/python-spider-crawl-fund-data/
+https://jums.club/python-json-problem-sloved/
 https://jums.club/sloved-hexo-title/
 https://jums.club/re-sub/
 https://jums.club/how-to-use-python-command-param/
