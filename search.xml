@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>解决：Connection reset by 192.30.255.112 port 22 fatal: Could not read from remote repository.</title>
+      <link href="/git-error-2/"/>
+      <url>/git-error-2/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题：Connection reset by 192.30.255.112 port 22 fatal: Could not read from remote repository.</strong><br><img alt="error" data-src="https://img-blog.csdnimg.cn/20191230154340954.png" class="lazyload"></p><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p>先检查能否<code>ping</code>通该地址<code>github.com</code>：<br><img alt="ping 失败" data-src="https://img-blog.csdnimg.cn/2019123015451024.png" class="lazyload"><br>有我的<code>git bash</code>没有支持中文，所以就出现了乱码，我们可以看到这是ping不通的结果，如何解决呢？将该地址加入<code>hosts</code>文件：<br><img alt="地址路径" data-src="https://img-blog.csdnimg.cn/20191230154631703.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTIxMTg0,size_16,color_FFFFFF,t_70" class="lazyload"><br><img alt="修改的内容" data-src="https://img-blog.csdnimg.cn/20191230154657302.png" class="lazyload"><br>然后在<code>ping</code>一次看看，我们就可以看到如下的结果：<br><img alt="成功之后" data-src="https://img-blog.csdnimg.cn/20191230154738775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTIxMTg0,size_16,color_FFFFFF,t_70" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决：Hi crazyjums! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</title>
+      <link href="/git-error-1/"/>
+      <url>/git-error-1/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题：Hi crazyjums! You’ve successfully authenticated, but GitHub does not provide shell access.</strong>   </p><p>使用<code>git</code>命令验证是否和<code>GitHub</code>连接成功，出现上述错误：<br><img alt="error" data-src="https://img-blog.csdnimg.cn/20191230153509480.png" class="lazyload"></p><h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><p>这种方式比较简单粗暴，直接将<code>GitHub</code>的<code>ssh key</code>删除掉，然后重新生成一份新的。<br>具体可参考<a href="https://blog.csdn.net/qq_33521184/article/details/89347390" target="_blank" rel="noopener">这篇博客</a>。</p><p>然后问题解决：<br><img alt="result" data-src="https://img-blog.csdnimg.cn/20191230153835772.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTIxMTg0,size_16,color_FFFFFF,t_70" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python中的logging.basicConfig模块是一个一次性工具函数</title>
       <link href="/python-logging-error-sloved/"/>
       <url>/python-logging-error-sloved/</url>
