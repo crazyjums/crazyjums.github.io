@@ -4,11 +4,32 @@
   
     
     <entry>
-      <title>解决：Windows下，如何将MySQL的数据从C盘迁移到其他盘</title>
+      <title>Python如何对程序记录日志 logging</title>
+      <link href="/python-debug/"/>
+      <url>/python-debug/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> logging</span><br><span class="line">LOG_FORMAT = <span class="string">"%(asctime)s - %(levelname)s - %(message)s"</span></span><br><span class="line">DATE_FORMAT = <span class="string">"%m/%d/%Y %H:%M:%S %p"</span></span><br><span class="line">logging.basicConfig(filename=<span class="string">'apiStudy.log'</span>, level=logging.DEBUG, format=LOG_FORMAT, datefmt=DATE_FORMAT)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">()</span>:</span></span><br><span class="line">print(<span class="string">"test"</span>)</span><br><span class="line">logging.info(<span class="string">"这是一个info log"</span>)</span><br><span class="line">logging.error(<span class="string">"这是一个error log"</span>)</span><br><span class="line">logging.debug(<span class="string">"这是一个debug log"</span>)</span><br><span class="line">logging.warn(<span class="string">"这是一个warn log"</span>)</span><br></pre></td></tr></table></figure><h3 id="最终显示效果"><a href="#最终显示效果" class="headerlink" title="最终显示效果"></a>最终显示效果</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">10</span><span class="string">:01:23</span> <span class="string">AM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">Starting</span> <span class="string">new</span> <span class="string">HTTPS</span> <span class="string">connection</span> <span class="string">(1):</span> <span class="string">www.aqistudy.cn:443</span></span><br><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">10</span><span class="string">:01:23</span> <span class="string">AM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">https://www.aqistudy.cn:443</span> <span class="string">"GET /historydata/ HTTP/1.1"</span> <span class="number">200</span> <span class="string">None</span></span><br><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">10</span><span class="string">:02:40</span> <span class="string">AM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">Starting</span> <span class="string">new</span> <span class="string">HTTPS</span> <span class="string">connection</span> <span class="string">(1):</span> <span class="string">www.aqistudy.cn:443</span></span><br><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">10</span><span class="string">:02:40</span> <span class="string">AM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">https://www.aqistudy.cn:443</span> <span class="string">"GET /historydata/ HTTP/1.1"</span> <span class="number">200</span> <span class="string">None</span></span><br><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">10</span><span class="string">:03:28</span> <span class="string">AM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">Starting</span> <span class="string">new</span> <span class="string">HTTPS</span> <span class="string">connection</span> <span class="string">(1):</span> <span class="string">www.aqistudy.cn:443</span></span><br><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">10</span><span class="string">:03:28</span> <span class="string">AM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">https://www.aqistudy.cn:443</span> <span class="string">"POST /historydata/api/historyapi.php HTTP/1.1"</span> <span class="number">200</span> <span class="string">None</span></span><br><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">12</span><span class="string">:11:19</span> <span class="string">PM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">Starting</span> <span class="string">new</span> <span class="string">HTTPS</span> <span class="string">connection</span> <span class="string">(1):</span> <span class="string">www.aqistudy.cn:443</span></span><br><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">12</span><span class="string">:11:28</span> <span class="string">PM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">https://www.aqistudy.cn:443</span> <span class="string">"POST /historydata/api/historyapi.php HTTP/1.1"</span> <span class="number">200</span> <span class="string">None</span></span><br><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">12</span><span class="string">:12:57</span> <span class="string">PM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">Starting</span> <span class="string">new</span> <span class="string">HTTPS</span> <span class="string">connection</span> <span class="string">(1):</span> <span class="string">www.aqistudy.cn:443</span></span><br><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">12</span><span class="string">:12:59</span> <span class="string">PM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">https://www.aqistudy.cn:443</span> <span class="string">"POST /historydata/api/historyapi.php HTTP/1.1"</span> <span class="number">200</span> <span class="string">None</span></span><br><span class="line"><span class="number">12</span><span class="string">/26/2019</span> <span class="number">12</span><span class="string">:15:17</span> <span class="string">PM</span> <span class="bullet">-</span> <span class="string">DEBUG</span> <span class="bullet">-</span> <span class="string">Starting</span> <span class="string">new</span> <span class="string">HTTPS</span> <span class="string">connection</span> <span class="string">(1):</span> <span class="string">www.aqistudy.cn:443</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 编程语言 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows下，如何将MySQL从C盘迁移到其他盘以及解决MySQL迁移数据目录后不能启动服务</title>
       <link href="/mysql-to-another-disk/"/>
       <url>/mysql-to-another-disk/</url>
       
-        <content type="html"><![CDATA[<h3 id="1-关闭MySQL服务"><a href="#1-关闭MySQL服务" class="headerlink" title="1 关闭MySQL服务"></a>1 关闭MySQL服务</h3><p>右键点击【我的电脑】-》【管理】-》【服务和应用程序】-》【服务】-》关闭MySQL服务</p><h3 id="2-找到MySQL数据的存储位置"><a href="#2-找到MySQL数据的存储位置" class="headerlink" title="2 找到MySQL数据的存储位置"></a>2 找到MySQL数据的存储位置</h3><p><img alt="存储位置" data-src="https://upload-images.jianshu.io/upload_images/621273-ac528190b1b7bb0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"></p><h3 id="3-修改MySQL的配置文件"><a href="#3-修改MySQL的配置文件" class="headerlink" title="3 修改MySQL的配置文件"></a>3 修改MySQL的配置文件</h3><p>找到<code>my.ini</code>配置文件，找到其中的<code>datadir</code>，如下：<br><img alt="配置文件" data-src="https://upload-images.jianshu.io/upload_images/621273-508a25fcbd91f21b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"><br>将路径修改为你想要修改的路径即可。</p><h3 id="4-修改文件夹的权限"><a href="#4-修改文件夹的权限" class="headerlink" title="4 修改文件夹的权限"></a>4 修改文件夹的权限</h3><p>找到新的路径文件夹，右键-》【安全】-【编辑】-》【添加】-》【高级】-》【立即查找】-》选择【NETWORK_SERVICE】<br>如下图所示：<br><img alt="权限" data-src="https://upload-images.jianshu.io/upload_images/621273-944e5e7af127b2a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="1-关闭MySQL服务"><a href="#1-关闭MySQL服务" class="headerlink" title="1 关闭MySQL服务"></a>1 关闭MySQL服务</h3><p>右键点击【我的电脑】-》【管理】-》【服务和应用程序】-》【服务】-》关闭MySQL服务</p><h3 id="2-找到MySQL数据的存储位置"><a href="#2-找到MySQL数据的存储位置" class="headerlink" title="2 找到MySQL数据的存储位置"></a>2 找到MySQL数据的存储位置</h3><p><img alt="存储位置" data-src="https://upload-images.jianshu.io/upload_images/621273-ac528190b1b7bb0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"></p><h3 id="3-修改MySQL的配置文件"><a href="#3-修改MySQL的配置文件" class="headerlink" title="3 修改MySQL的配置文件"></a>3 修改MySQL的配置文件</h3><p>找到<code>my.ini</code>配置文件，找到其中的<code>datadir</code>，如下：<br><img alt="配置文件" data-src="https://upload-images.jianshu.io/upload_images/621273-508a25fcbd91f21b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"><br>将路径修改为你想要修改的路径即可。</p><h3 id="4-修改文件夹的权限"><a href="#4-修改文件夹的权限" class="headerlink" title="4 修改文件夹的权限"></a>4 修改文件夹的权限</h3><p>找到新的路径文件夹，右键-》【安全】-【编辑】-》【添加】-》【高级】-》【立即查找】-》选择【NETWORK_SERVICE】<br>如下图所示：<br><img alt="权限" data-src="https://upload-images.jianshu.io/upload_images/621273-944e5e7af127b2a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"></p><hr><h3 id="可能会遇到的问题："><a href="#可能会遇到的问题：" class="headerlink" title="可能会遇到的问题："></a>可能会遇到的问题：</h3><p><strong>2003 - can’t connect to mysql server on ‘localhost’ (10061)</strong><br>出现这种错误，就是说明<code>mysql</code>服务没有启动，可以通过查看服务页面：<br><img alt="服务启动" data-src="https://upload-images.jianshu.io/upload_images/621273-98e6f0e8ecea612a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"></p><p>如果现实没有启动，那么有下面几种情况可以检查：   </p><h4 id="情况1"><a href="#情况1" class="headerlink" title="情况1"></a>情况1</h4><p>检查是不是新的<code>MySQL</code>目录没有<code>NETWORK SERVICE</code>权限，正确的权限应该如下：<br><img alt="正确权限" data-src="https://upload-images.jianshu.io/upload_images/621273-82f09c988a826ead.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"></p><p>如果你的新的MySQL目录没有所有权限，那么可能导入服务时出了错误，可以重新导入<code>NETWORK SERVICE</code>。如下：<br><img alt="授权" data-src="https://img-blog.csdn.net/20181006100117453?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMjI5MjUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" class="lazyload"></p><h4 id="情况2"><a href="#情况2" class="headerlink" title="情况2"></a>情况2</h4><p>检查<code>MySQL</code>的配置文件的读取路径，如何查看读取路径，进入到【服务】窗口，查看<code>MySQL</code>的属性，可以看到如下所示：<br><img alt="配置读取路径" data-src="https://upload-images.jianshu.io/upload_images/621273-bacac516d8a7b29e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"><br>如果该路径下没有<code>my.ini</code>配置文件，那么我们有两种方法解决：</p><ul><li>将新目录下的配置文件拷贝到默认的路径下，不需要修改读取路径</li><li>修改配置文件的读取路径，不需要拷贝配置文件</li></ul><p>这里介绍如何修改读取路径，拷贝文件就不用介绍了吧。编辑新目录下的<code>my.ini</code>文件，修改这一部分，将路径修改成你的配置文件所在路径即可。<br><img alt="配置文件路径修改" data-src="https://upload-images.jianshu.io/upload_images/621273-6eef2f5fe0afe70a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="lazyload"></p>]]></content>
       
       
       
@@ -359,9 +380,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -420,9 +441,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -462,9 +483,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
