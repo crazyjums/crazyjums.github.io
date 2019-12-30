@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/about/index.html</loc>
+    
+    <lastmod>2019-12-30T12:26:29.705Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/git-error-2/</loc>
     
     <lastmod>2019-12-30T07:52:22.000Z</lastmod>
@@ -173,13 +180,6 @@
     <loc>https://jums.club/archives/index.html</loc>
     
     <lastmod>2019-12-06T15:32:09.666Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/about/index.html</loc>
-    
-    <lastmod>2019-12-06T15:31:36.839Z</lastmod>
     
   </url>
   
