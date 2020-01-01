@@ -4,13 +4,44 @@
   
     
     <entry>
-      <title>pug how to add google ad</title>
+      <title>如何加速访问GitHub page页面</title>
+      <link href="/github-page-speed-access/"/>
+      <url>/github-page-speed-access/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-查询地址"><a href="#1-查询地址" class="headerlink" title="1 查询地址"></a>1 查询地址</h3><p>打开<a href="https://www.ipaddress.com/" target="_blank" rel="noopener">https://www.ipaddress.com/</a> 查询以下三个链接的的 DNS 地址：</p><ul><li>github.com</li><li>assets-cdn.github.com</li><li>github.global.ssl.fastly.net</li></ul><p><img alt="example" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/1234562019.png" class="lazyload"></p><h3 id="2-修改配置文件"><a href="#2-修改配置文件" class="headerlink" title="2 修改配置文件"></a>2 修改配置文件</h3><p>打开系统 hosts 文件(需管理员权限)。 路径：<code>C:\Windows\System32\drivers\etc</code>,</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">192.30.253.112     github.com</span><br><span class="line">151.101.72.133    assets-cdn.github.com</span><br><span class="line">151.101.193.194    github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure><h3 id="3-刷新DNS地址"><a href="#3-刷新DNS地址" class="headerlink" title="3 刷新DNS地址"></a>3 刷新DNS地址</h3><p>在命令行输入：<code>ipconfg /flushdns</code></p><p>原文出处：<a href="https://bestzuo.cn/posts/497652030.html" target="_blank" rel="noopener">https://bestzuo.cn/posts/497652030.html</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo主题如何添加谷歌广告，非Next主题教程，pug框架</title>
       <link href="/pug-how-to-add-google-ad/"/>
       <url>/pug-how-to-add-google-ad/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h3 id="1-在主题目录下添加语句"><a href="#1-在主题目录下添加语句" class="headerlink" title="1 在主题目录下添加语句"></a>1 在主题目录下添加语句</h3><p>打开主题目录下的<code>your_theme/_config.yml</code> 文件,添加个广告控制开关：   </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show_ad_post: true  ##设置为 true</span><br></pre></td></tr></table></figure><h3 id="2-在head-pug中添加语句"><a href="#2-在head-pug中添加语句" class="headerlink" title="2 在head.pug中添加语句"></a>2 在head.pug中添加语句</h3><p><code>在 your_theme/layout/_partial/head.pug</code> 里添加代码：   </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if theme.show_ad_post</span><br><span class="line">      script(async=&apos;&apos;, src=&apos;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&apos;)</span><br><span class="line">      script.</span><br><span class="line">        (adsbygoogle = window.adsbygoogle || []).push(&#123;google_ad_client: &quot;ca-pub-XXXXX&quot;, enable_page_level_ads: true&#125;);</span><br></pre></td></tr></table></figure><p>这段代码是从你申请的 Adsense 账户中复制下来的，其中 ca-pub-XXXXX 替换成自己的账号就行了。但是这样的设置完全让 Google 为我们决定广告的位置，有时候显得页面比较乱，博客的可读性比较差。可以考虑在 Adsense 中创建广告位，然后在特定位置加上代码就好了，我的选择是在文章结束，评论上方加上一条的广告。</p><h3 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a>原文链接</h3><p><a href="https://www.jianshu.com/p/5a664fb9f325" target="_blank" rel="noopener">原文</a></p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
       
     </entry>
     
@@ -69,11 +100,11 @@
       
         <tags>
             
+            <tag> 解决问题 </tag>
+            
             <tag> 编程语言 </tag>
             
             <tag> Python </tag>
-            
-            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -157,9 +188,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -191,9 +222,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -458,9 +489,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -519,9 +550,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -561,9 +592,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
