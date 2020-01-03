@@ -10,6 +10,7 @@ Allow: /photo/
 Allow: /link/
 Allow: /about/
 
+
 Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
