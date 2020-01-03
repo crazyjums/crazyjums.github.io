@@ -4,11 +4,14 @@ Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
-Allow: /movie/
+Allow: /movies/
+Allow: /books/
+Allow: /hot/
 Allow: /music/
 Allow: /photo/
 Allow: /link/
 Allow: /about/
+Allow: /ads.txt
 
 
 Disallow: /vendors/
