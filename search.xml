@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>如何破解myeclipse|myeclipse破解教程</title>
+      <link href="/how-to-crack-myeclipse/"/>
+      <url>/how-to-crack-myeclipse/</url>
+      
+        <content type="html"><![CDATA[<h3 id="0-声明"><a href="#0-声明" class="headerlink" title="0 声明"></a>0 声明</h3><blockquote><p>本篇文章是转载自<a href="https://www.jianshu.com/p/f97916ff67e2" target="_blank" rel="noopener">该博客</a>，这里记录是为了方便自己日后使用，别无他用的目的。</p></blockquote><h3 id="1-下载软件"><a href="#1-下载软件" class="headerlink" title="1 下载软件"></a>1 下载软件</h3><p>链接: <a href="https://pan.baidu.com/s/1H-LUX1T07oXINVqDbKsgpg" target="_blank" rel="noopener">https://pan.baidu.com/s/1H-LUX1T07oXINVqDbKsgpg</a> 提取码: 1gxb    </p><h3 id="2-破解过程"><a href="#2-破解过程" class="headerlink" title="2 破解过程"></a>2 破解过程</h3><p>-1- 解压文件之后，双击run.bat，运行软件。<br><img alt="face UI" data-src="https://upload-images.jianshu.io/upload_images/1176659-a39d5076a3b56718.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/709/format/webp" class="lazyload"></p><p>-2- 获取到SystemId后，点击菜单Tools–0.RebuildKey，然后点击Active按钮，将会看到生产一串数字。<br><img alt="republickey" data-src="https://upload-images.jianshu.io/upload_images/1176659-2fda2c179f55c93c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/709/format/webp" class="lazyload">   </p><p>-3- 点击菜单Tools–1.ReplaceJarFile<br><img alt="republicjarfile" data-src="https://upload-images.jianshu.io/upload_images/1176659-468d0c9e38286f0a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/709/format/webp" class="lazyload"></p><p>-4- 跳出一个文件夹选项，找到你的MyEclipse安装的位置，并进入plugins文件夹，然后点击右下方的打开按钮。<br><img alt="plugins" data-src="https://upload-images.jianshu.io/upload_images/1176659-f71c9306f26cba9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/542/format/webp" class="lazyload">   </p><p>-5- 点击打开按钮后，程序会卡顿一会儿，然后出现下方页面，看到Done后说明成功替换Jar文件了：<br><img alt="success" data-src="https://upload-images.jianshu.io/upload_images/1176659-ccb65736f0b26968.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/709/format/webp" class="lazyload">   </p><p>-6- 点击菜单Tools–2.SaveProperities<br><img alt="save file" data-src="https://upload-images.jianshu.io/upload_images/1176659-f466027405853f20.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/709/format/webp" class="lazyload">   </p><h3 id="3-写在最后"><a href="#3-写在最后" class="headerlink" title="3 写在最后"></a>3 写在最后</h3><p>通过上面的步骤之后，我们就完成软件的破解了，如果您觉得该教程对您有帮助，可以关注一下鄙人的公众号【麦田里的守望者zhg】，多谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 软件破解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>sql server 2008，sql server 2012下载安装教程</title>
       <link href="/sql-server-download/"/>
       <url>/sql-server-download/</url>
@@ -14,11 +33,11 @@
       
         <tags>
             
-            <tag> 软件下载 </tag>
-            
             <tag> 数据库 </tag>
             
             <tag> sql server </tag>
+            
+            <tag> 软件下载 </tag>
             
         </tags>
       
@@ -117,9 +136,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
             <tag> GitHub </tag>
             
@@ -140,9 +159,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -203,11 +222,11 @@
       
         <tags>
             
+            <tag> 解决问题 </tag>
+            
             <tag> 编程语言 </tag>
             
             <tag> Python </tag>
-            
-            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -291,9 +310,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -331,9 +350,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -598,9 +617,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -659,9 +678,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -701,9 +720,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -882,9 +901,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> CNN </tag>
             
@@ -939,9 +958,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -962,9 +981,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -985,9 +1004,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1031,9 +1050,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -1161,9 +1180,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 数字图像处理 </tag>
             
