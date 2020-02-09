@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>web开发中转发和重定向的区别</title>
+      <link href="/redirecting-forword/"/>
+      <url>/redirecting-forword/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-转发"><a href="#1-转发" class="headerlink" title="1 转发"></a>1 转发</h3><p>转发是指浏览器在地址不变的情况下，页面内容发生变化</p><h3 id="2-重定向"><a href="#2-重定向" class="headerlink" title="2 重定向"></a>2 重定向</h3><p>重定向是指浏览器的页面转到另外一个页面，此时页面内容和浏览器的地址都会发生变化</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 名词解释 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何破解myeclipse|myeclipse破解教程</title>
       <link href="/how-to-crack-myeclipse/"/>
       <url>/how-to-crack-myeclipse/</url>
@@ -33,11 +52,11 @@
       
         <tags>
             
-            <tag> 软件下载 </tag>
-            
             <tag> 数据库 </tag>
             
             <tag> sql server </tag>
+            
+            <tag> 软件下载 </tag>
             
         </tags>
       
@@ -136,9 +155,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
             <tag> GitHub </tag>
             
@@ -159,9 +178,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -222,11 +241,11 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> 编程语言 </tag>
             
             <tag> Python </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -310,9 +329,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -350,9 +369,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -552,11 +571,11 @@
       
         <tags>
             
+            <tag> 解决问题 </tag>
+            
             <tag> 编程框架 </tag>
             
             <tag> TensorFlow </tag>
-            
-            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -617,9 +636,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -678,9 +697,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -720,9 +739,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
