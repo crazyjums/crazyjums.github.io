@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/about/index.html</loc>
+    
+    <lastmod>2020-02-09T13:50:03.108Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/a-ebook/</loc>
     
-    <lastmod>2020-02-09T12:55:34.075Z</lastmod>
+    <lastmod>2020-02-09T13:43:51.447Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/java-string-stringbuffer-builder/</loc>
     
-    <lastmod>2020-02-09T12:55:34.075Z</lastmod>
+    <lastmod>2020-02-09T12:56:35.274Z</lastmod>
     
   </url>
   
@@ -110,13 +117,6 @@
     <loc>https://jums.club/pug-how-to-add-google-ad/</loc>
     
     <lastmod>2020-01-01T12:03:48.982Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/about/index.html</loc>
-    
-    <lastmod>2019-12-30T12:26:29.705Z</lastmod>
     
   </url>
   
