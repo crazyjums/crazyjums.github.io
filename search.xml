@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title>红太阳是怎样升起的_延安整风运动的来龙去脉</title>
+      <link href="/a-ebook/"/>
+      <url>/a-ebook/</url>
+      
+        <content type="html"><![CDATA[<h3 id="读书分享"><a href="#读书分享" class="headerlink" title="读书分享"></a>读书分享</h3><p><a href="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/红太阳是怎样升起的_延安整风运动的来龙去脉.pdf" target="_blank" rel="noopener">红太阳是怎样升起的_延安整风运动的来龙去脉.pdf</a></p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>通过上面的步骤之后，我们就完成软件的破解了，如果您觉得该教程对您有帮助，可以关注一下鄙人的公众号【麦田里的守望者zhg】，多谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 读书分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java中string和stringBuffer以及stringBuilder的区别？</title>
+      <link href="/java-string-stringbuffer-builder/"/>
+      <url>/java-string-stringbuffer-builder/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-string"><a href="#1-string" class="headerlink" title="1 string"></a>1 string</h3><p>Java中的<code>string</code>是字符串的基本数据类型，但是我们在<a href="https://jums.club/java-class-base-datatype/">Java中基本数据类型和包装类的区别？</a>中说到过，一般情况下，我们用到类对象的机会比较多，所以<code>string</code>的包装类是<code>String</code>，这是一个不可变数据类型，类似Python中的<a href="https://jums.club/basic-python-knowledge/#4-1-2-str">str</a>数据类型，一旦创建，数据值不能修改。</p><h3 id="2-stringBuffer"><a href="#2-stringBuffer" class="headerlink" title="2 stringBuffer"></a>2 stringBuffer</h3><p><code>stringBuffer</code>是Java中对于<code>string</code>的一个补充，上面说到string是一种不可变的字符串数据类型，但是我们大部分情况下，需要用到一种可变的字符串，比如在拼接<code>sql</code>语句时，我们大部分情况下都是使用的<code>stringBuffer</code>数据类型。在Java中，<code>stringBuffer</code>是线程安全的，也就是说我们可以进行异步I/O操作。</p><h3 id="3-stringBuilder"><a href="#3-stringBuilder" class="headerlink" title="3 stringBuilder"></a>3 stringBuilder</h3><p><code>stringBuilder</code>和<code>stringBuffer</code>类似，都是可变的字符串数据类型，但是由于<code>stringBuilder</code>不是线程安全的，即不能进行异步I/O，只能进行同步操作。但是<code>stringBuilder</code>的运行效率又比<code>stringBuffer</code>更快，因为<code>stringBuffer</code>的线程安全特性，使得其运行效率有所下降。</p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>通过上面的步骤之后，我们就完成软件的破解了，如果您觉得该教程对您有帮助，可以关注一下鄙人的公众号【麦田里的守望者zhg】，多谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 编程语言 </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java中基本数据类型和包装类的区别？</title>
       <link href="/java-class-base-datatype/"/>
       <url>/java-class-base-datatype/</url>
@@ -197,9 +237,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
             <tag> GitHub </tag>
             
@@ -220,9 +260,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -283,11 +323,11 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> 编程语言 </tag>
             
             <tag> Python </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -371,9 +411,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -411,9 +451,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -678,9 +718,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -739,9 +779,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -781,9 +821,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
