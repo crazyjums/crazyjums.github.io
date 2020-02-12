@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/a-ebook/</loc>
+    
+    <lastmod>2020-02-12T08:12:00.304Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/cdn-speed-up/</loc>
     
     <lastmod>2020-02-09T14:36:19.742Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://jums.club/about/index.html</loc>
     
     <lastmod>2020-02-09T14:04:22.174Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/a-ebook/</loc>
-    
-    <lastmod>2020-02-09T13:43:51.447Z</lastmod>
     
   </url>
   
