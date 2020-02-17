@@ -2,37 +2,478 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jums.club/lizhi-songs/</loc>
+    <loc>https://jums.club/markdown-format/</loc>
     
-    <lastmod>2020-02-15T07:39:15.872Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/matplotlib-draw-x-and-y/</loc>
-    
-    <lastmod>2020-02-14T06:28:10.416Z</lastmod>
+    <lastmod>2020-02-17T05:21:23.914Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jums.club/matplotlib-draw-a-dymatic-func/</loc>
+    <loc>https://jums.club/other-around-ebook/</loc>
     
-    <lastmod>2020-02-13T14:48:33.388Z</lastmod>
+    <lastmod>2020-02-17T05:21:23.914Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jums.club/a-ebook/</loc>
+    <loc>https://jums.club/computer-around-ebook/</loc>
     
-    <lastmod>2020-02-12T08:12:00.304Z</lastmod>
+    <lastmod>2020-02-17T05:21:23.914Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/video-1/</loc>
+    
+    <lastmod>2020-02-16T07:46:05.954Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/SSPNet/</loc>
+    
+    <lastmod>2020-02-16T07:45:42.693Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/note-master-1/</loc>
+    
+    <lastmod>2020-02-16T07:45:36.493Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/music-test/</loc>
+    
+    <lastmod>2020-02-16T07:45:29.205Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/machine-learning-different-from-deep-learning/</loc>
+    
+    <lastmod>2020-02-16T07:45:22.746Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/lrn/</loc>
+    
+    <lastmod>2020-02-16T07:45:17.305Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/hexo-search-function/</loc>
+    
+    <lastmod>2020-02-16T07:45:10.901Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/sava-our-life/</loc>
+    
+    <lastmod>2020-02-16T07:44:40.245Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/gradient-descent/</loc>
+    
+    <lastmod>2020-02-16T07:44:17.168Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/git-to-github-and-coding/</loc>
+    
+    <lastmod>2020-02-16T07:44:08.854Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/dip/</loc>
+    
+    <lastmod>2020-02-16T07:44:03.449Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/cnn/</loc>
+    
+    <lastmod>2020-02-16T07:43:54.462Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/AlexNet/</loc>
+    
+    <lastmod>2020-02-16T07:43:46.738Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/tensorflow-log-level/</loc>
+    
+    <lastmod>2020-02-16T07:43:40.991Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/change-file-name-by-python/</loc>
+    
+    <lastmod>2020-02-16T07:43:35.471Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/view-package-of-npm/</loc>
+    
+    <lastmod>2020-02-16T07:43:29.546Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/archor-for-markdown/</loc>
+    
+    <lastmod>2020-02-16T07:43:22.967Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/ssh-connect-to-github/</loc>
+    
+    <lastmod>2020-02-16T07:43:17.472Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/config-ssh-for-github/</loc>
+    
+    <lastmod>2020-02-16T07:43:11.595Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/error-by-hexo-d-person-domain/</loc>
+    
+    <lastmod>2020-02-16T07:43:04.671Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/hexo-for-all/</loc>
+    
+    <lastmod>2020-02-16T07:42:59.041Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/put-your-hexo-blog-to-baidu-sitmap/</loc>
+    
+    <lastmod>2020-02-16T07:42:51.410Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/personal-domain-for-github-page/</loc>
+    
+    <lastmod>2020-02-16T07:42:43.742Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/a-free-tuchuang-site/</loc>
+    
+    <lastmod>2020-02-16T07:42:33.227Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/npm-npmr-content/</loc>
+    
+    <lastmod>2020-02-16T07:42:27.808Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/hexo-editor/</loc>
+    
+    <lastmod>2020-02-16T07:42:21.929Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/use-cloudfree-make-your-hexo-to-https/</loc>
+    
+    <lastmod>2020-02-16T07:42:14.215Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/markdownPad2-break/</loc>
+    
+    <lastmod>2020-02-16T07:42:07.392Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</loc>
+    
+    <lastmod>2020-02-16T07:41:44.633Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/liner-regression-writen-by-tensorflow/</loc>
+    
+    <lastmod>2020-02-16T07:41:35.897Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/tensorflow-reduce-mean/</loc>
+    
+    <lastmod>2020-02-16T07:41:14.631Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/tensorflow-mnist-full-connection/</loc>
+    
+    <lastmod>2020-02-16T07:41:00.054Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/cv-concept-you-must-know/</loc>
+    
+    <lastmod>2020-02-16T07:40:50.656Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/conclusion-hexo-1/</loc>
+    
+    <lastmod>2020-02-16T07:40:41.747Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/github-project/</loc>
+    
+    <lastmod>2020-02-16T07:40:16.847Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/qing-yu-nian-resource/</loc>
+    
+    <lastmod>2020-02-16T07:40:10.582Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/how-to-access-google/</loc>
+    
+    <lastmod>2020-02-16T07:40:01.120Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/how-to-do-research/</loc>
+    
+    <lastmod>2020-02-16T07:39:47.152Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/basic-python-knowledge/</loc>
+    
+    <lastmod>2020-02-16T07:39:35.372Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/how-to-use-python-command-param/</loc>
+    
+    <lastmod>2020-02-16T07:39:26.035Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/re-sub/</loc>
+    
+    <lastmod>2020-02-16T07:39:20.648Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/python-json-problem-sloved/</loc>
+    
+    <lastmod>2020-02-16T07:39:13.188Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/mysql-to-another-disk/</loc>
+    
+    <lastmod>2020-02-16T07:39:07.643Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/python-debug/</loc>
+    
+    <lastmod>2020-02-16T07:39:01.449Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/python-logging-error-sloved/</loc>
+    
+    <lastmod>2020-02-16T07:38:55.816Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/python-spider-crawl-fund-data/</loc>
+    
+    <lastmod>2020-02-16T07:38:48.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/git-error-2/</loc>
+    
+    <lastmod>2020-02-16T07:38:37.903Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/git-error-1/</loc>
+    
+    <lastmod>2020-02-16T07:38:32.403Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/pug-how-to-add-google-ad/</loc>
+    
+    <lastmod>2020-02-16T07:38:25.666Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/github-page-speed-access/</loc>
+    
+    <lastmod>2020-02-16T07:38:19.906Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/hexo-hot/</loc>
+    
+    <lastmod>2020-02-16T07:38:13.471Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/sloved-hexo-title/</loc>
+    
+    <lastmod>2020-02-16T07:38:03.370Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/sql-server-something/</loc>
+    
+    <lastmod>2020-02-16T07:37:51.772Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/sql-server-reback-data/</loc>
+    
+    <lastmod>2020-02-16T07:37:45.283Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/sql-server-download/</loc>
+    
+    <lastmod>2020-02-16T07:37:38.307Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/how-to-crack-myeclipse/</loc>
+    
+    <lastmod>2020-02-16T07:37:29.416Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/redirecting-forword/</loc>
+    
+    <lastmod>2020-02-16T07:37:22.592Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/java-class-base-datatype/</loc>
+    
+    <lastmod>2020-02-16T07:37:16.248Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/java-abstract-interface/</loc>
+    
+    <lastmod>2020-02-16T07:37:06.617Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/java-string-stringbuffer-builder/</loc>
+    
+    <lastmod>2020-02-16T07:36:54.846Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/cdn-speed-up/</loc>
     
-    <lastmod>2020-02-09T14:36:19.742Z</lastmod>
+    <lastmod>2020-02-16T07:36:45.002Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/matplotlib-draw-a-dymatic-func/</loc>
+    
+    <lastmod>2020-02-16T07:36:33.120Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/matplotlib-draw-x-and-y/</loc>
+    
+    <lastmod>2020-02-16T07:36:26.266Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/lizhi-songs/</loc>
+    
+    <lastmod>2020-02-16T07:36:08.364Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/a-ebook/</loc>
+    
+    <lastmod>2020-02-16T07:35:54.144Z</lastmod>
     
   </url>
   
@@ -44,69 +485,6 @@
   </url>
   
   <url>
-    <loc>https://jums.club/java-string-stringbuffer-builder/</loc>
-    
-    <lastmod>2020-02-09T12:56:35.274Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/java-abstract-interface/</loc>
-    
-    <lastmod>2020-02-09T08:39:14.713Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/java-class-base-datatype/</loc>
-    
-    <lastmod>2020-02-09T08:23:21.727Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/redirecting-forword/</loc>
-    
-    <lastmod>2020-02-09T08:05:58.620Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/how-to-crack-myeclipse/</loc>
-    
-    <lastmod>2020-02-04T12:22:29.577Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/sql-server-something/</loc>
-    
-    <lastmod>2020-01-31T06:19:46.115Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/sql-server-reback-data/</loc>
-    
-    <lastmod>2020-01-31T06:19:46.114Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/sql-server-download/</loc>
-    
-    <lastmod>2020-01-31T06:19:46.111Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/sava-our-life/</loc>
-    
-    <lastmod>2020-01-23T07:22:15.100Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jums.club/baidu_verify_tgcew1PmHJ.html</loc>
     
     <lastmod>2020-01-03T09:35:50.417Z</lastmod>
@@ -114,128 +492,9 @@
   </url>
   
   <url>
-    <loc>https://jums.club/sloved-hexo-title/</loc>
-    
-    <lastmod>2020-01-01T14:42:47.184Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/hexo-hot/</loc>
-    
-    <lastmod>2020-01-01T14:06:02.171Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jums.club/hot/index.html</loc>
     
     <lastmod>2020-01-01T13:17:55.973Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/github-page-speed-access/</loc>
-    
-    <lastmod>2020-01-01T12:27:29.755Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/pug-how-to-add-google-ad/</loc>
-    
-    <lastmod>2020-01-01T12:03:48.982Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/git-error-2/</loc>
-    
-    <lastmod>2019-12-30T07:52:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/git-error-1/</loc>
-    
-    <lastmod>2019-12-30T07:52:21.998Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/python-spider-crawl-fund-data/</loc>
-    
-    <lastmod>2019-12-30T07:32:16.995Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/python-logging-error-sloved/</loc>
-    
-    <lastmod>2019-12-30T06:49:27.583Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/python-debug/</loc>
-    
-    <lastmod>2019-12-30T04:07:04.988Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/mysql-to-another-disk/</loc>
-    
-    <lastmod>2019-12-30T02:36:58.961Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/python-json-problem-sloved/</loc>
-    
-    <lastmod>2019-12-29T04:32:47.560Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/re-sub/</loc>
-    
-    <lastmod>2019-12-28T06:16:15.483Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/how-to-use-python-command-param/</loc>
-    
-    <lastmod>2019-12-28T06:12:19.398Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/basic-python-knowledge/</loc>
-    
-    <lastmod>2019-12-28T05:35:27.462Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/how-to-do-research/</loc>
-    
-    <lastmod>2019-12-26T14:28:36.560Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/how-to-access-google/</loc>
-    
-    <lastmod>2019-12-26T03:14:11.605Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/qing-yu-nian-resource/</loc>
-    
-    <lastmod>2019-12-22T15:05:02.277Z</lastmod>
     
   </url>
   
@@ -250,13 +509,6 @@
     <loc>https://jums.club/gallery/index.html</loc>
     
     <lastmod>2019-12-17T15:46:35.403Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/github-project/</loc>
-    
-    <lastmod>2019-12-08T15:32:23.001Z</lastmod>
     
   </url>
   
@@ -317,254 +569,9 @@
   </url>
   
   <url>
-    <loc>https://jums.club/note-master-1/</loc>
-    
-    <lastmod>2019-12-06T15:27:01.108Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/conclusion-hexo-1/</loc>
-    
-    <lastmod>2019-11-28T14:00:38.066Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/cv-concept-you-must-know/</loc>
-    
-    <lastmod>2019-11-28T13:58:00.176Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/tensorflow-mnist-full-connection/</loc>
-    
-    <lastmod>2019-11-28T09:37:30.172Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/tensorflow-reduce-mean/</loc>
-    
-    <lastmod>2019-11-28T08:06:10.494Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/liner-regression-writen-by-tensorflow/</loc>
-    
-    <lastmod>2019-11-27T07:37:04.138Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</loc>
-    
-    <lastmod>2019-11-27T05:49:02.885Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/tensorflow-learning-note/</loc>
-    
-    <lastmod>2019-11-26T09:32:31.385Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/use-cloudfree-make-your-hexo-to-https/</loc>
-    
-    <lastmod>2019-11-26T09:32:29.980Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/markdownPad2-break/</loc>
-    
-    <lastmod>2019-11-26T09:32:29.974Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/hexo-editor/</loc>
-    
-    <lastmod>2019-11-25T07:44:44.285Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jums.club/hexo-admin-ehc-images.json</loc>
     
     <lastmod>2019-11-25T06:24:04.352Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/npm-npmr-content/</loc>
-    
-    <lastmod>2019-11-25T06:09:24.569Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/a-free-tuchuang-site/</loc>
-    
-    <lastmod>2019-11-25T03:10:12.155Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/personal-domain-for-github-page/</loc>
-    
-    <lastmod>2019-11-25T03:06:04.382Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/put-your-hexo-blog-to-baidu-sitmap/</loc>
-    
-    <lastmod>2019-11-25T03:04:36.838Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/hexo-for-all/</loc>
-    
-    <lastmod>2019-11-24T08:24:42.026Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/error-by-hexo-d-person-domain/</loc>
-    
-    <lastmod>2019-11-24T08:17:43.616Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/config-ssh-for-github/</loc>
-    
-    <lastmod>2019-11-24T07:02:23.966Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/ssh-connect-to-github/</loc>
-    
-    <lastmod>2019-11-24T05:11:33.378Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/archor-for-markdown/</loc>
-    
-    <lastmod>2019-11-24T03:16:02.707Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/view-package-of-npm/</loc>
-    
-    <lastmod>2019-11-24T03:13:59.042Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/change-file-name-by-python/</loc>
-    
-    <lastmod>2019-11-24T03:11:33.315Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/tensorflow-log-level/</loc>
-    
-    <lastmod>2019-11-24T03:11:03.822Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/video-1/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.805Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/music-test/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.782Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/machine-learning-different-from-deep-learning/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.778Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/lrn/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.775Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/hexo-search-function/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.772Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/hello-world/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.769Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/gradient-descent/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.765Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/git-to-github-and-coding/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.737Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/dip/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.734Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/cnn/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.720Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/SSPNet/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.707Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/AlexNet/</loc>
-    
-    <lastmod>2019-11-23T11:15:38.700Z</lastmod>
     
   </url>
   
