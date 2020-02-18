@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/how-to-use-git/</loc>
+    
+    <lastmod>2020-02-18T11:27:36.402Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/fatal-remote-origin-already-exists/</loc>
+    
+    <lastmod>2020-02-18T11:23:42.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/git-connect-to-github/</loc>
+    
+    <lastmod>2020-02-17T14:07:42.365Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/computer-around-ebook/</loc>
     
     <lastmod>2020-02-17T13:53:03.124Z</lastmod>
@@ -16,30 +37,9 @@
   </url>
   
   <url>
-    <loc>https://jums.club/git-connect-to-github/</loc>
-    
-    <lastmod>2020-02-17T13:06:51.953Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jums.club/git-delete-file-s/</loc>
     
     <lastmod>2020-02-17T12:32:20.359Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/how-to-use-git/</loc>
-    
-    <lastmod>2020-02-17T12:18:02.458Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/fatal-remote-origin-already-exists/</loc>
-    
-    <lastmod>2020-02-17T12:17:18.965Z</lastmod>
     
   </url>
   
