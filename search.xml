@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>GitHub如何开通多个静态page服务</title>
+      <link href="/github-how-to-create-two-more-page/"/>
+      <url>/github-how-to-create-two-more-page/</url>
+      
+        <content type="html"><![CDATA[<h3 id="0-需求"><a href="#0-需求" class="headerlink" title="0 需求"></a>0 需求</h3><p>之前我已经用<code>GitHub Page</code>开通了自己的<a href="https://jums.club">博客</a>服务，但是今天我想再弄一个博客，用于放图片，但是发现GitHub只能申请一个<strong>个人主页</strong>（访问路径：<code>&lt;username&gt;.github.io</code>），如果想要弄两个或两个以上，那就是另外一种page了，GitHub叫项目主页，所以这种项目主页的访问格式是：<code>&lt;username&gt;.github.io/&lt;projectname&gt;</code>，和个人主页的访问路径不一样。想这种项目主页，我们可以创建很多，但是个人主页，只能创建一个，且仓库名也是有限制的。</p><h3 id="1-开通"><a href="#1-开通" class="headerlink" title="1 开通"></a>1 开通</h3><p>用GitHub创建一个仓库之后，点击<code>settings</code>进入到设置界面，拉到最下面，有一个GitHub Page服务的设置栏，我们将访问分支（<code>branch</code>）设置成<code>gh-pages</code>，一般项目主页的网页文件，都是放在这个分支里面，而个人主页的网页文件，都是放在<code>master</code>分支里面。<br><img alt="设置分支" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200220203633.png" class="lazyload"></p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git如何连接GitHub</title>
       <link href="/git-connect-to-github/"/>
       <url>/git-connect-to-github/</url>
