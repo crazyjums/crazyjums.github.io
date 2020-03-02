@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>如何使用readthedoc.org编写属于自己的说明文档</title>
+      <link href="/how-to-write-a-document-for-your-project/"/>
+      <url>/how-to-write-a-document-for-your-project/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-网站"><a href="#1-网站" class="headerlink" title="1 网站"></a>1 网站</h3><p>访问<a href="https://readthedocs.org/" target="_blank" rel="noopener">https://readthedocs.org/</a>使用<code>github</code>进行登录，然后倒入自己需要撰写说明文档的项目。如下：<br><img alt="import project" data-src="%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200302133939.png" class="lazyload">   </p><h3 id="2-创建index-rst-or-README-rst文件"><a href="#2-创建index-rst-or-README-rst文件" class="headerlink" title="2 创建index.rst or README.rst文件"></a>2 创建index.rst or README.rst文件</h3><p>在自己的<code>github</code>项目中，创建你的说明文件，里面放的是你的说明文档的内容，将文件命名为<code>index.rst</code>or<code>README.rst</code>即可。</p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python scan dir</title>
+      <link href="/python-scan-dir/"/>
+      <url>/python-scan-dir/</url>
+      
+        <content type="html"><![CDATA[<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GitHub如何开通多个静态page服务</title>
       <link href="/github-how-to-create-two-more-page/"/>
       <url>/github-how-to-create-two-more-page/</url>
@@ -1215,9 +1247,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> CNN </tag>
             
@@ -1272,9 +1304,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -1295,9 +1327,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1318,9 +1350,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1364,9 +1396,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -1494,9 +1526,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 数字图像处理 </tag>
             
