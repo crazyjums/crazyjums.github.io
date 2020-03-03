@@ -4,6 +4,50 @@
   
     
     <entry>
+      <title>一些比较好的爬虫项目汇总</title>
+      <link href="/awesome-spider-project/"/>
+      <url>/awesome-spider-project/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://github.com/crazyjums/spider-project-summary/blob/master/REDEME.en.MD" target="_blank" rel="noopener">English Version</a>   </p><h2 id="1-爬虫入门"><a href="#1-爬虫入门" class="headerlink" title="1 爬虫入门"></a>1 爬虫入门</h2><table><thead><tr><th>项目名称</th><th>项目介绍</th></tr></thead><tbody><tr><td><a href="https://github.com/lining0806/PythonSpiderNotes" target="_blank" rel="noopener">python爬虫入门教程</a></td><td>这里主要介绍了一些爬虫的入门教程，非常适合小白入手</td></tr><tr><td>## 2 爬虫登录</td><td></td></tr><tr><td>项目名称</td><td>项目介绍</td></tr><tr><td>——————–</td><td>———————————–</td></tr><tr><td><a href="https://github.com/crazyjums/awesome-python-login-model" target="_blank" rel="noopener">login-model</a></td><td>这是爬虫中的登录模块演示</td></tr><tr><td>## 3 用户代理（User-Agent）</td><td></td></tr><tr><td>项目名称</td><td>项目介绍</td></tr><tr><td>——————–</td><td>———————————–</td></tr><tr><td><a href="https://github.com/crazyjums/fake-useragent" target="_blank" rel="noopener">fake-useragent</a></td><td>这里面有很多的用户代理（浏览器），防止被服务器监测到是机器人</td></tr></tbody></table><h2 id="4-代理池"><a href="#4-代理池" class="headerlink" title="4 代理池"></a>4 代理池</h2><blockquote><p>这里主要是一些HTTP Proxy代理项目，可以用于爬虫代理服务</p></blockquote><table><thead><tr><th>项目名称</th></tr></thead><tbody><tr><td><a href="https://github.com/crazyjums/mitmproxy" target="_blank" rel="noopener">mitmproxy</a></td></tr><tr><td><a href="https://github.com/crazyjums/haipproxy" target="_blank" rel="noopener">haipproxy</a></td></tr><tr><td><a href="https://github.com/crazyjums/scylla" target="_blank" rel="noopener">scylla</a></td></tr><tr><td><a href="https://github.com/crazyjums/getproxy" target="_blank" rel="noopener">getproxy</a></td></tr></tbody></table><h2 id="5-爬虫项目"><a href="#5-爬虫项目" class="headerlink" title="5 爬虫项目"></a>5 爬虫项目</h2><table><thead><tr><th>项目名称</th><th>项目介绍</th></tr></thead><tbody><tr><td><a href="https://github.com/facert/awesome-spider" target="_blank" rel="noopener">awesome-spider</a></td><td>这里介绍了很多的爬虫小项目，主要语言用的是<code>python</code></td></tr><tr><td><a href="https://github.com/scrapy/scrapy" target="_blank" rel="noopener">Scrapy</a></td><td>一个股票数据爬虫，可以通过<code>pip</code>进行安装使用</td></tr><tr><td><a href="https://github.com/crazyjums/ruia" target="_blank" rel="noopener">ruia</a></td><td>一个异步爬虫框架，可以实现高速爬取</td></tr><tr><td><a href="https://github.com/crazyjums/weixin_crawler" target="_blank" rel="noopener">weixin_crawler</a></td><td>一个微信公众号爬虫项目，可以爬取一些公众号的文章</td></tr><tr><td><a href="https://github.com/crazyjums/WechatSogou" target="_blank" rel="noopener">WechatSogou</a></td><td>一个微信搜狗搜索的<code>API</code>接口</td></tr></tbody></table><h2 id="6-爬虫框架"><a href="#6-爬虫框架" class="headerlink" title="6 爬虫框架"></a>6 爬虫框架</h2><table><thead><tr><th>项目名称</th><th>项目介绍</th></tr></thead><tbody><tr><td><a href="https://github.com/xianhu/PSpider" target="_blank" rel="noopener">PSpider</a></td><td>一个简单的web爬虫框架</td></tr><tr><td><a href="https://github.com/scrapy/scrapy" target="_blank" rel="noopener">Scrapy</a></td><td>Scrapy 是用 Python 实现的一个为了爬取网站数据、提取结构性数据而编写的应用框架</td></tr></tbody></table><h2 id="7-python其他"><a href="#7-python其他" class="headerlink" title="7 python其他"></a>7 python其他</h2><table><thead><tr><th>项目名称</th><th>项目介绍</th></tr></thead><tbody><tr><td><a href="https://github.com/crazyjums/wtfpython" target="_blank" rel="noopener">wtfpython</a></td><td>这里主要介绍了一些比较不常见的python代码，可以帮助我们减少平时写代码的时候进行debug调试</td></tr><tr><td><a href="https://github.com/crazyjums/awesome-python-applications" target="_blank" rel="noopener">awesome-python-applications</a></td><td>这里介绍了很多的特别棒的用<code>python</code>语言写的一些项目代码</td></tr></tbody></table><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 汇总 </tag>
+            
+            <tag> python </tag>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一些比较优秀的机器学习算法的汇总</title>
+      <link href="/machine-learning-project/"/>
+      <url>/machine-learning-project/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://github.com/crazyjums/awesome-ml-summary/blob/master/README.en.MD" target="_blank" rel="noopener">English Version</a>   </p><h1 id="机器学习项目"><a href="#机器学习项目" class="headerlink" title="机器学习项目"></a><center>机器学习项目</center></h1><h2 id="1-预测"><a href="#1-预测" class="headerlink" title="1 预测"></a>1 预测</h2><h3 id="1-1-时间序列预测"><a href="#1-1-时间序列预测" class="headerlink" title="1.1 时间序列预测"></a>1.1 时间序列预测</h3><table><thead><tr><th>项目名称</th><th>项目介绍</th></tr></thead><tbody><tr><td><a href="https://github.com/crazyjums/LSTM" target="_blank" rel="noopener">LSTM</a></td><td>使用LSTM神经网络进行时间序列数据预测分析, 基于Tensorflow框架、Kerase接口开发网络模型</td></tr><tr><td><a href="https://github.com/VivekPa/AIAlpha" target="_blank" rel="noopener">AIAlpha</a></td><td>该项目是堆叠神经网络预测股票回报的高级实现。</td></tr><tr><td><a href="https://github.com/634671436/Air_Pollution_Forcast_Beijing" target="_blank" rel="noopener">Air_Pollution_Forcast_Beijing</a></td><td>基于Keras的LSTM多变量时间序列预测</td></tr><tr><td><a href="https://github.com/jeurtr/TimeSeries_Predict" target="_blank" rel="noopener">TimeSeries_Predict</a></td><td>客流量时间序列预测</td></tr><tr><td><a href="https://github.com/wikke/TimeSeriesPrediction" target="_blank" rel="noopener">TimeSeriesPrediction</a></td><td>洗发水、股票预测等</td></tr><tr><td><a href="https://github.com/huang027/ARIMA" target="_blank" rel="noopener">ARIMA</a></td><td>基于<code>ARIMA</code>的预测</td></tr><tr><td><a href="https://github.com/yangwohenmai/TimeSeriesForecasting" target="_blank" rel="noopener">TimeSeriesForecasting</a></td><td>基于统计学的时间序列预测</td></tr><tr><td><a href="https://github.com/Clearfk/lstm-rnn-stock-predict" target="_blank" rel="noopener">lstm-rnn-stock-predict</a></td><td>这是一个基于LSTM-RNN算法的线上金融股票价格走势预测的小项目，使用tensorflow框架实现。</td></tr><tr><td><a href="https://github.com/coder17173/TripleExponentialSmoothing" target="_blank" rel="noopener">TripleExponentialSmoothing</a></td><td>三阶指数平滑算法，对于带有趋势性及周期性的时间序列有不错的预测效果。</td></tr><tr><td><a href="https://github.com/mufeiandroid/ML_stock_qt" target="_blank" rel="noopener">ML_stock_qt</a></td><td>基于机器学习算法的A股股票走势预测</td></tr><tr><td><a href="https://github.com/ZhouM1118/intelligentler-bp-ga" target="_blank" rel="noopener">intelligentler-bp-ga</a></td><td>基于BP算法和遗传算法建立武汉市空气质量指数的预测模型，以武汉市8个监测站的1年的空气质量数据为训练数据进行神经网络的建模，近一个月的数据作为测试数据进行模型的准确性测试，平均准确率在75%左右。</td></tr><tr><td><a href="https://github.com/xiaoluchaotian/stock_simple_mlp_algorithm" target="_blank" rel="noopener">stock_simple_mlp_algorithm</a></td><td>一个简单的股票预测算法，利用过去5天的涨幅，以及十余项市值因子和财务因子进行训练学习。</td></tr><tr><td><a href="https://github.com/maxiaozte/timeSeriesForecasting" target="_blank" rel="noopener">timeSeriesForecasting</a></td><td>时间序列预测算法总结与整理</td></tr><tr><td><a href="https://github.com/tudoulei/forest-cover-type-prediction" target="_blank" rel="noopener">forest-cover-type-prediction</a></td><td>kaggle比赛森林覆盖类型预测算法</td></tr><tr><td><a href="https://github.com/hangtongluo/ctrip001" target="_blank" rel="noopener">ctrip001</a></td><td>机票航班延误预测算法大赛</td></tr><tr><td><a href="https://github.com/andinsbing/Analysis-of-College-Graduates-Employment-Orientation" target="_blank" rel="noopener">Analysis-of-College-Graduates-Employment-Orientation</a></td><td>本项目旨在建立一个基于大数据处理的大学生就业方向分析预测系统，通过爬虫技术获取各大公司和著名招聘网站的大量招聘信息，然后将获取的数据进行清洗分类后储存在数据库中，最后从大学生的就业角度出发，通过算法分析数据，建立一个帮助大学生明确就业方向与社会需求的平台</td></tr><tr><td><a href="https://github.com/nik-niming/ARIMA" target="_blank" rel="noopener">ARIMA</a></td><td>时序数据预测算法ARIMA Demo,基于航空乘客月度数据集</td></tr></tbody></table><h3 id="1-2-预测算法"><a href="#1-2-预测算法" class="headerlink" title="1.2 预测算法"></a>1.2 预测算法</h3><table><thead><tr><th>项目名称</th><th>项目介绍</th></tr></thead><tbody><tr><td><a href="https://github.com/xiaoming-qxm/JData" target="_blank" rel="noopener">JData</a></td><td>京东JData算法大赛-高潜用户购买意向预测入门程序</td></tr><tr><td><a href="https://github.com/HongZhaoHua/jstarcraft-rns" target="_blank" rel="noopener">jstarcraft-rns</a></td><td>专注于解决推荐领域与搜索领域的两个核心问题:排序预测(Ranking)和评分预测(Rating). 为相关领域的研发人员提供完整的通用设计与参考实现. 涵盖了70多种排序预测与评分预测算法,是最快最全的Java推荐与搜索引擎.</td></tr><tr><td><a href="https://github.com/onion1003/JData_2018" target="_blank" rel="noopener">JData_2018</a></td><td>京东2018算法大赛 如期而至-用户购买时间预测</td></tr></tbody></table><h3 id="1-3-推荐系统"><a href="#1-3-推荐系统" class="headerlink" title="1.3 推荐系统"></a>1.3 推荐系统</h3><table><thead><tr><th>项目名称</th><th>项目介绍</th></tr></thead><tbody><tr><td><a href="https://github.com/crazyjums/RecommenderSystem-Paper" target="_blank" rel="noopener">RecommenderSystem-Paper</a></td><td>For the convenience of reading, I collect some basic and important papers about recommender system.</td></tr><tr><td><a href="https://github.com/apachecn/RecommenderSystems" target="_blank" rel="noopener">RecommenderSystems</a></td><td>介绍推荐系统基本知识，相关算法以及实现。</td></tr><tr><td><a href="https://github.com/LABELNET/YuanNews" target="_blank" rel="noopener">YuanNews</a></td><td>基于用户兴趣标签的新闻推荐系统</td></tr><tr><td><a href="https://github.com/zhaozhiyong19890102/Recommender-System" target="_blank" rel="noopener">Recommender-System</a></td><td>推荐系统综述</td></tr><tr><td><a href="https://github.com/jasonTangxd/recommendSys" target="_blank" rel="noopener">recommendSys</a></td><td>实时推荐和离线推荐</td></tr></tbody></table><h3 id="机器学习相关文档"><a href="#机器学习相关文档" class="headerlink" title="机器学习相关文档"></a>机器学习相关文档</h3><table><thead><tr><th>项目名称</th><th>项目介绍</th><th>GitHub</th><th>官网</th></tr></thead><tbody><tr><td>numpy-cn</td><td><code>Numpy</code>教程中文版，</td><td><a href="https://github.com/teadocs/numpy-cn" target="_blank" rel="noopener">numpy-cn</a></td><td><a href="https://www.numpy.org.cn/" target="_blank" rel="noopener">numpy-cn</a></td></tr><tr><td>pandas-cn</td><td><code>pandas</code>教程中文版</td><td><a href="https://github.com/teadocs/pandas-cn" target="_blank" rel="noopener">pandas-cn</a></td><td><a href="https://www.pypandas.cn/" target="_blank" rel="noopener">pandas-cn</a></td></tr><tr><td>matplotlib-cn</td><td><code>matplotlib</code>教程中文版</td><td><a href="https://www.matplotlib.org.cn/" target="_blank" rel="noopener">matplotlib-cn</a></td><td><a href="https://www.matplotlib.org.cn/" target="_blank" rel="noopener">matplotlib-cn</a></td></tr><tr><td>TensorFlow-cn</td><td><code>TensorFlow</code>教程中文版</td><td><a href="https://github.com/xitu/tensorflow-docs" target="_blank" rel="noopener">TensorFlow-cn</a></td><td><a href="https://tensorflow.juejin.im/get_started/" target="_blank" rel="noopener">TensorFlow-cn</a></td></tr><tr><td>sklearn-cn</td><td><code>sklearn</code>教程中文版</td><td><a href="https://github.com/apachecn/sklearn-doc-zh" target="_blank" rel="noopener">sklearn-cn</a></td><td><a href="https://sklearn.apachecn.org/" target="_blank" rel="noopener">sklearn-cn</a></td></tr></tbody></table><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 汇总 </tag>
+            
+            <tag> 神经网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>预测算法简介</title>
       <link href="/prediction-algorithm/"/>
       <url>/prediction-algorithm/</url>
@@ -1354,9 +1398,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> CNN </tag>
             
@@ -1411,9 +1455,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -1434,9 +1478,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1457,9 +1501,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1503,9 +1547,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -1633,9 +1677,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 数字图像处理 </tag>
             

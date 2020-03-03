@@ -1,3 +1,5 @@
+https://jums.club/awesome-spider-project/
+https://jums.club/machine-learning-project/
 https://jums.club/prediction-algorithm/
 https://jums.club/time-series-forecasting-algorithm/
 https://jums.club/write-blog-via-github/

@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jums.club/how-to-use-github-API/</loc>
+    <loc>https://jums.club/awesome-spider-project/</loc>
     <lastmod>2020-03-03</lastmod>
   </url>  <url>
-    <loc>https://jums.club/prediction-algorithm/</loc>
+    <loc>https://jums.club/machine-learning-project/</loc>
     <lastmod>2020-03-03</lastmod>
   </url>  <url>
-    <loc>https://jums.club/something-about-curl/</loc>
+    <loc>https://jums.club/write-blog-via-github/</loc>
     <lastmod>2020-03-03</lastmod>
   </url>  <url>
     <loc>https://jums.club/time-series-forecasting-algorithm/</loc>
     <lastmod>2020-03-03</lastmod>
   </url>  <url>
-    <loc>https://jums.club/write-blog-via-github/</loc>
+    <loc>https://jums.club/something-about-curl/</loc>
+    <lastmod>2020-03-03</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/prediction-algorithm/</loc>
+    <lastmod>2020-03-03</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/how-to-use-github-API/</loc>
     <lastmod>2020-03-03</lastmod>
   </url>  <url>
     <loc>https://jums.club/python-scan-dir/</loc>

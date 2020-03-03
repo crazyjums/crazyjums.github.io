@@ -2,44 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jums.club/prediction-algorithm/</loc>
+    <loc>https://jums.club/awesome-spider-project/</loc>
     
-    <lastmod>2020-03-03T06:14:45.441Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/time-series-forecasting-algorithm/</loc>
-    
-    <lastmod>2020-03-03T06:14:45.441Z</lastmod>
+    <lastmod>2020-03-03T06:45:00.663Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jums.club/write-blog-via-github/</loc>
+    <loc>https://jums.club/machine-learning-project/</loc>
     
-    <lastmod>2020-03-03T06:14:45.441Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/how-to-use-github-API/</loc>
-    
-    <lastmod>2020-03-03T06:14:45.441Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/something-about-curl/</loc>
-    
-    <lastmod>2020-03-03T06:14:45.441Z</lastmod>
+    <lastmod>2020-03-03T06:45:00.663Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/share/index.html</loc>
     
-    <lastmod>2020-03-03T05:41:33.202Z</lastmod>
+    <lastmod>2020-03-03T06:36:59.763Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/write-blog-via-github/</loc>
+    
+    <lastmod>2020-03-03T06:15:46.021Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/time-series-forecasting-algorithm/</loc>
+    
+    <lastmod>2020-03-03T06:15:46.020Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/something-about-curl/</loc>
+    
+    <lastmod>2020-03-03T06:15:46.018Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/prediction-algorithm/</loc>
+    
+    <lastmod>2020-03-03T06:15:46.012Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/how-to-use-github-API/</loc>
+    
+    <lastmod>2020-03-03T06:15:46.010Z</lastmod>
     
   </url>
   
