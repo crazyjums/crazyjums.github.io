@@ -4,6 +4,107 @@
   
     
     <entry>
+      <title>预测算法简介</title>
+      <link href="/prediction-algorithm/"/>
+      <url>/prediction-algorithm/</url>
+      
+        <content type="html"><![CDATA[<h3 id="0-A-few-more-concept-you-need-to-know"><a href="#0-A-few-more-concept-you-need-to-know" class="headerlink" title="0 A few more concept you need to know"></a>0 A few more concept you need to know</h3><h4 id="0-1-什么是bagging和boosting-link"><a href="#0-1-什么是bagging和boosting-link" class="headerlink" title="0.1 什么是bagging和boosting|link"></a>0.1 什么是bagging和boosting|<a href="https://www.jianshu.com/p/d270af43f043" target="_blank" rel="noopener">link</a></h4><p><strong>bagging</strong>：Bagging是Bootstrap Aggregating的英文缩写,是指一种有放回采样<br><strong>boosting</strong>：提升方法（Boosting），是一种可以用来减小监督式学习中偏差的机器学习算法。面对的问题是迈可·肯斯（Michael Kearns）提出的：一组“弱学习者”的集合能否生成一个“强学习者”？弱学习者一般是指一个分类器，它的结果只比随机分类好一点点；强学习者指分类器的结果非常接近真值。</p><h4 id="0-2-预测和拟合的区别？"><a href="#0-2-预测和拟合的区别？" class="headerlink" title="0.2 预测和拟合的区别？"></a>0.2 预测和拟合的区别？</h4><blockquote><p>预测：灰色预测的通用性比较强一些，一般场合都可以用，尤其适合那些规律性差且不清楚数据产生机理的情况。   </p></blockquote><blockquote><p>拟合：拟合比较适合于那些清楚数据产生机理，有比较规则的变化趋势的场景，比如已经知道这些数据符合一定的动力学变化规律，这时用指数拟合就比较合适。</p></blockquote><p>在数学建模中，能用拟合的地方尽量用拟合，这样会有具体的函数表达式，更有利于进一步的建模。当然有些问题就是数据的预测，这种情况哪种精度高就用哪种了（建议都用，便于比较），上面所说的最适合的问题，也主要是基于精度考虑的。</p><h4 id="0-3-预测和推荐的区别？"><a href="#0-3-预测和推荐的区别？" class="headerlink" title="0.3 预测和推荐的区别？"></a>0.3 预测和推荐的区别？</h4><h4 id="0-4-时间序列预测法-link"><a href="#0-4-时间序列预测法-link" class="headerlink" title="0.4 时间序列预测法|link"></a>0.4 时间序列预测法|<a href="https://zhuanlan.zhihu.com/p/38320827" target="_blank" rel="noopener">link</a></h4><blockquote><p>时间序列预测法其实是一种回归预测方法，属于定量预测，其基本原理是:一方面承认事物发展的延续性，运用过去的时间序列数据进行统计分析，推测出事物的发展趋势；另一方面充分考虑到由于偶然因素影响而产生的随机性，为了消除随机波动产生的影响，利用历史数据进行统计分析，并对数据进行适当处理，进行趋势预测。</p></blockquote><h4 id="0-5-什么有量纲和什么是无量纲？"><a href="#0-5-什么有量纲和什么是无量纲？" class="headerlink" title="0.5 什么有量纲和什么是无量纲？"></a>0.5 什么有量纲和什么是无量纲？</h4><p>量纲：是指有具体的单位的量，比如1m/s就是一个量纲量，是矢量。<br>无量纲：是指没有具体单位的标准化统计量，比如1%等，是标量<br>归一化：就是将有量纲的量转化成一个无量纲的量，将矢量变成标量。</p><h3 id="1-线性回归-link"><a href="#1-线性回归-link" class="headerlink" title="1 线性回归|link"></a>1 线性回归|<a href="https://www.cnblogs.com/baoxuhong/p/10210751.html" target="_blank" rel="noopener">link</a></h3><blockquote><p>定义：确定两种或两种以上变量间相互依赖的定量关系的一种统计分析方法   </p></blockquote><p>公式：<br><img alt="image" data-src="https://img2018.cnblogs.com/blog/925095/201901/925095-20190102130153170-1089413164.png" class="lazyload"><br>举例：<br>线性回归的目的就是找到一条线，能够使图中的每个点到该直线的举例最短，一般可用<a href="https://baike.baidu.com/item/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95" target="_blank" rel="noopener">最小二乘法</a>进行拟合<br><img alt="image" data-src="https://img2018.cnblogs.com/blog/925095/201901/925095-20190102131101282-829231011.png" class="lazyload"></p><h3 id="2-逻辑回归-link"><a href="#2-逻辑回归-link" class="headerlink" title="2 逻辑回归|link"></a>2 逻辑回归|<a href="https://www.cnblogs.com/baoxuhong/p/10222463.html" target="_blank" rel="noopener">link</a></h3><blockquote><p>概念：线性回归可以拟合X与Y之间的关系，但回归模型中Y值是连续的，如果换成一个二分类标签，Y只能取两个值0、1，这时候就不能用线性回归了，这样就有了逻辑回归。   </p></blockquote><p>针对Y的值域在区间[0-1]的问题，我们不能寻找到一条完美曲线，用于拟合二分类模型，但我们可以寻找一条完美的S型曲线，S型曲线叫Sigmoid曲线，<br><img alt="image" data-src="https://img2018.cnblogs.com/blog/925095/201901/925095-20190104185925892-1190461612.png" class="lazyload"><br>核心原理：<br>==逻辑回归核心原理是在线性回归的基础上加上一个Sigmoid函数，把训练数据通过Sigmoid函数整合到（0—1）之间。==</p><h3 id="3-支持向量机-link"><a href="#3-支持向量机-link" class="headerlink" title="3 支持向量机|link"></a>3 支持向量机|<a href="https://www.cnblogs.com/baoxuhong/p/10240867.html" target="_blank" rel="noopener">link</a></h3><blockquote><p>概念：SVM思想和线性回归很相似，两个都是寻找一条最佳直线。<br><strong>不同点</strong>：最佳直线的定义方法不一样，线性回归要求的是直线到各个点的距离最近，SVM要求的是直线离两边的点距离尽量大。</p></blockquote><p><img alt="image" data-src="https://img2018.cnblogs.com/blog/925095/201901/925095-20190108233323307-1363840041.png" class="lazyload"></p><h3 id="4-随机森林算法-link"><a href="#4-随机森林算法-link" class="headerlink" title="4 随机森林算法|link"></a>4 随机森林算法|<a href="https://blog.csdn.net/qq_34106574/article/details/82016442" target="_blank" rel="noopener">link</a></h3><p>所以随机森林算法的随机性主要体现在以下两个方面：   </p><ul><li>子模型的训练样本是随机抽取的</li><li>子模型的特征变量也是随机抽取的</li></ul><p>掌握随机森林之前，你学要具备如下知识：</p><ul><li><a href="https://www.cnblogs.com/zongfa/p/9304353.html" target="_blank" rel="noopener">集成学习</a></li><li><a href="https://www.cnblogs.com/keye/p/10564914.html" target="_blank" rel="noopener">决策树</a>   </li><li><a href="https://www.cnblogs.com/IamJiangXiaoKun/p/9455689.html" target="_blank" rel="noopener">信息熵</a>| <a href="https://blog.csdn.net/am290333566/article/details/81187124" target="_blank" rel="noopener">more concept</a></li></ul><p>随机森林的优缺点：| <a href="https://blog.csdn.net/qq_39303465/article/details/79234950" target="_blank" rel="noopener">learn more</a></p><p>决策树算法的优缺点：<br>优点:</p><ul><li>(1)速度快: 计算量相对较小, 且容易转化成分类规则. 只要沿着树根向下一直走到叶, 沿途的分裂条件就能够唯一确定一条分类的谓词.</li><li>(2)准确性高: 挖掘出来的分类规则准确性高, 便于理解, 决策树可以清晰的显示哪些字段比较重要, 即可以生成可以理解的规则.</li><li>(3)可以处理连续和种类字段</li><li>(4)不需要任何领域知识和参数假设</li><li>(5)适合高维数据   </li></ul><p>缺点:   </p><ul><li>(1)对于各类别样本数量不一致的数据, 信息增益偏向于那些更多数值的特征</li><li>(2)容易过拟合</li><li>(3)忽略属性之间的相关性</li></ul><h3 id="5-AdaBoost-link"><a href="#5-AdaBoost-link" class="headerlink" title="5 AdaBoost|link"></a>5 AdaBoost|<a href="https://www.cnblogs.com/ScorpioLu/p/8295990.html" target="_blank" rel="noopener">link</a></h3><h3 id="6-贝叶斯网络-link"><a href="#6-贝叶斯网络-link" class="headerlink" title="6 贝叶斯网络|link"></a>6 贝叶斯网络|<a href="https://blog.csdn.net/Pancheng1/article/details/81001459" target="_blank" rel="noopener">link</a></h3><h3 id="7-自编码网络-link"><a href="#7-自编码网络-link" class="headerlink" title="7 自编码网络|link"></a>7 自编码网络|<a href="https://blog.csdn.net/abcdrachel/article/details/84024144" target="_blank" rel="noopener">link</a></h3><h4 id="7-1-什么是自编码器？"><a href="#7-1-什么是自编码器？" class="headerlink" title="7.1 什么是自编码器？"></a>7.1 什么是自编码器？</h4><blockquote><p>自编码器是一个3层或大于3层的神经网络，将输入表达式x编码为一个新的表达式y，然后再将y解码回x。这是一个非监督学习算法，使用反向传播算法来训练网络使输出等于输入。<br><img alt="image" data-src="https://img-blog.csdnimg.cn/20181113100710190.png" class="lazyload"><br>图中，虚线蓝色框内就是一个自编码器模型，它由编码器(Encoder)和解码器(Decoder)两部分组成，本质上都是对输入信号做某种变换。编码器将输入信号x变换成编码信号y，而解码器将编码y转换成输出信号x‘。即<br>y = f(x)</p><p>x’ = g(y) = g(f(x))</p><p>自编码器的目的是，让输出x’尽可能复现输入x。</p><p>如果f和g都是恒等映射，那不就恒有x’=x？不错，但是这样的变换没啥作用。因此，我们对中间信号y做一定的约束，这样，系统往往能学出很有趣的编码变换f和编码y。</p><p>对于自编码器，我们需要强调一点是，我们往往并不关心输出是啥（反正只是复现输入），我们关心的是中间层的编码，或者说是从输入到编码的映射。</p><p>可以这么理解，我们在强迫编码y和输入x不同的情况下，系统还能复原原始信号x，那么说明编码y已经承载了原始数据的所有信息，但以另一种形式表现。这就是特征提取，而且是主动学出来的。实际上，自动学习原始数据的特征表达也是神经网络和深度学习的核心目的之一。</p></blockquote><h4 id="7-2-什么自编码网络？"><a href="#7-2-什么自编码网络？" class="headerlink" title="7.2 什么自编码网络？"></a>7.2 什么自编码网络？</h4><blockquote><p>自编码网络是非监督学习领域的一种，可以自动从无标注的数据中学习特征，是一种以重构输入信息为目标的神经网络，它可以给出比原始数据更好的特征描述，具有较强的特征学习能力，在深度学习中常用自编码网络生成的特征来取代原始数据，已取得更好效果。</p></blockquote><p><img alt="image" data-src="https://img-blog.csdnimg.cn/20181113105333903.png" class="lazyload"><br>自编码器通过隐藏层对输入进行压缩，并在输出层中解压缩，整个过程肯定会丢失信息，但是通过训练我们能够使丢失的信息尽量减少，最大化的保留其主要特征。</p><p>y = f(x) = s(wx+b)<br>x’ = g(y) = s(w’y+b’)<br>L(x,x’) = L(x,g(f(x)))   </p><p>其中L表示损失函数，结合数据的不同形式，可以是二次误差（squared error loss）或交叉熵误差(cross entropy loss)。</p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 神经网络 </tag>
+            
+            <tag> 预测算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>时间序列算法综述</title>
+      <link href="/time-series-forecasting-algorithm/"/>
+      <url>/time-series-forecasting-algorithm/</url>
+      
+        <content type="html"><![CDATA[<h3 id="时间序列预测的顺序"><a href="#时间序列预测的顺序" class="headerlink" title="时间序列预测的顺序"></a>时间序列预测的顺序</h3><p><img alt="image" data-src="https://img-blog.csdn.net/2018101810294119?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2p1bHljbGo1NTU1NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" class="lazyload"></p><p>时间序列的正式定义如下：它是一系列在相同时间间隔内测量到的数据点。<br>时间序列的特殊性是：该序列中的每个数据点都与先前的数据点相关。<br><a href="https://zhuanlan.zhihu.com/p/49746642" target="_blank" rel="noopener">知乎问答：利用Auto ARIMA构建高性能时间序列模型（附Python和R代码）</a>|<a href="https://www.analyticsvidhya.com/blog/2018/02/time-series-forecasting-methods/" target="_blank" rel="noopener">source article</a></p><h4 id="参考文献"><a href="#参考文献" class="headerlink" title="#参考文献"></a>#参考文献</h4><p><a href="https://blog.csdn.net/jyfu2_12/article/details/79207643" target="_blank" rel="noopener">常见Markdown公式代码</a><br><a href="https://item.jd.com/12475341.html" target="_blank" rel="noopener">《时间序列分析》-作者：詹姆斯·D·汉密尔顿（James D.Hamilton）</a><br><a href="https://otexts.com/fppcn/holt-winters.html" target="_blank" rel="noopener">预测：方法与实践</a></p><h3 id="1-其中常见的时间序列预测算法"><a href="#1-其中常见的时间序列预测算法" class="headerlink" title="1 其中常见的时间序列预测算法"></a>1 其中常见的时间序列预测算法</h3><h4 id="1-1-朴素预测法（一次指数平滑）"><a href="#1-1-朴素预测法（一次指数平滑）" class="headerlink" title="1.1 朴素预测法（一次指数平滑）"></a>1.1 朴素预测法（一次指数平滑）</h4><p>概念：利用前一时刻的数据，作为下一时刻数据的预测值，公式如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X_&#123;t+1&#125; = X_i</span><br></pre></td></tr></table></figure><p>缺点：那么预测出来的结果会是一条平行线，因为预测结果都是之前的最后一个时刻的值。如下所示：<br><img alt="image" data-src="https://pic3.zhimg.com/80/v2-91cc0429042526c71934287553bbd36e_hd.jpg" class="lazyload"></p><h4 id="1-2-简单平均法"><a href="#1-2-简单平均法" class="headerlink" title="1.2 简单平均法"></a>1.2 简单平均法</h4><p>概念：该方法是将之前的所有历史数据进行平均，不再是简单的利用最后一个时刻的数据作为预测值，图像是一条斜线，公式如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X_&#123;t+1&#125; = \frac&#123;1&#125;&#123;N&#125; \sum^N_&#123;i=1&#125; X_i</span><br></pre></td></tr></table></figure><p>where:<code>N</code>表示所有的历史数据的总数.<br>优点：不像“朴素预测法”那样，直接是一条平行线，该算法中将历史数据也考虑进去；<br>缺点：但是这些历史数据有些不一定都是有用，所以也会产生一定的误差<br><img alt="image" data-src="https://pic2.zhimg.com/80/v2-25e9516f144807a45e483cdd9f1f6fbd_hd.jpg" class="lazyload"></p><h4 id="1-3-移动平均法"><a href="#1-3-移动平均法" class="headerlink" title="1.3 移动平均法"></a>1.3 移动平均法</h4><p>概念：取前n个历史数据的平均，作为下一次的预测结果值，公式如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X_&#123;t+1&#125; = \frac &#123;1&#125;&#123;n&#125; \sum^n_i X_i</span><br></pre></td></tr></table></figure><p>where:<code>n</code>表示前<code>n</code>个数据的数据总数<br>优点：在<code>朴素预测法</code>和<code>简单平均法</code>的基础上进行改进，使得预测结果更加符合实际<br>缺点：最接近下一时刻的数据与下一时刻的真实数据明显更加接近，没有考虑权重<br><img alt="image" data-src="https://pic3.zhimg.com/80/v2-eac4ad5b9cc86106750147f88a1a3a42_hd.jpg" class="lazyload"></p><h4 id="1-4-加权移动平均法"><a href="#1-4-加权移动平均法" class="headerlink" title="1.4 加权移动平均法"></a>1.4 加权移动平均法</h4><p>概念：在移动平均法的基础上，对前n个数据给予不同的权重，那么对下一时刻的预测结果将更加接近真实值，公式如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X_&#123;t+1&#125; = \frac &#123;1&#125;&#123;n&#125; \sum^n_i X_i \cdot W_i</span><br></pre></td></tr></table></figure><p>where:W表示每个数据点的权重<br><img alt="image" data-src="https://pic2.zhimg.com/80/v2-ac1f9544d26d5d966573a5a8679875fd_hd.jpg" class="lazyload"></p><h3 id="1-5-简单指数平均法"><a href="#1-5-简单指数平均法" class="headerlink" title="1.5 简单指数平均法"></a>1.5 简单指数平均法</h3><p>概念：在该方法中，同样取前n个数据的平均同时加权重，但是更近期的观测结果会被赋予更大的权重，公式如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X_&#123;t+1&#125; = \frac &#123;1&#125;&#123;n&#125; \sum^n_i X_i \cdot W_i 且W_i&gt;W_&#123;i-1&#125;</span><br></pre></td></tr></table></figure><p><img alt="image" data-src="https://pic1.zhimg.com/80/v2-49baf17e7e9ade3bfd3a0b8b8d4b9864_hd.jpg" class="lazyload"></p><h4 id="1-6-霍尔特（Holt）线性趋势预测"><a href="#1-6-霍尔特（Holt）线性趋势预测" class="headerlink" title="1.6 霍尔特（Holt）线性趋势预测"></a>1.6 霍尔特（Holt）线性趋势预测</h4><p>概念：在之前的基础上，该方法加入了数据集的趋势，也就是数据的整体上涨或下跌等。<br>优点：该方法能够按照一定的趋势去预测，而不是盲目的预测，结果更具说服性<br>缺点：该方法只考虑了趋势性（上涨或下跌），但是没有考虑数据的季节性，也就是数据集的周期性。<br><img alt="image" data-src="https://pic4.zhimg.com/80/v2-6a278b4ba9c50cbd6db292dd4e7372df_hd.jpg" class="lazyload"></p><h4 id="1-7-霍尔特-温特斯（Holt-Winters）方法（三次指数平滑）"><a href="#1-7-霍尔特-温特斯（Holt-Winters）方法（三次指数平滑）" class="headerlink" title="1.7 霍尔特-温特斯（Holt Winters）方法（三次指数平滑）"></a>1.7 霍尔特-温特斯（Holt Winters）方法（三次指数平滑）</h4><p>概念：该方法在霍尔特线性趋势预测的基础上了，加入了季节性，也就是说，该方法同时具有趋势性和季节性。</p><p><img alt="image" data-src="https://pic3.zhimg.com/80/v2-a6d012dfeeadb4d9074789067871f42a_hd.jpg" class="lazyload"></p><h5 id="指数平滑法"><a href="#指数平滑法" class="headerlink" title="指数平滑法"></a><a href="https://blog.csdn.net/anshuai_aw1/article/details/82499095" target="_blank" rel="noopener">指数平滑法</a></h5><blockquote><p>指数平滑法有几种不同形式：一次指数平滑法针对没有趋势和季节性的序列，二次指数平滑法针对有趋势但没有季节性的序列，三次指数平滑法针对有趋势也有季节性的序列。“Holt-Winters”有时特指三次指数平滑法。</p></blockquote><h3 id="2-算法中用到的各种指标介绍-link"><a href="#2-算法中用到的各种指标介绍-link" class="headerlink" title="2 算法中用到的各种指标介绍|link"></a>2 算法中用到的各种指标介绍|<a href="https://www.jianshu.com/p/9ee85fdad150" target="_blank" rel="noopener">link</a></h3><h4 id="2-1-MSE-均方误差-mean-square-error"><a href="#2-1-MSE-均方误差-mean-square-error" class="headerlink" title="2.1 MSE-均方误差(mean square error)"></a>2.1 MSE-均方误差(mean square error)</h4><p><img alt="image" data-src="https://upload-images.jianshu.io/upload_images/9085642-db60f7a87d740e07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/482/format/webp" class="lazyload"><br>这里的y是测试集上的。<br>用 真实值-预测值 然后平方之后求和平均。</p><h4 id="2-2-RMSE-均方根误差-root-mean-square-error"><a href="#2-2-RMSE-均方根误差-root-mean-square-error" class="headerlink" title="2.2 RMSE-均方根误差(root mean square error)"></a>2.2 RMSE-均方根误差(root mean square error)</h4><p><img alt="image" data-src="https://upload-images.jianshu.io/upload_images/9085642-daf2f14301474004.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/534/format/webp" class="lazyload"></p><blockquote><p>例如：要做房价预测，每平方是万元（真贵），我们预测结果也是万元。那么差值的平方单位应该是 千万级别的。那我们不太好描述自己做的模型效果。怎么说呢？我们的模型误差是 多少千万？。。。。。。于是干脆就开个根号就好了。我们误差的结果就跟我们数据是一个级别的可，在描述模型的时候就说，我们模型的误差是多少万元。</p></blockquote><h4 id="2-3-MAE-平均绝对误差-mean-absolute-error"><a href="#2-3-MAE-平均绝对误差-mean-absolute-error" class="headerlink" title="2.3 MAE-平均绝对误差(mean absolute error)"></a>2.3 MAE-平均绝对误差(mean absolute error)</h4><p><img alt="image" data-src="https://upload-images.jianshu.io/upload_images/9085642-d8b6f1b5daac07bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/492/format/webp" class="lazyload"></p><h4 id="2-4-R-Squared"><a href="#2-4-R-Squared" class="headerlink" title="2.4 R Squared"></a>2.4 R Squared</h4><p>为了能够让模型有一个标准的衡量标准，这里引入R方的概念。</p><blockquote><p>比如说预测房价 那么误差单位就是万元。数子可能是3，4，5之类的。那么预测身高就可能是0.1，0.6之类的。没有什么可读性，到底多少才算好呢？不知道，那要根据模型的应用场景来。<br>看看分类算法的衡量标准就是正确率，而正确率又在0～1之间，最高百分之百。最低0。很直观，而且不同模型一样的。那么线性回归有没有这样的衡量标准呢？答案是有的。<br>那就是R Squared也就R方</p></blockquote><p>公式：<br><img alt="image" data-src="https://upload-images.jianshu.io/upload_images/9085642-a870d060a995bb24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/304/format/webp" class="lazyload"><br>其中分子是Residual(残差) Sum of Squares 分母是 Total Sum of Squares</p><p>慢慢解释。其实这个很简单：</p><ul><li>上面分子就是我们训练出的模型预测的所有误差。</li><li>下面分母就是不管什么我们猜的结果就是y的平均数。（瞎猜的误差）</li></ul><p>结果如下：</p><ul><li>如果结果是0，就说明我们的模型跟瞎猜差不多。</li><li>如果结果是1。就说明我们模型无错误。</li><li>如果结果是0-1之间的数，就是我们模型的好坏程度。</li><li>如果结果是负数。说明我们的模型还不如瞎猜。（其实导致这种情况说明我们的数据其实没有啥线性关系）</li></ul><p>公式的分子分母同时处以m，得：<br><img alt="image" data-src="https://upload-images.jianshu.io/upload_images/9085642-2f8310c7bc6c9004.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/448/format/webp" class="lazyload"></p><p>那么分子便成了MSE，分母就是方差，有如下：<br><img alt="image" data-src="https://upload-images.jianshu.io/upload_images/9085642-2b27e93fd95c1e6f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/435/format/webp" class="lazyload"></p><p>补充：什么是方差？<br><img alt="image" data-src="http://q26p6its6.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191211153448.png" class="lazyload"></p><h3 id="3-循环神经网络"><a href="#3-循环神经网络" class="headerlink" title="3 循环神经网络"></a>3 循环神经网络</h3><p>循环神经网络（Recurrent Neural Network）是一种基于序列结构数据的神经网络模型，在处理时间序列数据时，具有一定的优势。在RNN模型中，下一层的隐含层的输入是前一层隐含层的输入，这样做的目的就是为了能够“记住”整个序列的数据，从而能够对一些有时间顺序的数据进行处理。但是RNN也有缺点，缺点也由于其“优势”所导致的，在利用BPTT（Back Propagation Through Time，基于时间的反向传播）算法优化参数时，可能会遇到梯度消失（或者说梯度弥散）或者梯度爆炸的问题。由于BPTT的本质也是采用逐层梯度下降，然而梯度下降也就是求偏导数，如果每层的偏导数都小于1，那么就会出现梯度消失；反之，如果每层的偏导数大于1，那么就会出现梯度爆炸。<br><strong>公式如下：</strong><br><img alt="image" data-src="https://img2018.cnblogs.com/blog/1187314/201908/1187314-20190829170635207-1732920092.png" class="lazyload"><br><strong>RNN的结构如下：</strong><br><img alt="image" data-src="http://q26p6its6.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191212141822.png" class="lazyload"></p><h4 id="（1）-梯度爆炸的解决方法"><a href="#（1）-梯度爆炸的解决方法" class="headerlink" title="（1） 梯度爆炸的解决方法"></a>（1） 梯度爆炸的解决方法</h4><ul><li>重新设计网络结构</li><li>使用激活函数（ReLU函数等）</li><li>使用权重正则化</li><li>使用梯度剪枝</li><li>LSTM</li></ul><h4 id="（2）-梯度消失的解决办法"><a href="#（2）-梯度消失的解决办法" class="headerlink" title="（2） 梯度消失的解决办法"></a>（2） 梯度消失的解决办法</h4><p>由于梯度消失的问题比较棘手，不像梯度爆炸那样比较容易解决，需要对原网络进行改进，在此基础上，有诞生了</p><ul><li>GRU（Gate Recurrent Unit），门循环单元</li><li>LSTM（Long Short Term Memory）,长短时记忆网络。</li></ul><h4 id="3-1-长短时记忆网络"><a href="#3-1-长短时记忆网络" class="headerlink" title="3.1 长短时记忆网络"></a>3.1 长短时记忆网络</h4><p>为了解决基础RNN中出现的梯度消失和梯度爆炸问题，LSTM（Long Short Term Memory）于1997年被提出，且能很好的解决RNN中的梯度消失和梯度爆炸问题。</p><h5 id="（1）LSTM介绍"><a href="#（1）LSTM介绍" class="headerlink" title="（1）LSTM介绍"></a>（1）LSTM介绍</h5><blockquote><p>概念：</p><ul><li>一个LSTM Cell是由3个门限结构和1个状态向量传输线组成的，门限分别是遗忘门，传入门，输出门；</li><li>其中状态向量传输线负责长程记忆，因为它只做了一些简单的线性操作；3个门限负责短期记忆的选择，因为门限设置可以对输入向量做删除或者添加操作;   </li></ul></blockquote><p>下图是RNN和LSTM的结构图比较，右侧为LSTM：<br><img alt="image" data-src="https://pic4.zhimg.com/v2-e4f9851cad426dfe4ab1c76209546827_r.jpg" class="lazyload">   </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">左侧：</span><br><span class="line">其中x^t表示的是当前t时刻的输入，\newline h^&#123;t-1&#125;表示的是上一时刻的隐含层输出值，\newline h^t表示的是t时刻隐含层状态，\newline  y^t表示的是当前t时刻的输出值，\newline Naive表示的是普通的RNN。</span><br></pre></td></tr></table></figure><p><img alt="image" data-src="http://q26p6its6.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191212153759.png" class="lazyload">    </p><p><strong>LSTM中的参数介绍：</strong><br><img alt="image" data-src="https://pic4.zhimg.com/v2-15c5eb554f843ec492579c6d87e1497b_r.jpg" class="lazyload"><br><img alt="image" data-src="https://pic1.zhimg.com/80/v2-d044fd0087e1df5d2a1089b441db9970_hd.jpg" class="lazyload"><br><img alt="image" data-src="http://q26p6its6.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191212154019.png" class="lazyload"></p><p><strong>LSTM的内部结构：</strong><br><img alt="image" data-src="https://pic2.zhimg.com/80/v2-556c74f0e025a47fea05dc0f76ea775d_hd.jpg" class="lazyload"><br><img alt="image" data-src="http://q26p6its6.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191212154134.png" class="lazyload">    </p><p><strong>多层LSTM的连接结构：</strong><br><img alt="image" data-src="http://q26p6its6.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191213161301.png" class="lazyload"><br><strong>以下是一个LSTM cell结构图：</strong><br><img alt="image" data-src="https://images2018.cnblogs.com/blog/776149/201804/776149-20180419171148265-132667484.png" class="lazyload"></p><p>1）遗忘门<br>遗忘门是通过一个sigmoid函数来实现，“0”表示决绝任何输入，“1”表示接受所有输入<br><img alt="image" data-src="https://images2018.cnblogs.com/blog/776149/201804/776149-20180419180212604-282221791.png" class="lazyload">   </p><p>2）输入门（选择记忆）<br>输入门有两部分组成，一部分是由sigmoid函数来决定哪些信息需要更新，一部分由tanh函数来生成一个备选的用来更新的内容；然后再将这两部分进行向量点乘。<br>作用：决定让多少<strong>新的信</strong>息加入到cell状态中来<br><img alt="image" data-src="https://images2018.cnblogs.com/blog/776149/201804/776149-20180419180455006-1062571156.png" class="lazyload">   </p><p>3）输出门<br>该部分同样由两部分构成，一部分由sigmoid函数决定哪些信息需要输出，接着，另一部分是把一个状态向量通过一个tanh层（tanh函数），然后把tanh的状态输出和由sigmoid函数计算出来的权重相乘。这就得到了最后的结果。<br><img alt="image" data-src="https://images2018.cnblogs.com/blog/776149/201804/776149-20180419181357739-45985178.png" class="lazyload"></p><p>4）状态更新<br>首先由旧的状态和遗忘门的输出相乘，把一些不想保留的信息忘掉，然后加上<strong>输入门的输出，这部分信息就是我们想要新添加的内容</strong></p><h5 id="（2）LSTM的优缺点介绍"><a href="#（2）LSTM的优缺点介绍" class="headerlink" title="（2）LSTM的优缺点介绍"></a>（2）LSTM的优缺点介绍</h5><ul><li>优点<ul><li>解决了RNN中的梯度消失和梯度爆炸问题</li></ul></li><li>缺点<ul><li>计算速度较慢</li></ul></li></ul><h4 id="3-2-GRU"><a href="#3-2-GRU" class="headerlink" title="3.2 GRU"></a>3.2 GRU</h4><p>针对LSTM的缺点（计算速度偏慢），门控循环单元（Gate Recurrent Unit，GRU）在2014年被提出，在LSTM结构的基础上，GRU进行了改进。相比于LSTM，GRU减少了一个“门控单元”。在LSTM中有三个“门控单元”，分别是遗忘门、输入门、输出门来控制输入值、记忆值和输出值。而GRU中之后更新门(z)和重置门(r)两个“门控单元”，少了一个“门控单元”，其计算复杂度降低了，运行速度也提升了。</p><h5 id="（1）GRU的结构介绍"><a href="#（1）GRU的结构介绍" class="headerlink" title="（1）GRU的结构介绍"></a>（1）GRU的结构介绍</h5><p><strong>GRU的内部结构图：</strong><br><img alt="image" data-src="https://images2018.cnblogs.com/blog/1335117/201807/1335117-20180727095108158-462781335.png" class="lazyload">   </p><p><img alt="image" data-src="http://q26p6its6.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191213100320.png" class="lazyload">   </p><p><strong>GRU的状态图：</strong><br><img alt="image" data-src="https://pic2.zhimg.com/v2-8134a00c243153bfd9fd2bcbe0844e9c_1200x500.jpg" class="lazyload">    </p><p><strong>GRU的两个门控：</strong><br><img alt="image" data-src="https://pic3.zhimg.com/80/v2-7fff5d817530dada1b279c7279d73b8a_hd.jpg" class="lazyload"></p><p><img alt="image" data-src="http://q26p6its6.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20191213100545.png" class="lazyload"><br>首先再次强调一下，门控信号（这里的z ）的范围为0~1。门控信号越接近1，代表”记忆“下来的数据越多；而越接近0则代表”遗忘“的越多。</p><h5 id="（2）GRU和LSTM的关系"><a href="#（2）GRU和LSTM的关系" class="headerlink" title="（2）GRU和LSTM的关系"></a>（2）GRU和LSTM的关系</h5><p>我们知道GRU也是RNN的一种，且GRU是LSTM的一个变种或者说是简化版，但是他们之间的关系其实是：GRU利用更新门(z)代替了LSTM中的遗忘门和输入门，更新门既可以进行“遗忘”也可以进行“选择记忆”，这一点由<strong>更新表达式</strong>可以看出。</p><h4 id="RNN的参考文献"><a href="#RNN的参考文献" class="headerlink" title="RNN的参考文献"></a>RNN的参考文献</h4><p><a href="https://blog.csdn.net/qq_32241189/article/details/80461635" target="_blank" rel="noopener">深度学习之RNN(循环神经网络)</a><br><a href="https://zhuanlan.zhihu.com/p/32481747" target="_blank" rel="noopener">人人都能看懂的GRU</a><br><a href="https://zhuanlan.zhihu.com/p/32085405" target="_blank" rel="noopener">人人都能看懂的LSTM</a><br><a href="https://www.jianshu.com/p/8b78ac379e3a" target="_blank" rel="noopener">一文了解LSTM和GRU背后的秘密（绝对没有公式）</a><br><a href="https://www.cnblogs.com/arachis/p/RNN.html" target="_blank" rel="noopener">循环神经（LSTM）网络学习总结摘要</a><br><a href="https://blog.csdn.net/jason_cuijiahui/article/details/87517127" target="_blank" rel="noopener">什么是白噪声？如何判断时间序列是白噪声？</a><br><a href="https://blog.csdn.net/SUSU0203/article/details/80051692" target="_blank" rel="noopener">时间序列分析——自回归移动平均（ARMA）模型</a><br><a href="https://www.cnblogs.com/junge-mike/p/9335054.html" target="_blank" rel="noopener">时间序列模式（ARIMA）—Python实现</a></p><h3 id="4-奇异谱分析（SSA）"><a href="#4-奇异谱分析（SSA）" class="headerlink" title="4 奇异谱分析（SSA）"></a>4 奇异谱分析（SSA）</h3><p>奇异频谱分析（Singular spectral analysis，SSA）</p><h3 id="5-自回归移动平均（ARMA）"><a href="#5-自回归移动平均（ARMA）" class="headerlink" title="5 自回归移动平均（ARMA）"></a>5 自回归移动平均（ARMA）</h3><p>AR（p）,MA（q）<br>因为AR（p）,MA（q）,ARMA（p,q）都是平稳随机过程，对于有些时间序列数据不能很好的进行预测，比如有些数据在时间上具有季节性和或趋势性，像这样<strong>非平稳随机过程</strong>ARMA不能很好的预测，所以引入ARIMA（差分自回归移动平均），即在p,q两个参数的基础上，再加一个将时间序列变为平稳时所做的差分次数d。</p><blockquote><h4 id="什么是平稳随机过程？"><a href="#什么是平稳随机过程？" class="headerlink" title="什么是平稳随机过程？"></a>什么是平稳随机过程？</h4><p>平稳随机过程就是该随机过程的统计特性不随时间的推移而产生变化，因此其<strong>数学期望</strong>和<strong>方差</strong>都不变。</p></blockquote><h4 id="ARMA参考文献"><a href="#ARMA参考文献" class="headerlink" title="#ARMA参考文献"></a>#ARMA参考文献</h4><p><a href="https://blog.csdn.net/x_i_y_u_e/article/details/47748479" target="_blank" rel="noopener">AR,MA-&gt;ARMA-&gt;ARIMA</a>   </p><h3 id="6-差分自回归移动平均（ARIMA）"><a href="#6-差分自回归移动平均（ARIMA）" class="headerlink" title="6 差分自回归移动平均（ARIMA）"></a>6 差分自回归移动平均（ARIMA）</h3><p>差分自回归移动平均模型（Auto Regressive Integrated Moving Average  Model ,简称ARIMA）。|<a href="https://wiki.mbalib.com/wiki/ARIMA" target="_blank" rel="noopener">MBA智库-解释</a><br>AR是（Auto Regressive）自回归，p是自回归项；MA（Moving Average）是移动平均，q是移动平均项；d是时间序列成为平稳时所做的差分次数。<br>ARIMA模型的提出是为了解决ARMA模型不能预测非随机平稳过程的问题，ARIMA的<strong>思路</strong>是：现将给定的非平稳随机过程转换成平稳随机过程，然后再使用ARMA模型进行预测。</p><h3 id="7-支持向量回归（SVR）"><a href="#7-支持向量回归（SVR）" class="headerlink" title="7 支持向量回归（SVR）"></a>7 支持向量回归（SVR）</h3><p>支持向量回归（Support Vector Regression），SVM的英文全称是Support Vector Machines，中文叫支持向量机。支持向量机是我们用于分类的一种算法。支持向量也可以用于回归，所以叫支持向量回归。</p><h3 id="8-三次指数平滑"><a href="#8-三次指数平滑" class="headerlink" title="8 三次指数平滑"></a>8 三次指数平滑</h3><h4 id="8-1-为什么叫“指数平滑”？"><a href="#8-1-为什么叫“指数平滑”？" class="headerlink" title="8.1 为什么叫“指数平滑”？"></a>8.1 为什么叫“指数平滑”？</h4><p>先看公式：<br><img alt="image" data-src="http://attach.dataguru.cn/attachments/portal/201307/30/120150vwlsv88wgehsta8g.jpg" class="lazyload"><br>从公式中可以看出，该算法对整个时间序列中的数据多进行了计算，但是时间越久远，其对下一时刻的影响越小，指数越大，其权重越小。</p><h4 id="8-2-算法优点"><a href="#8-2-算法优点" class="headerlink" title="8.2 算法优点"></a>8.2 算法优点</h4><p>该算法考虑了时间序列的趋势性和季节性。</p><h4 id="三次指数平滑参考文献"><a href="#三次指数平滑参考文献" class="headerlink" title="#三次指数平滑参考文献"></a>#三次指数平滑参考文献</h4><p><a href="https://blog.csdn.net/hqr20627/article/details/79403876" target="_blank" rel="noopener">时间序列挖掘-三次指数平滑法(Holt-Winters)</a>   </p><blockquote><h4 id="什么是白噪声？"><a href="#什么是白噪声？" class="headerlink" title="什么是白噪声？"></a>什么是白噪声？</h4><p>纯随机序列，也称为白噪声序列，序列的各项之间没有任何的关系， 序列在进行完全无序的随机波动， 可以终止对该序列的分析。<br>当时间序列预测模型的预测达到了白噪声时，那么该模型就类似于收敛了。</p></blockquote><blockquote><h4 id="机器学习模型中的参数和超参数的区别？"><a href="#机器学习模型中的参数和超参数的区别？" class="headerlink" title="机器学习模型中的参数和超参数的区别？"></a>机器学习模型中的参数和超参数的区别？</h4><p>参数：是模型内部的参数，是模型从历史数据中“学习”到的参数，比如W和b，其值可以通过数据估计然后模型训练得到<br>超参数：是不能从模型中得到的参数，可以理解为模型外的参数，其值不能从数据估计得到<br>参考文件：<a href="https://www.jianshu.com/p/18730bed1b9d" target="_blank" rel="noopener">机器学习中模型参数与超参数的区别</a></p></blockquote><blockquote><h4 id="机器学习模型中的训练集、校验集、测试集"><a href="#机器学习模型中的训练集、校验集、测试集" class="headerlink" title="机器学习模型中的训练集、校验集、测试集"></a>机器学习模型中的训练集、校验集、测试集</h4><ul><li>训练集：用于训练模型，找出最佳的w和b。</li><li>验证集：用以确定模型超参数，选出最优模型。</li><li>测试集：仅用于对训练好的最优函数进行性能评估。   </li></ul><p>参考文献：<a href="https://blog.csdn.net/hohaizx/article/details/81013985" target="_blank" rel="noopener">https://blog.csdn.net/hohaizx/article/details/81013985</a></p></blockquote><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 神经网络 </tag>
+            
+            <tag> 时间序列算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何在github上写博客</title>
+      <link href="/write-blog-via-github/"/>
+      <url>/write-blog-via-github/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-创建账号"><a href="#1-创建账号" class="headerlink" title="1 创建账号"></a>1 创建账号</h3><p>如果你还没有<a href="https://github.com" target="_blank" rel="noopener">github</a>账号，那么你可以到<a href="https://github.com" target="_blank" rel="noopener">github官网</a>注册账号，这里不多赘述。如果已经有账号，那么请看下面。</p><h3 id="2-创建仓库（repositories）"><a href="#2-创建仓库（repositories）" class="headerlink" title="2 创建仓库（repositories）"></a>2 创建仓库（repositories）</h3><p>点击github网站的右上角的加号，创建一个仓库，名字可以自定义，符合规范就行。如下：<br><img alt="创建仓库" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200303135042.png" class="lazyload"><br><img alt="具体步骤" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200303135204.png" class="lazyload"></p><h3 id="3-开始写博客"><a href="#3-开始写博客" class="headerlink" title="3 开始写博客"></a>3 开始写博客</h3><p>进入到你刚刚创建的仓库，点击上面的<a href="https://github.com/crazyjums/awesome-ml-summary/wiki" target="_blank" rel="noopener">wiki</a>目录，开始创建博客，可以支持多种编辑格式。<br><img alt="wiki" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200303135245.png" class="lazyload"><br><img alt="new page" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200303135512.png" class="lazyload"><br><img alt="编辑格式" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200303135426.png" class="lazyload"><br>写完之后，你的所有博客都会汇总在这里，如下：<br><img alt="博客汇总" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200303135546.png" class="lazyload"></p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何使用github的REST API接口获取github项目数据</title>
+      <link href="/how-to-use-github-API/"/>
+      <url>/how-to-use-github-API/</url>
+      
+        <content type="html"><![CDATA[<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于cURL，了解这些就够用了</title>
+      <link href="/something-about-curl/"/>
+      <url>/something-about-curl/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-Wikipedia解释"><a href="#1-Wikipedia解释" class="headerlink" title="1 Wikipedia解释"></a>1 Wikipedia解释</h3><blockquote><p><a href="https://curl.haxx.se/" target="_blank" rel="noopener">cURL</a>是一个开源项目，主要的产品是curl（命令行工具）和libcurl（C语言的API库），两者功能均是：基于网络协议，对指定URL进行网络传输。cURL涉及是任何网络协议传输，不涉及对具体数据的具体处理。</p></blockquote><h3 id="2-基本用法"><a href="#2-基本用法" class="headerlink" title="2 基本用法"></a>2 基本用法</h3><ul><li>简单模式   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://example.com</span><br></pre></td></tr></table></figure><img alt="example" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200302221732.png" class="lazyload">   </li><li>详细模式(verbose)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -v http://example.com</span><br></pre></td></tr></table></figure></li></ul><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 传输工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何使用readthedoc.org编写属于自己的说明文档</title>
       <link href="/how-to-write-a-document-for-your-project/"/>
       <url>/how-to-write-a-document-for-your-project/</url>
@@ -1253,9 +1354,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> CNN </tag>
             
@@ -1310,9 +1411,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -1333,9 +1434,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1356,9 +1457,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1402,9 +1503,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -1532,9 +1633,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 数字图像处理 </tag>
             

@@ -1,3 +1,8 @@
+https://jums.club/prediction-algorithm/
+https://jums.club/time-series-forecasting-algorithm/
+https://jums.club/write-blog-via-github/
+https://jums.club/how-to-use-github-API/
+https://jums.club/something-about-curl/
 https://jums.club/how-to-write-a-document-for-your-project/
 https://jums.club/python-scan-dir/
 https://jums.club/github-how-to-create-two-more-page/
