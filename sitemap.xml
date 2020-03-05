@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/about/index.html</loc>
+    
+    <lastmod>2020-03-05T11:31:02.181Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/awesome-spider-project/</loc>
     
     <lastmod>2020-03-03T07:04:17.774Z</lastmod>
@@ -586,13 +593,6 @@
     <loc>https://jums.club/a-ebook/</loc>
     
     <lastmod>2020-02-16T07:35:54.144Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/about/index.html</loc>
-    
-    <lastmod>2020-02-09T14:04:22.174Z</lastmod>
     
   </url>
   
