@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/share/index.html</loc>
+    
+    <lastmod>2020-03-08T12:19:36.486Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/python-logging-error-sloved/</loc>
     
     <lastmod>2020-03-06T07:27:23.487Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>https://jums.club/machine-learning-project/</loc>
     
     <lastmod>2020-03-03T06:45:52.658Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/share/index.html</loc>
-    
-    <lastmod>2020-03-03T06:36:59.763Z</lastmod>
     
   </url>
   
