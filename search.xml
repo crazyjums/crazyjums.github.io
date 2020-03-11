@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>python爬虫如何下载存储图片</title>
+      <link href="/crawl-photo/"/>
+      <url>/crawl-photo/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download_photo</span><span class="params">()</span>:</span></span><br><span class="line">    root = <span class="string">"g:/emojis/"</span></span><br><span class="line">    url = <span class="string">"https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/avatar.jpg"</span></span><br><span class="line">    <span class="keyword">with</span> open(root + <span class="string">"name.jpg"</span>, <span class="string">"wb"</span>) <span class="keyword">as</span> file:</span><br><span class="line">        r = requests.get(url).content  <span class="comment">## This is the main code </span></span><br><span class="line">        file.write(r)  <span class="comment">## the main code too</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    download_photo()</span><br></pre></td></tr></table></figure><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一些比较好的爬虫项目汇总</title>
       <link href="/awesome-spider-project/"/>
       <url>/awesome-spider-project/</url>
@@ -551,11 +570,11 @@
       
         <tags>
             
+            <tag> 软件下载 </tag>
+            
             <tag> 数据库 </tag>
             
             <tag> sql server </tag>
-            
-            <tag> 软件下载 </tag>
             
         </tags>
       
