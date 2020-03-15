@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/python-namespace/</loc>
+    
+    <lastmod>2020-03-15T06:24:25.186Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/UnicodeDecodeError-gb2312/</loc>
+    
+    <lastmod>2020-03-15T06:24:25.186Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/share/index.html</loc>
+    
+    <lastmod>2020-03-15T05:58:28.149Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/about/index.html</loc>
     
     <lastmod>2020-03-11T06:15:18.121Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>https://jums.club/crawl-photo/</loc>
     
     <lastmod>2020-03-11T05:56:46.671Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/share/index.html</loc>
-    
-    <lastmod>2020-03-08T12:19:36.486Z</lastmod>
     
   </url>
   

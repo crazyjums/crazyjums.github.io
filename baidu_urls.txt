@@ -1,3 +1,5 @@
+https://jums.club/python-namespace/
+https://jums.club/UnicodeDecodeError-gb2312/
 https://jums.club/crawl-photo/
 https://jums.club/awesome-spider-project/
 https://jums.club/machine-learning-project/
