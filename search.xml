@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>TabError: Inconsistent use of tabs and spaces in indentation</title>
+      <link href="/python-tab-error/"/>
+      <url>/python-tab-error/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-问题"><a href="#1-问题" class="headerlink" title="1 问题"></a>1 问题</h3><p>在使用命令行运行<code>python</code>文件时，出现以下错误：   </p><blockquote><p>TabError: Inconsistent use of tabs and spaces in indentation</p></blockquote><p>但是代码什么的都没有问题，最后发现是格式的问题。因为<code>python</code>中默认是使用缩进进行区分代码的，所以如果使用了<code>tab</code>键进行缩进代码，那就回报这个错误。</p><p><img alt="error show" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200320205810.png" class="lazyload"></p><h3 id="2-解决方法"><a href="#2-解决方法" class="headerlink" title="2 解决方法"></a>2 解决方法</h3><p>用空格代替<code>tab</code>即可。</p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 解决问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python中的nonlocal和global关键字解析，python闭包解析</title>
       <link href="/python-namespace/"/>
       <url>/python-namespace/</url>
@@ -1255,9 +1276,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> summary </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -1457,9 +1478,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> CNN </tag>
             
@@ -1514,9 +1535,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -1537,9 +1558,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1560,9 +1581,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1606,9 +1627,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -1736,9 +1757,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 数字图像处理 </tag>
             
