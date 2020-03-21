@@ -1,3 +1,4 @@
+https://jums.club/how-to-use-setuptools/
 https://jums.club/python-tab-error/
 https://jums.club/python-namespace/
 https://jums.club/UnicodeDecodeError-gb2312/
