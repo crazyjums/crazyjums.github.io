@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/share/index.html</loc>
+    
+    <lastmod>2020-03-26T13:04:09.503Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/how-to-use-setuptools/</loc>
     
-    <lastmod>2020-03-21T12:51:17.529Z</lastmod>
+    <lastmod>2020-03-21T12:52:31.467Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>https://jums.club/how-to-access-google/</loc>
     
     <lastmod>2020-03-16T11:08:44.295Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/share/index.html</loc>
-    
-    <lastmod>2020-03-15T06:27:15.898Z</lastmod>
     
   </url>
   
