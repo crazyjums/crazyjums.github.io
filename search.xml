@@ -44,6 +44,27 @@
     
     
     <entry>
+      <title>解决python3 UnicodeEncodeError: &#39;gbk&#39; codec can&#39;t encode character &#39;\xXX&#39; in position XX</title>
+      <link href="/unicode-error-sloved/"/>
+      <url>/unicode-error-sloved/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-错误"><a href="#1-错误" class="headerlink" title="1 错误"></a>1 错误</h3><p>在使用爬虫爬取网络数据时，容易报下面的错误，也就是Unicode解码错误。<br><code>UnicodeEncodeError: &#39;gbk&#39; codec can&#39;t encode character &#39;\xbb&#39; in position 0: illegal multibyte sequence</code></p><p>str转bytes叫encode，bytes转str叫decode，如上面的代码就是将抓到的字节流给decode成unicode数组，我们使用下面的代码测试一下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">b'\xc2\xbb'</span>.decode(<span class="string">'utf-8'</span>))</span><br></pre></td></tr></table></figure><blockquote><p>运行结果：UnicodeEncodeError: ‘gbk’ codec can’t encode character ‘\xbb’ in position 0: illegal multibyte sequence</p></blockquote><p>从结果可以看出，报错了。和爬虫的错误一模一样。</p><h4 id="错误原因解析"><a href="#错误原因解析" class="headerlink" title="错误原因解析"></a>错误原因解析</h4><p><code>python</code>语言自身的限制，由于<code>print()</code>方法并不能完全输出所有的<code>unicode</code>编码中的字符，所以我们有时候在使用爬虫的时候，会报这个错误。</p><h3 id="2-解决方法"><a href="#2-解决方法" class="headerlink" title="2 解决方法"></a>2 解决方法</h3><p>在爬虫的文件头部，加上下面的代码即可。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> io</span><br><span class="line">sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding=<span class="string">"utf8"</span>)  <span class="comment">## encoding 的参数写成网站的编码格式即可</span></span><br></pre></td></tr></table></figure><p>其中，中文编码的大小：<strong>gbk&lt;gb2312&lt;gb18030</strong>，一般情况下，<code>gb18030</code>编码都能解析<code>gbk</code>不能解析的编码信息。</p><h3 id="转载博客"><a href="#转载博客" class="headerlink" title="转载博客"></a>转载博客</h3><blockquote><p>原文：<a href="https://blog.csdn.net/jim7424994/article/details/22675759" target="_blank" rel="noopener">https://blog.csdn.net/jim7424994/article/details/22675759</a></p></blockquote><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python中的nonlocal和global关键字解析，python闭包解析</title>
       <link href="/python-namespace/"/>
       <url>/python-namespace/</url>
@@ -1497,9 +1518,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> CNN </tag>
             
@@ -1554,9 +1575,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -1577,9 +1598,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1600,9 +1621,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1646,9 +1667,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -1776,9 +1797,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 数字图像处理 </tag>
             

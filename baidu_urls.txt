@@ -1,5 +1,6 @@
 https://jums.club/how-to-use-setuptools/
 https://jums.club/python-tab-error/
+https://jums.club/unicode-error-sloved/
 https://jums.club/python-namespace/
 https://jums.club/UnicodeDecodeError-gb2312/
 https://jums.club/crawl-photo/
