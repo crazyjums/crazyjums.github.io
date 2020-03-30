@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>java中类和函数、方法、属性，以及对象的区别</title>
+      <link href="/java-class-method/"/>
+      <url>/java-class-method/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-类和函数、方法"><a href="#1-类和函数、方法" class="headerlink" title="1 类和函数、方法"></a>1 类和函数、方法</h3><p>类的定义，在<code>java</code>中是用<code>class</code>关键字定义的一个结构，类中可以定义函数以及定义变量。</p><p>当我们使用<code>java</code>封装了一个实体类时，该实体类中，有一些变量和函数。此时在该类中的函数，我们可以称之为该实体类的方法了，该实体类中的变量，我们可以称之为该实体类的属性。我们这里以一个<code>Person</code>实体类为例。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name; <span class="comment">//名字</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age; <span class="comment">//年龄</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> height; <span class="comment">//身高</span></span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String name, <span class="keyword">int</span> age, <span class="keyword">float</span> height)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">        <span class="keyword">this</span>.height = height;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">float</span> <span class="title">getHeight</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> height;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setHeight</span><span class="params">(<span class="keyword">float</span> height)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.height = height;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我们可以看到上面的代码，<code>Person</code>实体类中，具有变量和函数。现在这个变量和函数就成了<code>Person</code>实体类的属性和方法了。在<code>java</code>中，实质上都是一样的，只是叫法不同而已。</p><h3 id="2-对象"><a href="#2-对象" class="headerlink" title="2 对象"></a>2 对象</h3><p>在<code>java</code>中，一切皆是对象，因为<code>java</code>时一门面向对象的语言，所以这里就有必要介绍一下<strong>对象</strong>是什么了。在<code>java</code>中，对象可以理解为：<strong>在内存中的一段代码块</strong>，当我们使用<code>new</code>创建了一个实体类时，那么<code>java</code>虚拟机就会在内存中开辟一段内存空间，用来存放<code>new</code>出来的这个实体类。我们可以看下面这段代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Person person = <span class="keyword">new</span> Person(<span class="string">"Jums"</span>,<span class="number">78</span>,<span class="number">187</span>);</span><br></pre></td></tr></table></figure><p>代码中定义了一定<code>Person</code>实体类，该实体类的别名叫<code>person</code>，那么此时的这个<code>person</code>，就代表一个对象，因为该内存中已经分配了一段内存空间。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Person person;</span><br></pre></td></tr></table></figure><p>我们再来看这一行代码，此时也定义了一个实体类，别名是<code>person</code>，但是没有实例化，也就是没有给它分配一个具体的<code>class</code>的实例。</p><h3 id="3-理解"><a href="#3-理解" class="headerlink" title="3 理解"></a>3 理解</h3><p>我们可以这样理解，用<code>class</code>定义的一个<code>Person</code>实体类，就如同工厂中的样品产品（俗称模子），不能直接没给客户。而<code>person</code>就是工厂具体生产出来的一个产品，也就是说是量产出来的，可以直接卖给客户。而那个<strong>对象</strong>的概念，就是这里讲的量产出来的具体的产品，可以类似这么理解。</p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 基础知识 </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java中的接口(interface)和抽象类(abstract)的区别</title>
+      <link href="/java-interface-abstract/"/>
+      <url>/java-interface-abstract/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-如何定义interface"><a href="#1-如何定义interface" class="headerlink" title="1 如何定义interface"></a>1 如何定义interface</h3><p>如何在<code>java</code>中定义接口：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">InterfaceName</span></span>&#123;</span><br><span class="line">  <span class="comment">//这里写具体的接口内部的方法</span></span><br><span class="line">  <span class="comment">//比如：</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getName</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="2-如何定义abstract"><a href="#2-如何定义abstract" class="headerlink" title="2 如何定义abstract"></a>2 如何定义abstract</h3><p>如何在<code>java</code>中定义抽象类：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbsName</span></span>&#123;</span><br><span class="line">  <span class="comment">//这里写具体的方法  可以写抽象方法和具体方法</span></span><br><span class="line">  <span class="comment">//比如：</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getName</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">  &#125;; <span class="comment">//不是抽象方法</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">getAge</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="interface和abstract的相同之处"><a href="#interface和abstract的相同之处" class="headerlink" title="interface和abstract的相同之处"></a>interface和abstract的相同之处</h3><ul><li>都是用来定义一个规范的，不写具体的实现</li></ul><h3 id="interface和abstract的不同之处"><a href="#interface和abstract的不同之处" class="headerlink" title="interface和abstract的不同之处"></a>interface和abstract的不同之处</h3><ul><li>interface内部定义的方法，它的实现类必须将其全部实现</li><li>abstract内部定义的方法，继承自它的子类，其子类可以不用全部实现其父类中的抽象方法，普通方法可以不用全部实现</li></ul><h3 id="看具体代码"><a href="#看具体代码" class="headerlink" title="看具体代码"></a>看具体代码</h3><p>AbsClass.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbsClass</span> </span>&#123;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    这是定义的一个抽象方法 不需要大括号</span></span><br><span class="line"><span class="comment">    继承该类的子类必须实现该方法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    这是一个普通方法 必须带大括号，内部可以空实现即不写任何代码</span></span><br><span class="line"><span class="comment">    继承该类的子类可以不用实现该方法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">showName</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>interface1.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">interface1</span> </span>&#123;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    下面定义的两个方法，实现该接口的类，必去全部实现</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>concreteClass.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">concreteClass</span> <span class="keyword">extends</span> <span class="title">AbsClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>concreteInterface.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">concreteInterface</span> <span class="keyword">implements</span> <span class="title">Interface1</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 基础知识 </tag>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何将自己写的python包自动导入到环境变量中，在命令行可以使用</title>
       <link href="/how-to-use-setuptools/"/>
       <url>/how-to-use-setuptools/</url>
@@ -671,11 +713,11 @@
       
         <tags>
             
-            <tag> 软件下载 </tag>
-            
             <tag> 数据库 </tag>
             
             <tag> sql server </tag>
+            
+            <tag> 软件下载 </tag>
             
         </tags>
       
@@ -1518,9 +1560,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> CNN </tag>
             
@@ -1575,9 +1617,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -1598,9 +1640,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1621,9 +1663,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1667,9 +1709,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -1797,9 +1839,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 数字图像处理 </tag>
             
