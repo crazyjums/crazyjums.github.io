@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>破解intellij ideal</title>
+      <title>破解intellij ideal 专业版</title>
       <link href="/crack-idel-perfessional/"/>
       <url>/crack-idel-perfessional/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>破解IDEAL的步骤和<a href="https://jums.club/crack-pycharm-perfessional">破解pycharm</a>的步骤差不太多。主要还是一个jar的存放路径有点不一样。</p></blockquote><p>注意：本教程转载自<a href="https://zhile.io，如有侵权请联系作者删除！" target="_blank" rel="noopener">https://zhile.io，如有侵权请联系作者删除！</a></p><p>本项目只做学习研究之用，不得用于商业用途！</p><p><a href="https://shimo.im/docs/gqQDrjPkwwctk3VJ/read" target="_blank" rel="noopener">原文</a></p><p>2019.12.02 jetbrains公司发布了Python的最强编辑器PyCharm 2019.3版本。本次大版本主要对Jupyter notebooks 、MongoDB、Python3.8功能做了一些增加，而这其中有很多功能都只能在专业版中使用。</p><p>本教程适用于PyCharm所有版本</p><h2 id="一、使用前注意事项"><a href="#一、使用前注意事项" class="headerlink" title="一、使用前注意事项"></a>一、使用前注意事项</h2><p>PyCharm一定要是在官网下载：<a href="https://www.jetbrains.com/pycharm/download/" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/</a><br>本教程适用于PyCharm所有版本<br>本教程适用于jetbrains全系列产品（Pycharm、Idea、GoLand、WebStorm、phpstorm、CLion、RubyMine、AppCode、DataGrid）目录<br>如果按照此教程还无法使用，加猪哥微信拉你进软件群（已经加过猪哥微信的请勿重复添加）</p><h2 id="二、使用教程"><a href="#二、使用教程" class="headerlink" title="二、使用教程"></a>二、使用教程</h2><h3 id="1-下载补丁"><a href="#1-下载补丁" class="headerlink" title="1.下载补丁"></a>1.下载补丁</h3><p>链接: <a href="https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow" target="_blank" rel="noopener">https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow</a> 提取码: q974 下载补丁文件 jetbrains-agent.jar （如果链接失效可关注微信公众号「麦田里的守望者zhg」回复pycharm破解（因为流程差不多，所以这里就还是使用的pycharm的破解思路），补丁来源于<a href="https://zhile.io）" target="_blank" rel="noopener">https://zhile.io）</a><br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/12651581337729_pic.jpg__thumbnail.jpg" class="lazyload"></p><p>新补丁文件大小为2M，如果小于2M的都是老补丁，需要从新下载哦！</p><h3 id="2-将补丁放在-lib目录"><a href="#2-将补丁放在-lib目录" class="headerlink" title="2.将补丁放在\lib目录"></a>2.将补丁放在\lib目录</h3><p>将刚才下载的补丁文件 jetbrains-agent.jar 放置在Pycharm安装目录里面的\lib目录里面，不是\bin目录，不是\bin目录，不是\bin目录。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/12591581333249_pic_hd.jpg__thumbnail.jpg" class="lazyload"></p><h3 id="3-修改文件"><a href="#3-修改文件" class="headerlink" title="3.修改文件"></a>3.修改文件</h3><p><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/4108889784-5decbbed883ae_articlex.png" class="lazyload"><br>如果提示需要创建文件，点击<code>yes</code>即可。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/2545636583-5decbbf0bf724_articlex.png" class="lazyload"><br>在打开的vmoptions编辑窗口末行添加：<code>-javaagent:你pycharm的安装目录\jetbrains-agent.jar</code>，请仔细检查补丁路径是否正确，如果错误则会出现pycharm打不开的情况。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/638135301-5decbbf40522f_articlex.png" class="lazyload">   </p><p>然后重启软件，即可。</p><p>f</p><h3 id="4-查看有效期"><a href="#4-查看有效期" class="headerlink" title="4.查看有效期"></a>4.查看有效期</h3><p>查看有效期的步骤为点击：Help-&gt;About这里可以看到你的pycharm的版本号、许可来源、有效期、以及一些环境</p><p>显示你电脑的用户名即表示成功，如果是 to PyCharm Evaluator 则表示没有成功，按照教程再多试几次！<br><img alt="破解成功" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200331160722.png" class="lazyload"></p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>破解IDEAL的步骤和<a href="https://jums.club/crack-pycharm-perfessional">破解pycharm</a>的步骤差不太多。主要还是一个jar的存放路径有点不一样。</p></blockquote><p>注意：本教程转载自<a href="https://zhile.io，如有侵权请联系作者删除！" target="_blank" rel="noopener">https://zhile.io，如有侵权请联系作者删除！</a></p><p>本项目只做学习研究之用，不得用于商业用途！</p><p><a href="https://shimo.im/docs/gqQDrjPkwwctk3VJ/read" target="_blank" rel="noopener">原文</a></p><p>2019.12.02 jetbrains公司发布了Python的最强编辑器PyCharm 2019.3版本。本次大版本主要对Jupyter notebooks 、MongoDB、Python3.8功能做了一些增加，而这其中有很多功能都只能在专业版中使用。</p><p>本教程适用于PyCharm所有版本</p><h2 id="一、使用前注意事项"><a href="#一、使用前注意事项" class="headerlink" title="一、使用前注意事项"></a>一、使用前注意事项</h2><p>PyCharm一定要是在官网下载：<a href="https://www.jetbrains.com/pycharm/download/" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/</a><br>本教程适用于PyCharm所有版本<br>本教程适用于jetbrains全系列产品（Pycharm、Idea、GoLand、WebStorm、phpstorm、CLion、RubyMine、AppCode、DataGrid）目录<br>如果按照此教程还无法使用，加猪哥微信拉你进软件群（已经加过猪哥微信的请勿重复添加）</p><h2 id="二、使用教程"><a href="#二、使用教程" class="headerlink" title="二、使用教程"></a>二、使用教程</h2><h3 id="1-下载补丁"><a href="#1-下载补丁" class="headerlink" title="1.下载补丁"></a>1.下载补丁</h3><p>链接: <a href="https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow" target="_blank" rel="noopener">https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow</a> 提取码: q974 下载补丁文件 jetbrains-agent.jar （如果链接失效可关注微信公众号「麦田里的守望者zhg」回复pycharm破解（因为流程差不多，所以这里就还是使用的pycharm的破解思路），补丁来源于<a href="https://zhile.io）" target="_blank" rel="noopener">https://zhile.io）</a><br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/12651581337729_pic.jpg__thumbnail.jpg" class="lazyload"></p><p>新补丁文件大小为2M，如果小于2M的都是老补丁，需要从新下载哦！</p><h3 id="2-将补丁放在-lib目录"><a href="#2-将补丁放在-lib目录" class="headerlink" title="2.将补丁放在\lib目录"></a>2.将补丁放在\lib目录</h3><p>将刚才下载的补丁文件 jetbrains-agent.jar 放置在Pycharm安装目录里面的\lib目录里面，不是\bin目录，不是\bin目录，不是\bin目录。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/12591581333249_pic_hd.jpg__thumbnail.jpg" class="lazyload"></p><h3 id="3-修改文件"><a href="#3-修改文件" class="headerlink" title="3.修改文件"></a>3.修改文件</h3><p><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/4108889784-5decbbed883ae_articlex.png" class="lazyload"><br>如果提示需要创建文件，点击<code>yes</code>即可。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/2545636583-5decbbf0bf724_articlex.png" class="lazyload"><br>在打开的vmoptions编辑窗口末行添加：<code>-javaagent:你pycharm的安装目录\jetbrains-agent.jar</code>，请仔细检查补丁路径是否正确，如果错误则会出现pycharm打不开的情况。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/638135301-5decbbf40522f_articlex.png" class="lazyload">   </p><p>然后重启软件，即可。</p><h3 id="4-查看有效期"><a href="#4-查看有效期" class="headerlink" title="4.查看有效期"></a>4.查看有效期</h3><p>查看有效期的步骤为点击：Help-&gt;About这里可以看到你的pycharm的版本号、许可来源、有效期、以及一些环境</p><p>显示你电脑的用户名即表示成功，如果是 to PyCharm Evaluator 则表示没有成功，按照教程再多试几次！<br><img alt="破解成功" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200331160722.png" class="lazyload"></p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
       
       
       
@@ -27,7 +27,7 @@
       <link href="/crack-pycharm-perfessional/"/>
       <url>/crack-pycharm-perfessional/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>注意：本教程转载自<a href="https://zhile.io，如有侵权请联系作者删除！" target="_blank" rel="noopener">https://zhile.io，如有侵权请联系作者删除！</a></p><p>本项目只做学习研究之用，不得用于商业用途！</p><p><a href="https://shimo.im/docs/DJ3h3tJv98ppTYyH/read" target="_blank" rel="noopener">原文</a></p><h3 id="关注我的公众号，恢复【破解pycharm】即可。"><a href="#关注我的公众号，恢复【破解pycharm】即可。" class="headerlink" title="关注我的公众号，恢复【破解pycharm】即可。"></a>关注我的公众号，恢复【破解pycharm】即可。</h3><p><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p><p>2019.12.02 jetbrains公司发布了Python的最强编辑器PyCharm 2019.3版本。本次大版本主要对Jupyter notebooks 、MongoDB、Python3.8功能做了一些增加，而这其中有很多功能都只能在专业版中使用。</p><p>本教程适用于PyCharm所有版本</p><h2 id="一、使用前注意事项"><a href="#一、使用前注意事项" class="headerlink" title="一、使用前注意事项"></a>一、使用前注意事项</h2><p>PyCharm一定要是在官网下载：<a href="https://www.jetbrains.com/pycharm/download/" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/</a><br>本教程适用于PyCharm所有版本<br>本教程适用于jetbrains全系列产品（Pycharm、Idea、GoLand、WebStorm、phpstorm、CLion、RubyMine、AppCode、DataGrid）目录<br>如果按照此教程还无法使用，加猪哥微信拉你进软件群（已经加过猪哥微信的请勿重复添加）<br>##二、使用教程</p><h3 id="1-下载补丁"><a href="#1-下载补丁" class="headerlink" title="1.下载补丁"></a>1.下载补丁</h3><p>链接: <a href="https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow" target="_blank" rel="noopener">https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow</a> 提取码: q974 下载补丁文件 jetbrains-agent.jar （如果链接失效可关注微信公众号「麦田里的守望者zhg」回复pycharm破解，补丁来源于<a href="https://zhile.io）" target="_blank" rel="noopener">https://zhile.io）</a><br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/12651581337729_pic.jpg__thumbnail.jpg" class="lazyload"></p><p>新补丁文件大小为2M，如果小于2M的都是老补丁，需要从新下载哦！</p><h3 id="2-将补丁放在-lib目录"><a href="#2-将补丁放在-lib目录" class="headerlink" title="2.将补丁放在\lib目录"></a>2.将补丁放在\lib目录</h3><p>将刚才下载的补丁文件 jetbrains-agent.jar 放置在Pycharm安装目录里面的\lib目录里面，不是\bin目录，不是\bin目录，不是\bin目录。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/12591581333249_pic_hd.jpg__thumbnail.jpg" class="lazyload"></p><h3 id="3-修改文件"><a href="#3-修改文件" class="headerlink" title="3.修改文件"></a>3.修改文件</h3><p><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/4108889784-5decbbed883ae_articlex.png" class="lazyload"><br>如果提示需要创建文件，点击<code>yes</code>即可。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/2545636583-5decbbf0bf724_articlex.png" class="lazyload"><br>在打开的vmoptions编辑窗口末行添加：<code>-javaagent:你pycharm的安装目录\jetbrains-agent.jar</code>，请仔细检查补丁路径是否正确，如果错误则会出现pycharm打不开的情况。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/638135301-5decbbf40522f_articlex.png" class="lazyload">   </p><p>然后重启软件，即可。</p><h3 id="4-查看有效期"><a href="#4-查看有效期" class="headerlink" title="4.查看有效期"></a>4.查看有效期</h3><p>查看有效期的步骤为点击：Help-&gt;About这里可以看到你的pycharm的版本号、许可来源、有效期、以及一些环境</p><p>显示你电脑的用户名即表示成功，如果是 to PyCharm Evaluator 则表示没有成功，按照教程再多试几次！<br><img alt="破解成功" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/JydYggsrSw4Is3cB__thumbnail.jpg" class="lazyload"></p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>注意：本教程转载自<a href="https://zhile.io，如有侵权请联系作者删除！" target="_blank" rel="noopener">https://zhile.io，如有侵权请联系作者删除！</a></p><p>本项目只做学习研究之用，不得用于商业用途！</p><p><a href="https://shimo.im/docs/DJ3h3tJv98ppTYyH/read" target="_blank" rel="noopener">原文</a></p><h3 id="关注我的公众号，恢复【破解pycharm】即可。"><a href="#关注我的公众号，恢复【破解pycharm】即可。" class="headerlink" title="关注我的公众号，恢复【破解pycharm】即可。"></a>关注我的公众号，恢复【破解pycharm】即可。</h3><p><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p><p>2019.12.02 jetbrains公司发布了Python的最强编辑器PyCharm 2019.3版本。本次大版本主要对Jupyter notebooks 、MongoDB、Python3.8功能做了一些增加，而这其中有很多功能都只能在专业版中使用。</p><p>本教程适用于PyCharm所有版本</p><h2 id="一、使用前注意事项"><a href="#一、使用前注意事项" class="headerlink" title="一、使用前注意事项"></a>一、使用前注意事项</h2><p>PyCharm一定要是在官网下载：<a href="https://www.jetbrains.com/pycharm/download/" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/</a><br>本教程适用于PyCharm所有版本<br>本教程适用于jetbrains全系列产品（Pycharm、Idea、GoLand、WebStorm、phpstorm、CLion、RubyMine、AppCode、DataGrid）目录<br>如果按照此教程还无法使用，加猪哥微信拉你进软件群（已经加过猪哥微信的请勿重复添加）</p><h2 id="二、使用教程"><a href="#二、使用教程" class="headerlink" title="二、使用教程"></a>二、使用教程</h2><h3 id="1-下载补丁"><a href="#1-下载补丁" class="headerlink" title="1.下载补丁"></a>1.下载补丁</h3><p>链接: <a href="https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow" target="_blank" rel="noopener">https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow</a> 提取码: q974 下载补丁文件 jetbrains-agent.jar （如果链接失效可关注微信公众号「麦田里的守望者zhg」回复pycharm破解，补丁来源于<a href="https://zhile.io）" target="_blank" rel="noopener">https://zhile.io）</a><br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/12651581337729_pic.jpg__thumbnail.jpg" class="lazyload"></p><p>新补丁文件大小为2M，如果小于2M的都是老补丁，需要从新下载哦！</p><h3 id="2-将补丁放在-lib目录"><a href="#2-将补丁放在-lib目录" class="headerlink" title="2.将补丁放在\lib目录"></a>2.将补丁放在\lib目录</h3><p>将刚才下载的补丁文件 jetbrains-agent.jar 放置在Pycharm安装目录里面的\lib目录里面，不是\bin目录，不是\bin目录，不是\bin目录。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/12591581333249_pic_hd.jpg__thumbnail.jpg" class="lazyload"></p><h3 id="3-修改文件"><a href="#3-修改文件" class="headerlink" title="3.修改文件"></a>3.修改文件</h3><p><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/4108889784-5decbbed883ae_articlex.png" class="lazyload"><br>如果提示需要创建文件，点击<code>yes</code>即可。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/2545636583-5decbbf0bf724_articlex.png" class="lazyload"><br>在打开的vmoptions编辑窗口末行添加：<code>-javaagent:你pycharm的安装目录\jetbrains-agent.jar</code>，请仔细检查补丁路径是否正确，如果错误则会出现pycharm打不开的情况。<br><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/638135301-5decbbf40522f_articlex.png" class="lazyload">   </p><p>然后重启软件，即可。</p><h3 id="4-查看有效期"><a href="#4-查看有效期" class="headerlink" title="4.查看有效期"></a>4.查看有效期</h3><p>查看有效期的步骤为点击：Help-&gt;About这里可以看到你的pycharm的版本号、许可来源、有效期、以及一些环境</p><p>显示你电脑的用户名即表示成功，如果是 to PyCharm Evaluator 则表示没有成功，按照教程再多试几次！<br><img alt="破解成功" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/JydYggsrSw4Is3cB__thumbnail.jpg" class="lazyload"></p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
       
       
       
@@ -113,9 +113,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -134,9 +134,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -854,9 +854,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
             <tag> GitHub </tag>
             
@@ -877,9 +877,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -940,11 +940,11 @@
       
         <tags>
             
-            <tag> 编程语言 </tag>
+            <tag> 解决问题 </tag>
             
             <tag> python </tag>
             
-            <tag> 解决问题 </tag>
+            <tag> 编程语言 </tag>
             
         </tags>
       
@@ -963,9 +963,9 @@
       
         <tags>
             
-            <tag> 编程语言 </tag>
-            
             <tag> python </tag>
+            
+            <tag> 编程语言 </tag>
             
         </tags>
       
@@ -1007,9 +1007,9 @@
       
         <tags>
             
-            <tag> 编程语言 </tag>
-            
             <tag> python </tag>
+            
+            <tag> 编程语言 </tag>
             
         </tags>
       
@@ -1028,9 +1028,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -1068,9 +1068,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -1293,9 +1293,9 @@
       
         <tags>
             
-            <tag> 软件破解 </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> 软件破解 </tag>
             
         </tags>
       
@@ -1314,9 +1314,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -1375,9 +1375,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -1417,9 +1417,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -1598,9 +1598,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> CNN </tag>
             
@@ -1655,9 +1655,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -1678,9 +1678,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1701,9 +1701,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1747,9 +1747,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -1877,9 +1877,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 数字图像处理 </tag>
             
