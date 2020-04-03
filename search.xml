@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>virtualenv在不同操作系统中的系统方式</title>
+      <link href="/virtualenv-start/"/>
+      <url>/virtualenv-start/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="windows系统"><a href="#windows系统" class="headerlink" title="windows系统"></a>windows系统</h3><p>加入你的虚拟环境就在<code>c:\Users\user_name\my_env</code>下，</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\user_name&gt;cd env\venv\scripts</span><br><span class="line">C:\Users\user_name&gt;activate  ##开启虚拟环境</span><br><span class="line">(venv)C:\Users\user_name&gt;</span><br></pre></td></tr></table></figure><h3 id="linux-or-mac"><a href="#linux-or-mac" class="headerlink" title="linux or mac"></a>linux or mac</h3><p>```<br>virtualenv myproject ### 创建一个虚拟环境<br>source myproject/bin/activate  ### 开启虚拟环境</p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>WPS如何设置级联变化的标题编号，根据上一级自动变化</title>
       <link href="/wps-set-cascade-number/"/>
       <url>/wps-set-cascade-number/</url>
@@ -982,9 +1001,9 @@
             
             <tag> 解决问题 </tag>
             
-            <tag> python </tag>
-            
             <tag> 编程语言 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -1003,9 +1022,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 编程语言 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -1047,9 +1066,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 编程语言 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -1638,9 +1657,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> CNN </tag>
             
@@ -1695,9 +1714,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -1718,9 +1737,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1741,9 +1760,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -1787,9 +1806,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -1917,9 +1936,9 @@
       
         <tags>
             
-            <tag> 计算机视觉 </tag>
-            
             <tag> 基础知识 </tag>
+            
+            <tag> 计算机视觉 </tag>
             
             <tag> 数字图像处理 </tag>
             
