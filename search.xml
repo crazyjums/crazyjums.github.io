@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title>WPS如何设置级联变化的标题编号，根据上一级自动变化</title>
+      <link href="/wps-set-cascade-number/"/>
+      <url>/wps-set-cascade-number/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-引出问题"><a href="#1-引出问题" class="headerlink" title="1 引出问题"></a>1 引出问题</h3><p>有时候，我们使用WPS时需要级联更改标题的编号，也就是说，如下面那样：<br><img alt="事例" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200403152632.png" class="lazyload">   </p><p>当我们需要在<code>1.1</code>节后面添加一小节时，如果手动修改编号的话，那我们需要更改很多地方，很麻烦，所以这里介绍一种级联编号的设置方法。</p><h3 id="2-设置方法"><a href="#2-设置方法" class="headerlink" title="2 设置方法"></a>2 设置方法</h3><p>首先选择样式旁边的按钮【新样式】，创建一个新样式，<br><img alt="创建新样式" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200403152810.png" class="lazyload"><br><img alt="取名字" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200403153005.png" class="lazyload"><br><img alt="点击编号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200403153107.png" class="lazyload"><br><img alt="创建自定义编号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200403153244.png" class="lazyload"><br><img alt="设置第一级编号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200403153537.png" class="lazyload">   </p><blockquote><p>说明：每一级目录都需要链接相同的样式名称，这个解释可能有点似懂非懂，后面会附上所有的截图，便可一目了然。</p></blockquote><p><img alt="设置第二级编号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200403153835.png" class="lazyload"><br><img alt="设置第三级编号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200403154011.png" class="lazyload"><br>以上的设置界面都是<strong>样式1</strong>的设置界面，相应的我们需要几级编号，就需要创建几个新样式，且每一级样式的编号设置参数都是一样的，不一样的是<strong>字体</strong>和<strong>段落格式</strong>不一样。</p><p><img alt="给多种样式的设置相同编号参数" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200403154309.png" class="lazyload"></p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+            <tag> Word </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C盘内存不足，如何清理不需要的缓存</title>
+      <link href="/how-to-clear-C-disk-cache/"/>
+      <url>/how-to-clear-C-disk-cache/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-C盘下面有哪些必要的文件夹"><a href="#1-C盘下面有哪些必要的文件夹" class="headerlink" title="1 C盘下面有哪些必要的文件夹"></a>1 C盘下面有哪些必要的文件夹</h3><ul><li>ProgramData/  <ul><li>作用：programdata属于电脑C盘的一个系统文件夹，它是公用的被创建文件夹或文件存放的地方，这些文件夹或文件仅由创建者完整控制。专家建议不要删除，隐藏即可！</li></ul></li><li>‘Program Files’/ <ul><li>作用：Program Files 指的是程序文件，也就是Windows 操作系统，也包括其它的操作系统各种软件默认安装到的目录。位于C盘分区（”C:\Program Files”，”%ProgramFiles%”），但也可根据用户的需要自定义到别的分区。</li></ul></li><li>‘Program Files (x86)’/ <ul><li>作用：Program Files (x86)和Program Files类似，都是软件的默认安装目录，但是这个(x86)是存放的32位的软件，上面的文件夹存放的是64位软件的。</li></ul></li><li>AppData/<ul><li><strong>LocalLow/</strong>：用来存放共享数据文件，一般可以通过清理一些无用的共享文件，来达到清理释放C盘的目的。当你解压缩包时如果不指定路径，系统就把压缩包解到local\temp文件夹下，存放了一些解压文件，安装软件时就从这里调取数据特别是一些制图软件，体积非常大，占用很多空间</li><li><strong>Local/</strong>：用来保存本地文件，其中可以通过删除本地临时文件，即AppData\Local\Temp\文件夹下的所有文件，来达到释放C盘的目的</li><li><strong>Roaming/</strong>：保存应用程序运行后的数据信息，如果删除应用程序运行配置数据会丢失，但是重新启动应用程序，又会重新创建，只不过会消耗一定的时间。删除该文件夹下的文件，不会影响电脑正常运行。如：空间听音乐，登入的号码等而缓存的一些数据，这些数据优化大师是清理不掉的，可以打开roaming文件夹里的文件全选定点击删除，删除不掉的就选择跳过，不过当你再使用程序时，这个文件夹又开始膨胀，又会缓存数据</li><li><blockquote><p>该文件下的文件不能全部删除，可以根据需要，将一些软件的缓存删除，以释放C盘空间，如果将该文件夹全部删除的话，那么可能导致系统不能正常启动。</p></blockquote></li></ul></li><li>Windows/<ul><li>该文件夹几乎存放了Windows系统运行所需要的所有的文件，包括：临时文件、系统文件、缓存等。</li><li><strong>WinSxS/</strong>：该文件下存放的是windows系统的一些补丁，也就是每次系统更新下载的补丁都存放这个文件夹下。</li><li><blockquote><p>因为是补丁，所以不能随便删除，如果删除可能会影响系统的防病毒能力。但是该文件夹有一个BackUp文件夹，用来备份一些补丁，该文件下的内容可以删除，其他的不建议删除。</p></blockquote></li></ul></li><li>Users/<ul><li><strong>Default/</strong>：用户的默认配置</li><li><strong>公用/</strong>：这是所有用户共享的文件夹，有音乐/、下载/等</li><li><strong>[你的电脑用户名]/</strong>：该文件夹存放的是当前用户的一些操作文件，包括软件的快捷方式，一些软件的默认配置文件都存放在这里，不建议删除。</li></ul></li></ul><h3 id="2-释放C盘内存空间"><a href="#2-释放C盘内存空间" class="headerlink" title="2 释放C盘内存空间"></a>2 释放C盘内存空间</h3><ul><li>C:\Users\Your-Computert-Name\AppData\Roaming\下的文件夹或文件可以删除。</li><li>C:\Program Files和C:\Program Files (x86)这两个文件下的应用程序，可以挪到其他的盘，以达到释放C盘空间的目的</li><li>C:\Users\Your-Computer-Name\文件夹的部分文件(出AppDate外)，可以删除，但是删除的时候，还是需要考虑一下，因为有些软件的配置文件会存放在这里，如果有些软件是你配置好久之后的一些参数，那么删除之后就会需要你重新调校，会很费时间的。</li></ul><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>破解intellij ideal 专业版</title>
       <link href="/crack-idel-perfessional/"/>
       <url>/crack-idel-perfessional/</url>
@@ -113,9 +153,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -134,9 +174,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -751,11 +791,11 @@
       
         <tags>
             
-            <tag> 软件下载 </tag>
-            
             <tag> 数据库 </tag>
             
             <tag> sql server </tag>
+            
+            <tag> 软件下载 </tag>
             
         </tags>
       
@@ -854,11 +894,11 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
             
             <tag> GitHub </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -877,9 +917,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -898,9 +938,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> GitHub </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -919,9 +959,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> GitHub </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -940,11 +980,11 @@
       
         <tags>
             
+            <tag> 编程语言 </tag>
+            
             <tag> 解决问题 </tag>
             
             <tag> python </tag>
-            
-            <tag> 编程语言 </tag>
             
         </tags>
       
@@ -963,9 +1003,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 编程语言 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -1007,9 +1047,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 编程语言 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -1068,9 +1108,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> Python </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -1314,9 +1354,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -1375,9 +1415,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -1417,9 +1457,9 @@
       
         <tags>
             
-            <tag> 解决问题 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 解决问题 </tag>
             
         </tags>
       
