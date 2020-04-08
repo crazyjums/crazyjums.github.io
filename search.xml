@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>java中3种for循环遍历集合的方式</title>
+      <link href="/java-3-type-of-iterator/"/>
+      <url>/java-3-type-of-iterator/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-For循环方式"><a href="#1-For循环方式" class="headerlink" title="1 For循环方式"></a>1 For循环方式</h3><ol><li>最普通的遍历方式，即定义一个下标<code>int i</code>，按照依次递增循环遍历集合。</li><li>使用<code>for(数据类型 变量名 : 集合引用名)</code>的方式遍历</li><li>集合有一个<code>forEach</code>的方法，可以调用该方法，参数<code>lambda</code>匿名函数进行遍历</li></ol><h3 id="2-代码示例"><a href="#2-代码示例" class="headerlink" title="2 代码示例"></a>2 代码示例</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ListTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        List aList = <span class="keyword">new</span> ArrayList();</span><br><span class="line">        aList.add(<span class="string">"nihao"</span>);</span><br><span class="line">        aList.add(<span class="string">"wohao"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//方式1</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; aList.size(); i++)&#123;</span><br><span class="line">            System.out.println(aList.get(i));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//方式2</span></span><br><span class="line">        <span class="keyword">for</span> (Object each : aList)&#123;</span><br><span class="line">            System.out.println(each);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//方式3</span></span><br><span class="line">        aList.forEach(each-&gt;&#123;</span><br><span class="line">            System.out.println(each);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>运行结果：<br>nihao<br>wohao<br>nihao<br>wohao<br>nihao<br>wohao   </p></blockquote><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>@classmethod和@staticmethod的区别，python中静态方法和类方法以及普通方法的区别</title>
+      <link href="/distiction-of-classmethod-staticmethod/"/>
+      <url>/distiction-of-classmethod-staticmethod/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-区别"><a href="#1-区别" class="headerlink" title="1 区别"></a>1 区别</h3><ul><li>普通方法：由实例化类之后的对象调用，不能有类直接调用，在类中，至少有一个参数，就是<code>self</code></li><li>静态方法：可以由类直接调用，也可以有实例化类之后的对象调用，没有默认参数<code>self</code>，可以由其他参数</li><li>类方法：可以直接由类调用，有一个默认参数，<code>cls</code>，即当前类。</li></ul><blockquote><p>异同点：   </p><ul><li>三种方法都可以有实例化类之后的对象调用，因为实例化后的类，也具有类的属性</li><li>除了普通方法外，其余两个方法，都可以直接使用为初始化（即未实例化）的类直接调用</li></ul></blockquote><h3 id="2-代码介绍"><a href="#2-代码介绍" class="headerlink" title="2 代码介绍"></a>2 代码介绍</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding=utf-8</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">normal_class</span><span class="params">(self, pa)</span>:</span></span><br><span class="line">        print(<span class="string">"this is a normal class , param is [&#123;&#125;]"</span>.format(pa))</span><br><span class="line"></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">static_class</span><span class="params">(pa)</span>:</span></span><br><span class="line">        print(<span class="string">"this is static method, there is no default param. &#123;&#125;"</span>.format(pa))</span><br><span class="line"></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">class_method</span><span class="params">(cls)</span>:</span></span><br><span class="line">        print(<span class="string">"this is a class method, param is [&#123;&#125;]"</span>.format(cls))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># 普通方法调用方法</span></span><br><span class="line">    test = Test()</span><br><span class="line">    test.normal_class(<span class="string">"普通方法"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">## 静态方法调用方法</span></span><br><span class="line">    Test.static_class(<span class="string">"静态方法"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">## 类方法调用方法</span></span><br><span class="line">    Test.class_method()</span><br></pre></td></tr></table></figure><blockquote><p>运行结果：<br>this is a normal class , param is [普通方法]<br>this is static method, there is no default param. 静态方法<br>this is a class method, param is [&lt;class ‘<strong>main</strong>.Test’&gt;]   </p></blockquote><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>virtualenv在不同操作系统中的系统方式</title>
       <link href="/virtualenv-start/"/>
       <url>/virtualenv-start/</url>
@@ -172,9 +210,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -193,9 +231,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -810,11 +848,11 @@
       
         <tags>
             
-            <tag> 软件下载 </tag>
-            
             <tag> 数据库 </tag>
             
             <tag> sql server </tag>
+            
+            <tag> 软件下载 </tag>
             
         </tags>
       
@@ -1001,9 +1039,9 @@
             
             <tag> 解决问题 </tag>
             
-            <tag> python </tag>
-            
             <tag> 编程语言 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -1022,9 +1060,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 编程语言 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -1066,9 +1104,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 编程语言 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -1127,9 +1165,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -1455,9 +1493,9 @@
       
         <tags>
             
-            <tag> summary </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> summary </tag>
             
         </tags>
       
