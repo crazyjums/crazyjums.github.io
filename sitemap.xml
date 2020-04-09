@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/java-reflect/</loc>
+    
+    <lastmod>2020-04-09T13:27:31.584Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/about/index.html</loc>
+    
+    <lastmod>2020-04-09T13:00:18.599Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/java-3-type-of-iterator/</loc>
     
-    <lastmod>2020-04-08T13:09:43.400Z</lastmod>
+    <lastmod>2020-04-08T13:10:51.391Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/distiction-of-classmethod-staticmethod/</loc>
     
-    <lastmod>2020-04-08T13:09:43.400Z</lastmod>
+    <lastmod>2020-04-08T13:10:51.389Z</lastmod>
     
   </url>
   
@@ -117,13 +131,6 @@
     <loc>https://jums.club/UnicodeDecodeError-gb2312/</loc>
     
     <lastmod>2020-03-15T06:25:28.527Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/about/index.html</loc>
-    
-    <lastmod>2020-03-11T06:15:18.121Z</lastmod>
     
   </url>
   
