@@ -1,3 +1,5 @@
+https://jums.club/markdown-grammer/
+https://jums.club/java-gc/
 https://jums.club/java-basic/
 https://jums.club/jvm-of-direct-memery/
 https://jums.club/typra-usage/
@@ -96,5 +98,3 @@ https://jums.club/lrn/
 https://jums.club/machine-learning-different-from-deep-learning/
 https://jums.club/SSPNet/
 https://jums.club/gradient-descent/
-https://jums.club/cnn/
-https://jums.club/archor-for-markdown/
