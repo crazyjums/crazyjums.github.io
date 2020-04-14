@@ -1,3 +1,8 @@
+https://jums.club/java-basic/
+https://jums.club/jvm-of-direct-memery/
+https://jums.club/typra-usage/
+https://jums.club/jvm-info/
+https://jums.club/jvm-reference/
 https://jums.club/vmware-network-info/
 https://jums.club/make-redis-error/
 https://jums.club/vmware-machine-can-not-connect-to-internet/
@@ -93,8 +98,3 @@ https://jums.club/SSPNet/
 https://jums.club/gradient-descent/
 https://jums.club/cnn/
 https://jums.club/archor-for-markdown/
-https://jums.club/cv-concept-you-must-know/
-https://jums.club/conclusion-hexo-1/
-https://jums.club/note-master-1/
-https://jums.club/video-1/
-https://jums.club/your-plan/

@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://jums.club/jvm-info/</loc>
+    <lastmod>2020-04-14</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/jvm-reference/</loc>
+    <lastmod>2020-04-14</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/typra-usage/</loc>
+    <lastmod>2020-04-14</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/java-basic/</loc>
+    <lastmod>2020-04-14</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/jvm-of-direct-memery/</loc>
+    <lastmod>2020-04-14</lastmod>
+  </url>  <url>
     <loc>https://jums.club/vmware-network-info/</loc>
     <lastmod>2020-04-13</lastmod>
   </url>  <url>
