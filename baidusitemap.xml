@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jums.club/java-thread-safe-set/</loc>
+    <loc>https://jums.club/hexo-for-all/</loc>
+    <lastmod>2020-04-16</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/markdown-grammer/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>  <url>
     <loc>https://jums.club/memery-leak/</loc>
+    <lastmod>2020-04-16</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/java-thread-safe-set/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>  <url>
     <loc>https://jums.club/java-basic/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>  <url>
     <loc>https://jums.club/jvm-info/</loc>
-    <lastmod>2020-04-16</lastmod>
-  </url>  <url>
-    <loc>https://jums.club/markdown-grammer/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>  <url>
     <loc>https://jums.club/jvm-param-info/</loc>
@@ -224,9 +227,6 @@
     <lastmod>2020-02-16</lastmod>
   </url>  <url>
     <loc>https://jums.club/error-by-hexo-d-person-domain/</loc>
-    <lastmod>2020-02-16</lastmod>
-  </url>  <url>
-    <loc>https://jums.club/hexo-for-all/</loc>
     <lastmod>2020-02-16</lastmod>
   </url>  <url>
     <loc>https://jums.club/put-your-hexo-blog-to-baidu-sitmap/</loc>
