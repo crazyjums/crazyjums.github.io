@@ -1,3 +1,5 @@
+https://jums.club/java-heap-overflow-thread/
+https://jums.club/jvm-param-info/
 https://jums.club/markdown-grammer/
 https://jums.club/java-gc/
 https://jums.club/java-basic/
@@ -96,5 +98,3 @@ https://jums.club/tensorflow-log-level/
 https://jums.club/AlexNet/
 https://jums.club/lrn/
 https://jums.club/machine-learning-different-from-deep-learning/
-https://jums.club/SSPNet/
-https://jums.club/gradient-descent/
