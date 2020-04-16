@@ -1,3 +1,5 @@
+https://jums.club/java-thread-safe-set/
+https://jums.club/memery-leak/
 https://jums.club/java-heap-overflow-thread/
 https://jums.club/jvm-param-info/
 https://jums.club/markdown-grammer/
@@ -96,5 +98,3 @@ https://jums.club/view-package-of-npm/
 https://jums.club/personal-domain-for-github-page/
 https://jums.club/tensorflow-log-level/
 https://jums.club/AlexNet/
-https://jums.club/lrn/
-https://jums.club/machine-learning-different-from-deep-learning/
