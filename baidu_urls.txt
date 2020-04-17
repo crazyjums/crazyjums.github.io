@@ -1,3 +1,5 @@
+https://jums.club/JVM-interview-questions/
+https://jums.club/java-byte-code-command/
 https://jums.club/java-thread-safe-set/
 https://jums.club/memery-leak/
 https://jums.club/java-heap-overflow-thread/
@@ -96,5 +98,3 @@ https://jums.club/put-your-hexo-blog-to-baidu-sitmap/
 https://jums.club/change-file-name-by-python/
 https://jums.club/view-package-of-npm/
 https://jums.club/personal-domain-for-github-page/
-https://jums.club/tensorflow-log-level/
-https://jums.club/AlexNet/
