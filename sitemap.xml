@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jums.club/hexo-for-all/</loc>
+    
+    <lastmod>2020-04-19T07:02:12.109Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/git-to-github-and-coding/</loc>
+    
+    <lastmod>2020-04-19T02:25:36.220Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jums.club/java-inner-class/</loc>
     
-    <lastmod>2020-04-18T09:39:07.969Z</lastmod>
+    <lastmod>2020-04-18T09:40:24.815Z</lastmod>
     
   </url>
   
@@ -19,13 +33,6 @@
     <loc>https://jums.club/JVM-interview-questions/</loc>
     
     <lastmod>2020-04-18T08:11:46.505Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/hexo-for-all/</loc>
-    
-    <lastmod>2020-04-16T12:23:44.924Z</lastmod>
     
   </url>
   
@@ -495,13 +502,6 @@
     <loc>https://jums.club/gradient-descent/</loc>
     
     <lastmod>2020-02-16T07:44:17.168Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/git-to-github-and-coding/</loc>
-    
-    <lastmod>2020-02-16T07:44:08.854Z</lastmod>
     
   </url>
   
