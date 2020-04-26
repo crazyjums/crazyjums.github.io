@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>Untitled</title>
+      <link href="/Untitled/"/>
+      <url>/Untitled/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java从键盘输入，scanner细节</title>
+      <link href="/java-scanner/"/>
+      <url>/java-scanner/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-需求"><a href="#1-需求" class="headerlink" title="1 需求"></a>1 需求</h3><p>当我们需要使用<code>java</code>从键盘输入数据时，使用到<code>Scanner</code>进行输入字符串时，可能会遇到一些小<code>bug</code>，比如：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Input</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> age = scanner.nextInt();</span><br><span class="line">        String name = scanner.nextLine();</span><br><span class="line">        String sex = scanner.nextLine();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>输出：</p><p><img alt data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200426220841912.jpg" class="lazyload"></p></blockquote><p>为什么会这样呢？</p><h3 id="2-原因解释"><a href="#2-原因解释" class="headerlink" title="2 原因解释"></a>2 原因解释</h3><p>因为<code>scanner.nextLine()</code>会接收一行数据，而<code>scanner.next()</code>是接收有效字符（除空格和<code>enter</code>等之外的所有字符）之前的数据，所以当输入完<code>age</code>值后，按下<code>enter</code>键之后，这个<code>enter</code>被<code>scanner.nextLine()</code>给吸收了，也就被其当做一个值给接收了，所以就自动跳过了中间的<code>name</code>，所以会导致出现<code>bug</code>。</p><p>不过没关系，解决办法就是在需要真正接收的变量前加一个空的<code>scanner.nextLine()</code>，将上一个输入的<code>enter</code>给接收了，这样就不会出<code>bug</code>了。</p><p>改正代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> age = scanner.nextInt();</span><br><span class="line">String _ = scanner.nextLine();</span><br><span class="line">String name = scanner.nextLine();</span><br><span class="line">String sex = scanner.nextLine();</span><br></pre></td></tr></table></figure><h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><ol><li><a href="http://blog.sina.com.cn/s/blog_93dc666c0101h00f.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_93dc666c0101h00f.html</a></li></ol><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>底层数据结构链表，以及java代码实现</title>
       <link href="/java-link/"/>
       <url>/java-link/</url>
@@ -61,19 +93,6 @@
             <tag> C++ </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>network”</title>
-      <link href="/network%E2%80%9D/"/>
-      <url>/network%E2%80%9D/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      
-      
       
     </entry>
     
@@ -2159,9 +2178,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> CNN </tag>
             
@@ -2216,9 +2235,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 目标检测 </tag>
             
@@ -2239,9 +2258,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -2262,9 +2281,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -2308,9 +2327,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 概念解释 </tag>
             
@@ -2438,9 +2457,9 @@
       
         <tags>
             
-            <tag> 基础知识 </tag>
-            
             <tag> 计算机视觉 </tag>
+            
+            <tag> 基础知识 </tag>
             
             <tag> 数字图像处理 </tag>
             

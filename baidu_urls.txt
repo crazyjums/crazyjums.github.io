@@ -1,7 +1,8 @@
+https://jums.club/Untitled/
+https://jums.club/java-scanner/
 https://jums.club/java-link/
 https://jums.club/tencent-interview-questions/
 https://jums.club/bubble-select-sort/
-https://jums.club/network%E2%80%9D/
 https://jums.club/Linux-release-info/
 https://jums.club/java-inner-class/
 https://jums.club/JVM-interview-questions/
@@ -97,4 +98,3 @@ https://jums.club/npm-npmr-content/
 https://jums.club/error-by-hexo-d-person-domain/
 https://jums.club/hexo-for-all/
 https://jums.club/config-ssh-for-github/
-https://jums.club/ssh-connect-to-github/
