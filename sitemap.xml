@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jums.club/Untitled/</loc>
+    <loc>https://jums.club/two-queue-to-stack/</loc>
     
-    <lastmod>2020-04-26T14:16:38.910Z</lastmod>
+    <lastmod>2020-04-27T11:58:55.312Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/two-stacks-to-queue/</loc>
+    
+    <lastmod>2020-04-27T11:58:55.312Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jums.club/java-link/</loc>
+    
+    <lastmod>2020-04-27T09:32:08.784Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jums.club/java-scanner/</loc>
     
-    <lastmod>2020-04-26T14:16:38.910Z</lastmod>
+    <lastmod>2020-04-26T14:18:01.108Z</lastmod>
     
   </url>
   
@@ -19,13 +33,6 @@
     <loc>https://jums.club/tencent-interview-questions/</loc>
     
     <lastmod>2020-04-25T13:43:14.050Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jums.club/java-link/</loc>
-    
-    <lastmod>2020-04-25T13:27:19.346Z</lastmod>
     
   </url>
   

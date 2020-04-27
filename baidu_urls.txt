@@ -1,4 +1,5 @@
-https://jums.club/Untitled/
+https://jums.club/two-queue-to-stack/
+https://jums.club/two-stacks-to-queue/
 https://jums.club/java-scanner/
 https://jums.club/java-link/
 https://jums.club/tencent-interview-questions/
@@ -97,4 +98,3 @@ https://jums.club/hexo-editor/
 https://jums.club/npm-npmr-content/
 https://jums.club/error-by-hexo-d-person-domain/
 https://jums.club/hexo-for-all/
-https://jums.club/config-ssh-for-github/
