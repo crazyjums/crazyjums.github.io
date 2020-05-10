@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://jums.club/matplotlib-usage/</loc>
+    <lastmod>2020-05-10</lastmod>
+  </url>  <url>
+    <loc>https://jums.club/java-link/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>  <url>
     <loc>https://jums.club/binaryTree-java-implements/</loc>
-    <lastmod>2020-04-29</lastmod>
+    <lastmod>2020-04-30</lastmod>
   </url>  <url>
     <loc>https://jums.club/two-queue-to-stack/</loc>
     <lastmod>2020-04-29</lastmod>
   </url>  <url>
     <loc>https://jums.club/two-stacks-to-queue/</loc>
-    <lastmod>2020-04-27</lastmod>
-  </url>  <url>
-    <loc>https://jums.club/java-link/</loc>
     <lastmod>2020-04-27</lastmod>
   </url>  <url>
     <loc>https://jums.club/java-scanner/</loc>
