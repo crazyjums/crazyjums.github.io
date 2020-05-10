@@ -1,3 +1,4 @@
+https://jums.club/how-to-reverse-string/
 https://jums.club/matplotlib-usage/
 https://jums.club/binaryTree-java-implements/
 https://jums.club/two-queue-to-stack/
@@ -97,4 +98,3 @@ https://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-ma
 https://jums.club/markdownPad2-break/
 https://jums.club/use-cloudfree-make-your-hexo-to-https/
 https://jums.club/hexo-editor/
-https://jums.club/npm-npmr-content/
