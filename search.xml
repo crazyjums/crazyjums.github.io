@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>github如何上传大于100M的文件</title>
+      <link href="/github-more-than-100/"/>
+      <url>/github-more-than-100/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在命令行输入如下命令：    </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config http.postBuffer 524288000</span><br></pre></td></tr></table></figure><p>然后执行<code>git config -l</code>查看配置，我们会发现最下面会多出一条记录：   </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">$ git config -l</span><br><span class="line">core.symlinks=<span class="literal">false</span></span><br><span class="line">core.autocrlf=<span class="literal">true</span></span><br><span class="line">core.fscache=<span class="literal">true</span></span><br><span class="line">color.diff=auto</span><br><span class="line">color.status=auto</span><br><span class="line">color.branch=auto</span><br><span class="line">color.interactive=<span class="literal">true</span></span><br><span class="line">help.format=html</span><br><span class="line">rebase.autosquash=<span class="literal">true</span></span><br><span class="line">http.sslcainfo=G:/software/git/Git/mingw64/ssl/certs/ca-bundle.crt</span><br><span class="line">http.sslbackend=openssl</span><br><span class="line">diff.astextplain.textconv=astextplain</span><br><span class="line">filter.lfs.clean=git-lfs clean -- %f</span><br><span class="line">filter.lfs.smudge=git-lfs smudge -- %f</span><br><span class="line">filter.lfs.process=git-lfs filter-process</span><br><span class="line">filter.lfs.required=<span class="literal">true</span></span><br><span class="line">credential.helper=manager</span><br><span class="line">user.email=xxx</span><br><span class="line">user.name=crazyjums</span><br><span class="line">gui.recentrepo=G:/codeFolder/blog</span><br><span class="line">filter.lfs.clean=git-lfs clean -- %f</span><br><span class="line">filter.lfs.smudge=git-lfs smudge -- %f</span><br><span class="line">filter.lfs.process=git-lfs filter-process</span><br><span class="line">filter.lfs.required=<span class="literal">true</span></span><br><span class="line">core.repositoryformatversion=0</span><br><span class="line">core.filemode=<span class="literal">false</span></span><br><span class="line">core.bare=<span class="literal">false</span></span><br><span class="line">core.logallrefupdates=<span class="literal">true</span></span><br><span class="line">core.symlinks=<span class="literal">false</span></span><br><span class="line">core.ignorecase=<span class="literal">true</span></span><br><span class="line">remote.origin.url=git@github.com:crazyjums/lizhi-resource.git</span><br><span class="line">remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*</span><br><span class="line">http.postbuffer=524288000</span><br></pre></td></tr></table></figure><p><a href="https://www.jianshu.com/p/9ddf90864c89" target="_blank" rel="noopener">read more</a></p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img alt="微信公众号" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" class="lazyload"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>next主题，文章链接是当前域名下的一个项目，并不是直接链接，修改版权部分信息</title>
       <link href="/next-change-copyright/"/>
       <url>/next-change-copyright/</url>
@@ -33,9 +54,9 @@
       
         <tags>
             
-            <tag> 算法 </tag>
-            
             <tag> 面试 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -77,9 +98,9 @@
             
             <tag> Java </tag>
             
-            <tag> 算法 </tag>
-            
             <tag> 面试 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -100,9 +121,9 @@
             
             <tag> Java </tag>
             
-            <tag> 算法 </tag>
-            
             <tag> 面试 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -123,9 +144,9 @@
             
             <tag> Java </tag>
             
-            <tag> 算法 </tag>
-            
             <tag> 面试 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -810,9 +831,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -831,9 +852,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -1551,11 +1572,11 @@
       
         <tags>
             
+            <tag> 解决问题 </tag>
+            
             <tag> hexo </tag>
             
             <tag> GitHub </tag>
-            
-            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -1574,9 +1595,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -1595,9 +1616,9 @@
       
         <tags>
             
-            <tag> GitHub </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -1616,9 +1637,9 @@
       
         <tags>
             
-            <tag> GitHub </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -1637,11 +1658,11 @@
       
         <tags>
             
+            <tag> 解决问题 </tag>
+            
             <tag> python </tag>
             
             <tag> 编程语言 </tag>
-            
-            <tag> 解决问题 </tag>
             
         </tags>
       
@@ -1725,9 +1746,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -1765,9 +1786,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -2011,9 +2032,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -2072,9 +2093,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -2093,9 +2114,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> summary </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -2114,9 +2135,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 解决问题 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
