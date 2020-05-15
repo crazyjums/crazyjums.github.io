@@ -1,3 +1,4 @@
+https://jums.club/next-change-copyright/
 https://jums.club/how-to-reverse-string/
 https://jums.club/matplotlib-usage/
 https://jums.club/binaryTree-java-implements/
@@ -97,4 +98,3 @@ https://jums.club/liner-regression-writen-by-tensorflow/
 https://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/
 https://jums.club/markdownPad2-break/
 https://jums.club/use-cloudfree-make-your-hexo-to-https/
-https://jums.club/hexo-editor/
