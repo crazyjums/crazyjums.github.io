@@ -387,6 +387,59 @@
       </tags>
   </entry>
   <entry>
+    <title>冒泡排序和选择排序过程介绍</title>
+    <url>/bubble-select-sort/</url>
+    <content><![CDATA[<h3 id="1-冒泡排序"><a href="#1-冒泡排序" class="headerlink" title="1.冒泡排序"></a>1.冒泡排序</h3><p>冒泡排序就是通过对比前一个和后一个数的大小，按照规则进行顺序的调换。每一轮对比之后最大或者最小值都会浮到最上面或者沉到最低下。</p>
+<p>如：对这一数组进行冒泡排序：int a[5]{34,12,56,4,7};   假设为从小到大排序</p>
+<p>一共需要比较length-1轮：</p>
+<p>第一轮：  a.34和12比较，12比34小，那么调换位置，此时为：12,34,56,4,7，然后在对该序列进行排序</p>
+<p>　　　　  b.然后就是34和56进行对比，34比56小，不用调换顺序，此时依旧为：12,34,56,4,7，然后在对该序列进行排序</p>
+<p>　　　　  c.然后再就是56和4鸡西宁对比，4比56小，所以将56和4调换顺序，此时序列就是：12,34,4,56,7</p>
+<p>　　　　  d.再然后就对比56和7，7比56小，所以将二者位置进行调换，此时完成第一轮调换，序列为：12,34,4,7,56</p>
+<p>　　　　我们可以看到第一轮排序之后，已经将序列中的最大值沉到最底部了。</p>
+<p>第二轮：此时的排序此时交第一轮要减1，</p>
+<p>　　　　  a.先是12和34对比，前者比后者小，所以不用调换位置，序列时：12,34,4,7,56</p>
+<p>　　　　  b.然后比较34和4的大小，后者比前者小，所以调换位置，此时序列为：12,4,34,7,56</p>
+<p>　　　　  c.再然后比较34和7的大小，后者比前者小，所以调换位置，此时序列为：12,4,7,34,56</p>
+<p>　　　　  d.此时就不用在往下比较了，因为比较次数已经减1了，也是因为第一轮中已经将最大的数选出来了。</p>
+<p>然后就是第三轮和第四轮的比较，方法类似。</p>
+<p>最终结果就是4,7,12,34,56</p>
+<p>我们可以看到程序截图如下图所示：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/1212206-20190322102402128-1914857974.png" alt="冒泡排序过程"></p>
+<h3 id="2-选择排序"><a href="#2-选择排序" class="headerlink" title="2.选择排序"></a>2.选择排序</h3><p>选择排序的实现要比冒泡排序简单一些，但是在代码上相对会有些绕。原理就是先假设待排序的序列中的第一个数为最小值或者最大值，这里还是用从小到大的顺序进行排序。首先假设第一个数为最小值（假设该值的索引下标时i），然后从该值的下一个数也就是索引为i+1的数开始进行比较，如果i+1的值要比假设的最小值小，那么就将二者的值进行交换，每一轮将最小值选择出来，并将其与假设的最小值进行调换就行，不需要想冒泡排序那样整个需略都要跟着一起移动。此时还需要一个缓冲变量来存放最小值的索引值。</p>
+<p>详细讲解：</p>
+<p>在时间复杂度上，这两种排序方法都是一样，O(N^2)，也是需要循环执行length-1轮。还是假设对数组a进行排序。</p>
+<p>首先定义数组：int a[5]{34,12,56,4,7}; </p>
+<p>第一轮：先假设序列中的第一个数是最小值，记录下它的索引值，定一个新的变量用来存放该索引值，minIndex=0，下表为0也就是第一个数。然后在进行循环。</p>
+<p>　　　　  a.内循环中的第一轮是34和12进行比较，后者比前者小，所以将minIndex的索引值进行更改，此时minIndex=1,</p>
+<p>　　　　  b.内循环中的第二轮，是利用minIndex 中的数和下一个待比较的数进行比较，应该是12和56比较，后者比前者小，所以不用修改minIndex的值</p>
+<p>　　　　  c.内循环中的第三轮，还是利用索引为1的数值和下一个待比较的数进行比较，应该是12和4进行比较，后者较之前者较小，所以记录下当前数的索引值并赋值给minIndex，此时minIndex=3</p>
+<p>　　　　  d.内循环中的第四轮，利用minIndex索引值的数值和下一个待比较的数进行比较，应该是4和7进行比较，后者比前者大，所以不用修改minIndex的值</p>
+<p>　　　　然后将序列中的第i个数和序列中索引值为minIndex的数进行调换，第一轮已将最小值选择出来了。此时序列为：4,12,56,34,7</p>
+<p>　　　　第一轮外循环之后，minIndex=3,下一轮外循环会将这个值直接覆盖</p>
+<p>第二轮：此时的minIndex=1，假设的最小值是12</p>
+<p>　　　　　此时定义上一轮外循环的下一个数为最小值，也即是索引值为1的值，那么本轮循环将从索引值为2的数开始比较，</p>
+<p>　　　　  a.内循环中的第一轮，比较12和56,后者比前者大，所以不用修改minIndex的值，</p>
+<p>　　　　  b.内循环中的第二轮，此时比较12和34的大小，还是依旧不用修改索引值</p>
+<p>　　　　  c.内循环中的第三轮，此时比较12和7的大小，后者比前者小，索引记录下当前数的索引值并赋值给minIndex记录下来</p>
+<p>　　　　内循环结束，判断minIndex的值是否被改变，如果被改变了，那么就将下标为i的数和下标为minIndex的数进行交换。此时序列为：4,7,56,34,12且minIndex=4</p>
+<p>第三轮和第四轮外循环的规则类似。。</p>
+<p>我们可以看程序运行的效果图如下：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/1212206-20190322105700101-1010848535.png" alt="选择排序过程"></p>
+<p>最后附上可供运行的c++代码：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// bubble sort</span></span><br><span class="line">    <span class="keyword">double</span> a[<span class="number">5</span>]=&#123;<span class="number">34</span>,<span class="number">12</span>,<span class="number">56</span>,<span class="number">4</span>,<span class="number">7</span>&#125;;</span><br><span class="line">    <span class="keyword">int</span> len = <span class="keyword">sizeof</span>(a) / <span class="keyword">sizeof</span>(<span class="keyword">double</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//output all numbers</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"before sorted by bubbleSort:"</span> &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; a[i]&lt;&lt;<span class="string">"\t"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//start to sort the array</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len<span class="number">-1</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;len -i <span class="number">-1</span>;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(a[j]&gt;a[j+<span class="number">1</span>])</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">double</span> t = <span class="number">0</span>;</span><br><span class="line">                t = a[j];</span><br><span class="line">                a[j] = a[j+<span class="number">1</span>];</span><br><span class="line">                a[j+<span class="number">1</span>] = t;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"This is at NO."</span> &lt;&lt; i &lt;&lt; <span class="string">"time:    "</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; a[i] &lt;&lt; <span class="string">"\t"</span>;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//output after sorted</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"after sorted by bubbleSort:"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; a[i]&lt;&lt;<span class="string">"\t"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//selectsort</span></span><br><span class="line">    <span class="keyword">double</span> b[<span class="number">5</span>]=&#123;<span class="number">34</span>,<span class="number">12</span>,<span class="number">56</span>,<span class="number">4</span>,<span class="number">7</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"before sorted by selectSort:"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; b[i]&lt;&lt; <span class="string">"\t"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="comment">//start to selectSort</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len<span class="number">-1</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> minIndex = i;<span class="comment">//pretend the first number of the array be the min number.and record the index</span></span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"ending-&gt;minIndex="</span> &lt;&lt; minIndex &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;len;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(b[minIndex]&gt;b[j])</span><br><span class="line">            &#123;</span><br><span class="line">                minIndex = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(minIndex != i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">double</span> t = <span class="number">0</span>;</span><br><span class="line">            t = b[i];</span><br><span class="line">            b[i] = b[minIndex];</span><br><span class="line">            b[minIndex] = t;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//print the detail</span></span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"This is at NO."</span> &lt;&lt; i &lt;&lt; <span class="string">"time:  "</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; setw(<span class="number">4</span>)&lt;&lt;b[i] ;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"   "</span>&lt;&lt; <span class="string">"ending-&gt;minIndex="</span> &lt;&lt; minIndex &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"after sorted by selectSort:"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; b[i]&lt;&lt;<span class="string">"\t"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>java</code>代码示例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bubble</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] b = &#123;<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">2</span>,<span class="number">89</span>,<span class="number">76</span>,<span class="number">35</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; b.length; i++) &#123;</span><br><span class="line">            System.out.print(b[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println();</span><br><span class="line">        <span class="keyword">int</span>[] c = bubble(b);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; c.length; i++) &#123;</span><br><span class="line">            System.out.print(c[i] + <span class="string">"\t"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println();</span><br><span class="line">        <span class="keyword">int</span>[] d = select(b);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; d.length; i++) &#123;</span><br><span class="line">            System.out.print(d[i] + <span class="string">"\t"</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] bubble(<span class="keyword">int</span>[] a) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; a.length - <span class="number">1</span> - i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (a[j+<span class="number">1</span>] &lt; a[j]) &#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = a[j+<span class="number">1</span>];</span><br><span class="line">                    a[j+<span class="number">1</span>] = a[j];</span><br><span class="line">                    a[j] = temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] select(<span class="keyword">int</span>[] a)&#123;</span><br><span class="line">        <span class="keyword">int</span> maxIndex = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> i,j;</span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (j=<span class="number">0</span>; j&lt; a.length -<span class="number">1</span> ;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (a[maxIndex] &lt; a[j])&#123;</span><br><span class="line">                    maxIndex = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(maxIndex != i)&#123;</span><br><span class="line">            <span class="keyword">return</span> a;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一篇文看透二叉树，先序遍历、中序遍历、后序遍历、广度优先、深度优先，java实现</title>
     <url>/binaryTree-java-implements/</url>
     <content><![CDATA[<h3 id="1-二叉树的定义"><a href="#1-二叉树的定义" class="headerlink" title="1 二叉树的定义"></a>1 二叉树的定义</h3><blockquote>
@@ -493,61 +546,8 @@
 ]]></content>
       <tags>
         <tag>Java</tag>
+        <tag>算法</tag>
         <tag>面试</tag>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>冒泡排序和选择排序过程介绍</title>
-    <url>/bubble-select-sort/</url>
-    <content><![CDATA[<h3 id="1-冒泡排序"><a href="#1-冒泡排序" class="headerlink" title="1.冒泡排序"></a>1.冒泡排序</h3><p>冒泡排序就是通过对比前一个和后一个数的大小，按照规则进行顺序的调换。每一轮对比之后最大或者最小值都会浮到最上面或者沉到最低下。</p>
-<p>如：对这一数组进行冒泡排序：int a[5]{34,12,56,4,7};   假设为从小到大排序</p>
-<p>一共需要比较length-1轮：</p>
-<p>第一轮：  a.34和12比较，12比34小，那么调换位置，此时为：12,34,56,4,7，然后在对该序列进行排序</p>
-<p>　　　　  b.然后就是34和56进行对比，34比56小，不用调换顺序，此时依旧为：12,34,56,4,7，然后在对该序列进行排序</p>
-<p>　　　　  c.然后再就是56和4鸡西宁对比，4比56小，所以将56和4调换顺序，此时序列就是：12,34,4,56,7</p>
-<p>　　　　  d.再然后就对比56和7，7比56小，所以将二者位置进行调换，此时完成第一轮调换，序列为：12,34,4,7,56</p>
-<p>　　　　我们可以看到第一轮排序之后，已经将序列中的最大值沉到最底部了。</p>
-<p>第二轮：此时的排序此时交第一轮要减1，</p>
-<p>　　　　  a.先是12和34对比，前者比后者小，所以不用调换位置，序列时：12,34,4,7,56</p>
-<p>　　　　  b.然后比较34和4的大小，后者比前者小，所以调换位置，此时序列为：12,4,34,7,56</p>
-<p>　　　　  c.再然后比较34和7的大小，后者比前者小，所以调换位置，此时序列为：12,4,7,34,56</p>
-<p>　　　　  d.此时就不用在往下比较了，因为比较次数已经减1了，也是因为第一轮中已经将最大的数选出来了。</p>
-<p>然后就是第三轮和第四轮的比较，方法类似。</p>
-<p>最终结果就是4,7,12,34,56</p>
-<p>我们可以看到程序截图如下图所示：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/1212206-20190322102402128-1914857974.png" alt="冒泡排序过程"></p>
-<h3 id="2-选择排序"><a href="#2-选择排序" class="headerlink" title="2.选择排序"></a>2.选择排序</h3><p>选择排序的实现要比冒泡排序简单一些，但是在代码上相对会有些绕。原理就是先假设待排序的序列中的第一个数为最小值或者最大值，这里还是用从小到大的顺序进行排序。首先假设第一个数为最小值（假设该值的索引下标时i），然后从该值的下一个数也就是索引为i+1的数开始进行比较，如果i+1的值要比假设的最小值小，那么就将二者的值进行交换，每一轮将最小值选择出来，并将其与假设的最小值进行调换就行，不需要想冒泡排序那样整个需略都要跟着一起移动。此时还需要一个缓冲变量来存放最小值的索引值。</p>
-<p>详细讲解：</p>
-<p>在时间复杂度上，这两种排序方法都是一样，O(N^2)，也是需要循环执行length-1轮。还是假设对数组a进行排序。</p>
-<p>首先定义数组：int a[5]{34,12,56,4,7}; </p>
-<p>第一轮：先假设序列中的第一个数是最小值，记录下它的索引值，定一个新的变量用来存放该索引值，minIndex=0，下表为0也就是第一个数。然后在进行循环。</p>
-<p>　　　　  a.内循环中的第一轮是34和12进行比较，后者比前者小，所以将minIndex的索引值进行更改，此时minIndex=1,</p>
-<p>　　　　  b.内循环中的第二轮，是利用minIndex 中的数和下一个待比较的数进行比较，应该是12和56比较，后者比前者小，所以不用修改minIndex的值</p>
-<p>　　　　  c.内循环中的第三轮，还是利用索引为1的数值和下一个待比较的数进行比较，应该是12和4进行比较，后者较之前者较小，所以记录下当前数的索引值并赋值给minIndex，此时minIndex=3</p>
-<p>　　　　  d.内循环中的第四轮，利用minIndex索引值的数值和下一个待比较的数进行比较，应该是4和7进行比较，后者比前者大，所以不用修改minIndex的值</p>
-<p>　　　　然后将序列中的第i个数和序列中索引值为minIndex的数进行调换，第一轮已将最小值选择出来了。此时序列为：4,12,56,34,7</p>
-<p>　　　　第一轮外循环之后，minIndex=3,下一轮外循环会将这个值直接覆盖</p>
-<p>第二轮：此时的minIndex=1，假设的最小值是12</p>
-<p>　　　　　此时定义上一轮外循环的下一个数为最小值，也即是索引值为1的值，那么本轮循环将从索引值为2的数开始比较，</p>
-<p>　　　　  a.内循环中的第一轮，比较12和56,后者比前者大，所以不用修改minIndex的值，</p>
-<p>　　　　  b.内循环中的第二轮，此时比较12和34的大小，还是依旧不用修改索引值</p>
-<p>　　　　  c.内循环中的第三轮，此时比较12和7的大小，后者比前者小，索引记录下当前数的索引值并赋值给minIndex记录下来</p>
-<p>　　　　内循环结束，判断minIndex的值是否被改变，如果被改变了，那么就将下标为i的数和下标为minIndex的数进行交换。此时序列为：4,7,56,34,12且minIndex=4</p>
-<p>第三轮和第四轮外循环的规则类似。。</p>
-<p>我们可以看程序运行的效果图如下：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/1212206-20190322105700101-1010848535.png" alt="选择排序过程"></p>
-<p>最后附上可供运行的c++代码：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// bubble sort</span></span><br><span class="line">    <span class="keyword">double</span> a[<span class="number">5</span>]=&#123;<span class="number">34</span>,<span class="number">12</span>,<span class="number">56</span>,<span class="number">4</span>,<span class="number">7</span>&#125;;</span><br><span class="line">    <span class="keyword">int</span> len = <span class="keyword">sizeof</span>(a) / <span class="keyword">sizeof</span>(<span class="keyword">double</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//output all numbers</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"before sorted by bubbleSort:"</span> &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; a[i]&lt;&lt;<span class="string">"\t"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//start to sort the array</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len<span class="number">-1</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;len -i <span class="number">-1</span>;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(a[j]&gt;a[j+<span class="number">1</span>])</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">double</span> t = <span class="number">0</span>;</span><br><span class="line">                t = a[j];</span><br><span class="line">                a[j] = a[j+<span class="number">1</span>];</span><br><span class="line">                a[j+<span class="number">1</span>] = t;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"This is at NO."</span> &lt;&lt; i &lt;&lt; <span class="string">"time:    "</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; a[i] &lt;&lt; <span class="string">"\t"</span>;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//output after sorted</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"after sorted by bubbleSort:"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; a[i]&lt;&lt;<span class="string">"\t"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//selectsort</span></span><br><span class="line">    <span class="keyword">double</span> b[<span class="number">5</span>]=&#123;<span class="number">34</span>,<span class="number">12</span>,<span class="number">56</span>,<span class="number">4</span>,<span class="number">7</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"before sorted by selectSort:"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; b[i]&lt;&lt; <span class="string">"\t"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="comment">//start to selectSort</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len<span class="number">-1</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> minIndex = i;<span class="comment">//pretend the first number of the array be the min number.and record the index</span></span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"ending-&gt;minIndex="</span> &lt;&lt; minIndex &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;len;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(b[minIndex]&gt;b[j])</span><br><span class="line">            &#123;</span><br><span class="line">                minIndex = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(minIndex != i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">double</span> t = <span class="number">0</span>;</span><br><span class="line">            t = b[i];</span><br><span class="line">            b[i] = b[minIndex];</span><br><span class="line">            b[minIndex] = t;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//print the detail</span></span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"This is at NO."</span> &lt;&lt; i &lt;&lt; <span class="string">"time:  "</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; setw(<span class="number">4</span>)&lt;&lt;b[i] ;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"   "</span>&lt;&lt; <span class="string">"ending-&gt;minIndex="</span> &lt;&lt; minIndex &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"after sorted by selectSort:"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; b[i]&lt;&lt;<span class="string">"\t"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>java</code>代码示例：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bubble</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] b = &#123;<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">2</span>,<span class="number">89</span>,<span class="number">76</span>,<span class="number">35</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; b.length; i++) &#123;</span><br><span class="line">            System.out.print(b[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println();</span><br><span class="line">        <span class="keyword">int</span>[] c = bubble(b);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; c.length; i++) &#123;</span><br><span class="line">            System.out.print(c[i] + <span class="string">"\t"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println();</span><br><span class="line">        <span class="keyword">int</span>[] d = select(b);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; d.length; i++) &#123;</span><br><span class="line">            System.out.print(d[i] + <span class="string">"\t"</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] bubble(<span class="keyword">int</span>[] a) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; a.length - <span class="number">1</span> - i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (a[j+<span class="number">1</span>] &lt; a[j]) &#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = a[j+<span class="number">1</span>];</span><br><span class="line">                    a[j+<span class="number">1</span>] = a[j];</span><br><span class="line">                    a[j] = temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] select(<span class="keyword">int</span>[] a)&#123;</span><br><span class="line">        <span class="keyword">int</span> maxIndex = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> i,j;</span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (j=<span class="number">0</span>; j&lt; a.length -<span class="number">1</span> ;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (a[maxIndex] &lt; a[j])&#123;</span><br><span class="line">                    maxIndex = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(maxIndex != i)&#123;</span><br><span class="line">            <span class="keyword">return</span> a;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -1704,39 +1704,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo编辑器之HexoEditor安装以及闭坑教程</title>
-    <url>/hexo-editor/</url>
-    <content><![CDATA[<h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h3><p>关于<a href="https://hexo.io/" target="_blank" rel="noopener"><code>hexo</code></a>+<code>github</code>配置自己的个人自定义博客是一个很好的个人博客解决方案，让<code>hexo</code>跑起来其实很简单，但是后期写博客，就显得有些不是很方便，你得：   </p>
-<ul>
-<li>打开<code>git bash</code>进入到博客目录</li>
-<li>使用<code>hexo new &quot;post_name&quot;</code>命令创建博客文件</li>
-<li>使用Markdown编辑器或者记事本写博客</li>
-<li>在使用<code>git bash</code>使用<code>hexo clean &amp; hexo g &amp; hexo d</code>部署到GitHub或者coding上</li>
-</ul>
-<p>这么一看确实很麻烦，而且还有图床也需要自己手动解决，所以这里介绍一个hexo编辑器<a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">HexoEditor</a>，可以创建博客，然后发布博客，还能编写边渲染，还支持图床备份等，很方便。当然还有其他的解决方案，比如：<a href="https://github.com/jaredly/hexo-admin" target="_blank" rel="noopener"><code>hexo-admin</code></a>,<a href="https://github.com/lwz7512/hexo-admin-ehc" target="_blank" rel="noopener"><code>hexo-admin-ehc</code></a>,<a href="https://github.com/nihgwu/hexo-hey" target="_blank" rel="noopener"><code>hexo-hey</code></a>等</p>
-<p>这里是<code>HexoEditor</code>代码的下载安装地址：<a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">https://github.com/zhuzhuyule/HexoEditor</a>。<br>该编辑器的界面如下，简洁大方：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/main.png" alt="HexoEditor main"><br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/side-menu.png" alt="HexoEditor side menu">   </p>
-<p><strong>安装环境：</strong>   </p>
-<ul>
-<li>node.js，<a href="https://nodejs.org/en/" target="_blank" rel="noopener">install</a></li>
-<li>git，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">install</a></li>
-</ul>
-<h3 id="2-配置环境"><a href="#2-配置环境" class="headerlink" title="2 配置环境"></a>2 配置环境</h3><h4 id="2-1-for-Windows"><a href="#2-1-for-Windows" class="headerlink" title="2.1 for Windows"></a>2.1 for Windows</h4><figure class="highlight plain"><figcaption><span>Files/nodejs/npm_global```和```C:/Program Files/nodejs/npm_cache```是node.js的安装目录，如果该目录下没有下面两个文件夹的话，我们需要**手动**创建这两个文件夹，名字**务必**一致。</span></figcaption><table><tr><td class="code"><pre><span class="line">&#96;&#96;&#96;</span><br><span class="line">npm config set prefix &quot;C:&#x2F;Program Files&#x2F;nodejs&#x2F;npm_global&quot;</span><br><span class="line">npm config set cache &quot;C:&#x2F;Program Files&#x2F;nodejs&#x2F;npm_cache&quot;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2-for-Linux-or-Mac"><a href="#2-2-for-Linux-or-Mac" class="headerlink" title="2.2 for Linux or Mac"></a>2.2 for Linux or Mac</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;~&#x2F;nodejs&#x2F;npm_global&quot;</span><br><span class="line">npm config set cache &quot;~&#x2F;nodejs&#x2F;npm_cache&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-克隆代码及安装"><a href="#3-克隆代码及安装" class="headerlink" title="3 克隆代码及安装"></a>3 克隆代码及安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;zhuzhuyule&#x2F;HexoEditor.git</span><br><span class="line">cd HexoEditor</span><br><span class="line">npm install</span><br><span class="line">npm start</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-闭坑"><a href="#4-闭坑" class="headerlink" title="4 闭坑"></a>4 闭坑</h3><p>当我们克隆完代码之后，然后<code>cd</code>到<code>HexoEditor</code>文件夹下，执行<code>npm install/i</code>命令之后，我们会发现一直不成功，如下面所示：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191125152248.png" alt="error install"><br>试了网上的很多解决方案，但是都没有道出真谛，只是草草回答。本想放弃算了，但是还是不甘心，然后又百度了一下，找到了一个解决方案，参考该<a href="https://blog.csdn.net/sihai12345/article/details/98099639" target="_blank" rel="noopener">博客</a>，文件给出了一个回答，关于<code>otarget No matching version found for js-sequence-diagrams@^1000000.0.6.</code>的解决方案，<strong>执行如下命令即可解决</strong>：     </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install js-sequence-diagrams@0.0.1-security</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-建议"><a href="#5-建议" class="headerlink" title="5 建议"></a>5 建议</h3><p>npm的三方库<a href="https://www.npmjs.com/" target="_blank" rel="noopener">官网</a>，该网站可以查找任何有关node.js的三方库，如果这里查不到，那就说明没有。<br>官网截图如下：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191125152829.png" alt="npm 官网"></p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于深度学习中的梯度下降，了解一下</title>
     <url>/gradient-descent/</url>
     <content><![CDATA[<p><a href="https://www.jianshu.com/p/c7e642877b0e" target="_blank" rel="noopener">一篇让你很容易理解什么是梯度下降的博客</a></p>
@@ -1781,6 +1748,39 @@
         <tag>计算机视觉</tag>
         <tag>基础知识</tag>
         <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo编辑器之HexoEditor安装以及闭坑教程</title>
+    <url>/hexo-editor/</url>
+    <content><![CDATA[<h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h3><p>关于<a href="https://hexo.io/" target="_blank" rel="noopener"><code>hexo</code></a>+<code>github</code>配置自己的个人自定义博客是一个很好的个人博客解决方案，让<code>hexo</code>跑起来其实很简单，但是后期写博客，就显得有些不是很方便，你得：   </p>
+<ul>
+<li>打开<code>git bash</code>进入到博客目录</li>
+<li>使用<code>hexo new &quot;post_name&quot;</code>命令创建博客文件</li>
+<li>使用Markdown编辑器或者记事本写博客</li>
+<li>在使用<code>git bash</code>使用<code>hexo clean &amp; hexo g &amp; hexo d</code>部署到GitHub或者coding上</li>
+</ul>
+<p>这么一看确实很麻烦，而且还有图床也需要自己手动解决，所以这里介绍一个hexo编辑器<a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">HexoEditor</a>，可以创建博客，然后发布博客，还能编写边渲染，还支持图床备份等，很方便。当然还有其他的解决方案，比如：<a href="https://github.com/jaredly/hexo-admin" target="_blank" rel="noopener"><code>hexo-admin</code></a>,<a href="https://github.com/lwz7512/hexo-admin-ehc" target="_blank" rel="noopener"><code>hexo-admin-ehc</code></a>,<a href="https://github.com/nihgwu/hexo-hey" target="_blank" rel="noopener"><code>hexo-hey</code></a>等</p>
+<p>这里是<code>HexoEditor</code>代码的下载安装地址：<a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">https://github.com/zhuzhuyule/HexoEditor</a>。<br>该编辑器的界面如下，简洁大方：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/main.png" alt="HexoEditor main"><br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/side-menu.png" alt="HexoEditor side menu">   </p>
+<p><strong>安装环境：</strong>   </p>
+<ul>
+<li>node.js，<a href="https://nodejs.org/en/" target="_blank" rel="noopener">install</a></li>
+<li>git，<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">install</a></li>
+</ul>
+<h3 id="2-配置环境"><a href="#2-配置环境" class="headerlink" title="2 配置环境"></a>2 配置环境</h3><h4 id="2-1-for-Windows"><a href="#2-1-for-Windows" class="headerlink" title="2.1 for Windows"></a>2.1 for Windows</h4><figure class="highlight plain"><figcaption><span>Files/nodejs/npm_global```和```C:/Program Files/nodejs/npm_cache```是node.js的安装目录，如果该目录下没有下面两个文件夹的话，我们需要**手动**创建这两个文件夹，名字**务必**一致。</span></figcaption><table><tr><td class="code"><pre><span class="line">&#96;&#96;&#96;</span><br><span class="line">npm config set prefix &quot;C:&#x2F;Program Files&#x2F;nodejs&#x2F;npm_global&quot;</span><br><span class="line">npm config set cache &quot;C:&#x2F;Program Files&#x2F;nodejs&#x2F;npm_cache&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-for-Linux-or-Mac"><a href="#2-2-for-Linux-or-Mac" class="headerlink" title="2.2 for Linux or Mac"></a>2.2 for Linux or Mac</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;~&#x2F;nodejs&#x2F;npm_global&quot;</span><br><span class="line">npm config set cache &quot;~&#x2F;nodejs&#x2F;npm_cache&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-克隆代码及安装"><a href="#3-克隆代码及安装" class="headerlink" title="3 克隆代码及安装"></a>3 克隆代码及安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;zhuzhuyule&#x2F;HexoEditor.git</span><br><span class="line">cd HexoEditor</span><br><span class="line">npm install</span><br><span class="line">npm start</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-闭坑"><a href="#4-闭坑" class="headerlink" title="4 闭坑"></a>4 闭坑</h3><p>当我们克隆完代码之后，然后<code>cd</code>到<code>HexoEditor</code>文件夹下，执行<code>npm install/i</code>命令之后，我们会发现一直不成功，如下面所示：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191125152248.png" alt="error install"><br>试了网上的很多解决方案，但是都没有道出真谛，只是草草回答。本想放弃算了，但是还是不甘心，然后又百度了一下，找到了一个解决方案，参考该<a href="https://blog.csdn.net/sihai12345/article/details/98099639" target="_blank" rel="noopener">博客</a>，文件给出了一个回答，关于<code>otarget No matching version found for js-sequence-diagrams@^1000000.0.6.</code>的解决方案，<strong>执行如下命令即可解决</strong>：     </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install js-sequence-diagrams@0.0.1-security</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-建议"><a href="#5-建议" class="headerlink" title="5 建议"></a>5 建议</h3><p>npm的三方库<a href="https://www.npmjs.com/" target="_blank" rel="noopener">官网</a>，该网站可以查找任何有关node.js的三方库，如果这里查不到，那就说明没有。<br>官网截图如下：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191125152829.png" alt="npm 官网"></p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -2512,8 +2512,8 @@
 <h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
 ]]></content>
       <tags>
-        <tag>面试</tag>
         <tag>算法</tag>
+        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
@@ -4289,24 +4289,6 @@ print(filename)    </code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Java中基本数据类型和包装类的区别？</title>
-    <url>/java-class-base-datatype/</url>
-    <content><![CDATA[<h3 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1 数据类型"></a>1 数据类型</h3><p>Java中基本数据类型包括int,long,string,boolean等，但是我们在编程的过程中，更多的是使用对象，而不是数据类型，所以Java为了方便编程，给每种基本数据类型都做了一个包装类，二者的基本功能相似，但是也有一些差别。比如在内存中的存储位置。举例：   </p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">5</span>;</span><br></pre></td></tr></table></figure>
-<p>在上面的代码中，我们知道变量<code>i</code>是通过基本数据类型进行定义的，此时该变量的值是存放在内存的栈内存中，且如果我们在定义时没有指定值的话，且需要判断该值是否为空，我们需要使用下面的判断语句：   </p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i;</span><br><span class="line"><span class="keyword">if</span> (i==<span class="number">0</span>)&#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-包装类"><a href="#2-包装类" class="headerlink" title="2 包装类"></a>2 包装类</h3><p>Java中的每一种数据类型都有其对应的包装类，如下图举例所示：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/number1.png" alt="Number"><br>包装类的本质是一个类，所以如果我们需要使用的话，必须使用<code>new</code>来定义，当在定义对象没有指定具体的值时，如果做<code>if</code>判断，那么和基本数据类型的判断是不同的，如：     </p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Integer i = <span class="keyword">new</span> Integer();</span><br><span class="line"><span class="keyword">if</span> (i==<span class="keyword">null</span>)&#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>此时的<code>i</code>中的值，存储在内存中的堆内存中。</p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Java</tag>
-        <tag>编程语言</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>java中类和函数、方法、属性，以及对象的区别</title>
     <url>/java-class-method/</url>
     <content><![CDATA[<h3 id="1-类和函数、方法"><a href="#1-类和函数、方法" class="headerlink" title="1 类和函数、方法"></a>1 类和函数、方法</h3><p>类的定义，在<code>java</code>中是用<code>class</code>关键字定义的一个结构，类中可以定义函数以及定义变量。</p>
@@ -4418,6 +4400,24 @@ print(filename)    </code></pre>
       <tags>
         <tag>Java</tag>
         <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java中基本数据类型和包装类的区别？</title>
+    <url>/java-class-base-datatype/</url>
+    <content><![CDATA[<h3 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1 数据类型"></a>1 数据类型</h3><p>Java中基本数据类型包括int,long,string,boolean等，但是我们在编程的过程中，更多的是使用对象，而不是数据类型，所以Java为了方便编程，给每种基本数据类型都做了一个包装类，二者的基本功能相似，但是也有一些差别。比如在内存中的存储位置。举例：   </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">5</span>;</span><br></pre></td></tr></table></figure>
+<p>在上面的代码中，我们知道变量<code>i</code>是通过基本数据类型进行定义的，此时该变量的值是存放在内存的栈内存中，且如果我们在定义时没有指定值的话，且需要判断该值是否为空，我们需要使用下面的判断语句：   </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i;</span><br><span class="line"><span class="keyword">if</span> (i==<span class="number">0</span>)&#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-包装类"><a href="#2-包装类" class="headerlink" title="2 包装类"></a>2 包装类</h3><p>Java中的每一种数据类型都有其对应的包装类，如下图举例所示：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/number1.png" alt="Number"><br>包装类的本质是一个类，所以如果我们需要使用的话，必须使用<code>new</code>来定义，当在定义对象没有指定具体的值时，如果做<code>if</code>判断，那么和基本数据类型的判断是不同的，如：     </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Integer i = <span class="keyword">new</span> Integer();</span><br><span class="line"><span class="keyword">if</span> (i==<span class="keyword">null</span>)&#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>此时的<code>i</code>中的值，存储在内存中的堆内存中。</p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Java</tag>
+        <tag>编程语言</tag>
       </tags>
   </entry>
   <entry>
@@ -6988,8 +6988,8 @@ cond(no)->op
 ]]></content>
       <tags>
         <tag>Java</tag>
-        <tag>面试</tag>
         <tag>算法</tag>
+        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
@@ -7060,8 +7060,8 @@ cond(no)->op
 ]]></content>
       <tags>
         <tag>Java</tag>
-        <tag>面试</tag>
         <tag>算法</tag>
+        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
