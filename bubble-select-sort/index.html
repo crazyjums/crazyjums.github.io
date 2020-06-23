@@ -163,12 +163,12 @@ ga('send', 'pageview');
 }
 
 var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
-var requiredFields = requestSetting(['nick','mail'],'nick,mail')
+var requiredFields = requestSetting(['nick','mail'],'')
 
 window.valine = new Valine({
   el:'#vcomment',
-  appId: '2lPeEraOnOk7GF6ou1WWs6BP-gzGzoHsz# leancloud application app id',
-  appKey: 'nXeW1bmcRE4TDrorjmdqj0ML# leancloud application app key',
+  appId: '2lPeEraOnOk7GF6ou1WWs6BP-gzGzoHsz',
+  appKey: 'nXeW1bmcRE4TDrorjmdqj0ML',
   placeholder: 'Please leave your footprints',
   avatar: 'monsterid',
   meta: guestInfo,
