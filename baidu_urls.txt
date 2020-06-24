@@ -1,3 +1,4 @@
+http://jums.club/html-lunfan-effect/
 http://jums.club/cpp-virtual-function/
 http://jums.club/c-serialization/
 http://jums.club/github-more-than-100/
@@ -97,4 +98,3 @@ http://jums.club/qing-yu-nian-resource/
 http://jums.club/github-project/
 http://jums.club/how-to-access-google/
 http://jums.club/tensorflow-reduce-mean/
-http://jums.club/tensorflow-mnist-full-connection/
