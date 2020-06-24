@@ -91,6 +91,26 @@
 ]]></content>
   </entry>
   <entry>
+    <title>解决【TypeError: Input &#39;b&#39; of &#39;MatMul&#39; Op has type int32 that does not match type float32 of argument &#39;a&#39;.】问题</title>
+    <url>/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</url>
+    <content><![CDATA[<h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><p>利用TensorFlow框架进行自实现线性回归时，报错：TypeError: Input ‘b’ of ‘MatMul’ Op has type int32 that does not match type float32 of argument ‘a’.<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191127131420.png" alt="error">   </p>
+<p><strong>源代码：</strong>    </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def liner_regression():</span><br><span class="line">    </span><br><span class="line">    自实现一个线性回归</span><br><span class="line">    y_true &#x3D; 0.8X + 0.7</span><br><span class="line">    :return:</span><br><span class="line">    </span><br><span class="line">    # 1 准备数据</span><br><span class="line">    X &#x3D; tf.random_normal(shape&#x3D;[100, 1],mean&#x3D;0.0,stddev&#x3D;1.0,name&#x3D;&quot;feature&quot;) # 用高斯分布生成随机值，</span><br><span class="line">    y_true &#x3D;  tf.matmul( X, [[8]]) + 0.7 # 用高斯分布生成随机值， 默认均值是0 方差是1</span><br><span class="line"></span><br><span class="line">    # 2 构造模型</span><br><span class="line">    # 模型构造用TensorFlow中的变量进行定义</span><br><span class="line">    # 2.1 weights</span><br><span class="line">    weights &#x3D; tf.Variable(initial_value&#x3D;tf.random_normal(shape&#x3D;[1,1]),name&#x3D;&quot;weights&quot;)</span><br><span class="line">    # 2.2 bias</span><br><span class="line">    bias &#x3D; tf.Variable(initial_value&#x3D;tf.random_normal(shape&#x3D;[1, 1]),name&#x3D;&quot;bias&quot;)</span><br><span class="line">    # 2.3 构建模型</span><br><span class="line">    y_predict &#x3D; tf.matmul(X,weights) + bias</span><br><span class="line"></span><br><span class="line">    # 3 构造损失函数</span><br><span class="line">    # loss &#x3D; tf.reduce_mean(tf.square(y_predict - y_true))</span><br><span class="line"></span><br><span class="line">    # 4 优化损失 梯度下降算法</span><br><span class="line">    # optimaizer &#x3D; tf.train.GradientDescentOptimizer(learning_rate&#x3D;0.01).minimize(loss)</span><br><span class="line"></span><br><span class="line">    # 显式的初始化变量</span><br><span class="line">    init &#x3D; tf.global_variables_initializer()</span><br><span class="line"></span><br><span class="line">    # 开启会话</span><br><span class="line">    with tf.Session() as sess:</span><br><span class="line">        sess.run(init)</span><br><span class="line">        print(X)</span><br><span class="line">        print(weights)</span><br><span class="line">        print(bias)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="2-解决问题"><a href="#2-解决问题" class="headerlink" title="2 解决问题"></a>2 解决问题</h3><p>问题代码：   </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">X &#x3D; tf.random_normal(shape&#x3D;[100, 1],mean&#x3D;0.0,stddev&#x3D;1.0,name&#x3D;&quot;feature&quot;) # 用高斯分布生成随机值，</span><br><span class="line">y_true &#x3D;  tf.matmul( X, [[8]]) + 0.7 # 用高斯分布生成随机值， 默认均值是0 方差是1</span><br></pre></td></tr></table></figure>
+
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191127131913.png" alt="error code"><br><strong>修改建议：</strong><br>将<code>y_true =  tf.matmul( X, [[8]]) + 0.7</code>中的<code>[[8]]</code>改成<code>[[8.0]]</code>或者使用<code>tf.cast([[8]],tf.float32)</code>进行数据类型转换</p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>编程框架</tag>
+        <tag>TensorFlow</tag>
+        <tag>解决问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于SSPNet（空间金字塔池化网络），了解一下</title>
     <url>/SSPNet/</url>
     <content><![CDATA[<h3 id="1-SSPNet论文出处"><a href="#1-SSPNet论文出处" class="headerlink" title="1 SSPNet论文出处"></a>1 SSPNet论文出处</h3><p>SSPNet（Spatial Pyramid Pooling Network），中文名字是空间金字塔池化网络<br>SSPNet论文出自《<a href="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/pdf/Spatial_Pyramid_Pooling_in_Deep_Convolutional_Networks_for_Visual_Recognition.pdf" target="_blank" rel="noopener">Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition</a>》<br><a href="https://blog.csdn.net/tinyzhao/article/details/53717136" target="_blank" rel="noopener">一篇较好的解读SSPNet的博客</a></p>
@@ -116,26 +136,6 @@
         <tag>计算机视觉</tag>
         <tag>基础知识</tag>
         <tag>目标检测</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决【TypeError: Input &#39;b&#39; of &#39;MatMul&#39; Op has type int32 that does not match type float32 of argument &#39;a&#39;.】问题</title>
-    <url>/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</url>
-    <content><![CDATA[<h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><p>利用TensorFlow框架进行自实现线性回归时，报错：TypeError: Input ‘b’ of ‘MatMul’ Op has type int32 that does not match type float32 of argument ‘a’.<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191127131420.png" alt="error">   </p>
-<p><strong>源代码：</strong>    </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def liner_regression():</span><br><span class="line">    </span><br><span class="line">    自实现一个线性回归</span><br><span class="line">    y_true &#x3D; 0.8X + 0.7</span><br><span class="line">    :return:</span><br><span class="line">    </span><br><span class="line">    # 1 准备数据</span><br><span class="line">    X &#x3D; tf.random_normal(shape&#x3D;[100, 1],mean&#x3D;0.0,stddev&#x3D;1.0,name&#x3D;&quot;feature&quot;) # 用高斯分布生成随机值，</span><br><span class="line">    y_true &#x3D;  tf.matmul( X, [[8]]) + 0.7 # 用高斯分布生成随机值， 默认均值是0 方差是1</span><br><span class="line"></span><br><span class="line">    # 2 构造模型</span><br><span class="line">    # 模型构造用TensorFlow中的变量进行定义</span><br><span class="line">    # 2.1 weights</span><br><span class="line">    weights &#x3D; tf.Variable(initial_value&#x3D;tf.random_normal(shape&#x3D;[1,1]),name&#x3D;&quot;weights&quot;)</span><br><span class="line">    # 2.2 bias</span><br><span class="line">    bias &#x3D; tf.Variable(initial_value&#x3D;tf.random_normal(shape&#x3D;[1, 1]),name&#x3D;&quot;bias&quot;)</span><br><span class="line">    # 2.3 构建模型</span><br><span class="line">    y_predict &#x3D; tf.matmul(X,weights) + bias</span><br><span class="line"></span><br><span class="line">    # 3 构造损失函数</span><br><span class="line">    # loss &#x3D; tf.reduce_mean(tf.square(y_predict - y_true))</span><br><span class="line"></span><br><span class="line">    # 4 优化损失 梯度下降算法</span><br><span class="line">    # optimaizer &#x3D; tf.train.GradientDescentOptimizer(learning_rate&#x3D;0.01).minimize(loss)</span><br><span class="line"></span><br><span class="line">    # 显式的初始化变量</span><br><span class="line">    init &#x3D; tf.global_variables_initializer()</span><br><span class="line"></span><br><span class="line">    # 开启会话</span><br><span class="line">    with tf.Session() as sess:</span><br><span class="line">        sess.run(init)</span><br><span class="line">        print(X)</span><br><span class="line">        print(weights)</span><br><span class="line">        print(bias)</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="2-解决问题"><a href="#2-解决问题" class="headerlink" title="2 解决问题"></a>2 解决问题</h3><p>问题代码：   </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">X &#x3D; tf.random_normal(shape&#x3D;[100, 1],mean&#x3D;0.0,stddev&#x3D;1.0,name&#x3D;&quot;feature&quot;) # 用高斯分布生成随机值，</span><br><span class="line">y_true &#x3D;  tf.matmul( X, [[8]]) + 0.7 # 用高斯分布生成随机值， 默认均值是0 方差是1</span><br></pre></td></tr></table></figure>
-
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191127131913.png" alt="error code"><br><strong>修改建议：</strong><br>将<code>y_true =  tf.matmul( X, [[8]]) + 0.7</code>中的<code>[[8]]</code>改成<code>[[8.0]]</code>或者使用<code>tf.cast([[8]],tf.float32)</code>进行数据类型转换</p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>编程框架</tag>
-        <tag>TensorFlow</tag>
-        <tag>解决问题</tag>
       </tags>
   </entry>
   <entry>
@@ -1582,23 +1582,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解决fatal: remote origin already exists.</title>
-    <url>/fatal-remote-origin-already-exists/</url>
-    <content><![CDATA[<h3 id="1-解决办法"><a href="#1-解决办法" class="headerlink" title="1 解决办法"></a>1 解决办法</h3><p>执行下面的语句删除已经存在的<code>origin</code>:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git remote rm origin</span><br></pre></td></tr></table></figure>
-
-<p>再次执行语句：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;...</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git如何连接GitHub</title>
     <url>/git-connect-to-github/</url>
     <content><![CDATA[<h3 id="1-生产自己的公钥和私钥"><a href="#1-生产自己的公钥和私钥" class="headerlink" title="1 生产自己的公钥和私钥"></a>1 生产自己的公钥和私钥</h3><p>首先生成一个rsa的私钥和公钥<br>ssh-keygen -t rsa -C “<a href="mailto:15950093214@163.com">15950093214@163.com</a>“  //你的github邮箱帐号，如下：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/1212206-20190330101656413-693026470.png" alt="gen key">   </p>
@@ -1613,6 +1596,23 @@
 <p>警告来可以不用看，如果显示成这样，那就算是连接成功了。</p>
 </blockquote>
 <h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号">   </p>
+]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决fatal: remote origin already exists.</title>
+    <url>/fatal-remote-origin-already-exists/</url>
+    <content><![CDATA[<h3 id="1-解决办法"><a href="#1-解决办法" class="headerlink" title="1 解决办法"></a>1 解决办法</h3><p>执行下面的语句删除已经存在的<code>origin</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git remote rm origin</span><br></pre></td></tr></table></figure>
+
+<p>再次执行语句：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;...</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
 ]]></content>
       <tags>
         <tag>git</tag>
@@ -6058,6 +6058,21 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
+    <title>next主题，文章链接是当前域名下的一个项目，并不是直接链接，修改版权部分信息</title>
+    <url>/next-change-copyright/</url>
+    <content><![CDATA[<h3 id="1-修改前部分"><a href="#1-修改前部分" class="headerlink" title="1 修改前部分"></a>1 修改前部分</h3><p>文件路径：<code>G:hexo-blog\lizhi\themes\next\layout\_macro\post-copyright.swg</code>   </p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&lt;ul</span> <span class="string">class="post-copyright"&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-author"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.author')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">post.author</span> <span class="string">|</span> <span class="string">default(config.author)</span> <span class="string">&#125;&#125;</span> </span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-link"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.link')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&lt;a</span> <span class="string">href="&#123;&#123;</span> <span class="string">post.url</span> <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;"</span> <span class="string">title="&#123;&#123;</span> <span class="string">post.title</span> <span class="string">&#125;&#125;"&gt;&#123;&#123;</span> <span class="string">post.url</span>  <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;&lt;/a&gt;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-license"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.license_title')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;</span> <span class="string">&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">__('post.copyright.license_content',</span> <span class="string">theme.post_copyright.license_url,</span> <span class="string">theme.post_copyright.license)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line"><span class="string">&lt;/ul&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-修改后"><a href="#2-修改后" class="headerlink" title="2 修改后"></a>2 修改后</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&lt;ul</span> <span class="string">class="post-copyright"&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-author"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.author')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">post.author</span> <span class="string">|</span> <span class="string">default(config.author)</span> <span class="string">&#125;&#125;</span> <span class="string">|</span> <span class="string">微信公众号：【麦田里的守望者zhg】</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-link"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.link')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&lt;a</span> <span class="string">href="https://jums.club/lizhi/&#123;&#123;</span> <span class="string">post.path</span> <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;"</span> <span class="string">title="&#123;&#123;</span> <span class="string">post.title</span> <span class="string">&#125;&#125;"&gt;https://jums.club/lizhi/&#123;&#123;</span> <span class="string">post.path</span>  <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;&lt;/a&gt;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-license"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.license_title')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;</span> <span class="string">&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">__('post.copyright.license_content',</span> <span class="string">theme.post_copyright.license_url,</span> <span class="string">theme.post_copyright.license)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line"><span class="string">&lt;/ul&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>修改部分：<br>在<code>post.url</code>前面加上你的项目域名地址，然后将<code>post.url</code>改成<code>post.path</code>。大功告成。<br>修改前的效果：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200515103043295.jpg" alt="修改前"><br>修改后的效果：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200515102826349.jpg" alt="修改后"></p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>硕士论文笔记</title>
     <url>/note-master-1/</url>
     <content><![CDATA[<h3 id="1-《智能交通图像识别系统的研究》from"><a href="#1-《智能交通图像识别系统的研究》from" class="headerlink" title="1.《智能交通图像识别系统的研究》from"></a>1.《智能交通图像识别系统的研究》<a href="https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD9904&filename=2003041026.nh&uid=WEEvREdxOWJmbC9oM1NjYkZCbDdrNXcwaGROd1Z6Qmo3emF5S1A3SnV3QjE=$R1yZ0H6jyaa0en3RxVUd8df-oHi7XMMDo7mtKT6mSmEvTuk11l2gFA!!&v=MzA1NzVUcldNMUZyQ1VSTE9lWitWdUZpSGhVN3ZCVjEyN0hiTzhIOUhPcVpFYlBJUjhlWDFMdXhZUzdEaDFUM3E=" target="_blank" rel="noopener">from</a></h3><h4 id="1-1人工神经网络进行字符识别"><a href="#1-1人工神经网络进行字符识别" class="headerlink" title="1.1人工神经网络进行字符识别"></a>1.1人工神经网络进行字符识别</h4><blockquote>
@@ -6274,21 +6289,6 @@ cond(no)->op
 <h3 id="2-解决方案"><a href="#2-解决方案" class="headerlink" title="2 解决方案"></a>2 解决方案</h3><p><a href="https://github.com/sindresorhus/gulp-imagemin/issues/340#issuecomment-586160290" target="_blank" rel="noopener">github答案</a><br>Had the same problem. The issue is you’re still calling imagemin.jpegtran in your config, which was replaced by imagemin.mozjpeg in v7.0.0.</p>
 <p>// old<br>imagemin.jpegtran({<br>    progressive: true,<br>}),</p>
 <p>// new<br>imagemin.mozjpeg({<br>    progressive: true,<br>}),<br>See also: <a href="https://github.com/sindresorhus/gulp-imagemin/commit/279a91b61c208c0e2a18d3734e6073f5e1d283a2#diff-0730bb7c2e8f9ea2438b52e419dd86c9R36" target="_blank" rel="noopener">279a91b#diff-0730bb7c2e8f9ea2438b52e419dd86c9R36</a></p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>next主题，文章链接是当前域名下的一个项目，并不是直接链接，修改版权部分信息</title>
-    <url>/next-change-copyright/</url>
-    <content><![CDATA[<h3 id="1-修改前部分"><a href="#1-修改前部分" class="headerlink" title="1 修改前部分"></a>1 修改前部分</h3><p>文件路径：<code>G:hexo-blog\lizhi\themes\next\layout\_macro\post-copyright.swg</code>   </p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&lt;ul</span> <span class="string">class="post-copyright"&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-author"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.author')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">post.author</span> <span class="string">|</span> <span class="string">default(config.author)</span> <span class="string">&#125;&#125;</span> </span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-link"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.link')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&lt;a</span> <span class="string">href="&#123;&#123;</span> <span class="string">post.url</span> <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;"</span> <span class="string">title="&#123;&#123;</span> <span class="string">post.title</span> <span class="string">&#125;&#125;"&gt;&#123;&#123;</span> <span class="string">post.url</span>  <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;&lt;/a&gt;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-license"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.license_title')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;</span> <span class="string">&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">__('post.copyright.license_content',</span> <span class="string">theme.post_copyright.license_url,</span> <span class="string">theme.post_copyright.license)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line"><span class="string">&lt;/ul&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-修改后"><a href="#2-修改后" class="headerlink" title="2 修改后"></a>2 修改后</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&lt;ul</span> <span class="string">class="post-copyright"&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-author"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.author')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">post.author</span> <span class="string">|</span> <span class="string">default(config.author)</span> <span class="string">&#125;&#125;</span> <span class="string">|</span> <span class="string">微信公众号：【麦田里的守望者zhg】</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-link"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.link')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&lt;a</span> <span class="string">href="https://jums.club/lizhi/&#123;&#123;</span> <span class="string">post.path</span> <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;"</span> <span class="string">title="&#123;&#123;</span> <span class="string">post.title</span> <span class="string">&#125;&#125;"&gt;https://jums.club/lizhi/&#123;&#123;</span> <span class="string">post.path</span>  <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;&lt;/a&gt;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-license"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.license_title')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;</span> <span class="string">&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">__('post.copyright.license_content',</span> <span class="string">theme.post_copyright.license_url,</span> <span class="string">theme.post_copyright.license)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line"><span class="string">&lt;/ul&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>修改部分：<br>在<code>post.url</code>前面加上你的项目域名地址，然后将<code>post.url</code>改成<code>post.path</code>。大功告成。<br>修改前的效果：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200515103043295.jpg" alt="修改前"><br>修改后的效果：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200515102826349.jpg" alt="修改后"></p>
 <h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
 ]]></content>
       <tags>
