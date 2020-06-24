@@ -2042,25 +2042,6 @@
       </tags>
   </entry>
   <entry>
-    <title>为你的hexo个人博客添加本地搜索功能</title>
-    <url>/hexo-search-function/</url>
-    <content><![CDATA[<h3 id="1-下载安装包"><a href="#1-下载安装包" class="headerlink" title="1.下载安装包"></a>1.下载安装包</h3><p>先下载安装下面的安装包，进入到对应的博客目录里面执行下面的语句：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-配置themes下面的配置文件-config-yml"><a href="#2-配置themes下面的配置文件-config-yml" class="headerlink" title="2.配置themes下面的配置文件_config.yml"></a>2.配置themes下面的配置文件_config.yml</h3><p>将enable选项改为true 很重要，否则不会有效果</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true # 将false改为true</span><br><span class="line">  labels:</span><br><span class="line">    input_placeholder: Search for Posts</span><br><span class="line">    hits_empty: &quot;We didn&#39;t find any results for the search: $&#123;query&#125;&quot; # if there are no result</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-重新启动本地服务器"><a href="#3-重新启动本地服务器" class="headerlink" title="3.重新启动本地服务器"></a>3.重新启动本地服务器</h3><blockquote>
-<p>hexo clean<br>hexo s -g //相当于 hexo g和hexo s一起执行</p>
-</blockquote>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-        <tag>本地搜索</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo主题添加热度显示</title>
     <url>/hexo-hot/</url>
     <content><![CDATA[<h3 id="1-注册leanCloud会员"><a href="#1-注册leanCloud会员" class="headerlink" title="1 注册leanCloud会员"></a>1 注册leanCloud会员</h3><p>点击官网：<a href="https://leancloud.cn/" target="_blank" rel="noopener">https://leancloud.cn/</a>注册会员，注册成功之后，按下面的提示点击：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200101213442.png" alt="注册成功之后"><br>然后创建一个class，命名为：<code>Counter</code>，<strong>必须是这个名字</strong>。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200101213643.png" alt="创建class"></p>
@@ -2093,6 +2074,25 @@
 ]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为你的hexo个人博客添加本地搜索功能</title>
+    <url>/hexo-search-function/</url>
+    <content><![CDATA[<h3 id="1-下载安装包"><a href="#1-下载安装包" class="headerlink" title="1.下载安装包"></a>1.下载安装包</h3><p>先下载安装下面的安装包，进入到对应的博客目录里面执行下面的语句：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-配置themes下面的配置文件-config-yml"><a href="#2-配置themes下面的配置文件-config-yml" class="headerlink" title="2.配置themes下面的配置文件_config.yml"></a>2.配置themes下面的配置文件_config.yml</h3><p>将enable选项改为true 很重要，否则不会有效果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true # 将false改为true</span><br><span class="line">  labels:</span><br><span class="line">    input_placeholder: Search for Posts</span><br><span class="line">    hits_empty: &quot;We didn&#39;t find any results for the search: $&#123;query&#125;&quot; # if there are no result</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-重新启动本地服务器"><a href="#3-重新启动本地服务器" class="headerlink" title="3.重新启动本地服务器"></a>3.重新启动本地服务器</h3><blockquote>
+<p>hexo clean<br>hexo s -g //相当于 hexo g和hexo s一起执行</p>
+</blockquote>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>本地搜索</tag>
       </tags>
   </entry>
   <entry>
@@ -5666,6 +5666,20 @@ print(filename)    </code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Python语言自动化处理文件夹中的文件</title>
+    <url>/markdown-format/</url>
+    <content><![CDATA[<h3 id="0-功能"><a href="#0-功能" class="headerlink" title="0 功能"></a>0 功能</h3><p>将文件夹中的PDF文件，转化成<code>markdwon</code>格式的链接语法，即<code>[]()</code>格式，输入自己的<code>github</code>存放地址以及文件夹路径即可。</p>
+<h3 id="1-代码"><a href="#1-代码" class="headerlink" title="1 代码"></a>1 代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># _*_ coding=utf-8 _*_</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">这个程序用来整理文件夹中的PDF文件，将其转化成Markdown格式的链接，即[]()的形式</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="keyword">import</span> os,re</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_book_lists</span><span class="params">()</span>:</span></span><br><span class="line">    root_dir = <span class="string">r"J:\电子书"</span></span><br><span class="line">    dir_tree = os.walk(root_dir)</span><br><span class="line">    sub_dir = dir_tree.__next__()[<span class="number">1</span>]</span><br><span class="line">    pdf_list = []</span><br><span class="line">    <span class="keyword">for</span> sub <span class="keyword">in</span> sub_dir:</span><br><span class="line">        <span class="keyword">for</span> _sub <span class="keyword">in</span> os.walk(root_dir + <span class="string">"\\"</span> + str(sub)):</span><br><span class="line">            _book_list = _sub[<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">if</span> _sub[<span class="number">1</span>] <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">                <span class="keyword">for</span> book <span class="keyword">in</span> _book_list:</span><br><span class="line">                    <span class="keyword">if</span> <span class="string">".pdf"</span> <span class="keyword">in</span> book:</span><br><span class="line">                        pdf_list.append(book)</span><br><span class="line">    <span class="keyword">return</span> pdf_list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_url_links</span><span class="params">(book_list)</span>:</span></span><br><span class="line">    urls = []</span><br><span class="line">    url = <span class="string">"https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/pdf"</span></span><br><span class="line">    <span class="keyword">for</span> book <span class="keyword">in</span> book_list:</span><br><span class="line">        book = re.sub(<span class="string">" |:|：|，|,|（|）|\(|\)"</span>,<span class="string">"_"</span>,book)</span><br><span class="line">        book = re.sub(<span class="string">"《|》"</span>,<span class="string">""</span>,book)</span><br><span class="line">        _url = <span class="string">"[&#123;&#125;](&#123;&#125;/&#123;&#125;)    "</span>.format(book[:<span class="number">-4</span>], url, book)</span><br><span class="line">        urls.append(_url)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> urls</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_markdown_format</span><span class="params">(book_list,urls,type_name)</span>:</span></span><br><span class="line">    dict = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> type_name:</span><br><span class="line">        dict[i] = []</span><br><span class="line">    <span class="comment"># print(dict)</span></span><br><span class="line">    dict[<span class="string">"other"</span>] = []</span><br><span class="line">    used = []</span><br><span class="line">    <span class="keyword">for</span> each_url <span class="keyword">in</span> urls:</span><br><span class="line">        <span class="keyword">for</span> each_name <span class="keyword">in</span> type_name:</span><br><span class="line">            <span class="keyword">if</span> each_name <span class="keyword">in</span> each_url:</span><br><span class="line">                _ = dict[each_name]</span><br><span class="line">                _.append(each_url)</span><br><span class="line">                used.append(each_url)</span><br><span class="line">    print(len(urls))</span><br><span class="line">    print(len(used))</span><br><span class="line">    <span class="keyword">for</span> each <span class="keyword">in</span> type_name:</span><br><span class="line">        _list = dict[each]</span><br><span class="line">        print(each + <span class="string">":   "</span>)</span><br><span class="line">        <span class="keyword">for</span> _url <span class="keyword">in</span> _list:</span><br><span class="line">            print(<span class="string">"- &#123;&#125;"</span>.format(_url))</span><br><span class="line">    print(<span class="string">"other:    "</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> urls:</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> used:</span><br><span class="line">            print(<span class="string">"- &#123;&#125;"</span>.format(i))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    book_list = get_book_lists()</span><br><span class="line">    urls = get_url_links(book_list)</span><br><span class="line">    type_name = [<span class="string">"Python"</span>,<span class="string">"SQL"</span>,<span class="string">"TCP-IP详解"</span>,<span class="string">"Kali_Linux无线网络渗透测试"</span>,<span class="string">"HTTP"</span>,<span class="string">"Shell"</span>,<span class="string">"Linux"</span>]</span><br><span class="line">    show_markdown_format(book_list,urls,type_name)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+        <tag>编程语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>markdown语法介绍</title>
     <url>/markdown-grammer/</url>
     <content><![CDATA[<h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1 标题"></a>1 标题</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 这是一级标题</span></span><br><span class="line"><span class="section">## 这是二级标题</span></span><br><span class="line"><span class="section">### 这是三级标题</span></span><br><span class="line"><span class="section">#### 这是四级标题</span></span><br><span class="line"><span class="section">##### 这是五级标题</span></span><br><span class="line"><span class="section">###### 这是六级标题</span></span><br></pre></td></tr></table></figure>
@@ -5809,20 +5823,6 @@ cond(no)->op
 ]]></content>
       <tags>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python语言自动化处理文件夹中的文件</title>
-    <url>/markdown-format/</url>
-    <content><![CDATA[<h3 id="0-功能"><a href="#0-功能" class="headerlink" title="0 功能"></a>0 功能</h3><p>将文件夹中的PDF文件，转化成<code>markdwon</code>格式的链接语法，即<code>[]()</code>格式，输入自己的<code>github</code>存放地址以及文件夹路径即可。</p>
-<h3 id="1-代码"><a href="#1-代码" class="headerlink" title="1 代码"></a>1 代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># _*_ coding=utf-8 _*_</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">这个程序用来整理文件夹中的PDF文件，将其转化成Markdown格式的链接，即[]()的形式</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="keyword">import</span> os,re</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_book_lists</span><span class="params">()</span>:</span></span><br><span class="line">    root_dir = <span class="string">r"J:\电子书"</span></span><br><span class="line">    dir_tree = os.walk(root_dir)</span><br><span class="line">    sub_dir = dir_tree.__next__()[<span class="number">1</span>]</span><br><span class="line">    pdf_list = []</span><br><span class="line">    <span class="keyword">for</span> sub <span class="keyword">in</span> sub_dir:</span><br><span class="line">        <span class="keyword">for</span> _sub <span class="keyword">in</span> os.walk(root_dir + <span class="string">"\\"</span> + str(sub)):</span><br><span class="line">            _book_list = _sub[<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">if</span> _sub[<span class="number">1</span>] <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">                <span class="keyword">for</span> book <span class="keyword">in</span> _book_list:</span><br><span class="line">                    <span class="keyword">if</span> <span class="string">".pdf"</span> <span class="keyword">in</span> book:</span><br><span class="line">                        pdf_list.append(book)</span><br><span class="line">    <span class="keyword">return</span> pdf_list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_url_links</span><span class="params">(book_list)</span>:</span></span><br><span class="line">    urls = []</span><br><span class="line">    url = <span class="string">"https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/pdf"</span></span><br><span class="line">    <span class="keyword">for</span> book <span class="keyword">in</span> book_list:</span><br><span class="line">        book = re.sub(<span class="string">" |:|：|，|,|（|）|\(|\)"</span>,<span class="string">"_"</span>,book)</span><br><span class="line">        book = re.sub(<span class="string">"《|》"</span>,<span class="string">""</span>,book)</span><br><span class="line">        _url = <span class="string">"[&#123;&#125;](&#123;&#125;/&#123;&#125;)    "</span>.format(book[:<span class="number">-4</span>], url, book)</span><br><span class="line">        urls.append(_url)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> urls</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_markdown_format</span><span class="params">(book_list,urls,type_name)</span>:</span></span><br><span class="line">    dict = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> type_name:</span><br><span class="line">        dict[i] = []</span><br><span class="line">    <span class="comment"># print(dict)</span></span><br><span class="line">    dict[<span class="string">"other"</span>] = []</span><br><span class="line">    used = []</span><br><span class="line">    <span class="keyword">for</span> each_url <span class="keyword">in</span> urls:</span><br><span class="line">        <span class="keyword">for</span> each_name <span class="keyword">in</span> type_name:</span><br><span class="line">            <span class="keyword">if</span> each_name <span class="keyword">in</span> each_url:</span><br><span class="line">                _ = dict[each_name]</span><br><span class="line">                _.append(each_url)</span><br><span class="line">                used.append(each_url)</span><br><span class="line">    print(len(urls))</span><br><span class="line">    print(len(used))</span><br><span class="line">    <span class="keyword">for</span> each <span class="keyword">in</span> type_name:</span><br><span class="line">        _list = dict[each]</span><br><span class="line">        print(each + <span class="string">":   "</span>)</span><br><span class="line">        <span class="keyword">for</span> _url <span class="keyword">in</span> _list:</span><br><span class="line">            print(<span class="string">"- &#123;&#125;"</span>.format(_url))</span><br><span class="line">    print(<span class="string">"other:    "</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> urls:</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> used:</span><br><span class="line">            print(<span class="string">"- &#123;&#125;"</span>.format(i))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    book_list = get_book_lists()</span><br><span class="line">    urls = get_url_links(book_list)</span><br><span class="line">    type_name = [<span class="string">"Python"</span>,<span class="string">"SQL"</span>,<span class="string">"TCP-IP详解"</span>,<span class="string">"Kali_Linux无线网络渗透测试"</span>,<span class="string">"HTTP"</span>,<span class="string">"Shell"</span>,<span class="string">"Linux"</span>]</span><br><span class="line">    show_markdown_format(book_list,urls,type_name)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-        <tag>编程语言</tag>
       </tags>
   </entry>
   <entry>
@@ -6058,21 +6058,6 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
-    <title>next主题，文章链接是当前域名下的一个项目，并不是直接链接，修改版权部分信息</title>
-    <url>/next-change-copyright/</url>
-    <content><![CDATA[<h3 id="1-修改前部分"><a href="#1-修改前部分" class="headerlink" title="1 修改前部分"></a>1 修改前部分</h3><p>文件路径：<code>G:hexo-blog\lizhi\themes\next\layout\_macro\post-copyright.swg</code>   </p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&lt;ul</span> <span class="string">class="post-copyright"&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-author"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.author')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">post.author</span> <span class="string">|</span> <span class="string">default(config.author)</span> <span class="string">&#125;&#125;</span> </span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-link"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.link')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&lt;a</span> <span class="string">href="&#123;&#123;</span> <span class="string">post.url</span> <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;"</span> <span class="string">title="&#123;&#123;</span> <span class="string">post.title</span> <span class="string">&#125;&#125;"&gt;&#123;&#123;</span> <span class="string">post.url</span>  <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;&lt;/a&gt;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-license"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.license_title')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;</span> <span class="string">&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">__('post.copyright.license_content',</span> <span class="string">theme.post_copyright.license_url,</span> <span class="string">theme.post_copyright.license)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line"><span class="string">&lt;/ul&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-修改后"><a href="#2-修改后" class="headerlink" title="2 修改后"></a>2 修改后</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&lt;ul</span> <span class="string">class="post-copyright"&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-author"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.author')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">post.author</span> <span class="string">|</span> <span class="string">default(config.author)</span> <span class="string">&#125;&#125;</span> <span class="string">|</span> <span class="string">微信公众号：【麦田里的守望者zhg】</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-link"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.link')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&lt;a</span> <span class="string">href="https://jums.club/lizhi/&#123;&#123;</span> <span class="string">post.path</span> <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;"</span> <span class="string">title="&#123;&#123;</span> <span class="string">post.title</span> <span class="string">&#125;&#125;"&gt;https://jums.club/lizhi/&#123;&#123;</span> <span class="string">post.path</span>  <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;&lt;/a&gt;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-license"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.license_title')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;</span> <span class="string">&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">__('post.copyright.license_content',</span> <span class="string">theme.post_copyright.license_url,</span> <span class="string">theme.post_copyright.license)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line"><span class="string">&lt;/ul&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>修改部分：<br>在<code>post.url</code>前面加上你的项目域名地址，然后将<code>post.url</code>改成<code>post.path</code>。大功告成。<br>修改前的效果：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200515103043295.jpg" alt="修改前"><br>修改后的效果：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200515102826349.jpg" alt="修改后"></p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>硕士论文笔记</title>
     <url>/note-master-1/</url>
     <content><![CDATA[<h3 id="1-《智能交通图像识别系统的研究》from"><a href="#1-《智能交通图像识别系统的研究》from" class="headerlink" title="1.《智能交通图像识别系统的研究》from"></a>1.《智能交通图像识别系统的研究》<a href="https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD9904&filename=2003041026.nh&uid=WEEvREdxOWJmbC9oM1NjYkZCbDdrNXcwaGROd1Z6Qmo3emF5S1A3SnV3QjE=$R1yZ0H6jyaa0en3RxVUd8df-oHi7XMMDo7mtKT6mSmEvTuk11l2gFA!!&v=MzA1NzVUcldNMUZyQ1VSTE9lWitWdUZpSGhVN3ZCVjEyN0hiTzhIOUhPcVpFYlBJUjhlWDFMdXhZUzdEaDFUM3E=" target="_blank" rel="noopener">from</a></h3><h4 id="1-1人工神经网络进行字符识别"><a href="#1-1人工神经网络进行字符识别" class="headerlink" title="1.1人工神经网络进行字符识别"></a>1.1人工神经网络进行字符识别</h4><blockquote>
@@ -6289,6 +6274,21 @@ cond(no)->op
 <h3 id="2-解决方案"><a href="#2-解决方案" class="headerlink" title="2 解决方案"></a>2 解决方案</h3><p><a href="https://github.com/sindresorhus/gulp-imagemin/issues/340#issuecomment-586160290" target="_blank" rel="noopener">github答案</a><br>Had the same problem. The issue is you’re still calling imagemin.jpegtran in your config, which was replaced by imagemin.mozjpeg in v7.0.0.</p>
 <p>// old<br>imagemin.jpegtran({<br>    progressive: true,<br>}),</p>
 <p>// new<br>imagemin.mozjpeg({<br>    progressive: true,<br>}),<br>See also: <a href="https://github.com/sindresorhus/gulp-imagemin/commit/279a91b61c208c0e2a18d3734e6073f5e1d283a2#diff-0730bb7c2e8f9ea2438b52e419dd86c9R36" target="_blank" rel="noopener">279a91b#diff-0730bb7c2e8f9ea2438b52e419dd86c9R36</a></p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>next主题，文章链接是当前域名下的一个项目，并不是直接链接，修改版权部分信息</title>
+    <url>/next-change-copyright/</url>
+    <content><![CDATA[<h3 id="1-修改前部分"><a href="#1-修改前部分" class="headerlink" title="1 修改前部分"></a>1 修改前部分</h3><p>文件路径：<code>G:hexo-blog\lizhi\themes\next\layout\_macro\post-copyright.swg</code>   </p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&lt;ul</span> <span class="string">class="post-copyright"&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-author"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.author')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">post.author</span> <span class="string">|</span> <span class="string">default(config.author)</span> <span class="string">&#125;&#125;</span> </span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-link"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.link')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&lt;a</span> <span class="string">href="&#123;&#123;</span> <span class="string">post.url</span> <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;"</span> <span class="string">title="&#123;&#123;</span> <span class="string">post.title</span> <span class="string">&#125;&#125;"&gt;&#123;&#123;</span> <span class="string">post.url</span>  <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;&lt;/a&gt;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-license"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.license_title')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;</span> <span class="string">&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">__('post.copyright.license_content',</span> <span class="string">theme.post_copyright.license_url,</span> <span class="string">theme.post_copyright.license)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line"><span class="string">&lt;/ul&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-修改后"><a href="#2-修改后" class="headerlink" title="2 修改后"></a>2 修改后</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&lt;ul</span> <span class="string">class="post-copyright"&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-author"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.author')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">post.author</span> <span class="string">|</span> <span class="string">default(config.author)</span> <span class="string">&#125;&#125;</span> <span class="string">|</span> <span class="string">微信公众号：【麦田里的守望者zhg】</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-link"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.link')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&lt;a</span> <span class="string">href="https://jums.club/lizhi/&#123;&#123;</span> <span class="string">post.path</span> <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;"</span> <span class="string">title="&#123;&#123;</span> <span class="string">post.title</span> <span class="string">&#125;&#125;"&gt;https://jums.club/lizhi/&#123;&#123;</span> <span class="string">post.path</span>  <span class="string">|</span> <span class="string">default(post.permalink)</span> <span class="string">&#125;&#125;&lt;/a&gt;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line">  <span class="string">&lt;li</span> <span class="string">class="post-copyright-license"&gt;</span></span><br><span class="line">    <span class="string">&lt;strong&gt;&#123;&#123;</span> <span class="string">__('post.copyright.license_title')</span> <span class="string">+</span> <span class="string">__('symbol.colon')</span> <span class="string">&#125;&#125;</span> <span class="string">&lt;/strong&gt;</span></span><br><span class="line">    <span class="string">&#123;&#123;</span> <span class="string">__('post.copyright.license_content',</span> <span class="string">theme.post_copyright.license_url,</span> <span class="string">theme.post_copyright.license)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">  <span class="string">&lt;/li&gt;</span></span><br><span class="line"><span class="string">&lt;/ul&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>修改部分：<br>在<code>post.url</code>前面加上你的项目域名地址，然后将<code>post.url</code>改成<code>post.path</code>。大功告成。<br>修改前的效果：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200515103043295.jpg" alt="修改前"><br>修改后的效果：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200515102826349.jpg" alt="修改后"></p>
 <h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
 ]]></content>
       <tags>
@@ -6587,6 +6587,17 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
+    <title>《庆余年》免费资源</title>
+    <url>/qing-yu-nian-resource/</url>
+    <content><![CDATA[<h3 id="1-国外资源"><a href="#1-国外资源" class="headerlink" title="1 国外资源"></a>1 国外资源</h3><p><a href="https://drive.google.com/drive/folders/1OEdzNsGgfx_t-b0cVy-V0lmyBAn8Jqp8?usp=drive_open" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1OEdzNsGgfx_t-b0cVy-V0lmyBAn8Jqp8?usp=drive_open</a></p>
+<h3 id="2-国内资源"><a href="#2-国内资源" class="headerlink" title="2 国内资源"></a>2 国内资源</h3><p>天翼云盘：<a href="https://cloud.189.cn/t/rMN3uq3MRFf2" target="_blank" rel="noopener">https://cloud.189.cn/t/rMN3uq3MRFf2</a>(密码：48sc)</p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>影视</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python问题解决:re.error: unbalanced parenthesis at position 88</title>
     <url>/re-sub/</url>
     <content><![CDATA[<h4 id="问题：re-error-unbalanced-parenthesis-at-position-88"><a href="#问题：re-error-unbalanced-parenthesis-at-position-88" class="headerlink" title="问题：re.error: unbalanced parenthesis at position 88"></a>问题：re.error: unbalanced parenthesis at position 88</h4><p>在使用Python正则表达式的时候，用替换方法出现上述错误，</p>
@@ -6612,17 +6623,6 @@ cond(no)->op
 ]]></content>
       <tags>
         <tag>名词解释</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《庆余年》免费资源</title>
-    <url>/qing-yu-nian-resource/</url>
-    <content><![CDATA[<h3 id="1-国外资源"><a href="#1-国外资源" class="headerlink" title="1 国外资源"></a>1 国外资源</h3><p><a href="https://drive.google.com/drive/folders/1OEdzNsGgfx_t-b0cVy-V0lmyBAn8Jqp8?usp=drive_open" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1OEdzNsGgfx_t-b0cVy-V0lmyBAn8Jqp8?usp=drive_open</a></p>
-<h3 id="2-国内资源"><a href="#2-国内资源" class="headerlink" title="2 国内资源"></a>2 国内资源</h3><p>天翼云盘：<a href="https://cloud.189.cn/t/rMN3uq3MRFf2" target="_blank" rel="noopener">https://cloud.189.cn/t/rMN3uq3MRFf2</a>(密码：48sc)</p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>影视</tag>
       </tags>
   </entry>
   <entry>
@@ -7239,20 +7239,6 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
-    <title>virtualenv在不同操作系统中的系统方式</title>
-    <url>/virtualenv-start/</url>
-    <content><![CDATA[<h3 id="windows系统"><a href="#windows系统" class="headerlink" title="windows系统"></a>windows系统</h3><p>加入你的虚拟环境就在<code>c:\Users\user_name\my_env</code>下，</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\Users\user_name&gt;cd env\venv\scripts</span><br><span class="line">C:\Users\user_name&gt;activate  ##开启虚拟环境</span><br><span class="line">(venv)C:\Users\user_name&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="linux-or-mac"><a href="#linux-or-mac" class="headerlink" title="linux or mac"></a>linux or mac</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">virtualenv myproject ### 创建一个虚拟环境</span><br><span class="line">source myproject&#x2F;bin&#x2F;activate  ### 开启虚拟环境</span><br></pre></td></tr></table></figure>
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>查看hexo已经安装的三方包命令</title>
     <url>/view-package-of-npm/</url>
     <content><![CDATA[<h3 id="查看命令"><a href="#查看命令" class="headerlink" title="查看命令"></a>查看命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm list --depth 0</span><br></pre></td></tr></table></figure>
@@ -7266,6 +7252,20 @@ cond(no)->op
 ]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>virtualenv在不同操作系统中的系统方式</title>
+    <url>/virtualenv-start/</url>
+    <content><![CDATA[<h3 id="windows系统"><a href="#windows系统" class="headerlink" title="windows系统"></a>windows系统</h3><p>加入你的虚拟环境就在<code>c:\Users\user_name\my_env</code>下，</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\Users\user_name&gt;cd env\venv\scripts</span><br><span class="line">C:\Users\user_name&gt;activate  ##开启虚拟环境</span><br><span class="line">(venv)C:\Users\user_name&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="linux-or-mac"><a href="#linux-or-mac" class="headerlink" title="linux or mac"></a>linux or mac</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">virtualenv myproject ### 创建一个虚拟环境</span><br><span class="line">source myproject&#x2F;bin&#x2F;activate  ### 开启虚拟环境</span><br></pre></td></tr></table></figure>
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
