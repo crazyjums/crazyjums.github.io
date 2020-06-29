@@ -575,19 +575,6 @@
       </tags>
   </entry>
   <entry>
-    <title>用Python扫描文件夹中所有文件，并将部分文件按要求改名字</title>
-    <url>/change-file-name-by-python/</url>
-    <content><![CDATA[<h3 id="话不多说，直接上代码"><a href="#话不多说，直接上代码" class="headerlink" title="话不多说，直接上代码"></a>话不多说，直接上代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">scan_files</span><span class="params">(directory, prefix=None, postfix=None)</span>:</span></span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> files <span class="keyword">in</span> os.walk(directory):</span><br><span class="line">        <span class="keyword">for</span> file <span class="keyword">in</span> files[<span class="number">2</span>]:</span><br><span class="line">            <span class="keyword">if</span> <span class="string">"微信截图_"</span> <span class="keyword">in</span> file:</span><br><span class="line">                count += <span class="number">1</span></span><br><span class="line">                newname = re.sub(<span class="string">"微信截图_"</span>,<span class="string">""</span>,file)</span><br><span class="line">                os.rename(directory+file,directory+newname)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    print(<span class="string">"改名完成,一共改名&#123;&#125;个文件"</span>.format(count))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    dir = <span class="string">r"xxx/xxx"</span> <span class="comment"># 这里写你的路径，记得加上前面的r，否则容易出错</span></span><br><span class="line">    scan_files(dir)</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-        <tag>编程语言</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>利用免费cdn对GitHub资源进行加速访问</title>
     <url>/cdn-speed-up/</url>
     <content><![CDATA[<h3 id="1-cdn网站"><a href="#1-cdn网站" class="headerlink" title="1 cdn网站"></a>1 cdn网站</h3><p><a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">https://www.jsdelivr.com/</a>，网站首页如下所示：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200209222722.png" alt="home page"></p>
@@ -598,6 +585,19 @@
 ]]></content>
       <tags>
         <tag>GitHub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用Python扫描文件夹中所有文件，并将部分文件按要求改名字</title>
+    <url>/change-file-name-by-python/</url>
+    <content><![CDATA[<h3 id="话不多说，直接上代码"><a href="#话不多说，直接上代码" class="headerlink" title="话不多说，直接上代码"></a>话不多说，直接上代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">scan_files</span><span class="params">(directory, prefix=None, postfix=None)</span>:</span></span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> files <span class="keyword">in</span> os.walk(directory):</span><br><span class="line">        <span class="keyword">for</span> file <span class="keyword">in</span> files[<span class="number">2</span>]:</span><br><span class="line">            <span class="keyword">if</span> <span class="string">"微信截图_"</span> <span class="keyword">in</span> file:</span><br><span class="line">                count += <span class="number">1</span></span><br><span class="line">                newname = re.sub(<span class="string">"微信截图_"</span>,<span class="string">""</span>,file)</span><br><span class="line">                os.rename(directory+file,directory+newname)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    print(<span class="string">"改名完成,一共改名&#123;&#125;个文件"</span>.format(count))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    dir = <span class="string">r"xxx/xxx"</span> <span class="comment"># 这里写你的路径，记得加上前面的r，否则容易出错</span></span><br><span class="line">    scan_files(dir)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+        <tag>编程语言</tag>
       </tags>
   </entry>
   <entry>
@@ -1203,6 +1203,32 @@
       </tags>
   </entry>
   <entry>
+    <title>@classmethod和@staticmethod的区别，python中静态方法和类方法以及普通方法的区别</title>
+    <url>/distiction-of-classmethod-staticmethod/</url>
+    <content><![CDATA[<h3 id="1-区别"><a href="#1-区别" class="headerlink" title="1 区别"></a>1 区别</h3><ul>
+<li>普通方法：由实例化类之后的对象调用，不能有类直接调用，在类中，至少有一个参数，就是<code>self</code></li>
+<li>静态方法：可以由类直接调用，也可以有实例化类之后的对象调用，没有默认参数<code>self</code>，可以由其他参数</li>
+<li>类方法：可以直接由类调用，有一个默认参数，<code>cls</code>，即当前类。</li>
+</ul>
+<blockquote>
+<p>异同点：   </p>
+<ul>
+<li>三种方法都可以有实例化类之后的对象调用，因为实例化后的类，也具有类的属性</li>
+<li>除了普通方法外，其余两个方法，都可以直接使用为初始化（即未实例化）的类直接调用</li>
+</ul>
+</blockquote>
+<h3 id="2-代码介绍"><a href="#2-代码介绍" class="headerlink" title="2 代码介绍"></a>2 代码介绍</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#coding=utf-8</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">normal_class</span><span class="params">(self, pa)</span>:</span></span><br><span class="line">        print(<span class="string">"this is a normal class , param is [&#123;&#125;]"</span>.format(pa))</span><br><span class="line"></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">static_class</span><span class="params">(pa)</span>:</span></span><br><span class="line">        print(<span class="string">"this is static method, there is no default param. &#123;&#125;"</span>.format(pa))</span><br><span class="line"></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">class_method</span><span class="params">(cls)</span>:</span></span><br><span class="line">        print(<span class="string">"this is a class method, param is [&#123;&#125;]"</span>.format(cls))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># 普通方法调用方法</span></span><br><span class="line">    test = Test()</span><br><span class="line">    test.normal_class(<span class="string">"普通方法"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">## 静态方法调用方法</span></span><br><span class="line">    Test.static_class(<span class="string">"静态方法"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">## 类方法调用方法</span></span><br><span class="line">    Test.class_method()</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>运行结果：<br>this is a normal class , param is [普通方法]<br>this is static method, there is no default param. 静态方法<br>this is a class method, param is [&lt;class ‘<strong>main</strong>.Test’&gt;]   </p>
+</blockquote>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数字图像处理（dip）</title>
     <url>/dip/</url>
     <content><![CDATA[<h2 id="学科：数字图像处理（Digital-Image-Processing-video）"><a href="#学科：数字图像处理（Digital-Image-Processing-video）" class="headerlink" title="学科：数字图像处理（Digital Image Processing -video）"></a>学科：<a href="[https://baike.baidu.com/item/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/5199259?fr=aladdin](https://baike.baidu.com/item/数字图像处理/5199259?fr=aladdin)">数字图像处理</a>（<a href="https://www.bilibili.com/video/av61178093/" target="_blank" rel="noopener">Digital Image Processing -video</a>）</h2><h2 id="作者：zhuhonggen"><a href="#作者：zhuhonggen" class="headerlink" title="作者：zhuhonggen"></a>作者：zhuhonggen</h2><p><img src= "/img/loading.gif" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/vAot1Iqrer7Arz2qUQp7S3Ysdc5CsF7rBVBy82ZFdxLvnJGcqQT6QvhMib9OvDMtwPjSyKHWzQXtgDVdWafOcLA/0?wx_fmt=jpeg" alt="作者微信公众号"></p>
@@ -1535,32 +1561,6 @@
       </tags>
   </entry>
   <entry>
-    <title>@classmethod和@staticmethod的区别，python中静态方法和类方法以及普通方法的区别</title>
-    <url>/distiction-of-classmethod-staticmethod/</url>
-    <content><![CDATA[<h3 id="1-区别"><a href="#1-区别" class="headerlink" title="1 区别"></a>1 区别</h3><ul>
-<li>普通方法：由实例化类之后的对象调用，不能有类直接调用，在类中，至少有一个参数，就是<code>self</code></li>
-<li>静态方法：可以由类直接调用，也可以有实例化类之后的对象调用，没有默认参数<code>self</code>，可以由其他参数</li>
-<li>类方法：可以直接由类调用，有一个默认参数，<code>cls</code>，即当前类。</li>
-</ul>
-<blockquote>
-<p>异同点：   </p>
-<ul>
-<li>三种方法都可以有实例化类之后的对象调用，因为实例化后的类，也具有类的属性</li>
-<li>除了普通方法外，其余两个方法，都可以直接使用为初始化（即未实例化）的类直接调用</li>
-</ul>
-</blockquote>
-<h3 id="2-代码介绍"><a href="#2-代码介绍" class="headerlink" title="2 代码介绍"></a>2 代码介绍</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#coding=utf-8</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">normal_class</span><span class="params">(self, pa)</span>:</span></span><br><span class="line">        print(<span class="string">"this is a normal class , param is [&#123;&#125;]"</span>.format(pa))</span><br><span class="line"></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">static_class</span><span class="params">(pa)</span>:</span></span><br><span class="line">        print(<span class="string">"this is static method, there is no default param. &#123;&#125;"</span>.format(pa))</span><br><span class="line"></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">class_method</span><span class="params">(cls)</span>:</span></span><br><span class="line">        print(<span class="string">"this is a class method, param is [&#123;&#125;]"</span>.format(cls))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># 普通方法调用方法</span></span><br><span class="line">    test = Test()</span><br><span class="line">    test.normal_class(<span class="string">"普通方法"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">## 静态方法调用方法</span></span><br><span class="line">    Test.static_class(<span class="string">"静态方法"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">## 类方法调用方法</span></span><br><span class="line">    Test.class_method()</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>运行结果：<br>this is a normal class , param is [普通方法]<br>this is static method, there is no default param. 静态方法<br>this is a class method, param is [&lt;class ‘<strong>main</strong>.Test’&gt;]   </p>
-</blockquote>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决【hexo博客绑定个人域名之后，每次hexo d之后，页面总是失效，需要重新配置】</title>
     <url>/error-by-hexo-d-person-domain/</url>
     <content><![CDATA[<h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><p>我<a href="https://jums.club/personal-domain-for-github-page/">绑定个人域名</a>之后,每次写完博客，将本地博客使用<code>hexo d</code>提交到GitHub时，然后再在浏览器中查看返现页面成了404，然后通过百度，终于把问题解决。</p>
@@ -1673,17 +1673,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GitHub如何开通多个静态page服务</title>
-    <url>/github-how-to-create-two-more-page/</url>
-    <content><![CDATA[<h3 id="0-需求"><a href="#0-需求" class="headerlink" title="0 需求"></a>0 需求</h3><p>之前我已经用<code>GitHub Page</code>开通了自己的<a href="https://jums.club">博客</a>服务，但是今天我想再弄一个博客，用于放图片，但是发现GitHub只能申请一个<strong>个人主页</strong>（访问路径：<code>&lt;username&gt;.github.io</code>），如果想要弄两个或两个以上，那就是另外一种page了，GitHub叫项目主页，所以这种项目主页的访问格式是：<code>&lt;username&gt;.github.io/&lt;projectname&gt;</code>，和个人主页的访问路径不一样。想这种项目主页，我们可以创建很多，但是个人主页，只能创建一个，且仓库名也是有限制的。</p>
-<h3 id="1-开通"><a href="#1-开通" class="headerlink" title="1 开通"></a>1 开通</h3><p>用GitHub创建一个仓库之后，点击<code>settings</code>进入到设置界面，拉到最下面，有一个GitHub Page服务的设置栏，我们将访问分支（<code>branch</code>）设置成<code>gh-pages</code>，一般项目主页的网页文件，都是放在这个分支里面，而个人主页的网页文件，都是放在<code>master</code>分支里面。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200220203633.png" alt="设置分支"></p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>github</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何同时将hexo代码部署到GitHub以及coding上</title>
     <url>/git-to-github-and-coding/</url>
     <content><![CDATA[<h3 id="1-安装插件"><a href="#1-安装插件" class="headerlink" title="1 安装插件"></a>1 安装插件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
@@ -1695,6 +1684,17 @@
 ]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub如何开通多个静态page服务</title>
+    <url>/github-how-to-create-two-more-page/</url>
+    <content><![CDATA[<h3 id="0-需求"><a href="#0-需求" class="headerlink" title="0 需求"></a>0 需求</h3><p>之前我已经用<code>GitHub Page</code>开通了自己的<a href="https://jums.club">博客</a>服务，但是今天我想再弄一个博客，用于放图片，但是发现GitHub只能申请一个<strong>个人主页</strong>（访问路径：<code>&lt;username&gt;.github.io</code>），如果想要弄两个或两个以上，那就是另外一种page了，GitHub叫项目主页，所以这种项目主页的访问格式是：<code>&lt;username&gt;.github.io/&lt;projectname&gt;</code>，和个人主页的访问路径不一样。想这种项目主页，我们可以创建很多，但是个人主页，只能创建一个，且仓库名也是有限制的。</p>
+<h3 id="1-开通"><a href="#1-开通" class="headerlink" title="1 开通"></a>1 开通</h3><p>用GitHub创建一个仓库之后，点击<code>settings</code>进入到设置界面，拉到最下面，有一个GitHub Page服务的设置栏，我们将访问分支（<code>branch</code>）设置成<code>gh-pages</code>，一般项目主页的网页文件，都是放在这个分支里面，而个人主页的网页文件，都是放在<code>master</code>分支里面。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200220203633.png" alt="设置分支"></p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -5793,6 +5793,20 @@ print(filename)    </code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Python语言自动化处理文件夹中的文件</title>
+    <url>/markdown-format/</url>
+    <content><![CDATA[<h3 id="0-功能"><a href="#0-功能" class="headerlink" title="0 功能"></a>0 功能</h3><p>将文件夹中的PDF文件，转化成<code>markdwon</code>格式的链接语法，即<code>[]()</code>格式，输入自己的<code>github</code>存放地址以及文件夹路径即可。</p>
+<h3 id="1-代码"><a href="#1-代码" class="headerlink" title="1 代码"></a>1 代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># _*_ coding=utf-8 _*_</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">这个程序用来整理文件夹中的PDF文件，将其转化成Markdown格式的链接，即[]()的形式</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="keyword">import</span> os,re</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_book_lists</span><span class="params">()</span>:</span></span><br><span class="line">    root_dir = <span class="string">r"J:\电子书"</span></span><br><span class="line">    dir_tree = os.walk(root_dir)</span><br><span class="line">    sub_dir = dir_tree.__next__()[<span class="number">1</span>]</span><br><span class="line">    pdf_list = []</span><br><span class="line">    <span class="keyword">for</span> sub <span class="keyword">in</span> sub_dir:</span><br><span class="line">        <span class="keyword">for</span> _sub <span class="keyword">in</span> os.walk(root_dir + <span class="string">"\\"</span> + str(sub)):</span><br><span class="line">            _book_list = _sub[<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">if</span> _sub[<span class="number">1</span>] <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">                <span class="keyword">for</span> book <span class="keyword">in</span> _book_list:</span><br><span class="line">                    <span class="keyword">if</span> <span class="string">".pdf"</span> <span class="keyword">in</span> book:</span><br><span class="line">                        pdf_list.append(book)</span><br><span class="line">    <span class="keyword">return</span> pdf_list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_url_links</span><span class="params">(book_list)</span>:</span></span><br><span class="line">    urls = []</span><br><span class="line">    url = <span class="string">"https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/pdf"</span></span><br><span class="line">    <span class="keyword">for</span> book <span class="keyword">in</span> book_list:</span><br><span class="line">        book = re.sub(<span class="string">" |:|：|，|,|（|）|\(|\)"</span>,<span class="string">"_"</span>,book)</span><br><span class="line">        book = re.sub(<span class="string">"《|》"</span>,<span class="string">""</span>,book)</span><br><span class="line">        _url = <span class="string">"[&#123;&#125;](&#123;&#125;/&#123;&#125;)    "</span>.format(book[:<span class="number">-4</span>], url, book)</span><br><span class="line">        urls.append(_url)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> urls</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_markdown_format</span><span class="params">(book_list,urls,type_name)</span>:</span></span><br><span class="line">    dict = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> type_name:</span><br><span class="line">        dict[i] = []</span><br><span class="line">    <span class="comment"># print(dict)</span></span><br><span class="line">    dict[<span class="string">"other"</span>] = []</span><br><span class="line">    used = []</span><br><span class="line">    <span class="keyword">for</span> each_url <span class="keyword">in</span> urls:</span><br><span class="line">        <span class="keyword">for</span> each_name <span class="keyword">in</span> type_name:</span><br><span class="line">            <span class="keyword">if</span> each_name <span class="keyword">in</span> each_url:</span><br><span class="line">                _ = dict[each_name]</span><br><span class="line">                _.append(each_url)</span><br><span class="line">                used.append(each_url)</span><br><span class="line">    print(len(urls))</span><br><span class="line">    print(len(used))</span><br><span class="line">    <span class="keyword">for</span> each <span class="keyword">in</span> type_name:</span><br><span class="line">        _list = dict[each]</span><br><span class="line">        print(each + <span class="string">":   "</span>)</span><br><span class="line">        <span class="keyword">for</span> _url <span class="keyword">in</span> _list:</span><br><span class="line">            print(<span class="string">"- &#123;&#125;"</span>.format(_url))</span><br><span class="line">    print(<span class="string">"other:    "</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> urls:</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> used:</span><br><span class="line">            print(<span class="string">"- &#123;&#125;"</span>.format(i))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    book_list = get_book_lists()</span><br><span class="line">    urls = get_url_links(book_list)</span><br><span class="line">    type_name = [<span class="string">"Python"</span>,<span class="string">"SQL"</span>,<span class="string">"TCP-IP详解"</span>,<span class="string">"Kali_Linux无线网络渗透测试"</span>,<span class="string">"HTTP"</span>,<span class="string">"Shell"</span>,<span class="string">"Linux"</span>]</span><br><span class="line">    show_markdown_format(book_list,urls,type_name)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+        <tag>编程语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>redis安装报错：zmalloc.h:50:31: 致命错误：jemalloc/jemalloc.h：没有那个文件或目录</title>
     <url>/make-redis-error/</url>
     <content><![CDATA[<h3 id="1-Linux下安装redis"><a href="#1-Linux下安装redis" class="headerlink" title="1 Linux下安装redis"></a>1 Linux下安装redis</h3><ol>
@@ -5812,20 +5826,6 @@ print(filename)    </code></pre>
 ]]></content>
       <tags>
         <tag>Redis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python语言自动化处理文件夹中的文件</title>
-    <url>/markdown-format/</url>
-    <content><![CDATA[<h3 id="0-功能"><a href="#0-功能" class="headerlink" title="0 功能"></a>0 功能</h3><p>将文件夹中的PDF文件，转化成<code>markdwon</code>格式的链接语法，即<code>[]()</code>格式，输入自己的<code>github</code>存放地址以及文件夹路径即可。</p>
-<h3 id="1-代码"><a href="#1-代码" class="headerlink" title="1 代码"></a>1 代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># _*_ coding=utf-8 _*_</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">这个程序用来整理文件夹中的PDF文件，将其转化成Markdown格式的链接，即[]()的形式</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="keyword">import</span> os,re</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_book_lists</span><span class="params">()</span>:</span></span><br><span class="line">    root_dir = <span class="string">r"J:\电子书"</span></span><br><span class="line">    dir_tree = os.walk(root_dir)</span><br><span class="line">    sub_dir = dir_tree.__next__()[<span class="number">1</span>]</span><br><span class="line">    pdf_list = []</span><br><span class="line">    <span class="keyword">for</span> sub <span class="keyword">in</span> sub_dir:</span><br><span class="line">        <span class="keyword">for</span> _sub <span class="keyword">in</span> os.walk(root_dir + <span class="string">"\\"</span> + str(sub)):</span><br><span class="line">            _book_list = _sub[<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">if</span> _sub[<span class="number">1</span>] <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">                <span class="keyword">for</span> book <span class="keyword">in</span> _book_list:</span><br><span class="line">                    <span class="keyword">if</span> <span class="string">".pdf"</span> <span class="keyword">in</span> book:</span><br><span class="line">                        pdf_list.append(book)</span><br><span class="line">    <span class="keyword">return</span> pdf_list</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_url_links</span><span class="params">(book_list)</span>:</span></span><br><span class="line">    urls = []</span><br><span class="line">    url = <span class="string">"https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/pdf"</span></span><br><span class="line">    <span class="keyword">for</span> book <span class="keyword">in</span> book_list:</span><br><span class="line">        book = re.sub(<span class="string">" |:|：|，|,|（|）|\(|\)"</span>,<span class="string">"_"</span>,book)</span><br><span class="line">        book = re.sub(<span class="string">"《|》"</span>,<span class="string">""</span>,book)</span><br><span class="line">        _url = <span class="string">"[&#123;&#125;](&#123;&#125;/&#123;&#125;)    "</span>.format(book[:<span class="number">-4</span>], url, book)</span><br><span class="line">        urls.append(_url)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> urls</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_markdown_format</span><span class="params">(book_list,urls,type_name)</span>:</span></span><br><span class="line">    dict = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> type_name:</span><br><span class="line">        dict[i] = []</span><br><span class="line">    <span class="comment"># print(dict)</span></span><br><span class="line">    dict[<span class="string">"other"</span>] = []</span><br><span class="line">    used = []</span><br><span class="line">    <span class="keyword">for</span> each_url <span class="keyword">in</span> urls:</span><br><span class="line">        <span class="keyword">for</span> each_name <span class="keyword">in</span> type_name:</span><br><span class="line">            <span class="keyword">if</span> each_name <span class="keyword">in</span> each_url:</span><br><span class="line">                _ = dict[each_name]</span><br><span class="line">                _.append(each_url)</span><br><span class="line">                used.append(each_url)</span><br><span class="line">    print(len(urls))</span><br><span class="line">    print(len(used))</span><br><span class="line">    <span class="keyword">for</span> each <span class="keyword">in</span> type_name:</span><br><span class="line">        _list = dict[each]</span><br><span class="line">        print(each + <span class="string">":   "</span>)</span><br><span class="line">        <span class="keyword">for</span> _url <span class="keyword">in</span> _list:</span><br><span class="line">            print(<span class="string">"- &#123;&#125;"</span>.format(_url))</span><br><span class="line">    print(<span class="string">"other:    "</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> urls:</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> used:</span><br><span class="line">            print(<span class="string">"- &#123;&#125;"</span>.format(i))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    book_list = get_book_lists()</span><br><span class="line">    urls = get_url_links(book_list)</span><br><span class="line">    type_name = [<span class="string">"Python"</span>,<span class="string">"SQL"</span>,<span class="string">"TCP-IP详解"</span>,<span class="string">"Kali_Linux无线网络渗透测试"</span>,<span class="string">"HTTP"</span>,<span class="string">"Shell"</span>,<span class="string">"Linux"</span>]</span><br><span class="line">    show_markdown_format(book_list,urls,type_name)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-        <tag>编程语言</tag>
       </tags>
   </entry>
   <entry>
@@ -6719,17 +6719,6 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
-    <title>《庆余年》免费资源</title>
-    <url>/qing-yu-nian-resource/</url>
-    <content><![CDATA[<h3 id="1-国外资源"><a href="#1-国外资源" class="headerlink" title="1 国外资源"></a>1 国外资源</h3><p><a href="https://drive.google.com/drive/folders/1OEdzNsGgfx_t-b0cVy-V0lmyBAn8Jqp8?usp=drive_open" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1OEdzNsGgfx_t-b0cVy-V0lmyBAn8Jqp8?usp=drive_open</a></p>
-<h3 id="2-国内资源"><a href="#2-国内资源" class="headerlink" title="2 国内资源"></a>2 国内资源</h3><p>天翼云盘：<a href="https://cloud.189.cn/t/rMN3uq3MRFf2" target="_blank" rel="noopener">https://cloud.189.cn/t/rMN3uq3MRFf2</a>(密码：48sc)</p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>影视</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TabError: Inconsistent use of tabs and spaces in indentation</title>
     <url>/python-tab-error/</url>
     <content><![CDATA[<h3 id="1-问题"><a href="#1-问题" class="headerlink" title="1 问题"></a>1 问题</h3><p>在使用命令行运行<code>python</code>文件时，出现以下错误：   </p>
@@ -6744,6 +6733,17 @@ cond(no)->op
       <tags>
         <tag>解决问题</tag>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《庆余年》免费资源</title>
+    <url>/qing-yu-nian-resource/</url>
+    <content><![CDATA[<h3 id="1-国外资源"><a href="#1-国外资源" class="headerlink" title="1 国外资源"></a>1 国外资源</h3><p><a href="https://drive.google.com/drive/folders/1OEdzNsGgfx_t-b0cVy-V0lmyBAn8Jqp8?usp=drive_open" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1OEdzNsGgfx_t-b0cVy-V0lmyBAn8Jqp8?usp=drive_open</a></p>
+<h3 id="2-国内资源"><a href="#2-国内资源" class="headerlink" title="2 国内资源"></a>2 国内资源</h3><p>天翼云盘：<a href="https://cloud.189.cn/t/rMN3uq3MRFf2" target="_blank" rel="noopener">https://cloud.189.cn/t/rMN3uq3MRFf2</a>(密码：48sc)</p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>影视</tag>
       </tags>
   </entry>
   <entry>
