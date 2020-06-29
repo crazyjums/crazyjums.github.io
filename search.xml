@@ -319,6 +319,74 @@
       </tags>
   </entry>
   <entry>
+    <title>Python基础知识介绍</title>
+    <url>/basic-python-knowledge/</url>
+    <content><![CDATA[<h3 id="1-下载Python"><a href="#1-下载Python" class="headerlink" title="1 下载Python"></a>1 下载Python</h3><ul>
+<li>Windows:<a href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener">下载</a>    </li>
+<li>mac os:<a href="https://www.python.org/downloads/mac-osx/" target="_blank" rel="noopener">下载</a>    </li>
+</ul>
+<h3 id="2-安装Python"><a href="#2-安装Python" class="headerlink" title="2 安装Python"></a>2 安装Python</h3><p>这里就不过多讲述这些，下载完安装包之后，直接点击下一步即可，记得添加到环境变量（Windows）    </p>
+<h4 id="2-1-添加环境变量"><a href="#2-1-添加环境变量" class="headerlink" title="2.1 添加环境变量"></a>2.1 添加环境变量</h4><p>【我的电脑】-&gt;【属性】-&gt;【高级系统设置】-&gt;【环境变量】-&gt;【系统变量】-&gt;【path】<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226145021.png" alt="环境变量">    </p>
+<h3 id="3-pip的使用"><a href="#3-pip的使用" class="headerlink" title="3 pip的使用"></a>3 pip的使用</h3><h4 id="3-1-pip-install-xxx"><a href="#3-1-pip-install-xxx" class="headerlink" title="3.1 pip install xxx"></a>3.1 pip install xxx</h4><p>功能：通过<code>pip</code>命令来安装三方包，这里以<code>requests</code>为例:    </p>
+<blockquote>
+<p>pip install requests    </p>
+</blockquote>
+<h4 id="3-2-pip-list"><a href="#3-2-pip-list" class="headerlink" title="3.2 pip list"></a>3.2 pip list</h4><p>功能：显示本地已经安装的三方包，如：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226145436.png" alt="pip list">    </p>
+<h4 id="3-3-pip-V-upper-letter"><a href="#3-3-pip-V-upper-letter" class="headerlink" title="3.3 pip -V(upper letter)"></a>3.3 pip -V(upper letter)</h4><p>功能：显示Python的路径以及当前版本号，如：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226145543.png" alt="pip -V">    </p>
+<h4 id="3-4-其他-pip-h"><a href="#3-4-其他-pip-h" class="headerlink" title="3.4 其他 pip -h"></a>3.4 其他 pip -h</h4><p>功能：显示帮助信息，其他的更多的信息可以通过该命令查看，或者参考<a href="https://pypi.org/project/pip/" target="_blank" rel="noopener">这里</a><br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226145626.png" alt="pip -h">    </p>
+<h3 id="4-Python中的变量"><a href="#4-Python中的变量" class="headerlink" title="4 Python中的变量"></a>4 Python中的变量</h3><p>本章前提：<code>id()</code>，该方法是用来显示变量在内存中的地址的。    </p>
+<h4 id="4-1-不可变数据类型"><a href="#4-1-不可变数据类型" class="headerlink" title="4.1 不可变数据类型"></a>4.1 不可变数据类型</h4><p>不可变数据类型表示，如果某变量的值发生了变化，那么必须重新分配一个内存空间来盛放这个新的值。Python中的几种不可变数据类型：<code>number</code>,<code>str</code>,<code>tuple</code>。    </p>
+<h5 id="4-1-1-number"><a href="#4-1-1-number" class="headerlink" title="4.1.1 number"></a>4.1.1 number</h5><p>Python中支持4中不同数值型的数据类型（<a href="https://www.runoob.com/python/python-numbers.html" target="_blank" rel="noopener">参考</a>）：    </p>
+<ul>
+<li>int（整型）    </li>
+<li>long integters（长整型）    </li>
+<li>floating point real values（浮点型）    </li>
+<li>complex numbers（复杂数值型）<br>举例：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226150623.png" alt="number example">    </li>
+</ul>
+<h5 id="4-1-2-str"><a href="#4-1-2-str" class="headerlink" title="4.1.2 str"></a>4.1.2 str</h5><p>字符串类型也是不可信数据类型。<br>举例：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226151208.png" alt="str example"><br>字符串的特性：    </p>
+<ul>
+<li>截取    </li>
+<li>连接    </li>
+</ul>
+<p>（1）截取<br>随便截取：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226151430.png" alt="截取1"><br>截取到倒数第一位为止：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226151531.png" alt="截取2"><br>截取所有：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226151608.png" alt="截取3"><br>这种截取方式相当于：<code>t=s</code>，即直接赋值。    </p>
+<p>（2）连接<br>这种方式比较简单，就是直接用<code>+</code>号将前后两个字符串连接成一个。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226151817.png" alt="连接1">    </p>
+<h5 id="4-1-3-tuple"><a href="#4-1-3-tuple" class="headerlink" title="4.1.3 tuple"></a>4.1.3 tuple</h5><p>元组是Python中的一种不可变数据类型，用小括号<code>()</code>包起来。<br>定义元祖：    </p>
+<ul>
+<li>直接用小括号包起来，如果只有一个变量，那么末尾加一个<code>,</code>，用以区分元组和普通变量    </li>
+<li>用<code>tuple</code>关键字定义    </li>
+</ul>
+<p>举例：<br>（1）直接用<code>()</code>包起来<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226152201.png" alt="定义1"><br>（2）用<code>tuple</code>关键字定义<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226152412.png" alt="定义2">    </p>
+<h4 id="4-2-可变数据类型"><a href="#4-2-可变数据类型" class="headerlink" title="4.2 可变数据类型"></a>4.2 可变数据类型</h4><h5 id="4-2-1-list"><a href="#4-2-1-list" class="headerlink" title="4.2.1 list"></a>4.2.1 list</h5><p>Python中的<code>list</code>是一种比较灵活的数据结构，也是一种可变数据结构，看下面的例子：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227161328.png" alt="list example"><br>下面这种情况，和我们以为的可能不太一样：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227161656.png" alt="特例1"><br>你觉得<code>a</code>和<code>b</code>是同一个对象吗？<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227161622.png" alt="答案"><br><strong>注意：</strong>    </p>
+<blockquote>
+<p>当我们使用<code>=</code>进行列表的赋值的时候，我们要注意，默认情况下，<code>=</code>表示的是一种浅拷贝，即直接将<code>=</code>左边的变量的指针指向<code>=</code>右边的变量的内存空间，当右边的变量改变的时候，左边的变量也跟着改变，当我们在写程序的时候，这种方式显然不够安全。别不用着急，可以使用<code>Python</code>中的<strong>深拷贝</strong>进行赋值。    </p>
+</blockquote>
+<p><strong>深拷贝：</strong><br>深拷贝与浅拷贝的示意图：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/164e6856d76ff161.jpg" alt="deep and shallow copy"><br>浅拷贝和赋值的区别？    </p>
+<ul>
+<li>当我们把一个对象赋值给一个新的变量时，赋的其实是该对象的在栈中的地址，而不是堆中的数据。也就是两个对象指向的是同一个存储空间，无论哪个对象发生改变，其实都是改变的存储空间的内容，因此，两个对象是联动的。    </li>
+<li>浅拷贝是按位拷贝对象，它会创建一个新对象，这个对象有着原始对象属性值的一份精确拷贝。如果属性是基本类型，拷贝的就是基本类型的值；如果属性是内存地址（引用类型），拷贝的就是内存地址 ，因此如果其中一个对象改变了这个地址，就会影响到另一个对象。即默认拷贝构造函数只是对对象进行浅拷贝复制(逐个成员依次拷贝)，即只复制对象空间而不复制资源。    </li>
+</ul>
+<p>（1）浅拷贝和赋值举例：<br><code>Python</code>中有一个自带包<code>copy</code>，该包中的<code>copy</code>代表浅拷贝，<code>deepcopy</code>代表深拷贝。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227162724.png" alt="浅拷贝和赋值举例"><br>从图中我们可以看到，通过赋值的方式得到的<code>list_3</code>的地址和<code>list_1</code>的地址是一样的，这就印证了上面说的，赋值就是直接将指针指向源数据的内存空间。而浅拷贝则不然，浅拷贝则是赋值了一遍数据，但是复制也不是全盘复制，而是有条件的赋值，即如果该属性是基本类型（基本数据类型也可理解为不可变的数据结构，如<code>int</code>,<code>str</code>,’long int’等）就直接将该基本类型的值拷贝一份到新的内存中，如果该属性是一个内存地址（也就是说是可变的数据结构，通常这种数据类型在内存中是一种引用的方式，即内存地址），那么就将内存地址复制一份到新的内存中，那么如果该内存地址中的源数据改变了，新复制的数据中该内存地址所指向的数据也会改变，因为它们指向的是同一个数据。    </p>
+<p>（2）深拷贝举例：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227163618.png" alt="deepcopy"><br>深拷贝就和其他的编程语言（比如<code>java</code>）的一致了，就是直接一模一样拷贝一份，源数据和新被赋值的数据进水不犯河水。它们的各自改变不会互相影响。<br>看下面的例子：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227163848.png" alt="深拷贝和浅拷贝举例">    </p>
+<blockquote>
+<p>关于深拷贝和浅拷贝的具体更深的内容，可以参考这篇博客：<a href="https://juejin.im/post/5b5dcf8351882519790c9a2e" target="_blank" rel="noopener">https://juejin.im/post/5b5dcf8351882519790c9a2e</a>    </p>
+</blockquote>
+<h5 id="4-2-2-dict"><a href="#4-2-2-dict" class="headerlink" title="4.2.2 dict"></a>4.2.2 dict</h5><p>字典是<code>Python</code>中的一种<code>key-value</code>的键值对形式的数据结构，也是一种可变的数据结构，基本原理和上一节讲的<code>list</code>差不多，这里简单介绍一下。    </p>
+<p>（1）字典赋值的举例：<br>关于<code>python</code>中的这种数据赋值，我们叫它赋值，不如叫它给真正的数据对象取一个别名，这就好理解了。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227164942.png" alt="字典赋值的举例"><br>我们可以看到，字典的赋值和列表的赋值其实是一样的，都是简单粗暴的直接指针指过去，<code>dict_1</code>和<code>dict_2</code>是联动的。如我们修改<code>dict_1</code>的<code>name</code>属性，<code>dict_2</code>的<code>name</code>属性也改变了：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227165149.png" alt="联动性">    </p>
+<p>（2）字典的浅拷贝举例：<br><code>dict.copy()</code>和<code>from copy import copy</code>的区别？    </p>
+<ul>
+<li><code>dict.copy()</code>：这种拷贝只是拷贝第一层，如果字典中还嵌套有可变数据类型，还是一样，只拷贝引用即地址，不会真正拷贝数据。    </li>
+<li><code>from copy import copy</code>中导入的<code>copy</code>是浅拷贝的包，但是用在字典上，会拷贝第一层，再往下就不会再拷贝了。    </li>
+</ul>
+<p>举例：<br><code>dict.copy()</code>举例：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227171641.png" alt="dict.copy()举例"><br>我们可以看到，基本类型都是已经拷贝了，所以<code>dict_2</code>的<code>age</code>属性并没有改变。接着看修改可变数据类型之后的情况：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227171839.png" alt="可变类型的改变">    </p>
+<p>（3）字典的深拷贝举例：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227211521.png" alt="字典的深拷贝举例">   </p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+        <tag>编程语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一篇文看透二叉树，先序遍历、中序遍历、后序遍历、广度优先、深度优先，java实现</title>
     <url>/binaryTree-java-implements/</url>
     <content><![CDATA[<h3 id="1-二叉树的定义"><a href="#1-二叉树的定义" class="headerlink" title="1 二叉树的定义"></a>1 二叉树的定义</h3><blockquote>
@@ -427,74 +495,6 @@
         <tag>Java</tag>
         <tag>面试</tag>
         <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python基础知识介绍</title>
-    <url>/basic-python-knowledge/</url>
-    <content><![CDATA[<h3 id="1-下载Python"><a href="#1-下载Python" class="headerlink" title="1 下载Python"></a>1 下载Python</h3><ul>
-<li>Windows:<a href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener">下载</a>    </li>
-<li>mac os:<a href="https://www.python.org/downloads/mac-osx/" target="_blank" rel="noopener">下载</a>    </li>
-</ul>
-<h3 id="2-安装Python"><a href="#2-安装Python" class="headerlink" title="2 安装Python"></a>2 安装Python</h3><p>这里就不过多讲述这些，下载完安装包之后，直接点击下一步即可，记得添加到环境变量（Windows）    </p>
-<h4 id="2-1-添加环境变量"><a href="#2-1-添加环境变量" class="headerlink" title="2.1 添加环境变量"></a>2.1 添加环境变量</h4><p>【我的电脑】-&gt;【属性】-&gt;【高级系统设置】-&gt;【环境变量】-&gt;【系统变量】-&gt;【path】<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226145021.png" alt="环境变量">    </p>
-<h3 id="3-pip的使用"><a href="#3-pip的使用" class="headerlink" title="3 pip的使用"></a>3 pip的使用</h3><h4 id="3-1-pip-install-xxx"><a href="#3-1-pip-install-xxx" class="headerlink" title="3.1 pip install xxx"></a>3.1 pip install xxx</h4><p>功能：通过<code>pip</code>命令来安装三方包，这里以<code>requests</code>为例:    </p>
-<blockquote>
-<p>pip install requests    </p>
-</blockquote>
-<h4 id="3-2-pip-list"><a href="#3-2-pip-list" class="headerlink" title="3.2 pip list"></a>3.2 pip list</h4><p>功能：显示本地已经安装的三方包，如：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226145436.png" alt="pip list">    </p>
-<h4 id="3-3-pip-V-upper-letter"><a href="#3-3-pip-V-upper-letter" class="headerlink" title="3.3 pip -V(upper letter)"></a>3.3 pip -V(upper letter)</h4><p>功能：显示Python的路径以及当前版本号，如：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226145543.png" alt="pip -V">    </p>
-<h4 id="3-4-其他-pip-h"><a href="#3-4-其他-pip-h" class="headerlink" title="3.4 其他 pip -h"></a>3.4 其他 pip -h</h4><p>功能：显示帮助信息，其他的更多的信息可以通过该命令查看，或者参考<a href="https://pypi.org/project/pip/" target="_blank" rel="noopener">这里</a><br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226145626.png" alt="pip -h">    </p>
-<h3 id="4-Python中的变量"><a href="#4-Python中的变量" class="headerlink" title="4 Python中的变量"></a>4 Python中的变量</h3><p>本章前提：<code>id()</code>，该方法是用来显示变量在内存中的地址的。    </p>
-<h4 id="4-1-不可变数据类型"><a href="#4-1-不可变数据类型" class="headerlink" title="4.1 不可变数据类型"></a>4.1 不可变数据类型</h4><p>不可变数据类型表示，如果某变量的值发生了变化，那么必须重新分配一个内存空间来盛放这个新的值。Python中的几种不可变数据类型：<code>number</code>,<code>str</code>,<code>tuple</code>。    </p>
-<h5 id="4-1-1-number"><a href="#4-1-1-number" class="headerlink" title="4.1.1 number"></a>4.1.1 number</h5><p>Python中支持4中不同数值型的数据类型（<a href="https://www.runoob.com/python/python-numbers.html" target="_blank" rel="noopener">参考</a>）：    </p>
-<ul>
-<li>int（整型）    </li>
-<li>long integters（长整型）    </li>
-<li>floating point real values（浮点型）    </li>
-<li>complex numbers（复杂数值型）<br>举例：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226150623.png" alt="number example">    </li>
-</ul>
-<h5 id="4-1-2-str"><a href="#4-1-2-str" class="headerlink" title="4.1.2 str"></a>4.1.2 str</h5><p>字符串类型也是不可信数据类型。<br>举例：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226151208.png" alt="str example"><br>字符串的特性：    </p>
-<ul>
-<li>截取    </li>
-<li>连接    </li>
-</ul>
-<p>（1）截取<br>随便截取：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226151430.png" alt="截取1"><br>截取到倒数第一位为止：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226151531.png" alt="截取2"><br>截取所有：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226151608.png" alt="截取3"><br>这种截取方式相当于：<code>t=s</code>，即直接赋值。    </p>
-<p>（2）连接<br>这种方式比较简单，就是直接用<code>+</code>号将前后两个字符串连接成一个。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226151817.png" alt="连接1">    </p>
-<h5 id="4-1-3-tuple"><a href="#4-1-3-tuple" class="headerlink" title="4.1.3 tuple"></a>4.1.3 tuple</h5><p>元组是Python中的一种不可变数据类型，用小括号<code>()</code>包起来。<br>定义元祖：    </p>
-<ul>
-<li>直接用小括号包起来，如果只有一个变量，那么末尾加一个<code>,</code>，用以区分元组和普通变量    </li>
-<li>用<code>tuple</code>关键字定义    </li>
-</ul>
-<p>举例：<br>（1）直接用<code>()</code>包起来<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226152201.png" alt="定义1"><br>（2）用<code>tuple</code>关键字定义<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191226152412.png" alt="定义2">    </p>
-<h4 id="4-2-可变数据类型"><a href="#4-2-可变数据类型" class="headerlink" title="4.2 可变数据类型"></a>4.2 可变数据类型</h4><h5 id="4-2-1-list"><a href="#4-2-1-list" class="headerlink" title="4.2.1 list"></a>4.2.1 list</h5><p>Python中的<code>list</code>是一种比较灵活的数据结构，也是一种可变数据结构，看下面的例子：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227161328.png" alt="list example"><br>下面这种情况，和我们以为的可能不太一样：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227161656.png" alt="特例1"><br>你觉得<code>a</code>和<code>b</code>是同一个对象吗？<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227161622.png" alt="答案"><br><strong>注意：</strong>    </p>
-<blockquote>
-<p>当我们使用<code>=</code>进行列表的赋值的时候，我们要注意，默认情况下，<code>=</code>表示的是一种浅拷贝，即直接将<code>=</code>左边的变量的指针指向<code>=</code>右边的变量的内存空间，当右边的变量改变的时候，左边的变量也跟着改变，当我们在写程序的时候，这种方式显然不够安全。别不用着急，可以使用<code>Python</code>中的<strong>深拷贝</strong>进行赋值。    </p>
-</blockquote>
-<p><strong>深拷贝：</strong><br>深拷贝与浅拷贝的示意图：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/164e6856d76ff161.jpg" alt="deep and shallow copy"><br>浅拷贝和赋值的区别？    </p>
-<ul>
-<li>当我们把一个对象赋值给一个新的变量时，赋的其实是该对象的在栈中的地址，而不是堆中的数据。也就是两个对象指向的是同一个存储空间，无论哪个对象发生改变，其实都是改变的存储空间的内容，因此，两个对象是联动的。    </li>
-<li>浅拷贝是按位拷贝对象，它会创建一个新对象，这个对象有着原始对象属性值的一份精确拷贝。如果属性是基本类型，拷贝的就是基本类型的值；如果属性是内存地址（引用类型），拷贝的就是内存地址 ，因此如果其中一个对象改变了这个地址，就会影响到另一个对象。即默认拷贝构造函数只是对对象进行浅拷贝复制(逐个成员依次拷贝)，即只复制对象空间而不复制资源。    </li>
-</ul>
-<p>（1）浅拷贝和赋值举例：<br><code>Python</code>中有一个自带包<code>copy</code>，该包中的<code>copy</code>代表浅拷贝，<code>deepcopy</code>代表深拷贝。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227162724.png" alt="浅拷贝和赋值举例"><br>从图中我们可以看到，通过赋值的方式得到的<code>list_3</code>的地址和<code>list_1</code>的地址是一样的，这就印证了上面说的，赋值就是直接将指针指向源数据的内存空间。而浅拷贝则不然，浅拷贝则是赋值了一遍数据，但是复制也不是全盘复制，而是有条件的赋值，即如果该属性是基本类型（基本数据类型也可理解为不可变的数据结构，如<code>int</code>,<code>str</code>,’long int’等）就直接将该基本类型的值拷贝一份到新的内存中，如果该属性是一个内存地址（也就是说是可变的数据结构，通常这种数据类型在内存中是一种引用的方式，即内存地址），那么就将内存地址复制一份到新的内存中，那么如果该内存地址中的源数据改变了，新复制的数据中该内存地址所指向的数据也会改变，因为它们指向的是同一个数据。    </p>
-<p>（2）深拷贝举例：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227163618.png" alt="deepcopy"><br>深拷贝就和其他的编程语言（比如<code>java</code>）的一致了，就是直接一模一样拷贝一份，源数据和新被赋值的数据进水不犯河水。它们的各自改变不会互相影响。<br>看下面的例子：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227163848.png" alt="深拷贝和浅拷贝举例">    </p>
-<blockquote>
-<p>关于深拷贝和浅拷贝的具体更深的内容，可以参考这篇博客：<a href="https://juejin.im/post/5b5dcf8351882519790c9a2e" target="_blank" rel="noopener">https://juejin.im/post/5b5dcf8351882519790c9a2e</a>    </p>
-</blockquote>
-<h5 id="4-2-2-dict"><a href="#4-2-2-dict" class="headerlink" title="4.2.2 dict"></a>4.2.2 dict</h5><p>字典是<code>Python</code>中的一种<code>key-value</code>的键值对形式的数据结构，也是一种可变的数据结构，基本原理和上一节讲的<code>list</code>差不多，这里简单介绍一下。    </p>
-<p>（1）字典赋值的举例：<br>关于<code>python</code>中的这种数据赋值，我们叫它赋值，不如叫它给真正的数据对象取一个别名，这就好理解了。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227164942.png" alt="字典赋值的举例"><br>我们可以看到，字典的赋值和列表的赋值其实是一样的，都是简单粗暴的直接指针指过去，<code>dict_1</code>和<code>dict_2</code>是联动的。如我们修改<code>dict_1</code>的<code>name</code>属性，<code>dict_2</code>的<code>name</code>属性也改变了：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227165149.png" alt="联动性">    </p>
-<p>（2）字典的浅拷贝举例：<br><code>dict.copy()</code>和<code>from copy import copy</code>的区别？    </p>
-<ul>
-<li><code>dict.copy()</code>：这种拷贝只是拷贝第一层，如果字典中还嵌套有可变数据类型，还是一样，只拷贝引用即地址，不会真正拷贝数据。    </li>
-<li><code>from copy import copy</code>中导入的<code>copy</code>是浅拷贝的包，但是用在字典上，会拷贝第一层，再往下就不会再拷贝了。    </li>
-</ul>
-<p>举例：<br><code>dict.copy()</code>举例：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227171641.png" alt="dict.copy()举例"><br>我们可以看到，基本类型都是已经拷贝了，所以<code>dict_2</code>的<code>age</code>属性并没有改变。接着看修改可变数据类型之后的情况：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227171839.png" alt="可变类型的改变">    </p>
-<p>（3）字典的深拷贝举例：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20191227211521.png" alt="字典的深拷贝举例">   </p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-        <tag>编程语言</tag>
       </tags>
   </entry>
   <entry>
@@ -1593,23 +1593,6 @@
       </tags>
   </entry>
   <entry>
-    <title>如何使用git删除GitHub上的文件或文件夹</title>
-    <url>/git-delete-file-s/</url>
-    <content><![CDATA[<h3 id="1-问题"><a href="#1-问题" class="headerlink" title="1 问题"></a>1 问题</h3><p>当我们需要从github上删除一些我们不需要的文件或者文件夹时，如果通过github来操作的话，将会很麻烦，因为github只允许删除一个仓库，而不允许只删除一个单一的文件或者文件夹，使用git 工具可以快速删除。</p>
-<h3 id="2-解决"><a href="#2-解决" class="headerlink" title="2 解决"></a>2 解决</h3><h4 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rm --cached filename  &#x2F;&#x2F;删除文件</span><br><span class="line"></span><br><span class="line">git rm --cached -r dictory &#x2F;&#x2F;删除目录</span><br></pre></td></tr></table></figure>
-
-<h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;注释&quot;</span><br></pre></td></tr></table></figure>
-
-<h4 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git如何连接GitHub</title>
     <url>/git-connect-to-github/</url>
     <content><![CDATA[<h3 id="1-生产自己的公钥和私钥"><a href="#1-生产自己的公钥和私钥" class="headerlink" title="1 生产自己的公钥和私钥"></a>1 生产自己的公钥和私钥</h3><p>首先生成一个rsa的私钥和公钥<br>ssh-keygen -t rsa -C “<a href="mailto:15950093214@163.com">15950093214@163.com</a>“  //你的github邮箱帐号，如下：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/1212206-20190330101656413-693026470.png" alt="gen key">   </p>
@@ -1624,6 +1607,23 @@
 <p>警告来可以不用看，如果显示成这样，那就算是连接成功了。</p>
 </blockquote>
 <h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号">   </p>
+]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何使用git删除GitHub上的文件或文件夹</title>
+    <url>/git-delete-file-s/</url>
+    <content><![CDATA[<h3 id="1-问题"><a href="#1-问题" class="headerlink" title="1 问题"></a>1 问题</h3><p>当我们需要从github上删除一些我们不需要的文件或者文件夹时，如果通过github来操作的话，将会很麻烦，因为github只允许删除一个仓库，而不允许只删除一个单一的文件或者文件夹，使用git 工具可以快速删除。</p>
+<h3 id="2-解决"><a href="#2-解决" class="headerlink" title="2 解决"></a>2 解决</h3><h4 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rm --cached filename  &#x2F;&#x2F;删除文件</span><br><span class="line"></span><br><span class="line">git rm --cached -r dictory &#x2F;&#x2F;删除目录</span><br></pre></td></tr></table></figure>
+
+<h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;注释&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
 ]]></content>
       <tags>
         <tag>git</tag>
@@ -2623,17 +2623,6 @@ print(filename)    </code></pre>
       </tags>
   </entry>
   <entry>
-    <title>如何使用readthedoc.org编写属于自己的说明文档</title>
-    <url>/how-to-write-a-document-for-your-project/</url>
-    <content><![CDATA[<h3 id="1-网站"><a href="#1-网站" class="headerlink" title="1 网站"></a>1 网站</h3><p>访问<a href="https://readthedocs.org/" target="_blank" rel="noopener">https://readthedocs.org/</a>使用<code>github</code>进行登录，然后倒入自己需要撰写说明文档的项目。如下：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200302133939.png" alt="import project">   </p>
-<h3 id="2-创建index-rst-or-README-rst文件"><a href="#2-创建index-rst-or-README-rst文件" class="headerlink" title="2 创建index.rst or README.rst文件"></a>2 创建index.rst or README.rst文件</h3><p>在自己的<code>github</code>项目中，创建你的说明文件，里面放的是你的说明文档的内容，将文件命名为<code>index.rst</code>or<code>README.rst</code>即可。</p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>github</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何将自己写的python包自动导入到环境变量中，在命令行可以使用</title>
     <url>/how-to-use-setuptools/</url>
     <content><![CDATA[<h3 id="1-问题"><a href="#1-问题" class="headerlink" title="1 问题"></a>1 问题</h3><p>最近在写一些爬虫相关的项目，发现其中有很多的操作都是一些重复的代码，且有一定的规律性，所以就决定自己写一个自定义的包（<code>packagea</code>），然后通过<code>from moudle import moudle</code>的方式导入，就可以省去很多麻烦了。</p>
@@ -2659,6 +2648,17 @@ print(filename)    </code></pre>
 ]]></content>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何使用readthedoc.org编写属于自己的说明文档</title>
+    <url>/how-to-write-a-document-for-your-project/</url>
+    <content><![CDATA[<h3 id="1-网站"><a href="#1-网站" class="headerlink" title="1 网站"></a>1 网站</h3><p>访问<a href="https://readthedocs.org/" target="_blank" rel="noopener">https://readthedocs.org/</a>使用<code>github</code>进行登录，然后倒入自己需要撰写说明文档的项目。如下：<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/20200302133939.png" alt="import project">   </p>
+<h3 id="2-创建index-rst-or-README-rst文件"><a href="#2-创建index-rst-or-README-rst文件" class="headerlink" title="2 创建index.rst or README.rst文件"></a>2 创建index.rst or README.rst文件</h3><p>在自己的<code>github</code>项目中，创建你的说明文件，里面放的是你的说明文档的内容，将文件命名为<code>index.rst</code>or<code>README.rst</code>即可。</p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -7404,20 +7404,6 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
-    <title>virtualenv在不同操作系统中的系统方式</title>
-    <url>/virtualenv-start/</url>
-    <content><![CDATA[<h3 id="windows系统"><a href="#windows系统" class="headerlink" title="windows系统"></a>windows系统</h3><p>加入你的虚拟环境就在<code>c:\Users\user_name\my_env</code>下，</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\Users\user_name&gt;cd env\venv\scripts</span><br><span class="line">C:\Users\user_name&gt;activate  ##开启虚拟环境</span><br><span class="line">(venv)C:\Users\user_name&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="linux-or-mac"><a href="#linux-or-mac" class="headerlink" title="linux or mac"></a>linux or mac</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">virtualenv myproject ### 创建一个虚拟环境</span><br><span class="line">source myproject&#x2F;bin&#x2F;activate  ### 开启虚拟环境</span><br></pre></td></tr></table></figure>
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vmware下安装的centos虚拟机，不能访问外网</title>
     <url>/vmware-machine-can-not-connect-to-internet/</url>
     <content><![CDATA[<h3 id="1-问题"><a href="#1-问题" class="headerlink" title="1 问题"></a>1 问题</h3><p>使用<code>vmware</code>安装了<code>centos</code>虚拟机之后，发现不能访问外网，所以就网上搜了一下，现已经解决，但是还不能通过<code>xsheel</code>连接虚拟机。</p>
@@ -7440,6 +7426,20 @@ cond(no)->op
 ]]></content>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>virtualenv在不同操作系统中的系统方式</title>
+    <url>/virtualenv-start/</url>
+    <content><![CDATA[<h3 id="windows系统"><a href="#windows系统" class="headerlink" title="windows系统"></a>windows系统</h3><p>加入你的虚拟环境就在<code>c:\Users\user_name\my_env</code>下，</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\Users\user_name&gt;cd env\venv\scripts</span><br><span class="line">C:\Users\user_name&gt;activate  ##开启虚拟环境</span><br><span class="line">(venv)C:\Users\user_name&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="linux-or-mac"><a href="#linux-or-mac" class="headerlink" title="linux or mac"></a>linux or mac</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">virtualenv myproject ### 创建一个虚拟环境</span><br><span class="line">source myproject&#x2F;bin&#x2F;activate  ### 开启虚拟环境</span><br></pre></td></tr></table></figure>
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
