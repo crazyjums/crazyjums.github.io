@@ -107,19 +107,6 @@
       </tags>
   </entry>
   <entry>
-    <title>UnicodeDecodeError: &#39;gb2312&#39; codec can&#39;t decode byte 0x87 in position 16144: illegal multibyte sequence</title>
-    <url>/UnicodeDecodeError-gb2312/</url>
-    <content><![CDATA[<h3 id="1-问题"><a href="#1-问题" class="headerlink" title="1 问题"></a>1 问题</h3><h4 id="UnicodeDecodeError-‘gb2312’-codec-can’t-decode-byte-0x87-in-position-16144-illegal-multibyte-sequence"><a href="#UnicodeDecodeError-‘gb2312’-codec-can’t-decode-byte-0x87-in-position-16144-illegal-multibyte-sequence" class="headerlink" title="UnicodeDecodeError: ‘gb2312’ codec can’t decode byte 0x87 in position 16144: illegal multibyte sequence"></a>UnicodeDecodeError: ‘gb2312’ codec can’t decode byte 0x87 in position 16144: illegal multibyte sequence</h4><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200311213944.png" alt="gb2312 error"></p>
-<h3 id="2-分析"><a href="#2-分析" class="headerlink" title="2 分析"></a>2 分析</h3><p>解码错误，我们在用python爬虫爬取网页信息时，通常会遇到编码问题，这是其中的一种，中文编码问题更多。中文编码有如下几种，字符数以次增多：<code>gb2312&lt;gbk&lt;gb18030</code>，如果使用<code>gb2312</code>不能解码，那么可以使用<code>gb18030</code>解码试试</p>
-<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200311213901.png" alt="gn18030"></p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-        <tag>编码</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决【TypeError: Input &#39;b&#39; of &#39;MatMul&#39; Op has type int32 that does not match type float32 of argument &#39;a&#39;.】问题</title>
     <url>/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</url>
     <content><![CDATA[<h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><p>利用TensorFlow框架进行自实现线性回归时，报错：TypeError: Input ‘b’ of ‘MatMul’ Op has type int32 that does not match type float32 of argument ‘a’.<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191127131420.png" alt="error">   </p>
@@ -137,6 +124,19 @@
         <tag>编程框架</tag>
         <tag>TensorFlow</tag>
         <tag>解决问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UnicodeDecodeError: &#39;gb2312&#39; codec can&#39;t decode byte 0x87 in position 16144: illegal multibyte sequence</title>
+    <url>/UnicodeDecodeError-gb2312/</url>
+    <content><![CDATA[<h3 id="1-问题"><a href="#1-问题" class="headerlink" title="1 问题"></a>1 问题</h3><h4 id="UnicodeDecodeError-‘gb2312’-codec-can’t-decode-byte-0x87-in-position-16144-illegal-multibyte-sequence"><a href="#UnicodeDecodeError-‘gb2312’-codec-can’t-decode-byte-0x87-in-position-16144-illegal-multibyte-sequence" class="headerlink" title="UnicodeDecodeError: ‘gb2312’ codec can’t decode byte 0x87 in position 16144: illegal multibyte sequence"></a>UnicodeDecodeError: ‘gb2312’ codec can’t decode byte 0x87 in position 16144: illegal multibyte sequence</h4><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200311213944.png" alt="gb2312 error"></p>
+<h3 id="2-分析"><a href="#2-分析" class="headerlink" title="2 分析"></a>2 分析</h3><p>解码错误，我们在用python爬虫爬取网页信息时，通常会遇到编码问题，这是其中的一种，中文编码问题更多。中文编码有如下几种，字符数以次增多：<code>gb2312&lt;gbk&lt;gb18030</code>，如果使用<code>gb2312</code>不能解码，那么可以使用<code>gb18030</code>解码试试</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200311213901.png" alt="gn18030"></p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+        <tag>编码</tag>
       </tags>
   </entry>
   <entry>
@@ -818,6 +818,24 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo绑定个人域名之后，不能访问，已经解决</title>
+    <url>/config-ssh-for-github/</url>
+    <content><![CDATA[<h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><p>昨天为了优化SEO，我给我的GitHub page 加了一个三方包，如下：   </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<p>但是，当我再次hexo d的时候，发现本地的hexo可用，但是GitHub page就用不了了，因为我用了域名解析，用的腾讯云的域名解析系统，可以参考我的这篇博客，<a href="https://jums.club/personal-domain-for-github-page/">如何用一元开通自己的个性域名</a><br>当我使用<a href="https://jums.club/">https://jums.club/</a>进行访问时，发现出现了下面的界面：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191124093619.png" alt="error page">   </p>
+<h3 id="2-解决问题"><a href="#2-解决问题" class="headerlink" title="2 解决问题"></a>2 解决问题</h3><p>发现了问题，当然得解决问题，否则发现问题就没有什么意义了。<br>首先我百度了一下，看了一篇<a href="https://blog.csdn.net/tr1912/article/details/80673610" target="_blank" rel="noopener">博客</a>，看了一下，然后我的问题解决，虽然是百度的，但是问题能解决就行。<br>我发现我的GitHub page 的域名绑定突然好像失效了，所以我又从新绑定了一下，我是用的是IP地址和GitHub page 的域名同时绑定到我的个人域名上，如下所示：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191124095621.png" alt="domain photo"><br><strong>如何获取GitHub page的IP地址：</strong><br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191124095730.png" alt="github page ip">   </p>
+<p><strong>最后：</strong>   </p>
+<blockquote>
+<p>最后，问题终于解决，就是域名没有绑定，绑定完之后，渠道GitHub page 的setting界面，可以看到如下配置，即为配置成功。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191124100230.png" alt="success config"></p>
+</blockquote>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>解决问题</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>手把手教你玩转hexo个人博客，自定义主题，博客发布，GitHub部署</title>
     <url>/conclusion-hexo-1/</url>
     <content><![CDATA[<h3 id="1-总结"><a href="#1-总结" class="headerlink" title="1.总结"></a>1.总结</h3><p>最近几天一直在玩<a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a>个人博客，因为一直就想弄一个这样的博客平台，一个是为了兴趣，还有一个就是为了找工作的时候能够让面试官觉得自己很牛逼（这里涉及到社会学知识点，下次有机会我们再谈），所以就花了一点时间，弄了一下，也发现了一些坑，这里和大家一起分享一下。</p>
@@ -885,51 +903,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo绑定个人域名之后，不能访问，已经解决</title>
-    <url>/config-ssh-for-github/</url>
-    <content><![CDATA[<h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><p>昨天为了优化SEO，我给我的GitHub page 加了一个三方包，如下：   </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-<p>但是，当我再次hexo d的时候，发现本地的hexo可用，但是GitHub page就用不了了，因为我用了域名解析，用的腾讯云的域名解析系统，可以参考我的这篇博客，<a href="https://jums.club/personal-domain-for-github-page/">如何用一元开通自己的个性域名</a><br>当我使用<a href="https://jums.club/">https://jums.club/</a>进行访问时，发现出现了下面的界面：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191124093619.png" alt="error page">   </p>
-<h3 id="2-解决问题"><a href="#2-解决问题" class="headerlink" title="2 解决问题"></a>2 解决问题</h3><p>发现了问题，当然得解决问题，否则发现问题就没有什么意义了。<br>首先我百度了一下，看了一篇<a href="https://blog.csdn.net/tr1912/article/details/80673610" target="_blank" rel="noopener">博客</a>，看了一下，然后我的问题解决，虽然是百度的，但是问题能解决就行。<br>我发现我的GitHub page 的域名绑定突然好像失效了，所以我又从新绑定了一下，我是用的是IP地址和GitHub page 的域名同时绑定到我的个人域名上，如下所示：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191124095621.png" alt="domain photo"><br><strong>如何获取GitHub page的IP地址：</strong><br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191124095730.png" alt="github page ip">   </p>
-<p><strong>最后：</strong>   </p>
-<blockquote>
-<p>最后，问题终于解决，就是域名没有绑定，绑定完之后，渠道GitHub page 的setting界面，可以看到如下配置，即为配置成功。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191124100230.png" alt="success config"></p>
-</blockquote>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>解决问题</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>破解intellij ideal 专业版</title>
-    <url>/crack-idel-perfessional/</url>
-    <content><![CDATA[<blockquote>
-<p>破解IDEAL的步骤和<a href="https://jums.club/crack-pycharm-perfessional">破解pycharm</a>的步骤差不太多。主要还是一个jar的存放路径有点不一样。</p>
-</blockquote>
-<p>注意：本教程转载自<a href="https://zhile.io，如有侵权请联系作者删除！" target="_blank" rel="noopener">https://zhile.io，如有侵权请联系作者删除！</a></p>
-<p>本项目只做学习研究之用，不得用于商业用途！</p>
-<p><a href="https://shimo.im/docs/gqQDrjPkwwctk3VJ/read" target="_blank" rel="noopener">原文</a></p>
-<p>2019.12.02 jetbrains公司发布了Python的最强编辑器PyCharm 2019.3版本。本次大版本主要对Jupyter notebooks 、MongoDB、Python3.8功能做了一些增加，而这其中有很多功能都只能在专业版中使用。</p>
-<p>本教程适用于PyCharm所有版本</p>
-<h2 id="一、使用前注意事项"><a href="#一、使用前注意事项" class="headerlink" title="一、使用前注意事项"></a>一、使用前注意事项</h2><p>PyCharm一定要是在官网下载：<a href="https://www.jetbrains.com/pycharm/download/" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/</a><br>本教程适用于PyCharm所有版本<br>本教程适用于jetbrains全系列产品（Pycharm、Idea、GoLand、WebStorm、phpstorm、CLion、RubyMine、AppCode、DataGrid）目录<br>如果按照此教程还无法使用，加猪哥微信拉你进软件群（已经加过猪哥微信的请勿重复添加）</p>
-<h2 id="二、使用教程"><a href="#二、使用教程" class="headerlink" title="二、使用教程"></a>二、使用教程</h2><h3 id="1-下载补丁"><a href="#1-下载补丁" class="headerlink" title="1.下载补丁"></a>1.下载补丁</h3><p>链接: <a href="https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow" target="_blank" rel="noopener">https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow</a> 提取码: q974 下载补丁文件 jetbrains-agent.jar （如果链接失效可关注微信公众号「麦田里的守望者zhg」回复pycharm破解（因为流程差不多，所以这里就还是使用的pycharm的破解思路），补丁来源于<a href="https://zhile.io）" target="_blank" rel="noopener">https://zhile.io）</a><br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/12651581337729_pic.jpg__thumbnail.jpg" alt=""></p>
-<p>新补丁文件大小为2M，如果小于2M的都是老补丁，需要从新下载哦！</p>
-<h3 id="2-将补丁放在-lib目录"><a href="#2-将补丁放在-lib目录" class="headerlink" title="2.将补丁放在\lib目录"></a>2.将补丁放在\lib目录</h3><p>将刚才下载的补丁文件 jetbrains-agent.jar 放置在Pycharm安装目录里面的\lib目录里面，不是\bin目录，不是\bin目录，不是\bin目录。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/12591581333249_pic_hd.jpg__thumbnail.jpg" alt=""></p>
-<h3 id="3-修改文件"><a href="#3-修改文件" class="headerlink" title="3.修改文件"></a>3.修改文件</h3><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/4108889784-5decbbed883ae_articlex.png" alt=""><br>如果提示需要创建文件，点击<code>yes</code>即可。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/2545636583-5decbbf0bf724_articlex.png" alt=""><br>在打开的vmoptions编辑窗口末行添加：<code>-javaagent:你pycharm的安装目录\jetbrains-agent.jar</code>，请仔细检查补丁路径是否正确，如果错误则会出现pycharm打不开的情况。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/638135301-5decbbf40522f_articlex.png" alt="">   </p>
-<p>然后重启软件，即可。</p>
-<h3 id="4-查看有效期"><a href="#4-查看有效期" class="headerlink" title="4.查看有效期"></a>4.查看有效期</h3><p>查看有效期的步骤为点击：Help-&gt;About这里可以看到你的pycharm的版本号、许可来源、有效期、以及一些环境</p>
-<p>显示你电脑的用户名即表示成功，如果是 to PyCharm Evaluator 则表示没有成功，按照教程再多试几次！<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200331160722.png" alt="破解成功"></p>
-<h3 id="5-注意事项"><a href="#5-注意事项" class="headerlink" title="5 注意事项"></a>5 注意事项</h3><p>如果发现，重启软件之后，软件带不开或是提示<code>JDK</code>找不到，可以删除<strong>用户目录</strong>下的intellij iead文件夹，这是一个隐藏文件夹，文件名前有一个<code>.</code>，所以别删错了。</p>
-<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200404101849.png" alt=".intellij idea"></p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>软件破解</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对c++中虚函数和纯虚函数的理解</title>
     <url>/cpp-virtual-function/</url>
     <content><![CDATA[<h2 id="1-虚函数和纯虚函数的作用"><a href="#1-虚函数和纯虚函数的作用" class="headerlink" title="1 虚函数和纯虚函数的作用"></a>1 虚函数和纯虚函数的作用</h2><blockquote>
@@ -975,6 +948,33 @@
       <tags>
         <tag>编程语言</tag>
         <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>破解intellij ideal 专业版</title>
+    <url>/crack-idel-perfessional/</url>
+    <content><![CDATA[<blockquote>
+<p>破解IDEAL的步骤和<a href="https://jums.club/crack-pycharm-perfessional">破解pycharm</a>的步骤差不太多。主要还是一个jar的存放路径有点不一样。</p>
+</blockquote>
+<p>注意：本教程转载自<a href="https://zhile.io，如有侵权请联系作者删除！" target="_blank" rel="noopener">https://zhile.io，如有侵权请联系作者删除！</a></p>
+<p>本项目只做学习研究之用，不得用于商业用途！</p>
+<p><a href="https://shimo.im/docs/gqQDrjPkwwctk3VJ/read" target="_blank" rel="noopener">原文</a></p>
+<p>2019.12.02 jetbrains公司发布了Python的最强编辑器PyCharm 2019.3版本。本次大版本主要对Jupyter notebooks 、MongoDB、Python3.8功能做了一些增加，而这其中有很多功能都只能在专业版中使用。</p>
+<p>本教程适用于PyCharm所有版本</p>
+<h2 id="一、使用前注意事项"><a href="#一、使用前注意事项" class="headerlink" title="一、使用前注意事项"></a>一、使用前注意事项</h2><p>PyCharm一定要是在官网下载：<a href="https://www.jetbrains.com/pycharm/download/" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/</a><br>本教程适用于PyCharm所有版本<br>本教程适用于jetbrains全系列产品（Pycharm、Idea、GoLand、WebStorm、phpstorm、CLion、RubyMine、AppCode、DataGrid）目录<br>如果按照此教程还无法使用，加猪哥微信拉你进软件群（已经加过猪哥微信的请勿重复添加）</p>
+<h2 id="二、使用教程"><a href="#二、使用教程" class="headerlink" title="二、使用教程"></a>二、使用教程</h2><h3 id="1-下载补丁"><a href="#1-下载补丁" class="headerlink" title="1.下载补丁"></a>1.下载补丁</h3><p>链接: <a href="https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow" target="_blank" rel="noopener">https://pan.baidu.com/s/10cWE3gr5i0Qewamb6e-Jow</a> 提取码: q974 下载补丁文件 jetbrains-agent.jar （如果链接失效可关注微信公众号「麦田里的守望者zhg」回复pycharm破解（因为流程差不多，所以这里就还是使用的pycharm的破解思路），补丁来源于<a href="https://zhile.io）" target="_blank" rel="noopener">https://zhile.io）</a><br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/12651581337729_pic.jpg__thumbnail.jpg" alt=""></p>
+<p>新补丁文件大小为2M，如果小于2M的都是老补丁，需要从新下载哦！</p>
+<h3 id="2-将补丁放在-lib目录"><a href="#2-将补丁放在-lib目录" class="headerlink" title="2.将补丁放在\lib目录"></a>2.将补丁放在\lib目录</h3><p>将刚才下载的补丁文件 jetbrains-agent.jar 放置在Pycharm安装目录里面的\lib目录里面，不是\bin目录，不是\bin目录，不是\bin目录。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/12591581333249_pic_hd.jpg__thumbnail.jpg" alt=""></p>
+<h3 id="3-修改文件"><a href="#3-修改文件" class="headerlink" title="3.修改文件"></a>3.修改文件</h3><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/4108889784-5decbbed883ae_articlex.png" alt=""><br>如果提示需要创建文件，点击<code>yes</code>即可。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/2545636583-5decbbf0bf724_articlex.png" alt=""><br>在打开的vmoptions编辑窗口末行添加：<code>-javaagent:你pycharm的安装目录\jetbrains-agent.jar</code>，请仔细检查补丁路径是否正确，如果错误则会出现pycharm打不开的情况。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/638135301-5decbbf40522f_articlex.png" alt="">   </p>
+<p>然后重启软件，即可。</p>
+<h3 id="4-查看有效期"><a href="#4-查看有效期" class="headerlink" title="4.查看有效期"></a>4.查看有效期</h3><p>查看有效期的步骤为点击：Help-&gt;About这里可以看到你的pycharm的版本号、许可来源、有效期、以及一些环境</p>
+<p>显示你电脑的用户名即表示成功，如果是 to PyCharm Evaluator 则表示没有成功，按照教程再多试几次！<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200331160722.png" alt="破解成功"></p>
+<h3 id="5-注意事项"><a href="#5-注意事项" class="headerlink" title="5 注意事项"></a>5 注意事项</h3><p>如果发现，重启软件之后，软件带不开或是提示<code>JDK</code>找不到，可以删除<strong>用户目录</strong>下的intellij iead文件夹，这是一个隐藏文件夹，文件名前有一个<code>.</code>，所以别删错了。</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200404101849.png" alt=".intellij idea"></p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>软件破解</tag>
       </tags>
   </entry>
   <entry>
@@ -1636,18 +1636,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解决：Connection reset by 192.30.255.112 port 22 fatal: Could not read from remote repository.</title>
-    <url>/git-error-2/</url>
-    <content><![CDATA[<p><strong>问题：Connection reset by 192.30.255.112 port 22 fatal: Could not read from remote repository.</strong><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20191230154340954.png" alt="error"></p>
-<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p>先检查能否<code>ping</code>通该地址<code>github.com</code>：<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/2019123015451024.png" alt="ping 失败"><br>有我的<code>git bash</code>没有支持中文，所以就出现了乱码，我们可以看到这是ping不通的结果，如何解决呢？将该地址加入<code>hosts</code>文件：<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20191230154631703.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTIxMTg0,size_16,color_FFFFFF,t_70" alt="地址路径"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20191230154657302.png" alt="修改的内容"><br>然后在<code>ping</code>一次看看，我们就可以看到如下的结果：<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20191230154738775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTIxMTg0,size_16,color_FFFFFF,t_70" alt="成功之后"></p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>解决问题</tag>
-        <tag>GitHub</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决error: failed to push some refs to &#39;https://github.com/https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article//https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/.git&#39;</title>
     <url>/git-push-error/</url>
     <content><![CDATA[<h3 id="1-错误"><a href="#1-错误" class="headerlink" title="1 错误"></a>1 错误</h3><p><strong>error: failed to push some refs to ‘<a href="https://github.com/bluepen/python.git&#39;" target="_blank" rel="noopener">https://github.com/bluepen/python.git&#39;</a></strong><br><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/crazyjums/crazyjums.github.io@master/images/article/1212206-20190327215644805-894884421.png" alt="error"></p>
@@ -1665,6 +1653,18 @@
       </tags>
   </entry>
   <entry>
+    <title>解决：Connection reset by 192.30.255.112 port 22 fatal: Could not read from remote repository.</title>
+    <url>/git-error-2/</url>
+    <content><![CDATA[<p><strong>问题：Connection reset by 192.30.255.112 port 22 fatal: Could not read from remote repository.</strong><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20191230154340954.png" alt="error"></p>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p>先检查能否<code>ping</code>通该地址<code>github.com</code>：<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/2019123015451024.png" alt="ping 失败"><br>有我的<code>git bash</code>没有支持中文，所以就出现了乱码，我们可以看到这是ping不通的结果，如何解决呢？将该地址加入<code>hosts</code>文件：<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20191230154631703.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTIxMTg0,size_16,color_FFFFFF,t_70" alt="地址路径"><br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20191230154657302.png" alt="修改的内容"><br>然后在<code>ping</code>一次看看，我们就可以看到如下的结果：<br><img src= "/img/loading.gif" data-src="https://img-blog.csdnimg.cn/20191230154738775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTIxMTg0,size_16,color_FFFFFF,t_70" alt="成功之后"></p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>解决问题</tag>
+        <tag>GitHub</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何同时将hexo代码部署到GitHub以及coding上</title>
     <url>/git-to-github-and-coding/</url>
     <content><![CDATA[<h3 id="1-安装插件"><a href="#1-安装插件" class="headerlink" title="1 安装插件"></a>1 安装插件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
@@ -1676,6 +1676,17 @@
 ]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub如何开通多个静态page服务</title>
+    <url>/github-how-to-create-two-more-page/</url>
+    <content><![CDATA[<h3 id="0-需求"><a href="#0-需求" class="headerlink" title="0 需求"></a>0 需求</h3><p>之前我已经用<code>GitHub Page</code>开通了自己的<a href="https://jums.club">博客</a>服务，但是今天我想再弄一个博客，用于放图片，但是发现GitHub只能申请一个<strong>个人主页</strong>（访问路径：<code>&lt;username&gt;.github.io</code>），如果想要弄两个或两个以上，那就是另外一种page了，GitHub叫项目主页，所以这种项目主页的访问格式是：<code>&lt;username&gt;.github.io/&lt;projectname&gt;</code>，和个人主页的访问路径不一样。想这种项目主页，我们可以创建很多，但是个人主页，只能创建一个，且仓库名也是有限制的。</p>
+<h3 id="1-开通"><a href="#1-开通" class="headerlink" title="1 开通"></a>1 开通</h3><p>用GitHub创建一个仓库之后，点击<code>settings</code>进入到设置界面，拉到最下面，有一个GitHub Page服务的设置栏，我们将访问分支（<code>branch</code>）设置成<code>gh-pages</code>，一般项目主页的网页文件，都是放在这个分支里面，而个人主页的网页文件，都是放在<code>master</code>分支里面。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200220203633.png" alt="设置分支"></p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -1692,17 +1703,6 @@
 ]]></content>
       <tags>
         <tag>git</tag>
-        <tag>github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GitHub如何开通多个静态page服务</title>
-    <url>/github-how-to-create-two-more-page/</url>
-    <content><![CDATA[<h3 id="0-需求"><a href="#0-需求" class="headerlink" title="0 需求"></a>0 需求</h3><p>之前我已经用<code>GitHub Page</code>开通了自己的<a href="https://jums.club">博客</a>服务，但是今天我想再弄一个博客，用于放图片，但是发现GitHub只能申请一个<strong>个人主页</strong>（访问路径：<code>&lt;username&gt;.github.io</code>），如果想要弄两个或两个以上，那就是另外一种page了，GitHub叫项目主页，所以这种项目主页的访问格式是：<code>&lt;username&gt;.github.io/&lt;projectname&gt;</code>，和个人主页的访问路径不一样。想这种项目主页，我们可以创建很多，但是个人主页，只能创建一个，且仓库名也是有限制的。</p>
-<h3 id="1-开通"><a href="#1-开通" class="headerlink" title="1 开通"></a>1 开通</h3><p>用GitHub创建一个仓库之后，点击<code>settings</code>进入到设置界面，拉到最下面，有一个GitHub Page服务的设置栏，我们将访问分支（<code>branch</code>）设置成<code>gh-pages</code>，一般项目主页的网页文件，都是放在这个分支里面，而个人主页的网页文件，都是放在<code>master</code>分支里面。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200220203633.png" alt="设置分支"></p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
         <tag>github</tag>
       </tags>
   </entry>
@@ -2597,7 +2597,7 @@
   </entry>
   <entry>
     <title>Python使用命令行参数的用法</title>
-    <url>/how-to-use-setuptools/</url>
+    <url>/how-to-use-python-command-param/</url>
     <content><![CDATA[<h3 id="方法一（sys）"><a href="#方法一（sys）" class="headerlink" title="方法一（sys）"></a>方法一（<code>sys</code>）</h3><p>直接看代码： </p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python    </span></span><br><span class="line"><span class="comment"># -*- coding: UTF-8 -*-     </span></span><br><span class="line"><span class="keyword">import</span> sys    </span><br><span class="line">    </span><br><span class="line"><span class="keyword">print</span> (<span class="string">'参数个数为:'</span>, len(sys.argv), <span class="string">'个参数。'</span>)    </span><br><span class="line"><span class="keyword">print</span> (<span class="string">'参数列表:'</span>, str(sys.argv))</span><br></pre></td></tr></table></figure>
 
@@ -2615,7 +2615,7 @@
   </entry>
   <entry>
     <title>Python使用命令行参数的用法</title>
-    <url>/how-to-use-python-command-param/</url>
+    <url>/how-to-use-setuptools/</url>
     <content><![CDATA[<h3 id="方法一（sys）"><a href="#方法一（sys）" class="headerlink" title="方法一（sys）"></a>方法一（<code>sys</code>）</h3><p>直接看代码： </p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python    </span></span><br><span class="line"><span class="comment"># -*- coding: UTF-8 -*-     </span></span><br><span class="line"><span class="keyword">import</span> sys    </span><br><span class="line">    </span><br><span class="line"><span class="keyword">print</span> (<span class="string">'参数个数为:'</span>, len(sys.argv), <span class="string">'个参数。'</span>)    </span><br><span class="line"><span class="keyword">print</span> (<span class="string">'参数列表:'</span>, str(sys.argv))</span><br></pre></td></tr></table></figure>
 
@@ -4367,23 +4367,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java线程内部堆内存溢出，并不会导致主线程退出</title>
-    <url>/java-heap-overflow-thread/</url>
-    <content><![CDATA[<h3 id="1-代码"><a href="#1-代码" class="headerlink" title="1 代码"></a>1 代码</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HeapThread</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> _8M = <span class="number">8</span> * <span class="number">1024</span> * <span class="number">1024</span>;</span><br><span class="line">    <span class="comment">//vm 参数：-Xmx20m  设置堆内存为20M</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> Thread(()-&gt;&#123;</span><br><span class="line">            List&lt;<span class="keyword">byte</span>[]&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">            list.add(<span class="keyword">new</span> <span class="keyword">byte</span>[_8M]);</span><br><span class="line">            list.add(<span class="keyword">new</span> <span class="keyword">byte</span>[_8M]);</span><br><span class="line">        &#125;).start();</span><br><span class="line">        Thread.sleep(<span class="number">2000L</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>运行结果：   </p>
-<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200415153313.png" alt="运行结果"></p>
-</blockquote>
-<p>从运行结果可以看出，线程内部的堆内存溢出，并不会导致主线程结束。</p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Java</tag>
-        <tag>JVM</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>java垃圾回收算法介绍</title>
     <url>/java-gc/</url>
     <content><![CDATA[<h3 id="1-垃圾回收算法"><a href="#1-垃圾回收算法" class="headerlink" title="1 垃圾回收算法"></a>1 垃圾回收算法</h3><ol>
@@ -4470,6 +4453,23 @@
 </ul>
 </li>
 </ol>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Java</tag>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java线程内部堆内存溢出，并不会导致主线程退出</title>
+    <url>/java-heap-overflow-thread/</url>
+    <content><![CDATA[<h3 id="1-代码"><a href="#1-代码" class="headerlink" title="1 代码"></a>1 代码</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HeapThread</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> _8M = <span class="number">8</span> * <span class="number">1024</span> * <span class="number">1024</span>;</span><br><span class="line">    <span class="comment">//vm 参数：-Xmx20m  设置堆内存为20M</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> Thread(()-&gt;&#123;</span><br><span class="line">            List&lt;<span class="keyword">byte</span>[]&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">            list.add(<span class="keyword">new</span> <span class="keyword">byte</span>[_8M]);</span><br><span class="line">            list.add(<span class="keyword">new</span> <span class="keyword">byte</span>[_8M]);</span><br><span class="line">        &#125;).start();</span><br><span class="line">        Thread.sleep(<span class="number">2000L</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>运行结果：   </p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200415153313.png" alt="运行结果"></p>
+</blockquote>
+<p>从运行结果可以看出，线程内部的堆内存溢出，并不会导致主线程结束。</p>
 <h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
 ]]></content>
       <tags>
@@ -4569,6 +4569,71 @@
       <tags>
         <tag>基础知识</tag>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>底层数据结构链表，以及java代码实现</title>
+    <url>/java-link/</url>
+    <content><![CDATA[<h3 id="1-原理介绍"><a href="#1-原理介绍" class="headerlink" title="1 原理介绍"></a>1 原理介绍</h3><p>链表和数组的区别在于，数组的插入和删除操作需要整个数组一起跟着动，这样的效率很低。举个例子：打麻将时，当有一个麻将子，其大小正好在已经排序好的麻将中间，如果需要插入进原来的麻将序列，那么需要将之前或者之后的麻将全部移动，这样很费时间，所以链表可以弥补这种不足。</p>
+<h4 id="1-1-增"><a href="#1-1-增" class="headerlink" title="1.1 增"></a>1.1 增</h4><p>链表的插入操作包括两种：</p>
+<ul>
+<li>直接在末尾追加</li>
+<li>在中间的某个位置插入</li>
+</ul>
+<p>如下图所示，两种方式需要单独考虑。</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200425205325406.jpg" alt="示意图"></p>
+<h4 id="1-2-删"><a href="#1-2-删" class="headerlink" title="1.2 删"></a>1.2 删</h4><p>链表的删除，也包括两种：</p>
+<ul>
+<li>直接删除末尾的节点</li>
+<li>删除中间的节点</li>
+</ul>
+<p><strong>方式1删除：</strong></p>
+<p>使用两个指针，一个指针指向当前的节点，一个指针指向当前节点的前驱节点，前驱节点的后驱直接指向点前节点的后驱，即可实现删除功能。</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200425210011928.jpg" alt="方式1删除"></p>
+<p><strong>方式2删除：</strong></p>
+<p>只使用一个指针，将当前节点的后一个节点的数据赋值到当前节点，并将当前节点的后驱指向后一个节点的后一个节点。</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200425203253891.jpg" alt="方式2 删除"></p>
+<h4 id="1-3-改"><a href="#1-3-改" class="headerlink" title="1.3 改"></a>1.3 改</h4><p>修改其实就是先查找是否有需要修改的这个<code>数据</code>，如果没有这个数据返回<code>false</code>，否则就修改数据。</p>
+<h4 id="1-4-查"><a href="#1-4-查" class="headerlink" title="1.4 查"></a>1.4 查</h4><p>查找数据也是一个一个遍历，但是如果链表有重复数据的话，只会返回第一次查找的数据。</p>
+<h3 id="2-代码实现"><a href="#2-代码实现" class="headerlink" title="2 代码实现"></a>2 代码实现</h3><h4 id="2-1-创建链表"><a href="#2-1-创建链表" class="headerlink" title="2.1 创建链表"></a>2.1 创建链表</h4><p>链表中的节点的定义：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span> </span>&#123;</span><br><span class="line">        T data;</span><br><span class="line">        Node next = <span class="keyword">null</span>;<span class="comment">//下一个节点</span></span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.data = data;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-插入元素"><a href="#2-2-插入元素" class="headerlink" title="2.2 插入元素"></a>2.2 插入元素</h4><p>首先判断是否是一个空链表，如果是，则创建新链表，并将数据赋值给新节点，否则在末尾追加，或者在中间任意位置处插入。</p>
+<ul>
+<li>在末尾追加</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">add</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        Node newNode = <span class="keyword">new</span> Node(data);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">null</span> == head) &#123;</span><br><span class="line">            head = newNode;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        temp.next = newNode;</span><br><span class="line">        length++;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在中间任意位置插入</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> index, T data)</span> </span>&#123;</span><br><span class="line">        Node newNode = <span class="keyword">new</span> Node(data);</span><br><span class="line">        <span class="comment">//if index=1, special opearate</span></span><br><span class="line">        <span class="keyword">if</span> (index == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (head == <span class="keyword">null</span>) &#123; <span class="comment">//head is not existed</span></span><br><span class="line">                head = newNode;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123; <span class="comment">//head is existed</span></span><br><span class="line">                Node temp = head;</span><br><span class="line">                newNode.next = temp;</span><br><span class="line">                head = newNode;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//index not true -&gt; false</span></span><br><span class="line">        <span class="keyword">if</span> (index &lt; <span class="number">1</span> || index &gt; <span class="keyword">this</span>.length()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">1</span>;<span class="comment">//count the current node</span></span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (count &lt; index) &#123;</span><br><span class="line">            count += <span class="number">1</span>;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        newNode.next = temp.next;</span><br><span class="line">        temp.next = newNode;</span><br><span class="line">        length++;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-3-删除元素"><a href="#2-3-删除元素" class="headerlink" title="2.3 删除元素"></a>2.3 删除元素</h4><h5 id="2-3-1-方法1"><a href="#2-3-1-方法1" class="headerlink" title="2.3.1 方法1"></a>2.3.1 方法1</h5><p>上面介绍过了方式1的删除方式，这里主要展示关键代码实现：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Node pre = head;</span><br><span class="line">Node cur = head.next;</span><br><span class="line"><span class="keyword">while</span> (cur != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (cur.data == data) &#123;</span><br><span class="line">        foundNum++;</span><br><span class="line">        pre.next = cur.next;</span><br><span class="line">    &#125;</span><br><span class="line">    pre = cur;</span><br><span class="line">    cur = cur.next;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-3-2-方法2"><a href="#2-3-2-方法2" class="headerlink" title="2.3.2 方法2"></a>2.3.2 方法2</h5><p>关键代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Node temp = head;</span><br><span class="line"><span class="keyword">while</span> (temp != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (temp.data == data) &#123;</span><br><span class="line">        foundNum += <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        T tempData = temp.data;</span><br><span class="line">        temp.data = temp.next.data;</span><br><span class="line">        temp.next.data = tempData;</span><br><span class="line">        temp.next = temp.next.next;</span><br><span class="line"></span><br><span class="line">        length--;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    temp = temp.next;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-4-查询元素"><a href="#2-4-查询元素" class="headerlink" title="2.4 查询元素"></a>2.4 查询元素</h4><p>对着链表中的元素一个一个遍历，直到找到为止，如果找不到则返回<code>false</code>：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">search</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (length == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> foundIndex = <span class="number">0</span>;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            index++;</span><br><span class="line">            <span class="keyword">if</span> (temp.next.data == data) &#123;</span><br><span class="line">                foundIndex++;</span><br><span class="line">                <span class="keyword">return</span> index;</span><br><span class="line">            &#125;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (foundIndex == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> index;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-5-打印元素"><a href="#2-5-打印元素" class="headerlink" title="2.5 打印元素"></a>2.5 打印元素</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">printNode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            System.out.print(temp.next.data + <span class="string">"\t"</span>);</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-6-获取长度"><a href="#2-6-获取长度" class="headerlink" title="2.6 获取长度"></a>2.6 获取长度</h4><p>定义了一个全局变量，用来存储链表的长度，当插入元素成功之后，自加1，删除之后自减1,。</p>
+<h3 id="3-完整代码"><a href="#3-完整代码" class="headerlink" title="3 完整代码"></a>3 完整代码</h3><p><code>MyLinkNode.java</code>文件：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyLinkNode</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> length = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    Node head = <span class="keyword">new</span> Node();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Node <span class="title">getHead</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Node</span> </span>&#123;</span><br><span class="line">        T data;</span><br><span class="line">        Node next = <span class="keyword">null</span>;<span class="comment">//下一个节点</span></span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.data = data;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">add</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        Node newNode = <span class="keyword">new</span> Node(data);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">null</span> == head) &#123;</span><br><span class="line">            head = newNode;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        temp.next = newNode;</span><br><span class="line">        length++;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> index, T data)</span> </span>&#123;</span><br><span class="line">        Node newNode = <span class="keyword">new</span> Node(data);</span><br><span class="line">        <span class="comment">//if index=1, special opearate</span></span><br><span class="line">        <span class="keyword">if</span> (index == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (head == <span class="keyword">null</span>) &#123; <span class="comment">//head is not existed</span></span><br><span class="line">                head = newNode;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123; <span class="comment">//head is existed</span></span><br><span class="line">                Node temp = head;</span><br><span class="line">                newNode.next = temp;</span><br><span class="line">                head = newNode;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//index not true -&gt; false</span></span><br><span class="line">        <span class="keyword">if</span> (index &lt; <span class="number">1</span> || index &gt; <span class="keyword">this</span>.length()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">1</span>;<span class="comment">//count the current node</span></span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (count &lt; index) &#123;</span><br><span class="line">            count += <span class="number">1</span>;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        newNode.next = temp.next;</span><br><span class="line">        temp.next = newNode;</span><br><span class="line">        length++;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">printNode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            System.out.print(temp.next.data + <span class="string">"\t"</span>);</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">length</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> length;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">delete</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> foundNum = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        方式1：</span></span><br><span class="line"><span class="comment">        使用两个指针，一个指针指向当前指针，一个指针当前指针的前驱，当删除时，直接忽略需要删除的节点即可</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        Node pre = head;</span><br><span class="line">        Node cur = head.next;</span><br><span class="line">        <span class="keyword">while</span> (cur != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (cur.data == data) &#123;</span><br><span class="line">                foundNum++;</span><br><span class="line">                pre.next = cur.next;</span><br><span class="line">            &#125;</span><br><span class="line">            pre = cur;</span><br><span class="line">            cur = cur.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        方式2：将要删除的节点(假设要删除的节点的位置3)的下一个节点（位置是4）的数据赋值到当前要删除的节点，</span></span><br><span class="line"><span class="comment">        此时当前节点（位置是3）的数据是下一节点（位置是4）的数据，然后将当前节点（位置是3）的后驱指向一下节点（位置是4）</span></span><br><span class="line"><span class="comment">        的下一节点（位置是5）</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line"><span class="comment">//        Node temp = head;</span></span><br><span class="line"><span class="comment">//        while (temp != null) &#123;</span></span><br><span class="line"><span class="comment">//            if (temp.data == data) &#123;</span></span><br><span class="line"><span class="comment">//                foundNum += 1;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//                T tempData = temp.data;</span></span><br><span class="line"><span class="comment">//                temp.data = temp.next.data;</span></span><br><span class="line"><span class="comment">//                temp.next.data = tempData;</span></span><br><span class="line"><span class="comment">//                temp.next = temp.next.next;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//                length--;</span></span><br><span class="line"><span class="comment">//                return true;</span></span><br><span class="line"><span class="comment">//            &#125;</span></span><br><span class="line"><span class="comment">//            temp = temp.next;</span></span><br><span class="line"><span class="comment">//        &#125;</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (foundNum == <span class="number">0</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">"not found data -&gt;"</span> + data);</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        length--;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">delete</span><span class="params">(<span class="keyword">int</span> index)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (index == <span class="number">1</span>) &#123;</span><br><span class="line"></span><br><span class="line">            Node temp = head;</span><br><span class="line">            head = temp.next;</span><br><span class="line">            System.out.println(head.data + <span class="string">"---"</span> + head.next.toString());</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (index &lt; <span class="number">1</span> || index &gt;= <span class="keyword">this</span>.length()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (count &lt; index) &#123;</span><br><span class="line">            count++;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        temp.next = temp.next.next;</span><br><span class="line">        length--;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">search</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (length == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> foundIndex = <span class="number">0</span>;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            index++;</span><br><span class="line">            <span class="keyword">if</span> (temp.next.data == data) &#123;</span><br><span class="line">                foundIndex++;</span><br><span class="line">                <span class="keyword">return</span> index;</span><br><span class="line">            &#125;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (foundIndex == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> index;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">update</span><span class="params">(T oldData, T data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (length == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">int</span> foundNum = <span class="number">0</span>;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">if</span> (oldData <span class="keyword">instanceof</span> String) &#123;</span><br><span class="line">            <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> ((oldData.equals(temp.data))) &#123;</span><br><span class="line">                    foundNum++;</span><br><span class="line">                    temp.data = data;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                temp = temp.next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (oldData <span class="keyword">instanceof</span> Number) &#123;</span><br><span class="line">            <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (temp.data == oldData) &#123;</span><br><span class="line">                    foundNum++;</span><br><span class="line">                    temp.data = data;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                temp = temp.next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (foundNum == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试<code>java</code>文件：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestLink</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        MyLinkNode&lt;String&gt; myLinkNode = <span class="keyword">new</span> MyLinkNode&lt;&gt;();</span><br><span class="line">        myLinkNode.add(<span class="string">"1"</span>);</span><br><span class="line">        myLinkNode.add(<span class="string">"2"</span>);</span><br><span class="line">        myLinkNode.add(<span class="string">"3"</span>);</span><br><span class="line">        myLinkNode.add(<span class="string">"4"</span>);</span><br><span class="line">        myLinkNode.insert(<span class="number">3</span>,<span class="string">"insert"</span>);</span><br><span class="line">        myLinkNode.printNode();</span><br><span class="line">        System.out.println(<span class="string">"length="</span>+myLinkNode.length());</span><br><span class="line">        System.out.println(<span class="string">"\n"</span>);</span><br><span class="line">        myLinkNode.delete(<span class="string">"insert"</span>);</span><br><span class="line">        myLinkNode.printNode();</span><br><span class="line">        System.out.println(<span class="string">"length="</span>+myLinkNode.length());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>Java</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -4711,71 +4776,6 @@
 ]]></content>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>底层数据结构链表，以及java代码实现</title>
-    <url>/java-link/</url>
-    <content><![CDATA[<h3 id="1-原理介绍"><a href="#1-原理介绍" class="headerlink" title="1 原理介绍"></a>1 原理介绍</h3><p>链表和数组的区别在于，数组的插入和删除操作需要整个数组一起跟着动，这样的效率很低。举个例子：打麻将时，当有一个麻将子，其大小正好在已经排序好的麻将中间，如果需要插入进原来的麻将序列，那么需要将之前或者之后的麻将全部移动，这样很费时间，所以链表可以弥补这种不足。</p>
-<h4 id="1-1-增"><a href="#1-1-增" class="headerlink" title="1.1 增"></a>1.1 增</h4><p>链表的插入操作包括两种：</p>
-<ul>
-<li>直接在末尾追加</li>
-<li>在中间的某个位置插入</li>
-</ul>
-<p>如下图所示，两种方式需要单独考虑。</p>
-<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200425205325406.jpg" alt="示意图"></p>
-<h4 id="1-2-删"><a href="#1-2-删" class="headerlink" title="1.2 删"></a>1.2 删</h4><p>链表的删除，也包括两种：</p>
-<ul>
-<li>直接删除末尾的节点</li>
-<li>删除中间的节点</li>
-</ul>
-<p><strong>方式1删除：</strong></p>
-<p>使用两个指针，一个指针指向当前的节点，一个指针指向当前节点的前驱节点，前驱节点的后驱直接指向点前节点的后驱，即可实现删除功能。</p>
-<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200425210011928.jpg" alt="方式1删除"></p>
-<p><strong>方式2删除：</strong></p>
-<p>只使用一个指针，将当前节点的后一个节点的数据赋值到当前节点，并将当前节点的后驱指向后一个节点的后一个节点。</p>
-<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20200425203253891.jpg" alt="方式2 删除"></p>
-<h4 id="1-3-改"><a href="#1-3-改" class="headerlink" title="1.3 改"></a>1.3 改</h4><p>修改其实就是先查找是否有需要修改的这个<code>数据</code>，如果没有这个数据返回<code>false</code>，否则就修改数据。</p>
-<h4 id="1-4-查"><a href="#1-4-查" class="headerlink" title="1.4 查"></a>1.4 查</h4><p>查找数据也是一个一个遍历，但是如果链表有重复数据的话，只会返回第一次查找的数据。</p>
-<h3 id="2-代码实现"><a href="#2-代码实现" class="headerlink" title="2 代码实现"></a>2 代码实现</h3><h4 id="2-1-创建链表"><a href="#2-1-创建链表" class="headerlink" title="2.1 创建链表"></a>2.1 创建链表</h4><p>链表中的节点的定义：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span> </span>&#123;</span><br><span class="line">        T data;</span><br><span class="line">        Node next = <span class="keyword">null</span>;<span class="comment">//下一个节点</span></span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.data = data;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2-插入元素"><a href="#2-2-插入元素" class="headerlink" title="2.2 插入元素"></a>2.2 插入元素</h4><p>首先判断是否是一个空链表，如果是，则创建新链表，并将数据赋值给新节点，否则在末尾追加，或者在中间任意位置处插入。</p>
-<ul>
-<li>在末尾追加</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">add</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        Node newNode = <span class="keyword">new</span> Node(data);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">null</span> == head) &#123;</span><br><span class="line">            head = newNode;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        temp.next = newNode;</span><br><span class="line">        length++;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>在中间任意位置插入</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> index, T data)</span> </span>&#123;</span><br><span class="line">        Node newNode = <span class="keyword">new</span> Node(data);</span><br><span class="line">        <span class="comment">//if index=1, special opearate</span></span><br><span class="line">        <span class="keyword">if</span> (index == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (head == <span class="keyword">null</span>) &#123; <span class="comment">//head is not existed</span></span><br><span class="line">                head = newNode;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123; <span class="comment">//head is existed</span></span><br><span class="line">                Node temp = head;</span><br><span class="line">                newNode.next = temp;</span><br><span class="line">                head = newNode;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//index not true -&gt; false</span></span><br><span class="line">        <span class="keyword">if</span> (index &lt; <span class="number">1</span> || index &gt; <span class="keyword">this</span>.length()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">1</span>;<span class="comment">//count the current node</span></span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (count &lt; index) &#123;</span><br><span class="line">            count += <span class="number">1</span>;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        newNode.next = temp.next;</span><br><span class="line">        temp.next = newNode;</span><br><span class="line">        length++;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-3-删除元素"><a href="#2-3-删除元素" class="headerlink" title="2.3 删除元素"></a>2.3 删除元素</h4><h5 id="2-3-1-方法1"><a href="#2-3-1-方法1" class="headerlink" title="2.3.1 方法1"></a>2.3.1 方法1</h5><p>上面介绍过了方式1的删除方式，这里主要展示关键代码实现：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Node pre = head;</span><br><span class="line">Node cur = head.next;</span><br><span class="line"><span class="keyword">while</span> (cur != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (cur.data == data) &#123;</span><br><span class="line">        foundNum++;</span><br><span class="line">        pre.next = cur.next;</span><br><span class="line">    &#125;</span><br><span class="line">    pre = cur;</span><br><span class="line">    cur = cur.next;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="2-3-2-方法2"><a href="#2-3-2-方法2" class="headerlink" title="2.3.2 方法2"></a>2.3.2 方法2</h5><p>关键代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Node temp = head;</span><br><span class="line"><span class="keyword">while</span> (temp != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (temp.data == data) &#123;</span><br><span class="line">        foundNum += <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        T tempData = temp.data;</span><br><span class="line">        temp.data = temp.next.data;</span><br><span class="line">        temp.next.data = tempData;</span><br><span class="line">        temp.next = temp.next.next;</span><br><span class="line"></span><br><span class="line">        length--;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    temp = temp.next;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-4-查询元素"><a href="#2-4-查询元素" class="headerlink" title="2.4 查询元素"></a>2.4 查询元素</h4><p>对着链表中的元素一个一个遍历，直到找到为止，如果找不到则返回<code>false</code>：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">search</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (length == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> foundIndex = <span class="number">0</span>;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            index++;</span><br><span class="line">            <span class="keyword">if</span> (temp.next.data == data) &#123;</span><br><span class="line">                foundIndex++;</span><br><span class="line">                <span class="keyword">return</span> index;</span><br><span class="line">            &#125;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (foundIndex == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> index;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-5-打印元素"><a href="#2-5-打印元素" class="headerlink" title="2.5 打印元素"></a>2.5 打印元素</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">printNode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            System.out.print(temp.next.data + <span class="string">"\t"</span>);</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-6-获取长度"><a href="#2-6-获取长度" class="headerlink" title="2.6 获取长度"></a>2.6 获取长度</h4><p>定义了一个全局变量，用来存储链表的长度，当插入元素成功之后，自加1，删除之后自减1,。</p>
-<h3 id="3-完整代码"><a href="#3-完整代码" class="headerlink" title="3 完整代码"></a>3 完整代码</h3><p><code>MyLinkNode.java</code>文件：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyLinkNode</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> length = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    Node head = <span class="keyword">new</span> Node();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Node <span class="title">getHead</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Node</span> </span>&#123;</span><br><span class="line">        T data;</span><br><span class="line">        Node next = <span class="keyword">null</span>;<span class="comment">//下一个节点</span></span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.data = data;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">add</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        Node newNode = <span class="keyword">new</span> Node(data);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">null</span> == head) &#123;</span><br><span class="line">            head = newNode;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        temp.next = newNode;</span><br><span class="line">        length++;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> index, T data)</span> </span>&#123;</span><br><span class="line">        Node newNode = <span class="keyword">new</span> Node(data);</span><br><span class="line">        <span class="comment">//if index=1, special opearate</span></span><br><span class="line">        <span class="keyword">if</span> (index == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (head == <span class="keyword">null</span>) &#123; <span class="comment">//head is not existed</span></span><br><span class="line">                head = newNode;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123; <span class="comment">//head is existed</span></span><br><span class="line">                Node temp = head;</span><br><span class="line">                newNode.next = temp;</span><br><span class="line">                head = newNode;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//index not true -&gt; false</span></span><br><span class="line">        <span class="keyword">if</span> (index &lt; <span class="number">1</span> || index &gt; <span class="keyword">this</span>.length()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">1</span>;<span class="comment">//count the current node</span></span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (count &lt; index) &#123;</span><br><span class="line">            count += <span class="number">1</span>;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        newNode.next = temp.next;</span><br><span class="line">        temp.next = newNode;</span><br><span class="line">        length++;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">printNode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            System.out.print(temp.next.data + <span class="string">"\t"</span>);</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">length</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> length;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">delete</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> foundNum = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        方式1：</span></span><br><span class="line"><span class="comment">        使用两个指针，一个指针指向当前指针，一个指针当前指针的前驱，当删除时，直接忽略需要删除的节点即可</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        Node pre = head;</span><br><span class="line">        Node cur = head.next;</span><br><span class="line">        <span class="keyword">while</span> (cur != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (cur.data == data) &#123;</span><br><span class="line">                foundNum++;</span><br><span class="line">                pre.next = cur.next;</span><br><span class="line">            &#125;</span><br><span class="line">            pre = cur;</span><br><span class="line">            cur = cur.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        方式2：将要删除的节点(假设要删除的节点的位置3)的下一个节点（位置是4）的数据赋值到当前要删除的节点，</span></span><br><span class="line"><span class="comment">        此时当前节点（位置是3）的数据是下一节点（位置是4）的数据，然后将当前节点（位置是3）的后驱指向一下节点（位置是4）</span></span><br><span class="line"><span class="comment">        的下一节点（位置是5）</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line"><span class="comment">//        Node temp = head;</span></span><br><span class="line"><span class="comment">//        while (temp != null) &#123;</span></span><br><span class="line"><span class="comment">//            if (temp.data == data) &#123;</span></span><br><span class="line"><span class="comment">//                foundNum += 1;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//                T tempData = temp.data;</span></span><br><span class="line"><span class="comment">//                temp.data = temp.next.data;</span></span><br><span class="line"><span class="comment">//                temp.next.data = tempData;</span></span><br><span class="line"><span class="comment">//                temp.next = temp.next.next;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//                length--;</span></span><br><span class="line"><span class="comment">//                return true;</span></span><br><span class="line"><span class="comment">//            &#125;</span></span><br><span class="line"><span class="comment">//            temp = temp.next;</span></span><br><span class="line"><span class="comment">//        &#125;</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (foundNum == <span class="number">0</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">"not found data -&gt;"</span> + data);</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        length--;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">delete</span><span class="params">(<span class="keyword">int</span> index)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (index == <span class="number">1</span>) &#123;</span><br><span class="line"></span><br><span class="line">            Node temp = head;</span><br><span class="line">            head = temp.next;</span><br><span class="line">            System.out.println(head.data + <span class="string">"---"</span> + head.next.toString());</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (index &lt; <span class="number">1</span> || index &gt;= <span class="keyword">this</span>.length()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (count &lt; index) &#123;</span><br><span class="line">            count++;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        temp.next = temp.next.next;</span><br><span class="line">        length--;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">search</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (length == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> foundIndex = <span class="number">0</span>;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            index++;</span><br><span class="line">            <span class="keyword">if</span> (temp.next.data == data) &#123;</span><br><span class="line">                foundIndex++;</span><br><span class="line">                <span class="keyword">return</span> index;</span><br><span class="line">            &#125;</span><br><span class="line">            temp = temp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (foundIndex == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> index;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">update</span><span class="params">(T oldData, T data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (length == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">int</span> foundNum = <span class="number">0</span>;</span><br><span class="line">        Node temp = head;</span><br><span class="line">        <span class="keyword">if</span> (oldData <span class="keyword">instanceof</span> String) &#123;</span><br><span class="line">            <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> ((oldData.equals(temp.data))) &#123;</span><br><span class="line">                    foundNum++;</span><br><span class="line">                    temp.data = data;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                temp = temp.next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (oldData <span class="keyword">instanceof</span> Number) &#123;</span><br><span class="line">            <span class="keyword">while</span> (temp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (temp.data == oldData) &#123;</span><br><span class="line">                    foundNum++;</span><br><span class="line">                    temp.data = data;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                temp = temp.next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (foundNum == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>测试<code>java</code>文件：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestLink</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        MyLinkNode&lt;String&gt; myLinkNode = <span class="keyword">new</span> MyLinkNode&lt;&gt;();</span><br><span class="line">        myLinkNode.add(<span class="string">"1"</span>);</span><br><span class="line">        myLinkNode.add(<span class="string">"2"</span>);</span><br><span class="line">        myLinkNode.add(<span class="string">"3"</span>);</span><br><span class="line">        myLinkNode.add(<span class="string">"4"</span>);</span><br><span class="line">        myLinkNode.insert(<span class="number">3</span>,<span class="string">"insert"</span>);</span><br><span class="line">        myLinkNode.printNode();</span><br><span class="line">        System.out.println(<span class="string">"length="</span>+myLinkNode.length());</span><br><span class="line">        System.out.println(<span class="string">"\n"</span>);</span><br><span class="line">        myLinkNode.delete(<span class="string">"insert"</span>);</span><br><span class="line">        myLinkNode.printNode();</span><br><span class="line">        System.out.println(<span class="string">"length="</span>+myLinkNode.length());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>Java</tag>
-        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -5398,31 +5398,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>深度学习和机器学习的区别？</title>
-    <url>/machine-learning-different-from-deep-learning/</url>
-    <content><![CDATA[<p>关于深度学习和机器学习，他们有如下几点不同之处：</p>
-<h3 id="1-特征提取方面"><a href="#1-特征提取方面" class="headerlink" title="1 特征提取方面"></a>1 特征提取方面</h3><ul>
-<li>机器学习必须通过人工特征提取之后，才能进行后续的识别等操作</li>
-<li>深度学习则不同，深度学习深刻网络框架可以不需要人工进行特征提取，而是通过网络自动进行提取，那么深度学习就显得更加强大了</li>
-</ul>
-<h3 id="2-数据量和计算性能方面"><a href="#2-数据量和计算性能方面" class="headerlink" title="2 数据量和计算性能方面"></a>2 数据量和计算性能方面</h3><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191121140526768.jpg" alt="数据量和计算性能方面">   </p>
-<h3 id="算法代表"><a href="#算法代表" class="headerlink" title="算法代表"></a>算法代表</h3><p>机器学习：</p>
-<ul>
-<li>素朴贝叶斯</li>
-<li>决策树<br>…   </li>
-</ul>
-<p>深度学习</p>
-<ul>
-<li>神经网络</li>
-</ul>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>深度学习</tag>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>全面解析RNN,LSTM,Seq2Seq,Attention注意力机制</title>
     <url>/lstm-gru-rnn/</url>
     <content><![CDATA[<blockquote>
@@ -5575,6 +5550,31 @@
         <tag>LSTM</tag>
         <tag>RNN</tag>
         <tag>Attention</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习和机器学习的区别？</title>
+    <url>/machine-learning-different-from-deep-learning/</url>
+    <content><![CDATA[<p>关于深度学习和机器学习，他们有如下几点不同之处：</p>
+<h3 id="1-特征提取方面"><a href="#1-特征提取方面" class="headerlink" title="1 特征提取方面"></a>1 特征提取方面</h3><ul>
+<li>机器学习必须通过人工特征提取之后，才能进行后续的识别等操作</li>
+<li>深度学习则不同，深度学习深刻网络框架可以不需要人工进行特征提取，而是通过网络自动进行提取，那么深度学习就显得更加强大了</li>
+</ul>
+<h3 id="2-数据量和计算性能方面"><a href="#2-数据量和计算性能方面" class="headerlink" title="2 数据量和计算性能方面"></a>2 数据量和计算性能方面</h3><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191121140526768.jpg" alt="数据量和计算性能方面">   </p>
+<h3 id="算法代表"><a href="#算法代表" class="headerlink" title="算法代表"></a>算法代表</h3><p>机器学习：</p>
+<ul>
+<li>素朴贝叶斯</li>
+<li>决策树<br>…   </li>
+</ul>
+<p>深度学习</p>
+<ul>
+<li>神经网络</li>
+</ul>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>深度学习</tag>
+        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
@@ -6067,6 +6067,31 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
+    <title>教你如何用Markdown引用网易云音乐</title>
+    <url>/music-test/</url>
+    <content><![CDATA[<h3 id="1-固定长度"><a href="#1-固定长度" class="headerlink" title="1 固定长度"></a>1 固定长度</h3><p>复制下面的代码，到你的Markdown中，就可以实现音乐播放的功能，音乐源引用自网易云音乐。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"yes"</span> <span class="attr">border</span>=<span class="string">"100"</span> <span class="attr">marginwidth</span>=<span class="string">"4"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">333</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=1295824647&amp;auto=1&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=3932159&auto=1&height=66"></iframe> 
+
+<p><strong>参数解释：</strong>  </p>
+<ul>
+<li>auto 1:自动播放 0:不自动播放</li>
+<li>width 控制播放条的长度，默认是333px</li>
+<li>height 控制播放条的高度，默认是86px(px是像素的单位)</li>
+<li>src 歌曲的链接地址，可以在网页版的网易云平台搜索自己喜欢的歌曲查看，如下所示：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/1232314fdgdfsg.png" alt="image"></li>
+</ul>
+<h3 id="2-自适应长度"><a href="#2-自适应长度" class="headerlink" title="2 自适应长度"></a>2 自适应长度</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"1"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">100%</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=1295824647&amp;auto=0&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=1295824647&auto=0&height=66"></iframe>
+
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>玩艺</tag>
+        <tag>music</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>什么是内存泄漏？</title>
     <url>/memery-leak/</url>
     <content><![CDATA[<h3 id="1-内存泄漏的定义"><a href="#1-内存泄漏的定义" class="headerlink" title="1 内存泄漏的定义"></a>1 内存泄漏的定义</h3><blockquote>
@@ -6113,31 +6138,6 @@ cond(no)->op
 ]]></content>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>教你如何用Markdown引用网易云音乐</title>
-    <url>/music-test/</url>
-    <content><![CDATA[<h3 id="1-固定长度"><a href="#1-固定长度" class="headerlink" title="1 固定长度"></a>1 固定长度</h3><p>复制下面的代码，到你的Markdown中，就可以实现音乐播放的功能，音乐源引用自网易云音乐。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"yes"</span> <span class="attr">border</span>=<span class="string">"100"</span> <span class="attr">marginwidth</span>=<span class="string">"4"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">333</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=1295824647&amp;auto=1&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=3932159&auto=1&height=66"></iframe> 
-
-<p><strong>参数解释：</strong>  </p>
-<ul>
-<li>auto 1:自动播放 0:不自动播放</li>
-<li>width 控制播放条的长度，默认是333px</li>
-<li>height 控制播放条的高度，默认是86px(px是像素的单位)</li>
-<li>src 歌曲的链接地址，可以在网页版的网易云平台搜索自己喜欢的歌曲查看，如下所示：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/1232314fdgdfsg.png" alt="image"></li>
-</ul>
-<h3 id="2-自适应长度"><a href="#2-自适应长度" class="headerlink" title="2 自适应长度"></a>2 自适应长度</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"1"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">100%</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=1295824647&amp;auto=0&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=1295824647&auto=0&height=66"></iframe>
-
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>玩艺</tag>
-        <tag>music</tag>
       </tags>
   </entry>
   <entry>
@@ -6515,19 +6515,6 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
-    <title>如何让自己的hexo博客被Google和百度收录</title>
-    <url>/put-your-hexo-blog-to-baidu-sitmap/</url>
-    <content><![CDATA[<h3 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h3><p>关于如何让自己的hexo博客能够让百度或者谷歌收录，可以查看下面这篇博客。</p>
-<blockquote>
-<p><a href="https://www.jianshu.com/p/25145964abf3" target="_blank" rel="noopener">如何让自己的hexo博客被Google和百度收录</a></p>
-</blockquote>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo主题如何添加谷歌广告，非Next主题教程，pug框架</title>
     <url>/pug-how-to-add-google-ad/</url>
     <content><![CDATA[<h3 id="1-在主题目录下添加语句"><a href="#1-在主题目录下添加语句" class="headerlink" title="1 在主题目录下添加语句"></a>1 在主题目录下添加语句</h3><p>打开主题目录下的<code>your_theme/_config.yml</code> 文件,添加个广告控制开关：   </p>
@@ -6541,6 +6528,19 @@ cond(no)->op
 ]]></content>
       <tags>
         <tag>解决问题</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何让自己的hexo博客被Google和百度收录</title>
+    <url>/put-your-hexo-blog-to-baidu-sitmap/</url>
+    <content><![CDATA[<h3 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h3><p>关于如何让自己的hexo博客能够让百度或者谷歌收录，可以查看下面这篇博客。</p>
+<blockquote>
+<p><a href="https://www.jianshu.com/p/25145964abf3" target="_blank" rel="noopener">如何让自己的hexo博客被Google和百度收录</a></p>
+</blockquote>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
         <tag>hexo</tag>
       </tags>
   </entry>
@@ -6637,6 +6637,19 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
+    <title>用python扫描文件目录</title>
+    <url>/python-scan-dir/</url>
+    <content><![CDATA[<h3 id="1-使用"><a href="#1-使用" class="headerlink" title="1 使用"></a>1 使用</h3><p>通过<code>os.walk()</code>扫描制定目录下的所有文件以及子文件夹</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">扫描目录下的第一层文件，不包括子文件夹中的文件</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_dir_lists</span><span class="params">(root_dir)</span>:</span></span><br><span class="line">    root_dir = <span class="string">r"J:\电子书"</span></span><br><span class="line">    dir_tree = os.walk(root_dir)</span><br><span class="line">    sub_dir = dir_tree.__next__()[<span class="number">1</span>]</span><br><span class="line">    file_list = []</span><br><span class="line">    <span class="keyword">for</span> sub <span class="keyword">in</span> sub_dir:</span><br><span class="line">        <span class="keyword">for</span> _sub <span class="keyword">in</span> os.walk(root_dir + <span class="string">"\\"</span> + str(sub)):</span><br><span class="line">            _book_list = _sub[<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">if</span> _sub[<span class="number">1</span>] <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">                <span class="keyword">for</span> book <span class="keyword">in</span> _book_list:</span><br><span class="line">                    <span class="keyword">if</span> <span class="string">".pdf"</span> <span class="keyword">in</span> book:</span><br><span class="line">                        file_list.append(book)</span><br><span class="line">    <span class="keyword">return</span> file_list</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>用Python爬虫爬取基金网站基金数据</title>
     <url>/python-spider-crawl-fund-data/</url>
     <content><![CDATA[<h3 id="1-程序结构介绍"><a href="#1-程序结构介绍" class="headerlink" title="1 程序结构介绍"></a>1 程序结构介绍</h3><p>代码结构图：<br><img src= "/img/loading.gif" data-src="https://upload-images.jianshu.io/upload_images/621273-5866743b51461e55.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="代码结构图"></p>
@@ -6664,19 +6677,6 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
-    <title>用python扫描文件目录</title>
-    <url>/python-scan-dir/</url>
-    <content><![CDATA[<h3 id="1-使用"><a href="#1-使用" class="headerlink" title="1 使用"></a>1 使用</h3><p>通过<code>os.walk()</code>扫描制定目录下的所有文件以及子文件夹</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">扫描目录下的第一层文件，不包括子文件夹中的文件</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_dir_lists</span><span class="params">(root_dir)</span>:</span></span><br><span class="line">    root_dir = <span class="string">r"J:\电子书"</span></span><br><span class="line">    dir_tree = os.walk(root_dir)</span><br><span class="line">    sub_dir = dir_tree.__next__()[<span class="number">1</span>]</span><br><span class="line">    file_list = []</span><br><span class="line">    <span class="keyword">for</span> sub <span class="keyword">in</span> sub_dir:</span><br><span class="line">        <span class="keyword">for</span> _sub <span class="keyword">in</span> os.walk(root_dir + <span class="string">"\\"</span> + str(sub)):</span><br><span class="line">            _book_list = _sub[<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">if</span> _sub[<span class="number">1</span>] <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">                <span class="keyword">for</span> book <span class="keyword">in</span> _book_list:</span><br><span class="line">                    <span class="keyword">if</span> <span class="string">".pdf"</span> <span class="keyword">in</span> book:</span><br><span class="line">                        file_list.append(book)</span><br><span class="line">    <span class="keyword">return</span> file_list</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TabError: Inconsistent use of tabs and spaces in indentation</title>
     <url>/python-tab-error/</url>
     <content><![CDATA[<h3 id="1-问题"><a href="#1-问题" class="headerlink" title="1 问题"></a>1 问题</h3><p>在使用命令行运行<code>python</code>文件时，出现以下错误：   </p>
@@ -6689,8 +6689,8 @@ cond(no)->op
 <h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
 ]]></content>
       <tags>
-        <tag>Python</tag>
         <tag>解决问题</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -6717,8 +6717,8 @@ cond(no)->op
 <h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
 ]]></content>
       <tags>
-        <tag>Python</tag>
         <tag>解决问题</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -6925,6 +6925,19 @@ cond(no)->op
       </tags>
   </entry>
   <entry>
+    <title>tensorflow如何控制输出控制台的日志等级</title>
+    <url>/tensorflow-log-level/</url>
+    <content><![CDATA[<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="comment"># 输出所有 默认等级</span></span><br><span class="line">os.environ[<span class="string">"TF_CPP_MIN_LOG_LEVEL"</span>]=<span class="string">'1'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出warm和error</span></span><br><span class="line">os.environ[<span class="string">"TF_CPP_MIN_LOG_LEVEL"</span>]=<span class="string">'2'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 只输出error</span></span><br><span class="line">os.environ[<span class="string">"TF_CPP_MIN_LOG_LEVEL"</span>]=<span class="string">'3'</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+]]></content>
+      <tags>
+        <tag>编程框架</tag>
+        <tag>TensorFlow</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于TensorFlow的mnist手写体识别</title>
     <url>/tensorflow-mnist-full-connection/</url>
     <content><![CDATA[<h3 id="0-引言"><a href="#0-引言" class="headerlink" title="0 引言"></a>0 引言</h3><p>昨天我做（学者网上的教程）了一个线性回归的模型，可以参考这篇<a href="https://jusm.club/liner-regression-writen-by-tensorflow/" target="_blank" rel="noopener">博客</a>，用的TensorFlow框架，今天我继续学习，用TensorFlow框架对mnist数据集进行手写体识别。</p>
@@ -6958,19 +6971,6 @@ cond(no)->op
 </ul>
 <h3 id="8-运行效果"><a href="#8-运行效果" class="headerlink" title="8 运行效果"></a>8 运行效果</h3><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191128161437.png" alt="running result"></p>
 <h3 id="9-源代码"><a href="#9-源代码" class="headerlink" title="9 源代码"></a>9 源代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="keyword">from</span> tensorflow.examples.tutorials.mnist <span class="keyword">import</span> input_data</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fucc_connection</span><span class="params">(learning_rate=<span class="number">0.01</span>,error_value=np.exp<span class="params">(<span class="number">-5</span>)</span>,batch_size=<span class="number">100</span>)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    这是一个通过全连接网络实现的手写字体识别demo</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment">###############################</span></span><br><span class="line">    <span class="comment"># 分析过程</span></span><br><span class="line">    <span class="comment"># 这里的过程和线性回归的过程差不多，无非就是模型和函数有点不一样</span></span><br><span class="line">    <span class="comment"># 1 准备数据</span></span><br><span class="line">    <span class="comment"># 公式：</span></span><br><span class="line">    <span class="comment"># X([None,784]) * weight([784,10]) + bias[10] = y_predict([10])</span></span><br><span class="line">    <span class="comment"># with tf.variable_scope("prepare_data"):</span></span><br><span class="line">    mnist_data = input_data.read_data_sets(<span class="string">"./mnist_data"</span>, one_hot=<span class="literal">True</span>)</span><br><span class="line">    X = tf.placeholder(dtype=tf.float32, shape=[<span class="literal">None</span>, <span class="number">784</span>], name=<span class="string">"X"</span>)</span><br><span class="line">    y_true = tf.placeholder(dtype=tf.float32, shape=[<span class="literal">None</span>, <span class="number">10</span>], name=<span class="string">"y_true"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 2 构造模型</span></span><br><span class="line">    <span class="keyword">with</span> tf.variable_scope(<span class="string">"create_model"</span>):</span><br><span class="line">        <span class="comment"># 参数</span></span><br><span class="line">        weights = tf.Variable(initial_value=tf.random_normal(shape=[<span class="number">784</span>,<span class="number">10</span>]),name=<span class="string">"weight"</span>)</span><br><span class="line">        bias = tf.Variable(initial_value=tf.random_normal([<span class="number">10</span>]),name=<span class="string">"bias"</span>)</span><br><span class="line">        <span class="comment"># 模型</span></span><br><span class="line">        y_predict = tf.matmul(X,weights) + bias</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 3 构造损失函数</span></span><br><span class="line">    <span class="comment"># 这里使用的损失不再是均方差，这里用的softmax和交叉熵</span></span><br><span class="line">    <span class="keyword">with</span> tf.variable_scope(<span class="string">"loss_function"</span>):</span><br><span class="line">        loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_true,logits=y_predict))</span><br><span class="line">        <span class="comment"># 什么是logits:https://blog.csdn.net/nbxzkok/article/details/84838984</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 4 优化损失</span></span><br><span class="line">    <span class="comment"># 还是使用梯度下降方法进行优化损失</span></span><br><span class="line">    optimizer = tf.train.GradientDescentOptimizer(learning_rate=learning_rate).minimize(loss)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 5 计算准确率</span></span><br><span class="line">    equal_list = tf.equal(tf.argmax(y_true, <span class="number">1</span>), tf.argmax(y_predict, <span class="number">1</span>))</span><br><span class="line">    accuracy = tf.reduce_mean(tf.cast(equal_list, tf.float32))</span><br><span class="line"></span><br><span class="line">    <span class="comment">###############</span></span><br><span class="line">    <span class="comment"># 初始化变量</span></span><br><span class="line">    init = tf.global_variables_initializer()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 2) 收集变量</span></span><br><span class="line">    tf.summary.scalar(<span class="string">"loss"</span>,loss)</span><br><span class="line">    tf.summary.histogram(<span class="string">"weights"</span>, weights)</span><br><span class="line">    tf.summary.histogram(<span class="string">"bias"</span>, bias)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 3) 合并变量</span></span><br><span class="line">    merged = tf.summary.merge_all()</span><br><span class="line"></span><br><span class="line">    <span class="comment">## (1)定义一个模型的保存器</span></span><br><span class="line">    saver = tf.train.Saver()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 开启回话</span></span><br><span class="line">    <span class="keyword">with</span> tf.Session() <span class="keyword">as</span> sess:</span><br><span class="line">        sess.run(init)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 1) 创建事件</span></span><br><span class="line">        file_writer = tf.summary.FileWriter(graph=sess.graph, logdir=<span class="string">"./mnist_graph"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        image, label = mnist_data.train.next_batch(batch_size)</span><br><span class="line">        print(<span class="string">"loss:&#123;&#125;"</span>.format(sess.run(loss, feed_dict=&#123;X: image, y_true: label&#125;)))</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 开始训练</span></span><br><span class="line">        <span class="comment"># count = 0</span></span><br><span class="line">        <span class="comment"># while(loss.eval() &gt; np.exp(-9)):</span></span><br><span class="line">        <span class="comment">#     count += 1</span></span><br><span class="line">        <span class="comment">#     _optimizer, loss = sess.run([optimizer,loss], feed_dict=&#123;X:image, y_true:label&#125;)</span></span><br><span class="line">        <span class="comment">#     print("NO.&#123;count&#125;,loss:&#123;value&#125;".format(value=loss.eval(), count=count))</span></span><br><span class="line">        error_value = error_value</span><br><span class="line">        <span class="keyword">for</span> count <span class="keyword">in</span> range(<span class="number">100000</span>):</span><br><span class="line">            _optimizer, loss_value, accuracy_value = sess.run([optimizer, loss, accuracy], feed_dict=&#123;X: image, y_true: label&#125;)</span><br><span class="line">            <span class="keyword">if</span> accuracy_value &lt; <span class="number">0.9</span>:</span><br><span class="line">                print(<span class="string">"NO.&#123;count&#125;,loss:&#123;value&#125;, accuracy:&#123;accuracy&#125;"</span>.format(value=loss_value, count=count, accuracy=accuracy_value))</span><br><span class="line">                <span class="comment"># 4) 运行合并后的变量</span></span><br><span class="line">                <span class="comment"># summary = sess.run(merged)</span></span><br><span class="line">                <span class="comment"># file_writer.add_summary(summary,count)</span></span><br><span class="line">                <span class="comment">#</span></span><br><span class="line">                <span class="comment"># # (2) 开始保存模型</span></span><br><span class="line">                <span class="comment"># if count % 10 ==0 :</span></span><br><span class="line">                <span class="comment">#     saver.save("./temp/mnist/mnist.ckpt")</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                print(<span class="string">"-"</span>*<span class="number">10</span> + <span class="string">"result"</span> + <span class="string">"-"</span>*<span class="number">10</span>)</span><br><span class="line">                print(<span class="string">"learning_rate:&#123;&#125;"</span>.format(learning_rate))</span><br><span class="line">                print(<span class="string">"minial error value:&#123;&#125;"</span>.format(error_value))</span><br><span class="line">                print(<span class="string">"accuracy is:&#123;&#125;"</span>.format(accuracy_value))</span><br><span class="line">                print(<span class="string">"total running times:&#123;&#125; times"</span>.format(count))</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">(argv)</span>:</span></span><br><span class="line">    s_time = time.time()</span><br><span class="line">    fucc_connection(learning_rate=<span class="number">0.1</span>,batch_size=<span class="number">1000</span>)</span><br><span class="line">    e_time = time.time()</span><br><span class="line">    print(<span class="string">"running time:&#123;&#125; s"</span>.format(round((e_time - s_time),<span class="number">2</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    tf.app.run()</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-]]></content>
-      <tags>
-        <tag>编程框架</tag>
-        <tag>TensorFlow</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>tensorflow如何控制输出控制台的日志等级</title>
-    <url>/tensorflow-log-level/</url>
-    <content><![CDATA[<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="comment"># 输出所有 默认等级</span></span><br><span class="line">os.environ[<span class="string">"TF_CPP_MIN_LOG_LEVEL"</span>]=<span class="string">'1'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出warm和error</span></span><br><span class="line">os.environ[<span class="string">"TF_CPP_MIN_LOG_LEVEL"</span>]=<span class="string">'2'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 只输出error</span></span><br><span class="line">os.environ[<span class="string">"TF_CPP_MIN_LOG_LEVEL"</span>]=<span class="string">'3'</span></span><br></pre></td></tr></table></figure>
 
 
 <h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
@@ -7301,8 +7301,8 @@ cond(no)->op
 <h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
 ]]></content>
       <tags>
-        <tag>Python</tag>
         <tag>解决问题</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
