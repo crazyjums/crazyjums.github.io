@@ -1,5 +1,4 @@
 http://jums.club/lstm-gru-rnn/
-http://jums.club/html-lunfan-effect/
 http://jums.club/cpp-virtual-function/
 http://jums.club/c-serialization/
 http://jums.club/github-more-than-100/
@@ -14,7 +13,6 @@ http://jums.club/java-scanner/
 http://jums.club/java-link/
 http://jums.club/tencent-interview-questions/
 http://jums.club/bubble-select-sort/
-http://jums.club/Linux-release-info/
 http://jums.club/java-inner-class/
 http://jums.club/JVM-interview-questions/
 http://jums.club/java-byte-code-command/
@@ -43,7 +41,6 @@ http://jums.club/crack-idel-perfessional/
 http://jums.club/crack-pycharm-perfessional/
 http://jums.club/java-class-method/
 http://jums.club/java-interface-abstract/
-http://jums.club/how-to-use-setuptools/
 http://jums.club/python-tab-error/
 http://jums.club/unicode-error-sloved/
 http://jums.club/python-namespace/
@@ -57,16 +54,15 @@ http://jums.club/write-blog-via-github/
 http://jums.club/how-to-use-github-API/
 http://jums.club/something-about-curl/
 http://jums.club/how-to-write-a-document-for-your-project/
+http://jums.club/html-lunfan-effect/
 http://jums.club/python-scan-dir/
 http://jums.club/github-how-to-create-two-more-page/
 http://jums.club/git-connect-to-github/
 http://jums.club/git-push-error/
 http://jums.club/git-delete-file-s/
-http://jums.club/fatal-remote-origin-already-exists/
 http://jums.club/how-to-use-git/
 http://jums.club/markdown-format/
 http://jums.club/computer-around-ebook/
-http://jums.club/lizhi-songs/
 http://jums.club/matplotlib-draw-x-and-y/
 http://jums.club/matplotlib-draw-a-dymatic-func/
 http://jums.club/cdn-speed-up/
@@ -92,9 +88,13 @@ http://jums.club/python-spider-crawl-fund-data/
 http://jums.club/python-json-problem-sloved/
 http://jums.club/sloved-hexo-title/
 http://jums.club/re-sub/
+http://jums.club/how-to-use-setuptools/
 http://jums.club/how-to-use-python-command-param/
 http://jums.club/basic-python-knowledge/
 http://jums.club/how-to-do-research/
 http://jums.club/qing-yu-nian-resource/
 http://jums.club/github-project/
 http://jums.club/how-to-access-google/
+http://jums.club/tensorflow-reduce-mean/
+http://jums.club/tensorflow-mnist-full-connection/
+http://jums.club/liner-regression-writen-by-tensorflow/
