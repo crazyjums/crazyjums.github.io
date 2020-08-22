@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/tags/index.html</loc>
+    
+    <lastmod>2020-08-22T14:27:49.241Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/share/index.html</loc>
+    
+    <lastmod>2020-08-22T14:27:38.617Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/link/index.html</loc>
+    
+    <lastmod>2020-08-22T14:27:20.697Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/comments/index.html</loc>
+    
+    <lastmod>2020-08-22T14:27:02.046Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/archives/index.html</loc>
+    
+    <lastmod>2020-08-22T14:26:39.625Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/about/index.html</loc>
+    
+    <lastmod>2020-08-22T14:26:18.148Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/write-blog-via-github/</loc>
     
     <lastmod>2020-08-19T14:32:50.005Z</lastmod>
@@ -870,13 +912,6 @@
   </url>
   
   <url>
-    <loc>http://jums.club/link/index.html</loc>
-    
-    <lastmod>2020-06-23T14:17:51.273Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jums.club/categories/index.html</loc>
     
     <lastmod>2020-06-23T11:35:56.040Z</lastmod>
@@ -891,30 +926,9 @@
   </url>
   
   <url>
-    <loc>http://jums.club/about/index.html</loc>
-    
-    <lastmod>2020-04-12T08:21:19.601Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/share/index.html</loc>
-    
-    <lastmod>2020-03-27T11:56:53.711Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jums.club/how-to-use-github-API/</loc>
     
     <lastmod>2020-03-03T06:15:46.010Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/comments/index.html</loc>
-    
-    <lastmod>2020-02-21T14:54:54.393Z</lastmod>
     
   </url>
   
@@ -957,20 +971,6 @@
     <loc>http://jums.club/baidu_verify_tgcew1PmHJ.html</loc>
     
     <lastmod>2020-01-03T09:35:50.417Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/tags/index.html</loc>
-    
-    <lastmod>2019-12-06T15:34:16.539Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/archives/index.html</loc>
-    
-    <lastmod>2019-12-06T15:32:09.666Z</lastmod>
     
   </url>
   
