@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/git-connect-to-github/</loc>
+    
+    <lastmod>2020-09-03T14:33:08.284Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/tags/index.html</loc>
     
     <lastmod>2020-08-22T14:27:49.241Z</lastmod>
@@ -747,13 +754,6 @@
     <loc>http://jums.club/git-delete-file-s/</loc>
     
     <lastmod>2020-08-19T14:19:10.022Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/git-connect-to-github/</loc>
-    
-    <lastmod>2020-08-19T14:19:03.335Z</lastmod>
     
   </url>
   
