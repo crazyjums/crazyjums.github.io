@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/message-queue/</loc>
+    
+    <lastmod>2020-11-10T15:36:30.726Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/tcp-three-four/</loc>
     
     <lastmod>2020-11-10T15:28:23.831Z</lastmod>
