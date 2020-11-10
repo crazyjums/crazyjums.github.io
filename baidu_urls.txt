@@ -1,3 +1,4 @@
+http://jums.club/next-permutation/
 http://jums.club/message-queue/
 http://jums.club/tcp-three-four/
 http://jums.club/lstm-gru-rnn/
@@ -90,11 +91,10 @@ http://jums.club/python-spider-crawl-fund-data/
 http://jums.club/python-json-problem-sloved/
 http://jums.club/sloved-hexo-title/
 http://jums.club/re-sub/
-http://jums.club/how-to-use-setuptools/
 http://jums.club/how-to-use-python-command-param/
+http://jums.club/how-to-use-setuptools/
 http://jums.club/basic-python-knowledge/
 http://jums.club/how-to-do-research/
 http://jums.club/qing-yu-nian-resource/
 http://jums.club/github-project/
 http://jums.club/how-to-access-google/
-http://jums.club/tensorflow-reduce-mean/
