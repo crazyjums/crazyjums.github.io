@@ -93,8 +93,8 @@ http://jums.club/python-spider-crawl-fund-data/
 http://jums.club/python-json-problem-sloved/
 http://jums.club/sloved-hexo-title/
 http://jums.club/re-sub/
-http://jums.club/how-to-use-python-command-param/
 http://jums.club/how-to-use-setuptools/
+http://jums.club/how-to-use-python-command-param/
 http://jums.club/basic-python-knowledge/
 http://jums.club/how-to-do-research/
 http://jums.club/qing-yu-nian-resource/
