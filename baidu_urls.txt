@@ -1,3 +1,4 @@
+http://jums.club/steam-speed/
 http://jums.club/b-tree-and-b-plus/
 http://jums.club/jmm/
 http://jums.club/sleep-wait/
@@ -97,4 +98,3 @@ http://jums.club/python-debug/
 http://jums.club/mysql-to-another-disk/
 http://jums.club/python-spider-crawl-fund-data/
 http://jums.club/python-json-problem-sloved/
-http://jums.club/sloved-hexo-title/
