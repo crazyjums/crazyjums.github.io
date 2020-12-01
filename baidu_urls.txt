@@ -1,3 +1,5 @@
+http://jums.club/cpp-point-reference/
+http://jums.club/cpp-struct-class/
 http://jums.club/c-malloc-new/
 http://jums.club/steam-speed/
 http://jums.club/b-tree-and-b-plus/
@@ -66,8 +68,8 @@ http://jums.club/time-series-forecasting-algorithm/
 http://jums.club/write-blog-via-github/
 http://jums.club/how-to-use-github-API/
 http://jums.club/something-about-curl/
-http://jums.club/html-lunfan-effect/
 http://jums.club/how-to-write-a-document-for-your-project/
+http://jums.club/html-lunfan-effect/
 http://jums.club/python-scan-dir/
 http://jums.club/github-how-to-create-two-more-page/
 http://jums.club/git-connect-to-github/
@@ -96,5 +98,3 @@ http://jums.club/git-error-2/
 http://jums.club/git-error-1/
 http://jums.club/python-logging-error-sloved/
 http://jums.club/python-debug/
-http://jums.club/mysql-to-another-disk/
-http://jums.club/python-spider-crawl-fund-data/

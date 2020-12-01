@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/cpp-point-reference/</loc>
+    
+    <lastmod>2020-12-01T04:42:24.019Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/cpp-struct-class/</loc>
+    
+    <lastmod>2020-12-01T04:15:27.339Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/c-malloc-new/</loc>
     
-    <lastmod>2020-11-30T12:40:35.665Z</lastmod>
+    <lastmod>2020-11-30T13:06:45.635Z</lastmod>
     
   </url>
   
