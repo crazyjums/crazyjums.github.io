@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://jums.club/http-and-https/</loc>
+    <loc>http://jums.club/tcp-ip-cwnd/</loc>
     <lastmod>2020-12-01</lastmod>
   </url>  <url>
-    <loc>http://jums.club/tcp-ip-cwnd/</loc>
+    <loc>http://jums.club/http-and-https/</loc>
     <lastmod>2020-12-01</lastmod>
   </url>  <url>
     <loc>http://jums.club/cpp-point-reference/</loc>
