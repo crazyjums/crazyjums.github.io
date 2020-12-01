@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/tcp-and-udp/</loc>
+    
+    <lastmod>2020-12-01T14:58:29.946Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/tcp-ip-cwnd/</loc>
     
     <lastmod>2020-12-01T13:20:24.894Z</lastmod>
