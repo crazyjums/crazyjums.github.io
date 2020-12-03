@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://jums.club/stack-and-heap/</loc>
+    <lastmod>2020-12-03</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/stack-and-heap-java/</loc>
+    <lastmod>2020-12-03</lastmod>
+  </url>  <url>
     <loc>http://jums.club/tcp-and-udp/</loc>
     <lastmod>2020-12-01</lastmod>
   </url>  <url>
