@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/java-polymorphism2/</loc>
+    
+    <lastmod>2020-12-06T09:01:55.319Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/java-polymorphism/</loc>
+    
+    <lastmod>2020-12-06T08:41:03.391Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/java-lock-mechanism/</loc>
     
-    <lastmod>2020-12-06T06:40:47.184Z</lastmod>
+    <lastmod>2020-12-06T06:40:58.025Z</lastmod>
     
   </url>
   

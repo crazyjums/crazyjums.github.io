@@ -1,3 +1,5 @@
+http://jums.club/java-polymorphism2/
+http://jums.club/java-polymorphism/
 http://jums.club/java-lock-mechanism/
 http://jums.club/why-tcp-three-not-two/
 http://jums.club/stack-and-heap-java/
@@ -96,5 +98,3 @@ http://jums.club/redirecting-forword/
 http://jums.club/how-to-crack-myeclipse/
 http://jums.club/sql-server-download/
 http://jums.club/sql-server-reback-data/
-http://jums.club/sql-server-something/
-http://jums.club/sava-our-life/
