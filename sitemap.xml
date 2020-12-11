@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/comments/index.html</loc>
+    
+    <lastmod>2020-12-11T07:37:35.546Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/tcp-ip-cwnd/</loc>
+    
+    <lastmod>2020-12-08T11:26:45.849Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/enum-singleton/</loc>
     
-    <lastmod>2020-12-06T14:10:23.300Z</lastmod>
+    <lastmod>2020-12-06T14:10:33.169Z</lastmod>
     
   </url>
   
@@ -54,13 +68,6 @@
     <loc>http://jums.club/tcp-and-udp/</loc>
     
     <lastmod>2020-12-01T14:58:42.186Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/tcp-ip-cwnd/</loc>
-    
-    <lastmod>2020-12-01T13:20:24.894Z</lastmod>
     
   </url>
   
@@ -215,13 +222,6 @@
     <loc>http://jums.club/link/index.html</loc>
     
     <lastmod>2020-08-22T14:27:20.697Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/comments/index.html</loc>
-    
-    <lastmod>2020-08-22T14:27:02.046Z</lastmod>
     
   </url>
   
