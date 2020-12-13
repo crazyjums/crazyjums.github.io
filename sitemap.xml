@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/cpp-virtual-function/</loc>
+    
+    <lastmod>2020-12-13T11:49:49.254Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/c-serialization/</loc>
+    
+    <lastmod>2020-12-13T11:49:11.585Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/HashMap-and-HashTable/</loc>
     
-    <lastmod>2020-12-12T14:23:18.793Z</lastmod>
+    <lastmod>2020-12-12T14:23:28.430Z</lastmod>
     
   </url>
   
@@ -1010,13 +1024,6 @@
   </url>
   
   <url>
-    <loc>http://jums.club/cpp-virtual-function/</loc>
-    
-    <lastmod>2020-08-19T14:16:04.197Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jums.club/config-ssh-for-github/</loc>
     
     <lastmod>2020-08-19T14:15:51.567Z</lastmod>
@@ -1048,13 +1055,6 @@
     <loc>http://jums.club/cdn-speed-up/</loc>
     
     <lastmod>2020-08-19T14:14:54.634Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/c-serialization/</loc>
-    
-    <lastmod>2020-08-19T14:14:42.981Z</lastmod>
     
   </url>
   
