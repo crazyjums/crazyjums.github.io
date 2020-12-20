@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://jums.club/make-redis-error/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/machine-learning-project/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/wps-set-cascade-number/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
     <loc>http://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
@@ -313,12 +322,6 @@
     <loc>http://jums.club/machine-learning-different-from-deep-learning/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
-    <loc>http://jums.club/make-redis-error/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/machine-learning-project/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
     <loc>http://jums.club/music-test/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
@@ -386,9 +389,6 @@
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/next-permutation/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/wps-set-cascade-number/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/dip/</loc>
