@@ -1,3 +1,4 @@
+http://jums.club/backpackage-question/
 http://jums.club/HashMap-and-HashTable/
 http://jums.club/ArrayList-and-LinkedList/
 http://jums.club/enum-singleton/
@@ -97,4 +98,3 @@ http://jums.club/a-ebook/
 http://jums.club/java-string-stringbuffer-builder/
 http://jums.club/java-class-base-datatype/
 http://jums.club/java-abstract-interface/
-http://jums.club/redirecting-forword/
