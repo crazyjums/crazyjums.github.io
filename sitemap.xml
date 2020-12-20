@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/ArrayList-and-LinkedList/</loc>
+    
+    <lastmod>2020-12-20T08:34:07.212Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/unicode-error-sloved/</loc>
     
     <lastmod>2020-12-20T08:19:55.219Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>http://jums.club/java-polymorphism2/</loc>
     
     <lastmod>2020-12-20T08:11:42.068Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/ArrayList-and-LinkedList/</loc>
-    
-    <lastmod>2020-12-20T08:11:02.528Z</lastmod>
     
   </url>
   
