@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/jvm-of-direct-memery/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/jvm-reference/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/jvm-param-info/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/java-byte-code-command/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/mysql-to-another-disk/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/tencent-interview-questions/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/tensorflow-reduce-mean/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/tensorflow-mnist-full-connection/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/tensorflow-log-level/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/liner-regression-writen-by-tensorflow/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/how-to-use-python-command-param/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/change-file-name-by-python/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/AlexNet/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/python-spider-crawl-fund-data/</loc>
+    <lastmod>2020-12-20</lastmod>
+  </url>  <url>
     <loc>http://jums.club/cdn-speed-up/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
@@ -47,9 +92,6 @@
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/markdown-format/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/mysql-to-another-disk/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/distiction-of-classmethod-staticmethod/</loc>
@@ -124,9 +166,6 @@
     <loc>http://jums.club/java-basic/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
-    <loc>http://jums.club/java-byte-code-command/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
     <loc>http://jums.club/java-heap-overflow-thread/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
@@ -143,9 +182,6 @@
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/b-tree-and-b-plus/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/jvm-param-info/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/lstm-gru-rnn/</loc>
@@ -169,16 +205,10 @@
     <loc>http://jums.club/jmm/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
-    <loc>http://jums.club/jvm-reference/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
     <loc>http://jums.club/java-scanner/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/sleep-wait/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/jvm-of-direct-memery/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/java-reflect/</loc>
@@ -256,18 +286,6 @@
     <loc>http://jums.club/is-match/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
-    <loc>http://jums.club/tensorflow-log-level/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/tensorflow-mnist-full-connection/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/tensorflow-reduce-mean/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/TypeError-Input-b-of-MatMul-Op-has-type-int32-that-does-not-match-type-float32-of-argument-a/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
     <loc>http://jums.club/config-ssh-for-github/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
@@ -322,9 +340,6 @@
     <loc>http://jums.club/SSPNet/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
-    <loc>http://jums.club/tencent-interview-questions/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
     <loc>http://jums.club/use-cloudfree-make-your-hexo-to-https/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
@@ -374,21 +389,6 @@
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/wps-set-cascade-number/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/liner-regression-writen-by-tensorflow/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/how-to-use-python-command-param/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/change-file-name-by-python/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/AlexNet/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/python-spider-crawl-fund-data/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/dip/</loc>
