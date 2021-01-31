@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/about/index.html</loc>
+    
+    <lastmod>2021-01-31T06:16:52.623Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/binaryTree-java-implements/</loc>
     
     <lastmod>2021-01-31T05:48:07.059Z</lastmod>
@@ -1069,13 +1076,6 @@
     <loc>http://jums.club/comments/index.html</loc>
     
     <lastmod>2020-12-11T07:37:35.546Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/about/index.html</loc>
-    
-    <lastmod>2020-11-13T08:26:12.842Z</lastmod>
     
   </url>
   
