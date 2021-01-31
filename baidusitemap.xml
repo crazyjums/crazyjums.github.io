@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://jums.club/binaryTree-java-implements/</loc>
+    <lastmod>2021-01-31</lastmod>
+  </url>  <url>
     <loc>http://jums.club/tensorflow-to-use-gpu/</loc>
     <lastmod>2021-01-26</lastmod>
   </url>  <url>
@@ -275,9 +278,6 @@
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/HashMap-and-HashTable/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/binaryTree-java-implements/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/how-to-use-setuptools/</loc>
