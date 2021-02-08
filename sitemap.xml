@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/basic-python-knowledge/</loc>
+    
+    <lastmod>2021-02-08T05:44:02.163Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/awesome-spider-project/</loc>
+    
+    <lastmod>2021-02-08T05:42:16.371Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/subplot-legend/</loc>
     
     <lastmod>2021-02-07T13:45:44.560Z</lastmod>
@@ -317,23 +331,9 @@
   </url>
   
   <url>
-    <loc>http://jums.club/awesome-spider-project/</loc>
-    
-    <lastmod>2020-12-20T08:57:08.966Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jums.club/cnn/</loc>
     
     <lastmod>2020-12-20T08:57:03.009Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/basic-python-knowledge/</loc>
-    
-    <lastmod>2020-12-20T08:56:55.143Z</lastmod>
     
   </url>
   

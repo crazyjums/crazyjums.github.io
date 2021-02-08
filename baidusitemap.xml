@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://jums.club/basic-python-knowledge/</loc>
+    <lastmod>2021-02-08</lastmod>
+  </url>  <url>
+    <loc>http://jums.club/awesome-spider-project/</loc>
+    <lastmod>2021-02-08</lastmod>
+  </url>  <url>
     <loc>http://jums.club/subplot-legend/</loc>
     <lastmod>2021-02-07</lastmod>
   </url>  <url>
@@ -133,13 +139,7 @@
     <loc>http://jums.club/distiction-of-classmethod-staticmethod/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
-    <loc>http://jums.club/awesome-spider-project/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
     <loc>http://jums.club/cnn/</loc>
-    <lastmod>2020-12-20</lastmod>
-  </url>  <url>
-    <loc>http://jums.club/basic-python-knowledge/</loc>
     <lastmod>2020-12-20</lastmod>
   </url>  <url>
     <loc>http://jums.club/unicode-error-sloved/</loc>
