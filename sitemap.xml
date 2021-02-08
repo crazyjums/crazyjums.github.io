@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/dip/</loc>
+    
+    <lastmod>2021-02-08T06:16:18.849Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/unicode-error-sloved/</loc>
+    
+    <lastmod>2021-02-08T05:49:28.228Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/why-singleton-need-first-check/</loc>
+    
+    <lastmod>2021-02-08T05:47:55.737Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/backpackage-question/</loc>
+    
+    <lastmod>2021-02-08T05:46:43.337Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/basic-python-knowledge/</loc>
     
     <lastmod>2021-02-08T05:44:02.163Z</lastmod>
@@ -44,13 +72,6 @@
   </url>
   
   <url>
-    <loc>http://jums.club/why-singleton-need-first-check/</loc>
-    
-    <lastmod>2021-01-21T08:52:19.389Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jums.club/matplotlib-annotate/</loc>
     
     <lastmod>2021-01-19T13:40:35.718Z</lastmod>
@@ -68,13 +89,6 @@
     <loc>http://jums.club/us-apple-id-recharge/</loc>
     
     <lastmod>2021-01-13T09:01:35.150Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/backpackage-question/</loc>
-    
-    <lastmod>2020-12-23T02:57:50.082Z</lastmod>
     
   </url>
   
@@ -334,13 +348,6 @@
     <loc>http://jums.club/cnn/</loc>
     
     <lastmod>2020-12-20T08:57:03.009Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/unicode-error-sloved/</loc>
-    
-    <lastmod>2020-12-20T08:55:20.174Z</lastmod>
     
   </url>
   
@@ -957,13 +964,6 @@
     <loc>http://jums.club/next-permutation/</loc>
     
     <lastmod>2020-12-20T07:49:55.044Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/dip/</loc>
-    
-    <lastmod>2020-12-20T07:40:10.958Z</lastmod>
     
   </url>
   
