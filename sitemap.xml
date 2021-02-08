@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/cnn/</loc>
+    
+    <lastmod>2021-02-08T06:30:32.875Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/time-series-forecasting-algorithm/</loc>
+    
+    <lastmod>2021-02-08T06:28:31.990Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/prediction-algorithm/</loc>
+    
+    <lastmod>2021-02-08T06:18:43.459Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/dip/</loc>
     
     <lastmod>2021-02-08T06:16:18.849Z</lastmod>
@@ -345,13 +366,6 @@
   </url>
   
   <url>
-    <loc>http://jums.club/cnn/</loc>
-    
-    <lastmod>2020-12-20T08:57:03.009Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jums.club/java-gc/</loc>
     
     <lastmod>2020-12-20T08:55:02.380Z</lastmod>
@@ -618,13 +632,6 @@
   </url>
   
   <url>
-    <loc>http://jums.club/time-series-forecasting-algorithm/</loc>
-    
-    <lastmod>2020-12-20T08:45:12.099Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jums.club/two-queue-to-stack/</loc>
     
     <lastmod>2020-12-20T08:45:06.803Z</lastmod>
@@ -642,13 +649,6 @@
     <loc>http://jums.club/python-debug/</loc>
     
     <lastmod>2020-12-20T08:44:48.811Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/prediction-algorithm/</loc>
-    
-    <lastmod>2020-12-20T08:44:34.396Z</lastmod>
     
   </url>
   
