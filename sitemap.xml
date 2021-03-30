@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/matplotlib-usage/</loc>
+    
+    <lastmod>2021-03-30T08:19:25.176Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/about/index.html</loc>
     
     <lastmod>2021-03-24T11:28:04.237Z</lastmod>
@@ -292,13 +299,6 @@
     <loc>http://jums.club/matplotlib-draw-x-and-y/</loc>
     
     <lastmod>2020-12-20T09:02:01.249Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jums.club/matplotlib-usage/</loc>
-    
-    <lastmod>2020-12-20T09:01:55.481Z</lastmod>
     
   </url>
   
