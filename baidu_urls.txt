@@ -1,3 +1,4 @@
+http://jums.club/google-logo-color-code/
 http://jums.club/fliplo-clock-app/
 http://jums.club/subplot-legend/
 http://jums.club/tensorflow-to-use-gpu/
@@ -97,4 +98,3 @@ http://jums.club/git-delete-file-s/
 http://jums.club/how-to-use-git/
 http://jums.club/markdown-format/
 http://jums.club/computer-around-ebook/
-http://jums.club/matplotlib-draw-x-and-y/
