@@ -1,3 +1,5 @@
+http://jums.club/echarts-one-line/
+http://jums.club/echarts-change-data/
 http://jums.club/google-logo-color-code/
 http://jums.club/fliplo-clock-app/
 http://jums.club/subplot-legend/
@@ -96,5 +98,3 @@ http://jums.club/git-connect-to-github/
 http://jums.club/git-push-error/
 http://jums.club/git-delete-file-s/
 http://jums.club/how-to-use-git/
-http://jums.club/markdown-format/
-http://jums.club/computer-around-ebook/
