@@ -97,4 +97,4 @@ http://jums.club/time-series-forecasting-algorithm/
 http://jums.club/write-blog-via-github/
 http://jums.club/how-to-use-github-API/
 http://jums.club/something-about-curl/
-http://jums.club/how-to-write-a-document-for-your-project/
+http://jums.club/html-lunfan-effect/
