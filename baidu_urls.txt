@@ -1,3 +1,4 @@
+http://jums.club/install-and-run-redis-on-docker/
 http://jums.club/how-to-show-os-version-on-linux/
 http://jums.club/use-ssh-connect-the-root-of-ubuntu/
 http://jums.club/brfore-work/
@@ -97,4 +98,3 @@ http://jums.club/write-blog-via-github/
 http://jums.club/how-to-use-github-API/
 http://jums.club/something-about-curl/
 http://jums.club/how-to-write-a-document-for-your-project/
-http://jums.club/html-lunfan-effect/

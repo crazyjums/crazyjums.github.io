@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/install-and-run-redis-on-docker/</loc>
+    
+    <lastmod>2021-06-25T07:58:34.477Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/how-to-show-os-version-on-linux/</loc>
     
     <lastmod>2021-06-25T06:48:08.653Z</lastmod>
