@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Before you start work, you should know ... | CrazyJums</title><meta name="description" content="Linux可以掌握常用工具的日常使用场景：   awk统计ip，grep ，find ，curl   awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，$NF）、BEGIN、END、FILENAME、ARGC、ARGV   printf：格式化输出   print：正常输出   模式匹配：匹配字符使用&#x2F;[string]&#x2F;括起来   匹配所有行中只要含root的行：awk"><meta name="keywords" content="Linux,Mysql,Redis,Git"><meta name="author" content="CrazyJums"><meta name="copyright" content="CrazyJums"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://jums.club/images/favicon_64.ico"><link rel="canonical" href="http://jums.club/brfore-work/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta name="msvalidate.01" content="88688A1E5B9FE1F1F5EDAA94C73CD07D"/><meta name="baidu-site-verification" content="yiOH4yHRf0eeVuko"/><meta name="360-site-verification" content="d182b3f28525f2db83acfaaf6e696dba"/><meta property="og:type" content="article"><meta property="og:title" content="Before you start work, you should know ..."><meta property="og:url" content="http://jums.club/brfore-work/"><meta property="og:site_name" content="CrazyJums"><meta property="og:description" content="Linux可以掌握常用工具的日常使用场景：   awk统计ip，grep ，find ，curl   awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，$NF）、BEGIN、END、FILENAME、ARGC、ARGV   printf：格式化输出   print：正常输出   模式匹配：匹配字符使用&#x2F;[string]&#x2F;括起来   匹配所有行中只要含root的行：awk"><meta property="og:image" content="https://jums.club/images/article/apps.46003.14259451864568504.ad5e5d07-0fbb-46ed-b9b6-a1b781645691.jpg"><meta property="article:published_time" content="2021-06-24T04:50:35.000Z"><meta property="article:modified_time" content="2021-06-24T04:54:57.000Z"><meta name="twitter:card" content="summary"><script><!-- hexo-inject:begin --><!-- hexo-inject:end -->var activateDarkMode = function () {
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Before you start work, you should know ... | CrazyJums</title><meta name="description" content="Linux可以掌握常用工具的日常使用场景：   awk统计ip   awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，$NF）、BEGIN、END、FILENAME、ARGC、ARGV   printf：格式化输出   print：正常输出   模式匹配：匹配字符使用&#x2F;[string]&#x2F;括起来   匹配所有行中只要含root的行：awk &#39;&#x2F;root&#x2F; {pri"><meta name="keywords" content="Linux,Mysql,Redis,Git"><meta name="author" content="CrazyJums"><meta name="copyright" content="CrazyJums"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://jums.club/images/favicon_64.ico"><link rel="canonical" href="http://jums.club/brfore-work/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta name="msvalidate.01" content="88688A1E5B9FE1F1F5EDAA94C73CD07D"/><meta name="baidu-site-verification" content="yiOH4yHRf0eeVuko"/><meta name="360-site-verification" content="d182b3f28525f2db83acfaaf6e696dba"/><meta property="og:type" content="article"><meta property="og:title" content="Before you start work, you should know ..."><meta property="og:url" content="http://jums.club/brfore-work/"><meta property="og:site_name" content="CrazyJums"><meta property="og:description" content="Linux可以掌握常用工具的日常使用场景：   awk统计ip   awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，$NF）、BEGIN、END、FILENAME、ARGC、ARGV   printf：格式化输出   print：正常输出   模式匹配：匹配字符使用&#x2F;[string]&#x2F;括起来   匹配所有行中只要含root的行：awk &#39;&#x2F;root&#x2F; {pri"><meta property="og:image" content="https://jums.club/images/article/apps.46003.14259451864568504.ad5e5d07-0fbb-46ed-b9b6-a1b781645691.jpg"><meta property="article:published_time" content="2021-06-24T04:50:35.000Z"><meta property="article:modified_time" content="2021-06-28T09:23:06.911Z"><meta name="twitter:card" content="summary"><script><!-- hexo-inject:begin --><!-- hexo-inject:end -->var activateDarkMode = function () {
   document.documentElement.setAttribute('data-theme', 'dark')
   if (document.querySelector('meta[name="theme-color"]') !== null) {
     document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
@@ -112,9 +112,9 @@ ga('send', 'pageview');
 .justified-gallery img{
   opacity: 1
 }
-</style></noscript><script data-ad-client="ca-pub-7924394983086399" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta name="generator" content="Hexo 4.2.1"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://jums.club/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">175</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">71</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div></div></div><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux"><span class="toc-number">1.</span> <span class="toc-text">Linux</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Http："><span class="toc-number">2.</span> <span class="toc-text">Http：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis"><span class="toc-number">3.</span> <span class="toc-text">Redis</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysql"><span class="toc-number">4.</span> <span class="toc-text">mysql</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他："><span class="toc-number">5.</span> <span class="toc-text">其他：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#写在最后"><span class="toc-number">6.</span> <span class="toc-text">写在最后</span></a></li></ol></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://jums.club/images/article/apps.46003.14259451864568504.ad5e5d07-0fbb-46ed-b9b6-a1b781645691.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">CrazyJums</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">Before you start work, you should know ...</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2021-06-24 12:50:35"><i class="far fa-calendar-alt fa-fw"></i> Created 2021-06-24</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-06-24 12:54:57"><i class="fas fa-history fa-fw"></i> Updated 2021-06-24</span></time></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i><span>Word count:</span><span class="word-count">4.6k</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>Reading time: 19 min</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="far fa-eye fa-fw post-meta__icon"></i><span>Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><p>可以掌握常用工具的日常使用场景：</p>
+</style></noscript><script data-ad-client="ca-pub-7924394983086399" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta name="generator" content="Hexo 4.2.1"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://jums.club/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">177</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">71</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div></div></div><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux"><span class="toc-number">1.</span> <span class="toc-text">Linux</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Http："><span class="toc-number">2.</span> <span class="toc-text">Http：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis"><span class="toc-number">3.</span> <span class="toc-text">Redis</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysql"><span class="toc-number">4.</span> <span class="toc-text">mysql</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他："><span class="toc-number">5.</span> <span class="toc-text">其他：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#写在最后"><span class="toc-number">6.</span> <span class="toc-text">写在最后</span></a></li></ol></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://jums.club/images/article/apps.46003.14259451864568504.ad5e5d07-0fbb-46ed-b9b6-a1b781645691.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">CrazyJums</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">Before you start work, you should know ...</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2021-06-24 12:50:35"><i class="far fa-calendar-alt fa-fw"></i> Created 2021-06-24</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-06-28 17:23:06"><i class="fas fa-history fa-fw"></i> Updated 2021-06-28</span></time></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i><span>Word count:</span><span class="word-count">6.2k</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>Reading time: 27 min</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="far fa-eye fa-fw post-meta__icon"></i><span>Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><p>可以掌握常用工具的日常使用场景：</p>
 <!-- hexo-inject:begin --><!-- hexo-inject:end --><ul>
-<li><input disabled="" type="checkbox"> <p>awk统计ip，grep ，find ，curl</p>
+<li><input disabled="" type="checkbox"> <p>awk统计ip</p>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> <p>awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，<code>$NF</code>）、BEGIN、END、FILENAME、ARGC、ARGV</p>
 </li>
@@ -146,10 +146,166 @@ ga('send', 'pageview');
 </li>
 </ul>
 </li>
-<li><input disabled="" type="checkbox"> <p>了解：logrotate，rsync</p>
+<li><input checked="" disabled="" type="checkbox"> <p>grep</p>
+</li>
+</ul>
+<blockquote>
+<p><a href="https://man7.org/linux/man-pages/man1/grep.1.html" target="_blank" rel="noopener">grep</a>, egrep, fgrep - print lines that match patterns</p>
+<p>Basic usage:</p>
 <ul>
-<li><input disabled="" type="checkbox"> logrotate</li>
-<li><input disabled="" type="checkbox"> rsync</li>
+<li><p>grep “search_content” filename</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> [root@192 pig]<span class="comment"># grep "this" 1.txt </span></span><br><span class="line">1 this is a line</span><br><span class="line">2 this is the no.2 line</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>grep <code>-c</code> “search_content” filename   //count the [search content] in filename</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -c "this" 1.txt </span></span><br><span class="line">2</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>grep <code>-i</code> “search_content” filename   //ignore case</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -i "this" 1.txt </span></span><br><span class="line">1 this is a line</span><br><span class="line">2 this is the no.2 line</span><br><span class="line">This is me.</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>grep <code>-n</code>  “search_content” filename   //show line number</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -n "this" 1.txt </span></span><br><span class="line">1:1 this is a line</span><br><span class="line">2:2 this is the no.2 line</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>grep <code>-v</code> “search_content” filename   //match all strings in reverse</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -v "this" 1.txt </span></span><br><span class="line">how are you now.</span><br><span class="line">I am fine, thank you.</span><br><span class="line">This is me.</span><br><span class="line">[root@192 pig]<span class="comment"># cat 1.txt </span></span><br><span class="line">1 this is a line</span><br><span class="line">2 this is the no.2 line</span><br><span class="line">how are you now.</span><br><span class="line">I am fine, thank you.</span><br><span class="line">This is me.</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>union the parameters together</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -ic "this" 1.txt </span></span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>Regular Match:</p>
+<ul>
+<li><p><code>*</code>: Refers to match one character zero or more times</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628162948.png" alt=""></p>
+</li>
+<li><p><code>.</code>: When you use it only, it means match all strings. If you use it with search content, it means any character.</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628162911.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628163024.png" alt=""></p>
+</li>
+<li><p><code>{n,m}</code>: Match a character between <code>n</code> and <code>m</code> times.</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628163822.png" alt=""></p>
+</li>
+<li><p><code>^</code>: Start character.</p>
+</li>
+<li><p><code>$</code>: End character.    //Use <code>^</code> and <code>$</code> can match the IP address specifically.</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628163947.png" alt=""></p>
+</li>
+<li><p><code>^$</code>: This means match a empty line.</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628164225.png" alt=""></p>
+</li>
+<li><p><code>\b</code>: Bountdary match.</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628165211.png" alt=""></p>
+</li>
+<li><p><code>-B</code>: None boundary match. </p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628165538.png" alt=""></p>
+</li>
+<li><p><code>[]</code>: range matge. For example, [0-9] refers to all digits between 0 and 9.    //[a-z]. [A-Z]. [0-9]</p>
+</li>
+<li><p><code>\w</code>: Refers to <code>[0-9a-zA-Z]</code>.</p>
+</li>
+<li><p><code>\W</code>: Refers to <code>[^0-9a-zA-Z]</code></p>
+</li>
+</ul>
+<p>WildCard:</p>
+<ul>
+<li><code>?</code>: Match the previous character zero or one time.</li>
+</ul>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628170307.png" alt=""></p>
+<ul>
+<li><p><code>+</code>: Match the previous character one or more times.</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628170521.png" alt=""></p>
+</li>
+<li><p><code>()</code>: It’s a selection, offen use with <code>|</code> together, <code>|</code> means or.</p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628171103.png" alt=""></p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <p>find</p>
+<blockquote>
+<p><a href="https://man7.org/linux/man-pages/man1/find.1.html" target="_blank" rel="noopener">find</a> - search for files in a directory hierarchy</p>
+<p><a href="https://www.linuxcool.com/find" target="_blank" rel="noopener">find tutorials in chinese</a></p>
+<p>Common parameters:</p>
+<table>
+<thead>
+<tr>
+<th>-name</th>
+<th>按名称查找</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-size</td>
+<td>按大小查找</td>
+</tr>
+<tr>
+<td>-user</td>
+<td>按属性查找</td>
+</tr>
+<tr>
+<td>-type</td>
+<td>按类型查找</td>
+</tr>
+<tr>
+<td>-iname</td>
+<td>忽略大小写</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>查找<code>/etc</code>目录下的所有配置文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ find /etc/ -name <span class="string">"*.conf"</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+</blockquote>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <p>curl</p>
+<blockquote>
+<p>curl means client URL tool, curl in short.</p>
+<p><a href="http://www.ruanyifeng.com/blog/2019/09/curl-reference.html" target="_blank" rel="noopener">curl tutorials in chinese</a></p>
+<ul>
+<li><p><strong>get</strong> request: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://www.baidu.com   <span class="comment"># default request is get</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>-A</code>: user can specfiy the user-agent of th request</p>
+</li>
+<li><p><code>-b</code>: send a cookie to server</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -b <span class="string">'foo=bar;foo2=bar2;...'</span> https://www.baidu.com  <span class="comment"># cookie name is foo, value is bar</span></span><br><span class="line">curl -b cookie.txt https://www.baidu.com  <span class="comment"># send the cookie file to server </span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>-c</code>: write the cookie information that server sent to client into a file</p>
+</li>
+<li><p><code>-d</code>: If you want to use <strong>POST</strong> request to access website, you should send data to server.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -d <span class="string">'username=admin&amp;passwd=admin'</span> [X POST] https://www.baidu.com</span><br><span class="line">curl -d <span class="string">'@data.txt'</span> https://www.baidu.com  <span class="comment"># post data is in a file</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>--data-urlencode</code>: same as <code>-d</code>, this command can change the data to urlcode.</p>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <p>了解：logrotate，rsync</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <p>logrotate</p>
+<blockquote>
+<p><a href="https://linux.die.net/man/8/logrotate" target="_blank" rel="noopener">logrotate</a> - rotates, compresses, and mails system logs</p>
+<p><a href="https://www.jianshu.com/p/81dd446a1cb1" target="_blank" rel="noopener">logrotate tutorials in chinese</a></p>
+</blockquote>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <p>rsync</p>
+<blockquote>
+<p><a href="https://linux.die.net/man/1/rsync" target="_blank" rel="noopener">rsync</a> – a fast, versatile, remote (and local) file-copying tool</p>
+<p>The <code>rsync</code> can replace the command <code>cp</code> in linux, for example, you can use <code>rsync -r source destination</code> to replace <code>cp -r source destination</code>.</p>
+<p><a href="https://www.bilibili.com/video/BV1qZ4y137En?from=search&seid=10542537430323288651" target="_blank" rel="noopener">video tutorials</a></p>
+<p>sync local file:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rsync -a <span class="built_in">source</span> destination</span><br></pre></td></tr></table></figure>
+
+<p>sync remote host file:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rsync -av -e <span class="string">'ssh -p 22'</span> [<span class="built_in">source</span>] user@remoteHostAddress:[destination] </span><br></pre></td></tr></table></figure>
+
+<p><code>-v</code>   display the details of the information</p>
+<p><code>-a</code>   archive mode</p>
+<p><code>-e</code>   log in to remote host</p>
+</blockquote>
+</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"> <p>掌握ansible基本用法：主要用于批量查日志，执行命令。</p>
@@ -475,9 +631,47 @@ ga('send', 'pageview');
 </li>
 </ul>
 </li>
-<li><input disabled="" type="checkbox"> <p>跨域 Cookie</p>
+<li><input checked="" disabled="" type="checkbox"> <p>跨域 Cookie</p>
 <blockquote>
 <p><a href="https://segmentfault.com/a/1190000039227924" target="_blank" rel="noopener">COOKIE跨域获取问题</a></p>
+<p><a href="https://www.bilibili.com/video/BV1pA411u7Ji?from=search&seid=5785122887893488786" target="_blank" rel="noopener">video tutorials in chinese</a></p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS" target="_blank" rel="noopener"> What does CORS means</a></p>
+<p><a href="https://auth0.com/blog/cors-tutorial-a-guide-to-cross-origin-resource-sharing/" target="_blank" rel="noopener">CORS tutorials: A guide to cross-origin resource sharing</a></p>
+<p>网址形式如下：<a href="https://www.baidu.com:80/index.html，其中，`https`是协议，`www`是子域名，`baidu.com`是根域名，`80`是端口号，`index.html`是资源文件。" target="_blank" rel="noopener">https://www.baidu.com:80/index.html，其中，`https`是协议，`www`是子域名，`baidu.com`是根域名，`80`是端口号，`index.html`是资源文件。</a></p>
+<blockquote>
+<p><strong>同源策略</strong>是指在<a href="https://zh.wikipedia.org/wiki/排版引擎" target="_blank" rel="noopener">Web浏览器</a>中，允许某个网页<a href="https://zh.wikipedia.org/wiki/腳本" target="_blank" rel="noopener">脚本</a>访问另一个网页的数据，但前提是这两个网页必须有相同的<a href="https://zh.wikipedia.org/wiki/统一资源标志符" target="_blank" rel="noopener">URI</a>、<a href="https://zh.wikipedia.org/wiki/主機名稱" target="_blank" rel="noopener">主机名</a>和<a href="https://zh.wikipedia.org/wiki/通訊埠" target="_blank" rel="noopener">端口号</a>，一旦两个网站满足上述条件，这两个网站就被认定为具有相同来源。此策略可防止某个网页上的恶意<a href="https://zh.wikipedia.org/wiki/脚本" target="_blank" rel="noopener">脚本</a>通过该页面的<a href="https://zh.wikipedia.org/wiki/文档对象模型" target="_blank" rel="noopener">文档对象模型</a>访问另一网页上的敏感数据。</p>
+<p>同源策略对<a href="https://zh.wikipedia.org/wiki/Web应用程序" target="_blank" rel="noopener">Web应用程序</a>具有特殊意义，因为Web应用程序广泛依赖于<a href="https://zh.wikipedia.org/wiki/Cookie" target="_blank" rel="noopener">HTTP cookie</a><a href="https://zh.wikipedia.org/wiki/同源策略#cite_note-httpcookierfc-1" target="_blank" rel="noopener">[1]</a>来维持用户<a href="https://zh.wikipedia.org/wiki/会话" target="_blank" rel="noopener">会话</a>，所以必须将不相关网站严格分隔，以防止丢失数据泄露。</p>
+<p>值得注意的是同源策略仅适用于脚本，这意味着某网站可以通过相应的<a href="https://zh.wikipedia.org/wiki/HTML标签" target="_blank" rel="noopener">HTML标签</a><a href="https://zh.wikipedia.org/wiki/同源策略#cite_note-2" target="_blank" rel="noopener">[2]</a>访问不同来源网站上的<a href="https://zh.wikipedia.org/wiki/图像" target="_blank" rel="noopener">图像</a>、<a href="https://zh.wikipedia.org/wiki/CSS" target="_blank" rel="noopener">CSS</a>和<a href="https://zh.wikipedia.org/wiki/動態加載" target="_blank" rel="noopener">动态加载</a><a href="https://zh.wikipedia.org/wiki/脚本" target="_blank" rel="noopener">脚本</a>等资源。而<a href="https://zh.wikipedia.org/wiki/跨站请求伪造" target="_blank" rel="noopener">跨站请求伪造</a>就是利用同源策略不适用于<a href="https://zh.wikipedia.org/wiki/HTML标签" target="_blank" rel="noopener">HTML标签</a>的缺陷。</p>
+</blockquote>
+<p>在<code>协议</code>、<code>域名（包括根域名和子域名）</code>、<code>端口号</code>三者其中任何一项不一致的情况下，两个网址就不能进行互相通信，只有这三者都相同的情况下才可以进行通信，否则就叫<strong>跨域</strong>。</p>
+<ul>
+<li>a different scheme(http or https)</li>
+<li>a different domain</li>
+<li>a different port</li>
+</ul>
+<blockquote>
+<p><strong>为什么会有跨域限制？</strong></p>
+<p>答：浏览器会有跨域限制，二服务器没有这种限制。</p>
+</blockquote>
+<p>在HTML标签中，其中<code>img</code>、<code>link</code>、<code>script</code>、<code>iframe</code>这几个标签具有跨域性，可以直接访问不同域的资源。</p>
+<p><strong>figure it out</strong></p>
+<ul>
+<li><p>set the header like this: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Access-Control-Allow-Origin: *  <span class="comment"># if a request can be made from any origin</span></span><br><span class="line">Access-Control-Allow-Origin: https://example.com <span class="comment"># the origin that is allowed to make the request</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><strong>Two type of CORS Request</strong></p>
+<ul>
+<li><p>simple request(<code>GET</code>、<code>POST</code>、<code>HEAD</code>)</p>
+</li>
+<li><p>preflight request(<code>OPTIONS</code>)</p>
+<p>A preflight request example:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Request</span></span><br><span class="line">curl -i -X OPTIONS localhost:3001/api/ping \</span><br><span class="line">-H <span class="string">'Access-Control-Request-Method: GET'</span> \</span><br><span class="line">-H <span class="string">'Access-Control-Request-Headers: Content-Type, Accept'</span> \</span><br><span class="line">-H <span class="string">'Origin: http://localhost:3000'</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
 </blockquote>
 </li>
 <li><input checked="" disabled="" type="checkbox"> <p>https原理</p>
@@ -488,13 +682,13 @@ ga('send', 'pageview');
 <li>对称加密的加密和解密的速度快，效率高；非对称加密算法的加密和解密的速度满，效率低</li>
 <li>对称加密算法的加密和解密都是用的同一个密钥，密钥的传输成本较高；非对称加密算法的加密和解密采用的是不同的密钥，一个公钥一个私钥，公钥可以对外公开，密钥传输的成本较低。</li>
 </ul>
-<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/bVbClUj2.png" alt="https://segmentfault.com/img/bVbClUj"></p>
+<p><img src= "/img/loading.gif" data-src="https://segmentfault.com/img/bVbClUj" alt="https://segmentfault.com/img/bVbClUj"></p>
 <blockquote>
 <p><strong>Hypertext Transfer Protocol Secure</strong> (<strong>HTTPS</strong>) is an extension of the <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank" rel="noopener">Hypertext Transfer Protocol</a> (HTTP). It is used for <a href="https://en.wikipedia.org/wiki/Secure_communications" target="_blank" rel="noopener">secure communication</a> over a <a href="https://en.wikipedia.org/wiki/Network_operating_system" target="_blank" rel="noopener">computer network</a>, and is widely used on the Internet.<a href="https://en.wikipedia.org/wiki/HTTPS#cite_note-1" target="_blank" rel="noopener">[1]</a><a href="https://en.wikipedia.org/wiki/HTTPS#cite_note-2" target="_blank" rel="noopener">[2]</a> In HTTPS, the <a href="https://en.wikipedia.org/wiki/Communication_protocol" target="_blank" rel="noopener">communication protocol</a> is encrypted using <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="noopener">Transport Layer Security</a> (TLS) or, formerly, Secure Sockets Layer (SSL). The protocol is therefore also referred to as <strong>HTTP over TLS</strong>,<a href="https://en.wikipedia.org/wiki/HTTPS#cite_note-3" target="_blank" rel="noopener">[3]</a> or <strong>HTTP over SSL</strong>.</p>
 <p>The principal motivations for HTTPS are <a href="https://en.wikipedia.org/wiki/Authentication" target="_blank" rel="noopener">authentication</a> of the accessed <a href="https://en.wikipedia.org/wiki/Website" target="_blank" rel="noopener">website</a>, and protection of the <a href="https://en.wikipedia.org/wiki/Information_privacy" target="_blank" rel="noopener">privacy</a> and <a href="https://en.wikipedia.org/wiki/Data_integrity" target="_blank" rel="noopener">integrity</a> of the exchanged data while in transit. It protects against <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack" target="_blank" rel="noopener">man-in-the-middle attacks</a>, and the bidirectional <a href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation" target="_blank" rel="noopener">encryption</a> of communications between a client and server protects the communications against <a href="https://en.wikipedia.org/wiki/Eavesdropping" target="_blank" rel="noopener">eavesdropping</a> and <a href="https://en.wikipedia.org/wiki/Tamper-evident#Tampering" target="_blank" rel="noopener">tampering</a>.<a href="https://en.wikipedia.org/wiki/HTTPS#cite_note-httpse-4" target="_blank" rel="noopener">[4]</a><a href="https://en.wikipedia.org/wiki/HTTPS#cite_note-5" target="_blank" rel="noopener">[5]</a> The authentication aspect of HTTPS requires a trusted third party to sign server-side <a href="https://en.wikipedia.org/wiki/Public_key_certificate" target="_blank" rel="noopener">digital certificates</a>. This was historically an expensive operation, which meant fully authenticated HTTPS connections were usually found only on secured payment transaction services and other secured corporate information systems on the <a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank" rel="noopener">World Wide Web</a>. In 2016, a campaign by the <a href="https://en.wikipedia.org/wiki/Electronic_Frontier_Foundation" target="_blank" rel="noopener">Electronic Frontier Foundation</a> with the support of web browser developers led to the protocol becoming more prevalent.<a href="https://en.wikipedia.org/wiki/HTTPS#cite_note-6" target="_blank" rel="noopener">[6]</a> HTTPS is now used more often by web users than the original non-secure HTTP, primarily to protect page authenticity on all types of websites; secure accounts; and to keep user communications, identity, and web browsing private.<a href="https://en.wikipedia.org/wiki/HTTPS#cite_note-7" target="_blank" rel="noopener">[7]</a></p>
 </blockquote>
 <p><code>HTTPS=HTTP+TLS/SSL</code></p>
-<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/bVbClUl.png" alt=""></p>
+<p><img src= "/img/loading.gif" data-src="https://segmentfault.com/img/bVbClUl" alt=""></p>
 <p>数字正式在HTTPS中相当于非对称加密算法的私钥和公钥的分配这么一个工作。</p>
 <blockquote>
 <p><a href="https://segmentfault.com/a/1190000021494676" target="_blank" rel="noopener">HTTPS 详解一：附带最精美详尽的 HTTPS 原理图</a></p>
@@ -503,6 +697,126 @@ ga('send', 'pageview');
 </ul>
 <h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h1><ul>
 <li><input disabled="" type="checkbox"> <p>hash,zset,set,string 等数据类型的常用指令和时间复杂度</p>
+<blockquote>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <strong>string</strong>: </li>
+</ul>
+<p>add a key-value type data, use <code>set key value</code> command</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">set</span> name zhangsan</span><br><span class="line">OK</span><br></pre></td></tr></table></figure>
+
+<p> read the value of the key given by user</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; get name<span class="string">"zhangsan"</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th>命令及描述</th>
+<th>means</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td><a href="https://www.runoob.com/redis/strings-set.html" target="_blank" rel="noopener">SET key value</a> 设置指定 key 的值</td>
+<td><strong>add a new key-value type data</strong></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td><a href="https://www.runoob.com/redis/strings-get.html" target="_blank" rel="noopener">GET key</a> 获取指定 key 的值。</td>
+<td><strong>read key;s value</strong></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td><a href="https://www.runoob.com/redis/strings-getrange.html" target="_blank" rel="noopener">GETRANGE key start end</a> 返回 key 中字符串值的子字符</td>
+<td><strong>read the substring of the key</strong></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td><a href="https://www.runoob.com/redis/strings-getset.html" target="_blank" rel="noopener">GETSET key value</a> 将给定 key 的值设为 value ，并返回 key 的旧值(old value)。</td>
+<td><strong>change key’s value</strong></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td><a href="https://www.runoob.com/redis/strings-getbit.html" target="_blank" rel="noopener">GETBIT key offset</a> 对 key 所储存的字符串值，获取指定偏移量上的位(bit)。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td><a href="https://www.runoob.com/redis/strings-mget.html" target="_blank" rel="noopener">MGET key1 [key2..]</a> 获取所有(一个或多个)给定 key 的值。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td><a href="https://www.runoob.com/redis/strings-setbit.html" target="_blank" rel="noopener">SETBIT key offset value</a> 对 key 所储存的字符串值，设置或清除指定偏移量上的位(bit)。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td><a href="https://www.runoob.com/redis/strings-setex.html" target="_blank" rel="noopener">SETEX key seconds value</a> 将值 value 关联到 key ，并将 key 的过期时间设为 seconds (以秒为单位)。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td><a href="https://www.runoob.com/redis/strings-setnx.html" target="_blank" rel="noopener">SETNX key value</a> 只有在 key 不存在时设置 key 的值。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td><a href="https://www.runoob.com/redis/strings-setrange.html" target="_blank" rel="noopener">SETRANGE key offset value</a> 用 value 参数覆写给定 key 所储存的字符串值，从偏移量 offset 开始。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td><a href="https://www.runoob.com/redis/strings-strlen.html" target="_blank" rel="noopener">STRLEN key</a> 返回 key 所储存的字符串值的长度。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td><a href="https://www.runoob.com/redis/strings-mset.html" target="_blank" rel="noopener">MSET key value [key value …]</a> 同时设置一个或多个 key-value 对。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td><a href="https://www.runoob.com/redis/strings-msetnx.html" target="_blank" rel="noopener">MSETNX key value [key value …]</a> 同时设置一个或多个 key-value 对，当且仅当所有给定 key 都不存在。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td><a href="https://www.runoob.com/redis/strings-psetex.html" target="_blank" rel="noopener">PSETEX key milliseconds value</a> 这个命令和 SETEX 命令相似，但它以毫秒为单位设置 key 的生存时间，而不是像 SETEX 命令那样，以秒为单位。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td><a href="https://www.runoob.com/redis/strings-incr.html" target="_blank" rel="noopener">INCR key</a> 将 key 中储存的数字值增一。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td><a href="https://www.runoob.com/redis/strings-incrby.html" target="_blank" rel="noopener">INCRBY key increment</a> 将 key 所储存的值加上给定的增量值（increment） 。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td><a href="https://www.runoob.com/redis/strings-incrbyfloat.html" target="_blank" rel="noopener">INCRBYFLOAT key increment</a> 将 key 所储存的值加上给定的浮点增量值（increment） 。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td><a href="https://www.runoob.com/redis/strings-decr.html" target="_blank" rel="noopener">DECR key</a> 将 key 中储存的数字值减一。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td><a href="https://www.runoob.com/redis/strings-decrby.html" target="_blank" rel="noopener">DECRBY key decrement</a> key 所储存的值减去给定的减量值（decrement） 。</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td><a href="https://www.runoob.com/redis/strings-append.html" target="_blank" rel="noopener">APPEND key value</a> 如果 key 已经存在并且是一个字符串， APPEND 命令将指定的 value 追加到该 key 原来值（value）的末尾。</td>
+<td></td>
+</tr>
+</tbody></table>
+</blockquote>
 </li>
 <li><input disabled="" type="checkbox"> <p>掌握正确的redis分布式锁。</p>
 </li>
@@ -516,7 +830,7 @@ ga('send', 'pageview');
 <h1 id="其他："><a href="#其他：" class="headerlink" title="其他："></a>其他：</h1><ul>
 <li><input checked="" disabled="" type="checkbox"> <p>markdown语法和 typora 使用</p>
 </li>
-<li><input disabled="" type="checkbox"> <p>git command</p>
+<li><input checked="" disabled="" type="checkbox"> <p>git command</p>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> <p>add files to the remote repository</p>
 <blockquote>
@@ -531,36 +845,40 @@ ga('send', 'pageview');
 </li>
 <li><input checked="" disabled="" type="checkbox"> <p>merge </p>
 <blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git merge &lt;branch name&gt;  <span class="comment"># when you are in a branch, this command means merge &lt;branch name&gt; to this branch </span></span><br><span class="line"></span><br><span class="line">Jums@Computer MINGW64 ~/OneDrive/learngit (master) <span class="comment"># current branch is master, merge &lt;topic&gt; to master</span></span><br><span class="line">$ git merge topic</span><br><span class="line">Auto-merging readme.md</span><br><span class="line">CONFLICT (content): Merge conflict <span class="keyword">in</span> readme.md</span><br><span class="line">Auto-merging 2.py</span><br><span class="line">CONFLICT (content): Merge conflict <span class="keyword">in</span> 2.py</span><br><span class="line">Removing 1.py</span><br><span class="line">Automatic merge failed; fix conflicts and <span class="keyword">then</span> commit the result.</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge &lt;branch name&gt;  <span class="comment"># when you are in a branch, this command means merge &lt;branch name&gt; to this branch Jums@Computer MINGW64 ~/OneDrive/learngit (master) # current branch is master, merge &lt;topic&gt; to master$ git merge topicAuto-merging readme.mdCONFLICT (content): Merge conflict in readme.mdAuto-merging 2.pyCONFLICT (content): Merge conflict in 2.pyRemoving 1.pyAutomatic merge failed; fix conflicts and then commit the result.</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>How to fix merge conflict:</strong></p>
 <p>When the merge conflict comes: When two files have two different sets of modifications in the same location, git cannot decide which modification to use and needs to be manually specified.</p>
 <p>The codes bewteen <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD</code> and <code>=======</code> is in the current branch, and the codes bewtten <code>=======</code> and <code>&gt;&gt;&gt;&gt;&gt;&gt;[branch name]</code> is in the [branch name]. You shoud manually merged the codes.</p>
 <p>After that, you also should <code>add</code> the files to repository, use the following command:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git add [file name]</span><br><span class="line">$ git commit -m <span class="string">""</span>  <span class="comment"># you can't add the [file name] here, or you will get a error</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add [file name]$ git commit -m <span class="string">""</span>  <span class="comment"># you can't add the [file name] here, or you will get a error</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><input disabled="" type="checkbox"> <p>rebase</p>
+<li><input checked="" disabled="" type="checkbox"> <p>rebase</p>
+<blockquote>
+<p><a href="https://git-scm.com/docs/git-rebase" target="_blank" rel="noopener">git-rebase</a> - Reapply commits on top of another base tip</p>
+<p><a href="https://www.bilibili.com/video/BV19B4y1u7vm?from=search&amp;seid=7525997366811669539" target="_blank" rel="noopener">https://www.bilibili.com/video/BV19B4y1u7vm?from=search&amp;seid=7525997366811669539</a>    (video tutroials)</p>
+</blockquote>
 </li>
 <li><input checked="" disabled="" type="checkbox"> <p>reset </p>
 <blockquote>
 <p>对提交的版本进行回退，可以根据<code>git  log</code>命令查看已经提交的版本，然后可以根据指定<code>commit id</code>或者<code>HEAD</code>回退到不同的版本，</p>
 <p><code>git log</code>信息如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span></span><br><span class="line">commit 466755c74ed4fd27059f6b0e4f42d0c3dcb8b663 (HEAD -&gt; master, origin/master)</span><br><span class="line">Author: crazyjums &lt;crazyjums@gmail.com&gt;</span><br><span class="line">Date:   Mon Jun 21 14:58:11 2021 +0800</span><br><span class="line"></span><br><span class="line">add a second title</span><br><span class="line"></span><br><span class="line">commit b57119f13a741f116daabfebd27b51a990b7322a</span><br><span class="line">Author: crazyjums &lt;crazyjums@gmail.com&gt;</span><br><span class="line">Date:   Mon Jun 21 14:39:35 2021 +0800</span><br><span class="line"></span><br><span class="line">modified the file, add a new line</span><br><span class="line"></span><br><span class="line">commit 1f7990b84caf752f9e22d1dbcf215d5285066d25</span><br><span class="line">Author: crazyjums &lt;crazyjums@gmail.com&gt;</span><br><span class="line">Date:   Mon Jun 21 14:27:27 2021 +0800</span><br><span class="line"></span><br><span class="line">first time to commit</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git logcommit 466755c74ed4fd27059f6b0e4f42d0c3dcb8b663 (HEAD -&gt; master, origin/master)Author: crazyjums &lt;crazyjums@gmail.com&gt;Date:   Mon Jun 21 14:58:11 2021 +0800add a second titlecommit b57119f13a741f116daabfebd27b51a990b7322aAuthor: crazyjums &lt;crazyjums@gmail.com&gt;Date:   Mon Jun 21 14:39:35 2021 +0800modified the file, add a new linecommit 1f7990b84caf752f9e22d1dbcf215d5285066d25Author: crazyjums &lt;crazyjums@gmail.com&gt;Date:   Mon Jun 21 14:27:27 2021 +0800first time to commit</span><br></pre></td></tr></table></figure>
 
 <p><code>HEAD</code>表示当前的版本号，如果需要回退到上一个版本号，则可以使用<code>HEAD^</code>、上上一个版本号则是<code>HEAD^^</code>、往上倒100个可以在<code>HEAD</code>后面写上100个<code>^</code>符号，当然也可以写成<code>HEAD~100</code>。</p>
 <p><code>HEAD</code>在<code>git</code>中其实是一个指针，指向不同的版本号，回退也就是将<code>HEAD</code>指针重新指向了不同的版本信息。</p>
 <p><img src= "/img/loading.gif" data-src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210621152126.png" alt=""></p>
 <p>除了使用<code>HEAD</code>之外，还可以使用<code>commit id</code>进行回退，每一次版本提交都有一个宇宙唯一的<code>commit id</code>，指定该<code>commit id</code>的前几位就行，<code>git</code>会自行查找。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard HEAD~2</span><br><span class="line">HEAD is now at 1f7990b first time to commit</span><br><span class="line"></span><br><span class="line">$ git reset --hard 466755</span><br><span class="line">HEAD is now at 466755c add a second title</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard HEAD~2HEAD is now at 1f7990b first time to commit$ git reset --hard 466755HEAD is now at 466755c add a second title</span><br></pre></td></tr></table></figure>
 
 <p>在使用<code>git log</code>命令时，只会显示当前命令窗口的历史提交记录，如果电脑重启之后，在使用<code>git log</code>命令出现的历史记录会是空，但是在<code>git</code>中，就算是重启电脑之后，还是有办法找到每一次的历史提交记录，可以使用命令：<code>git reflog</code>：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br><span class="line">1f7990b (HEAD -&gt; master) HEAD@&#123;0&#125;: reset: moving to HEAD~2</span><br><span class="line">466755c (origin/master) HEAD@&#123;1&#125;: reset: moving to 466755</span><br><span class="line">1f7990b (HEAD -&gt; master) HEAD@&#123;2&#125;: reset: moving to HEAD~2</span><br><span class="line">466755c (origin/master) HEAD@&#123;3&#125;: reset: moving to 466755</span><br><span class="line">b57119f HEAD@&#123;4&#125;: reset: moving to HEAD^</span><br><span class="line">466755c (origin/master) HEAD@&#123;5&#125;: commit: add a second title</span><br><span class="line">b57119f HEAD@&#123;6&#125;: commit: modified the file, add a new line</span><br><span class="line">1f7990b (HEAD -&gt; master) HEAD@&#123;7&#125;: commit (initial): first time to commit</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog1f7990b (HEAD -&gt; master) HEAD@&#123;0&#125;: reset: moving to HEAD~2466755c (origin/master) HEAD@&#123;1&#125;: reset: moving to 4667551f7990b (HEAD -&gt; master) HEAD@&#123;2&#125;: reset: moving to HEAD~2466755c (origin/master) HEAD@&#123;3&#125;: reset: moving to 466755b57119f HEAD@&#123;4&#125;: reset: moving to HEAD^466755c (origin/master) HEAD@&#123;5&#125;: commit: add a second titleb57119f HEAD@&#123;6&#125;: commit: modified the file, add a new line1f7990b (HEAD -&gt; master) HEAD@&#123;7&#125;: commit (initial): first time to commit</span><br></pre></td></tr></table></figure>
 
 <p>在使用<code>reset</code>等命令修改了本地文件之后，也就是当前本地电脑上的文件不是<code>git</code>托管平台的最新版本的时候，需要使用<code>git pull</code>命令将<code>git</code>平台的命令拉过来。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull &lt;remote_repository&gt; &lt;branch&gt;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git pull git@github.com:crazyjums/learngit.git master</span><br><span class="line">From github.com:crazyjums/learngit</span><br><span class="line"> * branch            master     -&gt; FETCH_HEAD</span><br><span class="line">Auto-merging readme.md</span><br><span class="line">CONFLICT (content): Merge conflict <span class="keyword">in</span> readme.md</span><br><span class="line">Automatic merge failed; fix conflicts and <span class="keyword">then</span> commit the result.</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull git@github.com:crazyjums/learngit.git masterFrom github.com:crazyjums/learngit * branch            master     -&gt; FETCH_HEADAuto-merging readme.mdCONFLICT (content): Merge conflict <span class="keyword">in</span> readme.mdAutomatic merge failed; fix conflicts and <span class="keyword">then</span> commit the result.</span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
 <li><input checked="" disabled="" type="checkbox"> <p>revert </p>
@@ -568,7 +886,7 @@ ga('send', 'pageview');
 <p><a href="https://git-scm.com/docs/git-revert" target="_blank" rel="noopener">git-revert</a> - Revert some existing commits</p>
 <p>sounds like the <code>git reset</code> command, but this command can remain the trackability information, when you wana go back to the history version in <code>master</code> branch, you should use <code>git revert</code> command instead of <code>git reset</code>.</p>
 <p>This command’s usage just like the <code>git reset</code>.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git revert HEAD^  <span class="comment"># go back to last version</span></span><br><span class="line">$ git revert HEAD~[number]  <span class="comment"># go back to previous version</span></span><br><span class="line"><span class="comment"># you can see the trackability information at `git revert`:</span></span><br><span class="line">commit d567e6e3e14165ffa8febd4c62bac2fa413a1509</span><br><span class="line">Author: crazyjums &lt;crazyjums@gmail.com&gt;</span><br><span class="line">Date:   Thu Jun 24 11:33:43 2021 +0800</span><br><span class="line"></span><br><span class="line"> Revert <span class="string">"add a txt file by jums"</span></span><br><span class="line"></span><br><span class="line"> This reverts commit db298e7bb373711438efdab0e64bbab72b5b5cac.</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git revert HEAD^  <span class="comment"># go back to last version$ git revert HEAD~[number]  # go back to previous version# you can see the trackability information at `git revert`:commit d567e6e3e14165ffa8febd4c62bac2fa413a1509Author: crazyjums &lt;crazyjums@gmail.com&gt;Date:   Thu Jun 24 11:33:43 2021 +0800 Revert "add a txt file by jums" This reverts commit db298e7bb373711438efdab0e64bbab72b5b5cac.</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
 <li><input checked="" disabled="" type="checkbox"> <p>checkout </p>
@@ -640,7 +958,7 @@ ga('send', 'pageview');
 </li>
 </ul>
 <h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">CrazyJums</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://jums.club/brfore-work/">http://jums.club/brfore-work/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a><a class="post-meta__tags" href="/tags/Mysql/">Mysql</a><a class="post-meta__tags" href="/tags/Redis/">Redis</a><a class="post-meta__tags" href="/tags/Git/">Git</a></div><div class="post_share"><div class="social-share" data-image="https://jums.club/images/article/how-to-deploy-redis-in-docker.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><button class="reward-button"><i class="fas fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://jums.club/images/wechatpay.jpg" alt="微信" onclick="window.open('https://jums.club/images/wechatpay.jpg')"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://jums.club/images/alipay.jpg" alt="支付宝" onclick="window.open('https://jums.club/images/alipay.jpg')"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></button></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/use-ssh-connect-the-root-of-ubuntu/"><img class="prev-cover" data-src="https://jums.club/images/article/fix-ubuntu-sudo-permission-denied.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Ubuntu系统如何使用SSH协议连接root用户</div></div></a></div><div class="next-post pull-right"><a href="/error-git-pull/"><img class="next-cover" data-src="https://jums.club/images/article/git_reset.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">! [rejected] master -&gt; master (non-fast-forward)</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/install-and-run-redis-on-docker/" title="install and run redis on docker"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/how-to-deploy-redis-in-docker.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-25</div><div class="relatedPosts_title">install and run redis on docker</div></div></a></div><div class="relatedPosts_item"><a href="/how-to-show-os-version-on-linux/" title="how to view os version on linux（如何查看Linux的系统信息）"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/linux-uvod.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-25</div><div class="relatedPosts_title">how to view os version on linux（如何查看Linux的系统信息）</div></div></a></div><div class="relatedPosts_item"><a href="/something-about-curl/" title="关于cURL，了解这些就够用了"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/curl.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-03-02</div><div class="relatedPosts_title">关于cURL，了解这些就够用了</div></div></a></div><div class="relatedPosts_item"><a href="/use-ssh-connect-the-root-of-ubuntu/" title="Ubuntu系统如何使用SSH协议连接root用户"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/fix-ubuntu-sudo-permission-denied.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-24</div><div class="relatedPosts_title">Ubuntu系统如何使用SSH协议连接root用户</div></div></a></div><div class="relatedPosts_item"><a href="/vmware-machine-can-not-connect-to-internet/" title="vmware下安装的centos虚拟机，不能访问外网"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/centos.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-13</div><div class="relatedPosts_title">vmware下安装的centos虚拟机，不能访问外网</div></div></a></div><div class="relatedPosts_item"><a href="/vmware-network-info/" title="如何通过Xshell，SSH命令连接vmware中的centos虚拟机"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/vmware.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-13</div><div class="relatedPosts_title">如何通过Xshell，SSH命令连接vmware中的centos虚拟机</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">CrazyJums</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://jums.club/brfore-work/">http://jums.club/brfore-work/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a><a class="post-meta__tags" href="/tags/Mysql/">Mysql</a><a class="post-meta__tags" href="/tags/Redis/">Redis</a><a class="post-meta__tags" href="/tags/Git/">Git</a></div><div class="post_share"><div class="social-share" data-image="https://jums.club/images/article/featured_hu626e9890ffbdd612a661545b9982ae95_25842_768x0_resize_q75_lanczos.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><button class="reward-button"><i class="fas fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://jums.club/images/wechatpay.jpg" alt="微信" onclick="window.open('https://jums.club/images/wechatpay.jpg')"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://jums.club/images/alipay.jpg" alt="支付宝" onclick="window.open('https://jums.club/images/alipay.jpg')"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></button></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/use-ssh-connect-the-root-of-ubuntu/"><img class="prev-cover" data-src="https://jums.club/images/article/fix-ubuntu-sudo-permission-denied.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Ubuntu系统如何使用SSH协议连接root用户</div></div></a></div><div class="next-post pull-right"><a href="/error-git-pull/"><img class="next-cover" data-src="https://jums.club/images/article/git_reset.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">! [rejected] master -&gt; master (non-fast-forward)</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/install-and-run-redis-on-docker/" title="install and run redis on docker"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/how-to-deploy-redis-in-docker.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-25</div><div class="relatedPosts_title">install and run redis on docker</div></div></a></div><div class="relatedPosts_item"><a href="/how-to-change-timezone-in-linux/" title="how to change timezone in linux"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/featured_hu626e9890ffbdd612a661545b9982ae95_25842_768x0_resize_q75_lanczos.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-25</div><div class="relatedPosts_title">how to change timezone in linux</div></div></a></div><div class="relatedPosts_item"><a href="/how-to-show-os-version-on-linux/" title="how to view os version on linux（如何查看Linux的系统信息）"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/linux-uvod.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-25</div><div class="relatedPosts_title">how to view os version on linux（如何查看Linux的系统信息）</div></div></a></div><div class="relatedPosts_item"><a href="/something-about-curl/" title="关于cURL，了解这些就够用了"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/curl.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-03-02</div><div class="relatedPosts_title">关于cURL，了解这些就够用了</div></div></a></div><div class="relatedPosts_item"><a href="/use-ssh-connect-the-root-of-ubuntu-zhgJumsComputer/" title="Ubuntu系统如何使用SSH协议连接root用户"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/Ubuntu-19.04-Disco-Dingo.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-24</div><div class="relatedPosts_title">Ubuntu系统如何使用SSH协议连接root用户</div></div></a></div><div class="relatedPosts_item"><a href="/vmware-machine-can-not-connect-to-internet/" title="vmware下安装的centos虚拟机，不能访问外网"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/centos.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-13</div><div class="relatedPosts_title">vmware下安装的centos虚拟机，不能访问外网</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
   var from = from
   var setting = set.split(',').filter(function(item){
   return from.indexOf(item) > -1
