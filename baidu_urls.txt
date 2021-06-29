@@ -1,8 +1,9 @@
+http://jums.club/how-to-change-timezone-in-linux-ZHG_ASUS/
 http://jums.club/how-to-change-timezone-in-linux/
 http://jums.club/install-and-run-redis-on-docker/
 http://jums.club/how-to-show-os-version-on-linux/
-http://jums.club/use-ssh-connect-the-root-of-ubuntu-zhgJumsComputer/
 http://jums.club/use-ssh-connect-the-root-of-ubuntu/
+http://jums.club/use-ssh-connect-the-root-of-ubuntu-zhgJumsComputer/
 http://jums.club/brfore-work/
 http://jums.club/error-git-pull/
 http://jums.club/de-quality-factor/
@@ -97,4 +98,3 @@ http://jums.club/machine-learning-project/
 http://jums.club/prediction-algorithm/
 http://jums.club/time-series-forecasting-algorithm/
 http://jums.club/write-blog-via-github/
-http://jums.club/how-to-use-github-API/
