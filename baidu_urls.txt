@@ -1,3 +1,5 @@
+http://jums.club/php-timezone/
+http://jums.club/php-syntax/
 http://jums.club/How-to-connect-remote-redis-server/
 http://jums.club/how-to-change-timezone-in-linux/
 http://jums.club/install-and-run-redis-on-docker/
@@ -96,5 +98,3 @@ http://jums.club/awesome-spider-project/
 http://jums.club/machine-learning-project/
 http://jums.club/prediction-algorithm/
 http://jums.club/time-series-forecasting-algorithm/
-http://jums.club/write-blog-via-github/
-http://jums.club/how-to-use-github-API/
