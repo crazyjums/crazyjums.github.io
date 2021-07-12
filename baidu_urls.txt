@@ -1,3 +1,4 @@
+http://jums.club/php-isset-empty/
 http://jums.club/php-timezone/
 http://jums.club/php-syntax/
 http://jums.club/How-to-connect-remote-redis-server/
@@ -97,4 +98,3 @@ http://jums.club/crawl-photo/
 http://jums.club/awesome-spider-project/
 http://jums.club/machine-learning-project/
 http://jums.club/prediction-algorithm/
-http://jums.club/time-series-forecasting-algorithm/
