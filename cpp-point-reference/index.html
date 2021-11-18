@@ -1,0 +1,331 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>c++中指针和引用的区别？ | CrazyJums</title><meta name="description" content="1 引用基础教程我们知道，参数的传递本质上是一次赋值的过程，赋值就是对内存进行拷贝。所谓内存拷贝，是指将一块内存上的数据复制到另一块内存上。 对于像 char、bool、int、float 等基本类型的数据，它们占用的内存往往只有几个字节，对它们进行内存拷贝非常快速。而数组、结构体、对象是一系列数据的集合，数据的数量没有限制，可能很少，也可能成千上万，对它们进行频繁的内存拷贝可能会消耗很多时间，拖"><meta name="keywords" content="cpp"><meta name="author" content="CrazyJums"><meta name="copyright" content="CrazyJums"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://jums.club/images/favicon_64.ico"><link rel="canonical" href="https://jums.club/cpp-point-reference/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta name="msvalidate.01" content="88688A1E5B9FE1F1F5EDAA94C73CD07D"/><meta name="baidu-site-verification" content="yiOH4yHRf0eeVuko"/><meta name="360-site-verification" content="d182b3f28525f2db83acfaaf6e696dba"/><meta property="og:type" content="article"><meta property="og:title" content="c++中指针和引用的区别？"><meta property="og:url" content="https://jums.club/cpp-point-reference/"><meta property="og:site_name" content="CrazyJums"><meta property="og:description" content="1 引用基础教程我们知道，参数的传递本质上是一次赋值的过程，赋值就是对内存进行拷贝。所谓内存拷贝，是指将一块内存上的数据复制到另一块内存上。 对于像 char、bool、int、float 等基本类型的数据，它们占用的内存往往只有几个字节，对它们进行内存拷贝非常快速。而数组、结构体、对象是一系列数据的集合，数据的数量没有限制，可能很少，也可能成千上万，对它们进行频繁的内存拷贝可能会消耗很多时间，拖"><meta property="og:image" content="https://jums.club/images/article/pointerRef.png"><meta property="article:published_time" content="2020-12-01T04:37:08.000Z"><meta property="article:modified_time" content="2021-09-06T01:25:42.560Z"><meta name="twitter:card" content="summary"><script><!-- hexo-inject:begin --><!-- hexo-inject:end -->var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = '2'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="prev" title="http和https协议的区别？" href="https://jums.club/http-and-https/"><link rel="next" title="C++ class和struct到底有什么区别" href="https://jums.club/cpp-struct-class/"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: '9335780214',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?109416411ccef2c884dd6e0306467b1d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-153513094-1', 'auto');
+ga('send', 'pageview');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: true,
+  copyright: {"languages":{"author":"Author: CrazyJums","link":"Link: ","source":"Source: CrazyJums","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: true,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><script data-ad-client="ca-pub-7924394983086399" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://jums.club/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">224</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">62</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div></div></div><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BC%95%E7%94%A8%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">1 引用基础教程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-C-%E5%BC%95%E7%94%A8%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 C++引用作为函数参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-C-%E5%BC%95%E7%94%A8%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 C++引用作为函数返回值</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-C-%E4%B8%AD%E6%8C%87%E9%92%88%E5%92%8C%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.</span> <span class="toc-text">2 C++中指针和引用的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%8C%87%E9%92%88%E5%92%8C%E5%BC%95%E7%94%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E6%80%A7%E8%B4%A8%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 指针和引用的定义和性质区别：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E6%8C%87%E9%92%88%E5%92%8C%E5%BC%95%E7%94%A8%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E8%BF%9B%E8%A1%8C%E4%BC%A0%E9%80%92%E6%97%B6%E7%9A%84%E5%8C%BA%E5%88%AB%E3%80%82"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 指针和引用作为函数参数进行传递时的区别。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%B0%86%E5%BC%95%E7%94%A8%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0%E8%BF%9B%E8%A1%8C%E4%BC%A0%E9%80%92%E3%80%82"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 将引用作为函数的参数进行传递。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-C-%E5%BC%95%E7%94%A8%E5%9C%A8%E6%9C%AC%E8%B4%A8%E4%B8%8A%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E5%AE%83%E5%92%8C%E6%8C%87%E9%92%88%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">3.</span> <span class="toc-text">3 C++引用在本质上是什么，它和指针到底有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#reference"><span class="toc-number">4.</span> <span class="toc-text">reference</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="toc-number">5.</span> <span class="toc-text">写在最后</span></a></li></ol></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://jums.club/images/article/pointerRef.png)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">CrazyJums</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">c++中指针和引用的区别？</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-12-01 12:37:08"><i class="far fa-calendar-alt fa-fw"></i> Created 2020-12-01</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-09-06 09:25:42"><i class="fas fa-history fa-fw"></i> Updated 2021-09-06</span></time></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i><span>Word count:</span><span class="word-count">4.7k</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>Reading time: 16 min</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="far fa-eye fa-fw post-meta__icon"></i><span>Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h2 id="1-引用基础教程"><a href="#1-引用基础教程" class="headerlink" title="1 引用基础教程"></a>1 引用基础教程</h2><p>我们知道，参数的传递本质上是一次赋值的过程，赋值就是对内存进行拷贝。所谓内存拷贝，是指将一块内存上的数据复制到另一块内存上。</p>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><p>对于像 char、bool、int、float 等基本类型的数据，它们占用的内存往往只有几个字节，对它们进行内存拷贝非常快速。而数组、结构体、对象是一系列数据的集合，数据的数量没有限制，可能很少，也可能成千上万，对它们进行频繁的内存拷贝可能会消耗很多时间，拖慢程序的执行效率。</p>
+<p>C/<a target="_blank" rel="noopener" href="http://c.biancheng.net/cplus/">C++</a> 禁止在函数调用时直接传递数组的内容，而是强制传递数组<a target="_blank" rel="noopener" href="http://c.biancheng.net/c/80/">指针</a>，这点已在《<a target="_blank" rel="noopener" href="http://c.biancheng.net/view/2014.html">C语言指针变量作为函数参数</a>》中进行了讲解。而对于结构体和对象没有这种限制，调用函数时既可以传递指针，也可以直接传递内容；为了提高效率，我曾建议传递指针，这样做在大部分情况下并没有什么不妥，读者可以点击《<a target="_blank" rel="noopener" href="http://c.biancheng.net/view/2033.html">C语言结构体指针</a>》进行回顾。</p>
+<p>但是在 C++ 中，我们有了一种比指针更加便捷的传递聚合类型数据的方式，那就是<strong>引用（Reference）</strong>。</p>
+<blockquote>
+<p>在 C/C++ 中，我们将 char、int、float 等由语言本身支持的类型称为基本类型，将数组、结构体、类（对象）等由基本类型组合而成的类型称为聚合类型（在讲解结构体时也曾使用复杂类型、构造类型这两种说法）。</p>
+</blockquote>
+<p>引用（Reference）是 C++ 相对于C语言的又一个扩充。引用可以看做是数据的一个别名，通过这个别名和原来的名字都能够找到这份数据。引用类似于 Windows 中的快捷方式，一个可执行程序可以有多个快捷方式，通过这些快捷方式和可执行程序本身都能够运行程序；引用还类似于人的绰号（笔名），使用绰号（笔名）和本名都能表示一个人。</p>
+<p>引用的定义方式类似于指针，只是用<code>&amp;</code>取代了<code>*</code>，语法格式为：</p>
+<p>type &amp;name = data;</p>
+<p>type 是被引用的数据的类型，name 是引用的名称，data 是被引用的数据。<strong>引用必须在定义的同时初始化，并且以后也要从一而终，不能再引用其它数据，这有点类似于常量（const 变量）</strong>。</p>
+<p>下面是一个演示引用的实例：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">99</span>;</span><br><span class="line">    <span class="keyword">int</span> &amp;r = a;</span><br><span class="line">    cout &lt;&lt; a &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; r &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; &amp;a &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; &amp;r &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>运行结果：<br>99, 99<br>0x28ff44, 0x28ff44</p>
+</blockquote>
+<p>本例中，变量 r 就是变量 a 的引用，它们用来指代同一份数据；也可以说变量 r 是变量 a 的另一个名字。从输出结果可以看出，a 和 r 的地址一样，都是<code>0x28ff44</code>；或者说地址为<code>0x28ff44</code>的内存有两个名字，a 和 r，想要访问该内存上的数据时，使用哪个名字都行。</p>
+<p>注意，引用在定义时需要添加<code>&amp;</code>，在使用时不能添加<code>&amp;</code>，使用时添加<code>&amp;</code>表示取地址。如上面代码所示，第5行中的<code>&amp;</code>表示引用，第 7 行中的<code>&amp;</code>表示取地址。除了这两种用法，<code>&amp;</code>还可以表示位运算中的与运算。</p>
+<p>由于引用 r 和原始变量 a 都是指向同一地址，所以通过引用也可以修改原始变量中所存储的数据，请看下面的例子：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">99</span>;</span><br><span class="line">    <span class="keyword">int</span> &amp;r = a;</span><br><span class="line">    r = <span class="number">47</span>;</span><br><span class="line">    cout &lt;&lt; a &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; r &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>运行结果：<br>47, 47</p>
+</blockquote>
+<p>最终程序输出两个 47，可见原始变量 a 的值已经被引用变量 r 所修改。</p>
+<p>如果读者不希望通过引用来修改原始的数据，那么可以在定义时添加 const 限制，形式为：</p>
+<p>const type &amp;name = value;</p>
+<p>也可以是：</p>
+<p>type const &amp;name = value;</p>
+<p>这种引用方式为常引用</p>
+<h3 id="1-1-C-引用作为函数参数"><a href="#1-1-C-引用作为函数参数" class="headerlink" title="1.1 C++引用作为函数参数"></a>1.1 C++引用作为函数参数</h3><p>在定义或声明函数时，我们可以将函数的形参指定为引用的形式，这样在调用函数时就会将实参和形参绑定在一起，让它们都指代同一份数据。如此一来，如果在函数体中修改了形参的数据，那么实参的数据也会被修改，从而拥有“在函数内部影响函数外部数据”的效果。</p>
+<p>至于实参和形参是如何绑定的，我们将在下节《<a target="_blank" rel="noopener" href="http://c.biancheng.net/view/vip_2252.html">C++引用在本质上是什么，它和指针到底有什么区别？</a>》中讲解，届时我们会一针见血地阐明引用的本质。</p>
+<p>一个能够展现按引用传参的优势的例子就是交换两个数的值，请看下面的代码：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap1</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap2</span><span class="params">(<span class="keyword">int</span> *p1, <span class="keyword">int</span> *p2)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap3</span><span class="params">(<span class="keyword">int</span> &amp;r1, <span class="keyword">int</span> &amp;r2)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num1, num2;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Input two integers: &quot;</span>;</span><br><span class="line">    cin &gt;&gt; num1 &gt;&gt; num2;</span><br><span class="line">    <span class="built_in">swap1</span>(num1, num2);</span><br><span class="line">    cout &lt;&lt; num1 &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; num2 &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Input two integers: &quot;</span>;</span><br><span class="line">    cin &gt;&gt; num1 &gt;&gt; num2;</span><br><span class="line">    <span class="built_in">swap2</span>(&amp;num1, &amp;num2);</span><br><span class="line">    cout &lt;&lt; num1 &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; num2 &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Input two integers: &quot;</span>;</span><br><span class="line">    cin &gt;&gt; num1 &gt;&gt; num2;</span><br><span class="line">    <span class="built_in">swap3</span>(num1, num2);</span><br><span class="line">    cout &lt;&lt; num1 &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; num2 &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//直接传递参数内容</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap1</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> temp = a;</span><br><span class="line">    a = b;</span><br><span class="line">    b = temp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//传递指针</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap2</span><span class="params">(<span class="keyword">int</span> *p1, <span class="keyword">int</span> *p2)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> temp = *p1;</span><br><span class="line">    *p1 = *p2;</span><br><span class="line">    *p2 = temp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//按引用传参</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap3</span><span class="params">(<span class="keyword">int</span> &amp;r1, <span class="keyword">int</span> &amp;r2)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> temp = r1;</span><br><span class="line">    r1 = r2;</span><br><span class="line">    r2 = temp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>运行结果：<br>Input two integers: 12 34↙<br>12 34<br>Input two integers: 88 99↙<br>99 88<br>Input two integers: 100 200↙<br>200 100</p>
+</blockquote>
+<p>本例演示了三种交换变量的值的方法：</p>
+<p>1) swap1() 直接传递参数的内容，不能达到交换两个数的值的目的。对于 swap1() 来说，a、b 是形参，是作用范围仅限于函数内部的局部变量，它们有自己独立的内存，和 num1、num2 指代的数据不一样。调用函数时分别将 num1、num2 的值传递给 a、b，此后 num1、num2 和 a、b 再无任何关系，在 swap1() 内部修改 a、b 的值不会影响函数外部的 num1、num2，更不会改变 num1、num2 的值。</p>
+<p>2) swap2() 传递的是指针，能够达到交换两个数的值的目的。调用函数时，分别将 num1、num2 的指针传递给 p1、p2，此后 p1、p2 指向 a、b 所代表的数据，在函数内部可以通过指针间接地修改 a、b 的值。我们在《<a target="_blank" rel="noopener" href="http://c.biancheng.net/view/2014.html">C语言指针变量作为函数参数</a>》中也对比过第 1)、2) 中方式的区别。</p>
+<p>2) swap3() 是按引用传递，能够达到交换两个数的值的目的。调用函数时，分别将 r1、r2 绑定到 num1、num2 所指代的数据，此后 r1 和 num1、r2 和 num2 就都代表同一份数据了，通过 r1 修改数据后会影响 num1，通过 r2 修改数据后也会影响 num2。</p>
+<p>从以上代码的编写中可以发现，按引用传参在使用形式上比指针更加直观。在以后的 C++ 编程中，我鼓励读者大量使用引用，它一般可以代替指针（当然指针在C++中也不可或缺），C++ 标准库也是这样做的。</p>
+<h3 id="1-2-C-引用作为函数返回值"><a href="#1-2-C-引用作为函数返回值" class="headerlink" title="1.2 C++引用作为函数返回值"></a>1.2 C++引用作为函数返回值</h3><p>引用除了可以作为函数形参，还可以作为函数返回值，请看下面的例子：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> &amp;<span class="title">plus10</span><span class="params">(<span class="keyword">int</span> &amp;r)</span> </span>&#123;</span><br><span class="line">    r += <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">return</span> r;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num1 = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> num2 = <span class="built_in">plus10</span>(num1);</span><br><span class="line">    cout &lt;&lt; num1 &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; num2 &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>运行结果：<br>20 20</p>
+</blockquote>
+<p>在将引用作为函数返回值时应该注意一个小问题，就是不能返回局部数据（例如局部变量、局部对象、局部数组等）的引用，因为当函数调用完成后局部数据就会被销毁，有可能在下次使用时数据就不存在了，C++ 编译器检测到该行为时也会给出警告。</p>
+<p>更改上面的例子，让 plus10() 返回一个局部数据的引用：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> &amp;<span class="title">plus10</span><span class="params">(<span class="keyword">int</span> &amp;r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> m = r + <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">return</span> m;  <span class="comment">//返回局部数据的引用</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num1 = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> num2 = <span class="built_in">plus10</span>(num1);</span><br><span class="line">    cout &lt;&lt; num2 &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">int</span> &amp;num3 = <span class="built_in">plus10</span>(num1);</span><br><span class="line">    <span class="keyword">int</span> &amp;num4 = <span class="built_in">plus10</span>(num3);</span><br><span class="line">    cout &lt;&lt; num3 &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; num4 &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在 Visual Studio 下的运行结果：</p>
+<blockquote>
+<p>20<br>-858993450 -858993450</p>
+</blockquote>
+<p>在 <a target="_blank" rel="noopener" href="http://c.biancheng.net/gcc/">GCC</a> 下的运行结果：</p>
+<blockquote>
+<p>20<br>30 30</p>
+</blockquote>
+<p>在 C-Free 下的运行结果：</p>
+<blockquote>
+<p>20<br>30 0</p>
+</blockquote>
+<p>而我们期望的运行结果是：</p>
+<blockquote>
+<p>20<br>20 30</p>
+</blockquote>
+<p>plus10() 返回一个对局部变量 m 的引用，这是导致运行结果非常怪异的根源，因为函数是在栈上运行的，并且运行结束后会放弃对所有局部数据的管理权，后面的函数调用会覆盖前面函数的局部数据。本例中，第二次调用 plus10() 会覆盖第一次调用 plus10() 所产生的局部数据，第三次调用 plus10() 会覆盖第二次调用 plus10() 所产生的局部数据。</p>
+<p>关于函数调用的内部实现，我已在《<a target="_blank" rel="noopener" href="http://c.biancheng.net/c/140/">C语言内存精讲</a>》专题中讲到。</p>
+<h2 id="2-C-中指针和引用的区别"><a href="#2-C-中指针和引用的区别" class="headerlink" title="2 C++中指针和引用的区别"></a>2 C++中指针和引用的区别</h2><p>指针和引用在C++中很常用，但是对于它们之间的区别很多初学者都不是太熟悉，下面来谈谈他们2者之间的区别和用法。</p>
+<h3 id="2-1-指针和引用的定义和性质区别："><a href="#2-1-指针和引用的定义和性质区别：" class="headerlink" title="2.1 指针和引用的定义和性质区别："></a>2.1 指针和引用的定义和性质区别：</h3><p>(1)指针：指针是一个变量，只不过这个变量存储的是一个地址，指向内存的一个存储单元；而引用跟原来的变量实质上是同一个东西，只不过是原变量的一个别名而已。如：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">1</span>;<span class="keyword">int</span> *p=&amp;a;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">1</span>;<span class="keyword">int</span> &amp;b=a;</span><br></pre></td></tr></table></figure>
+
+<p>上面定义了一个整形变量和一个指针变量p，该指针变量指向a的存储单元，即p的值是a存储单元的地址。</p>
+<p>而下面2句定义了一个整形变量a和这个整形a的引用b，事实上a和b是同一个东西，在内存占有同一个存储单元。</p>
+<p>(2)可以有const指针，但是没有const引用；</p>
+<p>(3)指针可以有多级，但是引用只能是一级（int **p；合法 而 int &amp;&amp;a是不合法的）</p>
+<p>(4)指针的值可以为空，但是引用的值不能为NULL，并且引用在定义的时候必须初始化；</p>
+<p>(5)指针的值在初始化后可以改变，即指向其它的存储单元，而引用在进行初始化后就不会再改变了。</p>
+<p>(6)”sizeof引用”得到的是所指向的变量(对象)的大小，而”sizeof指针”得到的是指针本身的大小；</p>
+<p>(7)指针和引用的自增(++)运算意义不一样；</p>
+<h3 id="2-2-指针和引用作为函数参数进行传递时的区别。"><a href="#2-2-指针和引用作为函数参数进行传递时的区别。" class="headerlink" title="2.2 指针和引用作为函数参数进行传递时的区别。"></a>2.2 指针和引用作为函数参数进行传递时的区别。</h3><p>(1)指针作为参数进行传递：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> *a,<span class="keyword">int</span> *b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">　　<span class="keyword">int</span> temp=*a;</span><br><span class="line">　　*a=*b;</span><br><span class="line">　　*b=temp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">　　<span class="keyword">int</span> a=<span class="number">1</span>,b=<span class="number">2</span>;</span><br><span class="line">　　<span class="built_in">swap</span>(&amp;a,&amp;b);</span><br><span class="line">　　cout&lt;&lt;a&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">　　<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">　　<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>结果为2 1；</p>
+</blockquote>
+<p>用指针传递参数，可以实现对实参进行改变的目的，是因为传递过来的是实参的地址，因此使用*a实际上是取存储实参的内存单元里的数据，即是对实参进行改变，因此可以达到目的。</p>
+<p>再看一个程序;</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> *p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">　　<span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line">　　p=&amp;a;</span><br><span class="line">　　cout&lt;&lt;p&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;*p&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p=<span class="literal">NULL</span>;</span><br><span class="line">    <span class="built_in">test</span>(p);</span><br><span class="line">    <span class="keyword">if</span>(p==<span class="literal">NULL</span>)</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;指针p为NULL&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>运行结果为：</p>
+<p>0x22ff44 1</p>
+<p>指针p为NULL</p>
+</blockquote>
+<p>大家可能会感到奇怪，怎么回事，不是传递的是地址么，怎么p会是NULL？事实上，在main函数中声明了一个指针p，并赋值为NULL，当调用test函数时，事实上传递的也是地址，只不过传递的是指针地址。也就是说将指针作为参数进行传递时，事实上也是值传递，只不过传递的是地址。当把指针作为参数进行传递时，也是将实参的一个拷贝传递给形参，即上面程序main函数中的p为何与test函数中使用的p不是同一个变量，存储2个变量p的单元也不相同（只是2个p指向同一个存储单元），那么在test函数中对p进行修改，并不会影响到main函数中的p的值。</p>
+<p>如果要想达到也同时修改的目的的话，就得使用引用了。</p>
+<h3 id="2-3-将引用作为函数的参数进行传递。"><a href="#2-3-将引用作为函数的参数进行传递。" class="headerlink" title="2.3 将引用作为函数的参数进行传递。"></a>2.3 将引用作为函数的参数进行传递。</h3><p>在讲引用作为函数参数进行传递时，实质上传递的是实参本身，即传递进来的不是实参的一个拷贝，因此对形参的修改其实是对实参的修改，所以在用引用进行参数传递时，不仅节约时间，而且可以节约空间。</p>
+<p>看下面这个程序：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> &amp;a)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">　　cout&lt;&lt;&amp;a&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line">    cout&lt;&lt;&amp;a&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">    <span class="built_in">test</span>(a);</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出结果为： 0x22ff44 1<br>0x22ff44 1</p>
+</blockquote>
+<p>再看下这个程序：</p>
+<p>这足以说明用引用进行参数传递时，事实上传递的是实参本身，而不是拷贝。</p>
+<p>所以在上述要达到同时修改指针的目的的话，就得使用引用了。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> *&amp;p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">　　<span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line">　　p=&amp;a;</span><br><span class="line">　　cout&lt;&lt;p&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;*p&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p=<span class="literal">NULL</span>;</span><br><span class="line">    <span class="built_in">test</span>(p);</span><br><span class="line">    <span class="keyword">if</span>(p!=<span class="literal">NULL</span>)</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;指针p不为NULL&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出结果为：0x22ff44 1</p>
+<p>  指针p不为NULL</p>
+</blockquote>
+<h2 id="3-C-引用在本质上是什么，它和指针到底有什么区别？"><a href="#3-C-引用在本质上是什么，它和指针到底有什么区别？" class="headerlink" title="3 C++引用在本质上是什么，它和指针到底有什么区别？"></a>3 C++引用在本质上是什么，它和指针到底有什么区别？</h2><p>从概念上讲。指针从本质上讲就是存放变量地址的一个变量，在逻辑上是独立的，它可以被改变，包括其所指向的地址的改变和其指向的地址中所存放的数据的改变。</p>
+<p>而引用是一个别名，它在逻辑上不是独立的，它的存在具有依附性，所以引用必须在一开始就被初始化，而且其引用的对象在其整个生命周期中是不能被改变的（自始至终只能依附于同一个变量）。</p>
+<p>在C++中，指针和引用经常用于函数的参数传递，然而，指针传递参数和引用传递参数是有本质上的不同的：</p>
+<p>指针传递参数本质上是值传递的方式，它所传递的是一个地址值。值传递过程中，被调函数的形式参数作为被调函数的局部变量处理，即在栈中开辟了内存空间以存放由主调函数放进来的实参的值，从而成为了实参的一个副本。值传递的特点是被调函数对形式参数的任何操作都是作为局部变量进行，不会影响主调函数的实参变量的值。</p>
+<p>而在引用传递过程中，被调函数的形式参数虽然也作为局部变量在栈中开辟了内存空间，但是这时存放的是由主调函数放进来的实参变量的地址。被调函数对形参的任何操作都被处理成间接寻址，即通过栈中存放的地址访问主调函数中的实参变量。正因为如此，被调函数对形参做的任何操作都影响了主调函数中的实参变量。</p>
+<p>引用传递和指针传递是不同的，虽然它们都是在被调函数栈空间上的一个局部变量，但是任何对于引用参数的处理都会通过一个间接寻址的方式操作到主调函数中的相关变量。而对于指针传递的参数，如果改变被调函数中的指针地址，它将影响不到主调函数的相关变量。如果想通过指针参数传递来改变主调函数中的相关变量，那就得使用指向指针的指针，或者指针引用。</p>
+<p>为了进一步加深大家对指针和引用的区别，下面我从编译的角度来阐述它们之间的区别：</p>
+<p>程序在编译时分别将指针和引用添加到符号表上，符号表上记录的是变量名及变量所对应地址。指针变量在符号表上对应的地址值为指针变量的地址值，而引用在符号表上对应的地址值为引用对象的地址值。符号表生成后就不会再改，因此指针可以改变其指向的对象（指针变量中的值可以改），而引用对象则不能修改。</p>
+<p>最后，总结一下指针和引用的相同点和不同点：</p>
+<p>★相同点：</p>
+<p>●都是地址的概念；</p>
+<p>指针指向一块内存，它的内容是所指内存的地址；而引用则是某块内存的别名。</p>
+<p>★不同点：</p>
+<p>●指针是一个实体，而引用仅是个别名；</p>
+<p>●引用只能在定义时被初始化一次，之后不可变；指针可变；引用“从一而终”，指针可以“见异思迁”；</p>
+<p>●引用没有const，指针有const，const的指针不可变；</p>
+<p>●引用不能为空，指针可以为空；</p>
+<p>●“sizeof 引用”得到的是所指向的变量(对象)的大小，而“sizeof 指针”得到的是指针本身的大小；</p>
+<p>●指针和引用的自增(++)运算意义不一样；</p>
+<p>●引用是类型安全的，而指针不是 (引用比指针多了类型检查</p>
+<h2 id="reference"><a href="#reference" class="headerlink" title="reference"></a>reference</h2><p><a target="_blank" rel="noopener" href="http://www.ryxxff.com/20171.html">http://www.ryxxff.com/20171.html</a><br><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/vip_2252.html">http://c.biancheng.net/view/vip_2252.html</a></p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">CrazyJums</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://jums.club/cpp-point-reference/">https://jums.club/cpp-point-reference/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/cpp/">cpp</a></div><div class="post_share"><div class="social-share" data-image="https://jums.club/images/article2/zhuanpantupian-40233437_3.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><button class="reward-button"><i class="fas fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://jums.club/images/wechatpay.jpg" alt="微信" onclick="window.open('https://jums.club/images/wechatpay.jpg')"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://jums.club/images/alipay.jpg" alt="支付宝" onclick="window.open('https://jums.club/images/alipay.jpg')"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></button></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/http-and-https/"><img class="prev-cover" data-src="https://jums.club/images/article/HTTP-vs-HTTPS.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">http和https协议的区别？</div></div></a></div><div class="next-post pull-right"><a href="/cpp-struct-class/"><img class="next-cover" data-src="https://jums.club/images/article/5646546465.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">C++ class和struct到底有什么区别</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/bubble-select-sort/" title="冒泡排序和选择排序过程介绍"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/bubble_select.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-22</div><div class="relatedPosts_title">冒泡排序和选择排序过程介绍</div></div></a></div><div class="relatedPosts_item"><a href="/c-malloc-new/" title="c++中，为什么有了malloc/free，还要new/delete？"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/1272978-20180331203954844-585001911.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-11-30</div><div class="relatedPosts_title">c++中，为什么有了malloc/free，还要new/delete？</div></div></a></div><div class="relatedPosts_item"><a href="/c-serialization/" title="c++序列化以及反序列化实现"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/1_U-moh2EpPntprUBiugSuBQ.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-31</div><div class="relatedPosts_title">c++序列化以及反序列化实现</div></div></a></div><div class="relatedPosts_item"><a href="/cpp-struct-class/" title="C++ class和struct到底有什么区别"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/5646546465.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-01</div><div class="relatedPosts_title">C++ class和struct到底有什么区别</div></div></a></div><div class="relatedPosts_item"><a href="/cpp-virtual-function/" title="对c++中虚函数和纯虚函数的理解"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/1_U-moh2EpPntprUBiugSuBQ.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-06-24</div><div class="relatedPosts_title">对c++中虚函数和纯虚函数的理解</div></div></a></div><div class="relatedPosts_item"><a href="/stack-and-heap/" title="C++中栈和堆的区别？"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/oew8U.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-03</div><div class="relatedPosts_title">C++中栈和堆的区别？</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+  var from = from
+  var setting = set.split(',').filter(function(item){
+  return from.indexOf(item) > -1
+  });
+  setting = setting.length == 0 ? from :setting;
+  return setting
+}
+
+var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
+var requiredFields = requestSetting(['nick','mail'],'false')
+
+window.valine = new Valine({
+  el:'#vcomment',
+  appId: '2lPeEraOnOk7GF6ou1WWs6BP-gzGzoHsz',
+  appKey: 'nXeW1bmcRE4TDrorjmdqj0ML',
+  placeholder: 'Please leave your footprints',
+  avatar: 'monsterid',
+  meta: guestInfo,
+  pageSize: '10',
+  lang: 'en',
+  recordIP: false,
+  serverURLs: '',
+  emojiCDN: '',
+  emojiMaps: "",
+  enableQQ: false,
+  requiredFields: requiredFields
+});</script></div></article></main><footer id="footer" style="background-image: url(https://jums.club/images/article/pointerRef.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2021 By CrazyJums</div><div class="footer_custom_text">独立思考、不盲从、不撒谎</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button id="readmode" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button class="translate_chn_to_cht" id="translateLink" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="Setting"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="scroll_to_comment fas fa-comments"></i></a><button class="close" id="mobile-toc-button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script id="ribbon_piao" mobile="true" src="/js/third-party/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script><script>if (document.getElementsByClassName('mermaid').length) {
+  loadScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',function () {
+    mermaid.initialize({
+      theme: 'default',
+  })
+})
+}</script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end --></body></html>

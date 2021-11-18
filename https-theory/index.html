@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>https原理解析 | CrazyJums</title><meta name="description" content="HTTP协议是一种不安全的传输协议，所有数据在传输过程都是明文传输，很容易被第三方截获，造成数据不安全。 HTTPS使用混合加密协议对数据进行加密，即对称加密和非对称加密： 对称加密和非对称加密的优缺点：  对称加密的加密和解密的速度快，效率高；非对称加密算法的加密和解密的速度满，效率低 对称加密算法的加密和解密都是用的同一个密钥，密钥的传输成本较高；非对称加密算法的加密和解密采用的是不同的密钥，"><meta name="keywords" content="computer network"><meta name="author" content="CrazyJums"><meta name="copyright" content="CrazyJums"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://jums.club/images/favicon_64.ico"><link rel="canonical" href="https://jums.club/https-theory/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta name="msvalidate.01" content="88688A1E5B9FE1F1F5EDAA94C73CD07D"/><meta name="baidu-site-verification" content="yiOH4yHRf0eeVuko"/><meta name="360-site-verification" content="d182b3f28525f2db83acfaaf6e696dba"/><meta property="og:type" content="article"><meta property="og:title" content="https原理解析"><meta property="og:url" content="https://jums.club/https-theory/"><meta property="og:site_name" content="CrazyJums"><meta property="og:description" content="HTTP协议是一种不安全的传输协议，所有数据在传输过程都是明文传输，很容易被第三方截获，造成数据不安全。 HTTPS使用混合加密协议对数据进行加密，即对称加密和非对称加密： 对称加密和非对称加密的优缺点：  对称加密的加密和解密的速度快，效率高；非对称加密算法的加密和解密的速度满，效率低 对称加密算法的加密和解密都是用的同一个密钥，密钥的传输成本较高；非对称加密算法的加密和解密采用的是不同的密钥，"><meta property="og:image" content="https://jums.club/images/article2/iStock-833750208.png"><meta property="article:published_time" content="2021-07-26T08:34:52.000Z"><meta property="article:modified_time" content="2021-09-06T01:25:42.595Z"><meta name="twitter:card" content="summary"><script><!-- hexo-inject:begin --><!-- hexo-inject:end -->var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = '2'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="prev" title="redis启动出错Creating Server TCP listening socket 127.0.0.1:6379: bind: No error" href="https://jums.club/redis-start-error/"><link rel="next" title="mysql教程" href="https://jums.club/sql-tutorials/"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: '9335780214',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?109416411ccef2c884dd6e0306467b1d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-153513094-1', 'auto');
+ga('send', 'pageview');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: true,
+  copyright: {"languages":{"author":"Author: CrazyJums","link":"Link: ","source":"Source: CrazyJums","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: true,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><script data-ad-client="ca-pub-7924394983086399" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://jums.club/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">224</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">62</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div></div></div><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference"><span class="toc-number">1.</span> <span class="toc-text">Reference</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="toc-number">2.</span> <span class="toc-text">写在最后</span></a></li></ol></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://jums.club/images/article2/iStock-833750208.png)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">CrazyJums</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">https原理解析</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2021-07-26 16:34:52"><i class="far fa-calendar-alt fa-fw"></i> Created 2021-07-26</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-09-06 09:25:42"><i class="fas fa-history fa-fw"></i> Updated 2021-09-06</span></time></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i><span>Word count:</span><span class="word-count">516</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>Reading time: 2 min</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="far fa-eye fa-fw post-meta__icon"></i><span>Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>HTTP协议是一种不安全的传输协议，所有数据在传输过程都是明文传输，很容易被第三方截获，造成数据不安全。</p>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><p>HTTPS使用混合加密协议对数据进行加密，即对称加密和非对称加密：</p>
+<p>对称加密和非对称加密的优缺点：</p>
+<ul>
+<li>对称加密的加密和解密的速度快，效率高；非对称加密算法的加密和解密的速度满，效率低</li>
+<li>对称加密算法的加密和解密都是用的同一个密钥，密钥的传输成本较高；非对称加密算法的加密和解密采用的是不同的密钥，一个公钥一个私钥，公钥可以对外公开，密钥传输的成本较低。</li>
+</ul>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article2/bVbClUj.png" alt="https://jums.club/images/article2/bVbClUj.png"></p>
+<blockquote>
+<p><strong>Hypertext Transfer Protocol Secure</strong> (<strong>HTTPS</strong>) is an extension of the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">Hypertext Transfer Protocol</a> (HTTP). It is used for <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Secure_communications">secure communication</a> over a <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Network_operating_system">computer network</a>, and is widely used on the Internet.<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-1">[1]</a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-2">[2]</a> In HTTPS, the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Communication_protocol">communication protocol</a> is encrypted using <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Transport_Layer_Security">Transport Layer Security</a> (TLS) or, formerly, Secure Sockets Layer (SSL). The protocol is therefore also referred to as <strong>HTTP over TLS</strong>,<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-3">[3]</a> or <strong>HTTP over SSL</strong>.</p>
+<p>The principal motivations for HTTPS are <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Authentication">authentication</a> of the accessed <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Website">website</a>, and protection of the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Information_privacy">privacy</a> and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Data_integrity">integrity</a> of the exchanged data while in transit. It protects against <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attacks</a>, and the bidirectional <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation">encryption</a> of communications between a client and server protects the communications against <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Eavesdropping">eavesdropping</a> and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tamper-evident#Tampering">tampering</a>.<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-httpse-4">[4]</a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-5">[5]</a> The authentication aspect of HTTPS requires a trusted third party to sign server-side <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Public_key_certificate">digital certificates</a>. This was historically an expensive operation, which meant fully authenticated HTTPS connections were usually found only on secured payment transaction services and other secured corporate information systems on the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>. In 2016, a campaign by the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Electronic_Frontier_Foundation">Electronic Frontier Foundation</a> with the support of web browser developers led to the protocol becoming more prevalent.<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-6">[6]</a> HTTPS is now used more often by web users than the original non-secure HTTP, primarily to protect page authenticity on all types of websites; secure accounts; and to keep user communications, identity, and web browsing private.<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-7">[7]</a></p>
+</blockquote>
+<p><code>HTTPS=HTTP+TLS/SSL</code></p>
+<p><img src= "/img/loading.gif" data-src="https://jums.club/images/article2/bVbClUl.png" alt=""></p>
+<p>数字正式在HTTPS中相当于非对称加密算法的私钥和公钥的分配这么一个工作。</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000021494676">HTTPS 详解一：附带最精美详尽的 HTTPS 原理图</a></li>
+</ul>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">CrazyJums</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://jums.club/https-theory/">https://jums.club/https-theory/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/computer-network/">computer network</a></div><div class="post_share"><div class="social-share" data-image="https://jums.club/images/article2/zhuanpantupian-40233437_3.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><button class="reward-button"><i class="fas fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://jums.club/images/wechatpay.jpg" alt="微信" onclick="window.open('https://jums.club/images/wechatpay.jpg')"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://jums.club/images/alipay.jpg" alt="支付宝" onclick="window.open('https://jums.club/images/alipay.jpg')"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></button></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/redis-start-error/"><img class="prev-cover" data-src="https://jums.club/images/article2/194720-20170628150542305-1508549911.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">redis启动出错Creating Server TCP listening socket 127.0.0.1:6379: bind: No error</div></div></a></div><div class="next-post pull-right"><a href="/sql-tutorials/"><img class="next-cover" data-src="https://jums.club/images/article2/SQL-Coding-Class-San-Francisco-1-1.jpeg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">mysql教程</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/http-and-https/" title="http和https协议的区别？"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/HTTP-vs-HTTPS.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-01</div><div class="relatedPosts_title">http和https协议的区别？</div></div></a></div><div class="relatedPosts_item"><a href="/tcp-and-udp/" title="tcp和udp有什么区别？面试题。"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/TCP-vs-UDP-cover.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-01</div><div class="relatedPosts_title">tcp和udp有什么区别？面试题。</div></div></a></div><div class="relatedPosts_item"><a href="/tcp-ip-cwnd/" title="TCP/IP协议中的拥塞控制面试题"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/4454545454545.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-01</div><div class="relatedPosts_title">TCP/IP协议中的拥塞控制面试题</div></div></a></div><div class="relatedPosts_item"><a href="/tcp-three-four/" title="TCP/IP协议中的三次握手和四次挥手"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/c8bca661280e4d40a2b64120461109f4.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-11-10</div><div class="relatedPosts_title">TCP/IP协议中的三次握手和四次挥手</div></div></a></div><div class="relatedPosts_item"><a href="/why-tcp-three-not-two/" title="TCP/IP协议的三次握手为什么是三次而不是两次？"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/41697418-3ef2c7f2-754b-11e8-9d26-c56519a8f663.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-04</div><div class="relatedPosts_title">TCP/IP协议的三次握手为什么是三次而不是两次？</div></div></a></div><div class="relatedPosts_item"><a href="/http-error-code/" title="HTTP请求的常见错误代码"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/http-status-codes.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-15</div><div class="relatedPosts_title">HTTP请求的常见错误代码</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
+  var from = from
+  var setting = set.split(',').filter(function(item){
+  return from.indexOf(item) > -1
+  });
+  setting = setting.length == 0 ? from :setting;
+  return setting
+}
+
+var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
+var requiredFields = requestSetting(['nick','mail'],'false')
+
+window.valine = new Valine({
+  el:'#vcomment',
+  appId: '2lPeEraOnOk7GF6ou1WWs6BP-gzGzoHsz',
+  appKey: 'nXeW1bmcRE4TDrorjmdqj0ML',
+  placeholder: 'Please leave your footprints',
+  avatar: 'monsterid',
+  meta: guestInfo,
+  pageSize: '10',
+  lang: 'en',
+  recordIP: false,
+  serverURLs: '',
+  emojiCDN: '',
+  emojiMaps: "",
+  enableQQ: false,
+  requiredFields: requiredFields
+});</script></div></article></main><footer id="footer" style="background-image: url(https://jums.club/images/article2/iStock-833750208.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2021 By CrazyJums</div><div class="footer_custom_text">独立思考、不盲从、不撒谎</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button id="readmode" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button class="translate_chn_to_cht" id="translateLink" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="Setting"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="scroll_to_comment fas fa-comments"></i></a><button class="close" id="mobile-toc-button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script id="ribbon_piao" mobile="true" src="/js/third-party/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script><script>if (document.getElementsByClassName('mermaid').length) {
+  loadScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',function () {
+    mermaid.initialize({
+      theme: 'default',
+  })
+})
+}</script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end --></body></html>
