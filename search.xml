@@ -122,7 +122,7 @@
       <link href="/jetbrain-usages/"/>
       <url>/jetbrain-usages/</url>
       
-        <content type="html"><![CDATA[<h1 id="一、常用快捷键"><a href="#一、常用快捷键" class="headerlink" title="一、常用快捷键"></a>一、常用快捷键</h1><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>此快捷键说明我是翻译官方的快捷键说明的，方便查看，基于PHPStorm的官方Help来翻译的，其他系列的JetBrains软件应该都是一样的道理，其中如有错误，欢迎斧正。</p><h2 id="编辑"><a href="#编辑" class="headerlink" title="编辑"></a>编辑</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Ctrl + Space</td><td>代码自动完成提示（选择）</td></tr><tr><td>Alt + Enter</td><td>显示意图动作和快速修复</td></tr><tr><td>Ctrl + P</td><td>参数信息（在调用方法参数忘记的时候，提示）</td></tr><tr><td>Ctrl + Q</td><td>快速查找文件，可以查找当前类定义的文件等</td></tr><tr><td>Ctrl + 鼠标滑过</td><td>基本信息</td></tr><tr><td>Alt + Insert</td><td>生成代码…(细节需要多次操作会发现很有意思)</td></tr><tr><td>Ctrl + O</td><td>重写方法（在PHPStorm中是重写父类方法，会有选择框）</td></tr><tr><td>Ctrl + I</td><td>实现方法（一般是指实现接口类或抽象类方法）</td></tr><tr><td>Ctrl + Alt + T</td><td>环绕代码块 (if..else, try..catch, for, 等)</td></tr><tr><td>Ctrl + /</td><td>单行注释(//)</td></tr><tr><td>Ctrl + Shift + /</td><td>块注释 (/**/)</td></tr><tr><td>Ctrl + W</td><td>选择依次递增的代码块，具体使用目前来看比较少</td></tr><tr><td>Ctrl + Shift + W</td><td>去掉当前选择返回上一个选择，类似于撤销选择，与上面的相反</td></tr><tr><td>Ctrl + Alt + L</td><td>格式化代码，一般来说，写的代码格式不整齐统一，这个很有用</td></tr><tr><td>Ctrl + Alt + I</td><td>自啮合线，这个解释不太好解释，测试结果就是会自动根据代码来进行对齐</td></tr><tr><td>Ctrl + D</td><td>复制当前行或选定的块</td></tr><tr><td>Ctrl + Y</td><td>删除插入符号所在行</td></tr><tr><td>Ctrl + Shift + J</td><td>智能线连接（HTML和JavaScript才有用）</td></tr><tr><td>Ctrl + Enter</td><td>智能分割线 (HTML 和 JavaScript 才有用)</td></tr><tr><td>Shift + Enter</td><td>开始新行，比如光标在当前行，不需要切换到行尾按Enter，直接按这个组合键即可</td></tr><tr><td>Ctrl + Shift + U</td><td>切换选中的英文文字的大小写，此处其实用到挺多的</td></tr><tr><td>Ctrl + Shift + ] 或 [</td><td>选择直到代码块的开始或结束，我之前不知道这个，其实很有用</td></tr><tr><td>Ctrl + Delete</td><td>删除从当前光标到当前单词结尾</td></tr><tr><td>Ctrl + Backspace</td><td>从光标位置删除到当前单词的开始</td></tr><tr><td>Ctrl + + 或 -</td><td>这里是ctrl和加号或者减号产生的组合，可以折叠或展开当前代码块</td></tr><tr><td>Ctrl + F4</td><td>关闭活动中的tab</td></tr><tr><td>Ctrl + Shift + V</td><td>从历史粘贴</td></tr></tbody></table><h2 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>F8</td><td>跳过</td></tr><tr><td>F7</td><td>步进</td></tr><tr><td>Shift + F8</td><td>跳出</td></tr><tr><td>Alt + F8</td><td>表达式求值</td></tr><tr><td>F9</td><td>恢复程序</td></tr><tr><td>Ctrl + F8</td><td>切断断点</td></tr><tr><td>Ctrl+Shift+F8</td><td>查看断点</td></tr></tbody></table><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Shift + F10</td><td>运行</td></tr><tr><td>Shift + F9</td><td>调试</td></tr><tr><td>Ctrl + Shift + F10</td><td>从编辑器运行上下文配置（Run context configuration from editor），此处可能翻译不够准确</td></tr><tr><td>Ctrl + Shift + X</td><td>在命令行运行</td></tr></tbody></table><h2 id="搜索-替换"><a href="#搜索-替换" class="headerlink" title="搜索/替换"></a>搜索/替换</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Ctrl + F/R</td><td>查找/替换</td></tr><tr><td>F3/Shift + F3</td><td>查找下一个/上一个</td></tr><tr><td>Ctrl + Shift + F/R</td><td>在目录中查找/替换</td></tr></tbody></table><h2 id="查找哪些地方使用"><a href="#查找哪些地方使用" class="headerlink" title="查找哪些地方使用"></a>查找哪些地方使用</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Alt + F7 / Ctrl + F7</td><td>当前文件查找被使用/在文件中查找哪些地方使用</td></tr><tr><td>Ctrl + Shift + F7</td><td>文件中搜索并在使用的地方高亮显示</td></tr><tr><td>Ctrl + Alt + F7</td><td>显示哪些地方被使用</td></tr></tbody></table><h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Ctrl + N</td><td>跳转到指定类</td></tr><tr><td>Ctrl + Shift + N</td><td>跳转到文件</td></tr><tr><td>Ctrl + Alt + Shift + N</td><td>跳转到符号</td></tr><tr><td>Ctrl + G</td><td>跳转到第几行</td></tr><tr><td>Alt + Right/Left</td><td>切换编辑器活动窗</td></tr><tr><td>Esc</td><td>Go to editor (from tool window)</td></tr><tr><td>Ctrl + E</td><td>弹出最近编辑文件，我也是在写这文档才知道，太方便了</td></tr><tr><td>Ctrl + Alt + Left/Right</td><td>导航前进/后退</td></tr><tr><td>Ctrl + Shift + Backspace</td><td>跳转到最近编辑的代码位置</td></tr><tr><td>Alt + F1</td><td>在任何视图中选择当前文件或符号</td></tr><tr><td>Ctrl + B 或 Ctrl + Click</td><td>跳到申明（如跳转到当前函数声明的地方，这个很常用，可以实操一下）</td></tr><tr><td>Ctrl + Alt + B</td><td>与上面相反，跳到执行位置</td></tr><tr><td>Ctrl + Shift + I</td><td>打开快速定义查找</td></tr><tr><td>Ctrl + Shift + B</td><td>跳转到类型声明</td></tr><tr><td>Ctrl + U</td><td>跳到超级方法(super-method)/超类 (super-class)</td></tr><tr><td>Alt + Up/Down</td><td>跳转到上一个或者下一个方法，在编辑一个类的时候，方便一个一个的方法进行查看</td></tr><tr><td>Ctrl + ] / [</td><td>跳转到代码块的开始或结束</td></tr><tr><td>F2 / Shift + F2</td><td>跳转到上一个或下一个高亮错误地方，这个检查代码语法错误很有用</td></tr><tr><td>F4 / Ctrl + Enter</td><td>编辑源代码/查看源代码</td></tr></tbody></table><h2 id="重构"><a href="#重构" class="headerlink" title="重构"></a>重构</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>F5/F6</td><td>复制/移动</td></tr><tr><td>Alt + Delete</td><td>安全删除</td></tr><tr><td>Shift + F6</td><td>重命名</td></tr><tr><td>Ctrl + Alt + N</td><td>内联变量</td></tr><tr><td>Ctrl + Alt + M/V/F/C</td><td>提取方法/变量/字段/常数(Method/Variable/Field/Constant)</td></tr><tr><td>Ctrl + Alt + Shift + T</td><td>重构这段代码（显示所有可用的重构），比如if else if 这种语句转switch语句</td></tr></tbody></table><p>VCS/本地历史</p><hr><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Alt + 反引号 (`)</td><td>‘VCS’ 快速弹出，此处需要注意这个反引号在最左上角，和那个~符号在一起的，ESC键下面</td></tr><tr><td>Ctrl + K</td><td>提交项目到VCS</td></tr><tr><td>Ctrl + T</td><td>从 VCS 更新项目</td></tr><tr><td>Alt + Shift + C</td><td>显示最近更改</td></tr></tbody></table><h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>快速按两次 Shift</td><td>搜索任何一个地方</td></tr><tr><td>Ctrl + Shift + A</td><td>查找方法(Action)</td></tr><tr><td>Alt + #[0-9]</td><td>打开相应的工具窗口（这个我也没搞明白）</td></tr><tr><td>Ctrl + Alt + F11</td><td>开启或关闭全屏模式</td></tr><tr><td>Ctrl + Shift + F12</td><td>开启或关闭最大化编辑</td></tr><tr><td>Alt + Shift + F</td><td>添加到收藏列表（我觉得这个功能很神奇，不知道为啥要这么做）</td></tr><tr><td>Alt + Shift + I</td><td>检查当前文件以及当前配置文件</td></tr><tr><td>Ctrl + Alt + S</td><td>打开设置对话框（表示会与QQ默认快捷键冲突）</td></tr><tr><td>Ctrl + Tab</td><td>在 tabs 和工具窗口间切换</td></tr></tbody></table><h2 id="插入模板-片段-针对PHPstorm"><a href="#插入模板-片段-针对PHPstorm" class="headerlink" title="插入模板/片段(针对PHPstorm)"></a>插入模板/片段(针对PHPstorm)</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Alt + J</td><td>插入模板</td></tr><tr><td>eco</td><td>‘echo’ 语句</td></tr><tr><td>fore</td><td>foreach(iterable_expr as $value) {…}</td></tr><tr><td>forek</td><td>foreach(iterable_expr as $key =&gt; $value) {…}</td></tr><tr><td>inc/inco</td><td>‘include’/‘include_once’ 语句</td></tr><tr><td>prif</td><td>private function</td></tr><tr><td>prof</td><td>protected function</td></tr><tr><td>pubf</td><td>public function</td></tr><tr><td>rqr/rqro</td><td>‘require’/‘require_once’ 语句</td></tr><tr><td>更多…</td><td>其他自己尝试</td></tr></tbody></table><h1 id="二、下划线转驼峰"><a href="#二、下划线转驼峰" class="headerlink" title="二、下划线转驼峰"></a>二、下划线转驼峰</h1><p>IntelliJ IDEA下划线转驼峰及大小写转换插件和快捷键<br>idea带有快捷键ctrl+shift+u,来进行大小写的转换，这不能完全满足我们的需求。</p><p>IntelliJ IDEA提供了CamelCase很方便的工具插件，使用快捷键<code>shift+alt+u</code>。</p><p>按住shift+alt再不停的按U,会把选中内容的单词的下划线转驼峰转大写等，不停的转换，直到你想要的。</p><p>CamelCase插件：</p><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20211009103229.png" alt=""></p><p>1.安装方法：</p><p>idea菜单栏-<strong>file</strong>-<strong>settings</strong>-搜索”<strong>plugins</strong>“-点击下面按钮‘browse repositories‘-搜索“<strong>CamelCase</strong>”-点击安装</p><p>2.使用方法</p><p>安装后重新打开idea,选中内容，快捷键<code>shit+alt+u</code>，选中内容中的单词 就会变，直到变成你想要的。</p><p>这个真的很方便，特别是mysql数据库字段带下划线 直接复制字段到java，开发很快</p><h1 id="三、光标同时操作多行"><a href="#三、光标同时操作多行" class="headerlink" title="三、光标同时操作多行"></a>三、光标同时操作多行</h1><p>在ide编辑界面，按住<code>alt</code>键，然后使用鼠标左键点击不同的行，即可复制一个鼠标光标。</p><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20211126194309.png" alt=""></p><h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul><li><a href="https://cloud.tencent.com/developer/article/1460576">总结IntelliJ IDEA 使用技巧大全，速度收藏！</a></li><li><a href="https://segmentfault.com/a/1190000007206543">JetBrains系列IDE快捷键大全</a></li><li><a href="https://blog.csdn.net/ZYC88888/article/details/87876390">https://blog.csdn.net/ZYC88888/article/details/87876390</a></li></ul><h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="一、常用快捷键"><a href="#一、常用快捷键" class="headerlink" title="一、常用快捷键"></a>一、常用快捷键</h1><h2 id="1-1-编辑"><a href="#1-1-编辑" class="headerlink" title="1.1 编辑"></a>1.1 编辑</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Ctrl + Space</td><td>代码自动完成提示（选择）</td></tr><tr><td>Alt + Enter</td><td>显示意图动作和快速修复</td></tr><tr><td>Ctrl + P</td><td>参数信息（在调用方法参数忘记的时候，提示）</td></tr><tr><td>Ctrl + Q</td><td>快速查找文件，可以查找当前类定义的文件等</td></tr><tr><td>Ctrl + 鼠标滑过</td><td>基本信息</td></tr><tr><td>Alt + Insert</td><td>生成代码…(细节需要多次操作会发现很有意思)</td></tr><tr><td>Ctrl + O</td><td>重写方法（在PHPStorm中是重写父类方法，会有选择框）</td></tr><tr><td>Ctrl + I</td><td>实现方法（一般是指实现接口类或抽象类方法）</td></tr><tr><td>Ctrl + Alt + T</td><td>环绕代码块 (if..else, try..catch, for, 等)</td></tr><tr><td>Ctrl + /</td><td>单行注释(//)</td></tr><tr><td>Ctrl + Shift + /</td><td>块注释 (/**/)</td></tr><tr><td>Ctrl + W</td><td>选择依次递增的代码块，具体使用目前来看比较少</td></tr><tr><td>Ctrl + Shift + W</td><td>去掉当前选择返回上一个选择，类似于撤销选择，与上面的相反</td></tr><tr><td>Ctrl + Alt + L</td><td>格式化代码，一般来说，写的代码格式不整齐统一，这个很有用</td></tr><tr><td>Ctrl + Alt + I</td><td>自啮合线，这个解释不太好解释，测试结果就是会自动根据代码来进行对齐</td></tr><tr><td>Ctrl + D</td><td>复制当前行或选定的块</td></tr><tr><td>Ctrl + Y</td><td>删除插入符号所在行</td></tr><tr><td>Ctrl + Shift + J</td><td>智能线连接（HTML和JavaScript才有用）</td></tr><tr><td>Ctrl + Enter</td><td>智能分割线 (HTML 和 JavaScript 才有用)</td></tr><tr><td>Shift + Enter</td><td>开始新行，比如光标在当前行，不需要切换到行尾按Enter，直接按这个组合键即可</td></tr><tr><td>Ctrl + Shift + U</td><td>切换选中的英文文字的大小写，此处其实用到挺多的</td></tr><tr><td>Ctrl + Shift + ] 或 [</td><td>选择直到代码块的开始或结束，我之前不知道这个，其实很有用</td></tr><tr><td>Ctrl + Delete</td><td>删除从当前光标到当前单词结尾</td></tr><tr><td>Ctrl + Backspace</td><td>从光标位置删除到当前单词的开始</td></tr><tr><td>Ctrl + + 或 -</td><td>这里是ctrl和加号或者减号产生的组合，可以折叠或展开当前代码块</td></tr><tr><td>Ctrl + F4</td><td>关闭活动中的tab</td></tr><tr><td>Ctrl + Shift + V</td><td>从历史粘贴</td></tr></tbody></table><h2 id="1-3-调试"><a href="#1-3-调试" class="headerlink" title="1.3 调试"></a>1.3 调试</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>F8</td><td>跳过</td></tr><tr><td>F7</td><td>步进</td></tr><tr><td>Shift + F8</td><td>跳出</td></tr><tr><td>Alt + F8</td><td>表达式求值</td></tr><tr><td>F9</td><td>恢复程序</td></tr><tr><td>Ctrl + F8</td><td>切断断点</td></tr><tr><td>Ctrl+Shift+F8</td><td>查看断点</td></tr></tbody></table><h2 id="1-4-运行"><a href="#1-4-运行" class="headerlink" title="1.4 运行"></a>1.4 运行</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Shift + F10</td><td>运行</td></tr><tr><td>Shift + F9</td><td>调试</td></tr><tr><td>Ctrl + Shift + F10</td><td>从编辑器运行上下文配置（Run context configuration from editor），此处可能翻译不够准确</td></tr><tr><td>Ctrl + Shift + X</td><td>在命令行运行</td></tr></tbody></table><h2 id="1-5-搜索-替换"><a href="#1-5-搜索-替换" class="headerlink" title="1.5 搜索/替换"></a>1.5 搜索/替换</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Ctrl + F/R</td><td>查找/替换</td></tr><tr><td>F3/Shift + F3</td><td>查找下一个/上一个</td></tr><tr><td>Ctrl + Shift + F/R</td><td>在目录中查找/替换</td></tr></tbody></table><h2 id="1-6-查找哪些地方使用"><a href="#1-6-查找哪些地方使用" class="headerlink" title="1.6 查找哪些地方使用"></a>1.6 查找哪些地方使用</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Alt + F7 / Ctrl + F7</td><td>当前文件查找被使用/在文件中查找哪些地方使用</td></tr><tr><td>Ctrl + Shift + F7</td><td>文件中搜索并在使用的地方高亮显示</td></tr><tr><td>Ctrl + Alt + F7</td><td>显示哪些地方被使用</td></tr></tbody></table><h2 id="1-7-导航"><a href="#1-7-导航" class="headerlink" title="1.7 导航"></a>1.7 导航</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Ctrl + N</td><td>跳转到指定类</td></tr><tr><td>Ctrl + Shift + N</td><td>跳转到文件</td></tr><tr><td>Ctrl + Alt + Shift + N</td><td>跳转到符号</td></tr><tr><td>Ctrl + G</td><td>跳转到第几行</td></tr><tr><td>Alt + Right/Left</td><td>切换编辑器活动窗</td></tr><tr><td>Esc</td><td>Go to editor (from tool window)</td></tr><tr><td>Ctrl + E</td><td>弹出最近编辑文件，我也是在写这文档才知道，太方便了</td></tr><tr><td>Ctrl + Alt + Left/Right</td><td>导航前进/后退</td></tr><tr><td>Ctrl + Shift + Backspace</td><td>跳转到最近编辑的代码位置</td></tr><tr><td>Alt + F1</td><td>在任何视图中选择当前文件或符号</td></tr><tr><td>Ctrl + B 或 Ctrl + Click</td><td>跳到申明（如跳转到当前函数声明的地方，这个很常用，可以实操一下）</td></tr><tr><td>Ctrl + Alt + B</td><td>与上面相反，跳到执行位置</td></tr><tr><td>Ctrl + Shift + I</td><td>打开快速定义查找</td></tr><tr><td>Ctrl + Shift + B</td><td>跳转到类型声明</td></tr><tr><td>Ctrl + U</td><td>跳到超级方法(super-method)/超类 (super-class)</td></tr><tr><td>Alt + Up/Down</td><td>跳转到上一个或者下一个方法，在编辑一个类的时候，方便一个一个的方法进行查看</td></tr><tr><td>Ctrl + ] / [</td><td>跳转到代码块的开始或结束</td></tr><tr><td>F2 / Shift + F2</td><td>跳转到上一个或下一个高亮错误地方，这个检查代码语法错误很有用</td></tr><tr><td>F4 / Ctrl + Enter</td><td>编辑源代码/查看源代码</td></tr></tbody></table><h2 id="1-8-重构"><a href="#1-8-重构" class="headerlink" title="1.8 重构"></a>1.8 重构</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>F5/F6</td><td>复制/移动</td></tr><tr><td>Alt + Delete</td><td>安全删除</td></tr><tr><td>Shift + F6</td><td>重命名</td></tr><tr><td>Ctrl + Alt + N</td><td>内联变量</td></tr><tr><td>Ctrl + Alt + M/V/F/C</td><td>提取方法/变量/字段/常数(Method/Variable/Field/Constant)</td></tr><tr><td>Ctrl + Alt + Shift + T</td><td>重构这段代码（显示所有可用的重构），比如if else if 这种语句转switch语句</td></tr></tbody></table><h2 id="1-9-VCS-本地历史"><a href="#1-9-VCS-本地历史" class="headerlink" title="1.9 VCS/本地历史"></a>1.9 VCS/本地历史</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Alt + 反引号 (`)</td><td>‘VCS’ 快速弹出，此处需要注意这个反引号在最左上角，和那个~符号在一起的，ESC键下面</td></tr><tr><td>Ctrl + K</td><td>提交项目到VCS</td></tr><tr><td>Ctrl + T</td><td>从 VCS 更新项目</td></tr><tr><td>Alt + Shift + C</td><td>显示最近更改</td></tr></tbody></table><h2 id="1-10-常用操作"><a href="#1-10-常用操作" class="headerlink" title="1.10 常用操作"></a>1.10 常用操作</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>快速按两次 Shift</td><td>搜索任何一个地方</td></tr><tr><td>Ctrl + Shift + A</td><td>查找方法(Action)</td></tr><tr><td>Alt + #[0-9]</td><td>打开相应的工具窗口（这个我也没搞明白）</td></tr><tr><td>Ctrl + Alt + F11</td><td>开启或关闭全屏模式</td></tr><tr><td>Ctrl + Shift + F12</td><td>开启或关闭最大化编辑</td></tr><tr><td>Alt + Shift + F</td><td>添加到收藏列表（我觉得这个功能很神奇，不知道为啥要这么做）</td></tr><tr><td>Alt + Shift + I</td><td>检查当前文件以及当前配置文件</td></tr><tr><td>Ctrl + Alt + S</td><td>打开设置对话框（表示会与QQ默认快捷键冲突）</td></tr><tr><td>Ctrl + Tab</td><td>在 tabs 和工具窗口间切换</td></tr></tbody></table><h2 id="1-11-插入模板-片段-针对PHPstorm"><a href="#1-11-插入模板-片段-针对PHPstorm" class="headerlink" title="1.11 插入模板/片段(针对PHPstorm)"></a>1.11 插入模板/片段(针对PHPstorm)</h2><table><thead><tr><th>快捷键组合</th><th>说明</th></tr></thead><tbody><tr><td>Alt + J</td><td>插入模板</td></tr><tr><td>eco</td><td>‘echo’ 语句</td></tr><tr><td>fore</td><td>foreach(iterable_expr as $value) {…}</td></tr><tr><td>forek</td><td>foreach(iterable_expr as $key =&gt; $value) {…}</td></tr><tr><td>inc/inco</td><td>‘include’/‘include_once’ 语句</td></tr><tr><td>prif</td><td>private function</td></tr><tr><td>prof</td><td>protected function</td></tr><tr><td>pubf</td><td>public function</td></tr><tr><td>rqr/rqro</td><td>‘require’/‘require_once’ 语句</td></tr><tr><td>更多…</td><td>其他自己尝试</td></tr></tbody></table><h1 id="二、下划线转驼峰"><a href="#二、下划线转驼峰" class="headerlink" title="二、下划线转驼峰"></a>二、下划线转驼峰</h1><p>IntelliJ IDEA下划线转驼峰及大小写转换插件和快捷键<br>idea带有快捷键ctrl+shift+u,来进行大小写的转换，这不能完全满足我们的需求。</p><p>IntelliJ IDEA提供了CamelCase很方便的工具插件，使用快捷键<code>shift+alt+u</code>。</p><p>按住shift+alt再不停的按U,会把选中内容的单词的下划线转驼峰转大写等，不停的转换，直到你想要的。</p><p>CamelCase插件：</p><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20211009103229.png" alt=""></p><p>1.安装方法：</p><p>idea菜单栏-<strong>file</strong>-<strong>settings</strong>-搜索”<strong>plugins</strong>“-点击下面按钮‘browse repositories‘-搜索“<strong>CamelCase</strong>”-点击安装</p><p>2.使用方法</p><p>安装后重新打开idea,选中内容，快捷键<code>shit+alt+u</code>，选中内容中的单词 就会变，直到变成你想要的。</p><p>这个真的很方便，特别是mysql数据库字段带下划线 直接复制字段到java，开发很快</p><h1 id="三、光标同时操作多行"><a href="#三、光标同时操作多行" class="headerlink" title="三、光标同时操作多行"></a>三、光标同时操作多行</h1><p>在ide编辑界面，按住<code>alt</code>键，然后使用鼠标左键点击不同的行，即可复制一个鼠标光标。</p><p><img src= "/img/loading.gif" data-src="https://jums.club/images/article2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20211126194309.png" alt=""></p><h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul><li><a href="https://cloud.tencent.com/developer/article/1460576">总结IntelliJ IDEA 使用技巧大全，速度收藏！</a></li><li><a href="https://segmentfault.com/a/1190000007206543">JetBrains系列IDE快捷键大全</a></li><li><a href="https://blog.csdn.net/ZYC88888/article/details/87876390">https://blog.csdn.net/ZYC88888/article/details/87876390</a></li></ul><h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>]]></content>
       
       
       
@@ -1495,9 +1495,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
             <tag> cpp </tag>
             
@@ -1659,9 +1659,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
             <tag> MySQL </tag>
             
@@ -1703,11 +1703,11 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
             <tag> thread </tag>
             
@@ -2062,11 +2062,11 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
             <tag> algorithm </tag>
             
@@ -2087,11 +2087,11 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
             <tag> algorithm </tag>
             
@@ -2112,11 +2112,11 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
             <tag> algorithm </tag>
             
@@ -2137,9 +2137,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
+            
+            <tag> program language </tag>
             
         </tags>
       
@@ -2158,9 +2158,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
+            
+            <tag> program language </tag>
             
             <tag> algorithm </tag>
             
@@ -2221,9 +2221,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
+            
+            <tag> program language </tag>
             
         </tags>
       
@@ -2242,13 +2242,13 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
-            <tag> JVM </tag>
-            
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
+            
+            <tag> JVM </tag>
             
         </tags>
       
@@ -2267,9 +2267,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
+            
+            <tag> program language </tag>
             
             <tag> JVM </tag>
             
@@ -2290,9 +2290,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
+            
+            <tag> program language </tag>
             
         </tags>
       
@@ -2311,9 +2311,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
+            
+            <tag> program language </tag>
             
         </tags>
       
@@ -2332,9 +2332,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
+            
+            <tag> program language </tag>
             
             <tag> JVM </tag>
             
@@ -2355,13 +2355,13 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
-            <tag> JVM </tag>
-            
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
+            
+            <tag> JVM </tag>
             
         </tags>
       
@@ -2399,13 +2399,13 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
-            <tag> JVM </tag>
-            
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
+            
+            <tag> JVM </tag>
             
         </tags>
       
@@ -2424,9 +2424,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
+            
+            <tag> program language </tag>
             
         </tags>
       
@@ -2445,13 +2445,13 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
-            <tag> JVM </tag>
-            
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
+            
+            <tag> JVM </tag>
             
         </tags>
       
@@ -2489,13 +2489,13 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
-            <tag> JVM </tag>
-            
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
+            
+            <tag> JVM </tag>
             
         </tags>
       
@@ -2514,13 +2514,13 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
-            <tag> JVM </tag>
-            
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
+            
+            <tag> JVM </tag>
             
         </tags>
       
@@ -2617,11 +2617,11 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
         </tags>
       
@@ -2640,9 +2640,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
+            
+            <tag> program language </tag>
             
         </tags>
       
@@ -2777,11 +2777,11 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
             <tag> basic knowledge </tag>
             
@@ -2802,11 +2802,11 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
             <tag> basic knowledge </tag>
             
@@ -3332,11 +3332,11 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
         </tags>
       
@@ -3355,11 +3355,11 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
             
             <tag> java interview </tag>
+            
+            <tag> program language </tag>
             
         </tags>
       
@@ -3378,9 +3378,9 @@
       
         <tags>
             
-            <tag> program language </tag>
-            
             <tag> Java </tag>
+            
+            <tag> program language </tag>
             
         </tags>
       
