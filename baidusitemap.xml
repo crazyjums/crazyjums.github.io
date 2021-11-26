@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://jums.club/jetbrain-usages/</loc>
+    <lastmod>2021-11-26</lastmod>
+  </url>
+  <url>
+    <loc>http://jums.club/a-free-tuchuang-site/</loc>
+    <lastmod>2021-11-19</lastmod>
+  </url>
+  <url>
+    <loc>http://jums.club/linux-for-lnmp/</loc>
+    <lastmod>2021-11-19</lastmod>
+  </url>
+  <url>
     <loc>http://jums.club/sublime-tutorials/</loc>
     <lastmod>2021-11-18</lastmod>
   </url>
   <url>
     <loc>http://jums.club/php-zhuanpan/</loc>
-    <lastmod>2021-11-18</lastmod>
-  </url>
-  <url>
-    <loc>http://jums.club/linux-for-lnmp/</loc>
     <lastmod>2021-11-18</lastmod>
   </url>
   <url>
@@ -26,10 +34,6 @@
   </url>
   <url>
     <loc>http://jums.club/ssh-for-mutli-pc/</loc>
-    <lastmod>2021-10-09</lastmod>
-  </url>
-  <url>
-    <loc>http://jums.club/jetbrain-usages/</loc>
     <lastmod>2021-10-09</lastmod>
   </url>
   <url>
@@ -197,11 +201,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/why-singleton-need-first-check/</loc>
+    <loc>http://jums.club/why-tcp-three-not-two/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/why-tcp-three-not-two/</loc>
+    <loc>http://jums.club/why-singleton-need-first-check/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -289,11 +293,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/sql-tutorials/</loc>
+    <loc>http://jums.club/ssh-connect-to-github/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/ssh-connect-to-github/</loc>
+    <loc>http://jums.club/sql-tutorials/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -321,11 +325,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/sloved-hexo-title/</loc>
+    <loc>http://jums.club/slove-windows-account-error/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/slove-windows-account-error/</loc>
+    <loc>http://jums.club/sloved-hexo-title/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -341,11 +345,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/redis-tutorials/</loc>
+    <loc>http://jums.club/redis-start-error/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/redis-start-error/</loc>
+    <loc>http://jums.club/redis-tutorials/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -361,11 +365,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/python-tab-error/</loc>
+    <loc>http://jums.club/qing-yu-nian-resource/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/qing-yu-nian-resource/</loc>
+    <loc>http://jums.club/python-tab-error/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -477,11 +481,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/matplotlib-draw-x-and-y/</loc>
+    <loc>http://jums.club/matplotlib-draw-a-dymatic-func/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/matplotlib-draw-a-dymatic-func/</loc>
+    <loc>http://jums.club/matplotlib-draw-x-and-y/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -569,11 +573,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/java-heap-overflow-thread/</loc>
+    <loc>http://jums.club/java-inner-class/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/java-inner-class/</loc>
+    <loc>http://jums.club/java-heap-overflow-thread/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -637,11 +641,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/how-to-use-github-API/</loc>
+    <loc>http://jums.club/how-to-use-python-command-param/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/how-to-use-python-command-param/</loc>
+    <loc>http://jums.club/how-to-use-github-API/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -729,15 +733,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/git-connect-to-github/</loc>
-    <lastmod>2021-09-06</lastmod>
-  </url>
-  <url>
     <loc>http://jums.club/git-delete-file-s/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/fatal-remote-origin-already-exists/</loc>
+    <loc>http://jums.club/git-connect-to-github/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -745,15 +745,19 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
+    <loc>http://jums.club/fatal-remote-origin-already-exists/</loc>
+    <lastmod>2021-09-06</lastmod>
+  </url>
+  <url>
     <loc>http://jums.club/error-git-pull/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/enum-singleton/</loc>
+    <loc>http://jums.club/error-by-hexo-d-person-domain/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/error-by-hexo-d-person-domain/</loc>
+    <loc>http://jums.club/enum-singleton/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -861,11 +865,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/awk-cases/</loc>
+    <loc>http://jums.club/awesome-spider-project/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/awesome-spider-project/</loc>
+    <loc>http://jums.club/awk-cases/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -874,10 +878,6 @@
   </url>
   <url>
     <loc>http://jums.club/UnicodeDecodeError-gb2312/</loc>
-    <lastmod>2021-09-06</lastmod>
-  </url>
-  <url>
-    <loc>http://jums.club/a-free-tuchuang-site/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
