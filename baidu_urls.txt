@@ -1,3 +1,4 @@
+http://jums.club/php-dist-prod-and-test/
 http://jums.club/vue-tutorials/
 http://jums.club/php-zhuanpan/
 http://jums.club/laravel/
@@ -97,4 +98,3 @@ http://jums.club/lstm-gru-rnn/
 http://jums.club/cpp-virtual-function/
 http://jums.club/c-serialization/
 http://jums.club/github-more-than-100/
-http://jums.club/next-change-copyright/
