@@ -1,58 +1,18 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>hexo绑定个人域名如何实现https访问 | CrazyJums</title><meta name="description" content="1 发现问题当我们使用github+hexo+personal domain做自己的博客时，会发现只有http访问，不能进行https访问，关于个人域名的申请，请参考这篇博客，这里介绍一个网站cloudflare，他是国外的一个提供网站安全管理、性能优化及相关的技术支持的网站，github服务器在国外，所以有时候可能会被墙，这个时候cloudflare就发挥作用了。 2 解决问题首先去cloudf"><meta name="keywords" content="problem solved,hexo"><meta name="author" content="CrazyJums"><meta name="copyright" content="CrazyJums"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://jums.club/images/favicon_64.ico"><link rel="canonical" href="http://jums.club/use-cloudfree-make-your-hexo-to-https/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta name="msvalidate.01" content="88688A1E5B9FE1F1F5EDAA94C73CD07D"/><meta name="baidu-site-verification" content="yiOH4yHRf0eeVuko"/><meta name="360-site-verification" content="d182b3f28525f2db83acfaaf6e696dba"/><meta property="og:type" content="article"><meta property="og:title" content="hexo绑定个人域名如何实现https访问"><meta property="og:url" content="http://jums.club/use-cloudfree-make-your-hexo-to-https/"><meta property="og:site_name" content="CrazyJums"><meta property="og:description" content="1 发现问题当我们使用github+hexo+personal domain做自己的博客时，会发现只有http访问，不能进行https访问，关于个人域名的申请，请参考这篇博客，这里介绍一个网站cloudflare，他是国外的一个提供网站安全管理、性能优化及相关的技术支持的网站，github服务器在国外，所以有时候可能会被墙，这个时候cloudflare就发挥作用了。 2 解决问题首先去cloudf"><meta property="og:image" content="https://jums.club/images/article/6f42d391efe1d98e9ccf32f0d0df5d22.jpg"><meta property="article:published_time" content="2019-11-26T04:24:29.000Z"><meta property="article:modified_time" content="2021-09-06T01:25:42.676Z"><meta name="twitter:card" content="summary"><script><!-- hexo-inject:begin --><!-- hexo-inject:end -->var activateDarkMode = function () {
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
-  }
-}
-var activateLightMode = function () {
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
-  }
-}
-
-var getCookies = function (name) {
-  const value = `; ${document.cookie}`
-  const parts = value.split(`; ${name}=`)
-  if (parts.length === 2) return parts.pop().split(';').shift()
-}
-
-var autoChangeMode = 'false'
-var t = getCookies('theme')
-if (autoChangeMode === '1') {
-  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-  if (t === undefined) {
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport) {
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour <= 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-    }
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      if (Cookies.get('theme') === undefined) {
-        e.matches ? activateDarkMode() : activateLightMode()
-      }
-    })
-  } else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else if (autoChangeMode === '2') {
-  now = new Date()
-  hour = now.getHours()
-  isNight = hour <= 6 || hour >= 18
-  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else {
-  if (t === 'dark') activateDarkMode()
-  else if (t === 'light') activateLightMode()
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="prev" title="markdownPad2下载以及破解" href="http://jums.club/markdownPad2-break/"><link rel="next" title="hexo编辑器之HexoEditor安装以及闭坑教程" href="http://jums.club/hexo-editor/"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>hexo绑定个人域名如何实现https访问 | CrazyJums</title><meta name="keywords" content="problem solved,hexo"><meta name="author" content="CrazyJums"><meta name="copyright" content="CrazyJums"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1 发现问题当我们使用github+hexo+personal domain做自己的博客时，会发现只有http访问，不能进行https访问，关于个人域名的申请，请参考这篇博客，这里介绍一个网站cloudflare，他是国外的一个提供网站安全管理、性能优化及相关的技术支持的网站，github服务器在国外，所以有时候可能会被墙，这个时候cloudflare就发挥作用了。 2 解决问题首先去cloudf">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta property="og:type" content="article">
+<meta property="og:title" content="hexo绑定个人域名如何实现https访问">
+<meta property="og:url" content="http://jums.club/use-cloudfree-make-your-hexo-to-https/index.html">
+<meta property="og:site_name" content="CrazyJums">
+<meta property="og:description" content="1 发现问题当我们使用github+hexo+personal domain做自己的博客时，会发现只有http访问，不能进行https访问，关于个人域名的申请，请参考这篇博客，这里介绍一个网站cloudflare，他是国外的一个提供网站安全管理、性能优化及相关的技术支持的网站，github服务器在国外，所以有时候可能会被墙，这个时候cloudflare就发挥作用了。 2 解决问题首先去cloudf">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jums.club/images/article/6f42d391efe1d98e9ccf32f0d0df5d22.jpg">
+<meta property="article:published_time" content="2019-11-26T04:24:29.000Z">
+<meta property="article:modified_time" content="2021-09-06T01:25:42.676Z">
+<meta property="article:author" content="CrazyJums">
+<meta property="article:tag" content="problem solved">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jums.club/images/article/6f42d391efe1d98e9ccf32f0d0df5d22.jpg"><link rel="shortcut icon" href="/images/favicon_64.ico"><link rel="canonical" href="http://jums.club/use-cloudfree-make-your-hexo-to-https/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="yiOH4yHRf0eeVuko"/><meta name="qihu-site-verification" content="d182b3f28525f2db83acfaaf6e696dba"/><meta name="bing-site-verification" content="88688A1E5B9FE1F1F5EDAA94C73CD07D"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
   google_ad_client: '9335780214',
   enable_page_level_ads: 'true'
 });</script><script>var _hmt = _hmt || [];
@@ -62,98 +22,244 @@ if (autoChangeMode === '1') {
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-153513094-1', 'auto');
-ga('send', 'pageview');
-</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-153513094-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-153513094-1');
+</script><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
   translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
   copy: {
     success: 'Copy successfully',
     error: 'Copy error',
     noSupport: 'The browser does not support'
   },
-  bookmark: {
-    message_prev: 'Press',
-    message_next: 'to bookmark this page'
+  relativeDate: {
+    homepage: false,
+    post: false
   },
-  runtime_unit: 'days',
-  runtime: true,
-  copyright: {"languages":{"author":"Author: CrazyJums","link":"Link: ","source":"Source: CrazyJums","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: CrazyJums","link":"Link: ","source":"Source: CrazyJums","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
   Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
   },
-  baiduPush: true,
-  highlightCopy: true,
-  highlightLang: true,
-  isPhotoFigcaption: true,
-  islazyload: true,
-  isanchor: true    
-}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'hexo绑定个人域名如何实现https访问',
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
-  isSidebar: true
-  }</script><noscript><style>
-#nav {
-  opacity: 1
-}
-.justified-gallery img{
-  opacity: 1
-}
-</style></noscript><script data-ad-client="ca-pub-7924394983086399" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://jums.club/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">228</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">62</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div></div></div><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%8F%91%E7%8E%B0%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">1 发现问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">2 解决问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%9F%A5%E7%9C%8B%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">3 查看邮箱邮件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="toc-number">4.</span> <span class="toc-text">写在最后</span></a></li></ol></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://jums.club/images/article/6f42d391efe1d98e9ccf32f0d0df5d22.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">CrazyJums</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">hexo绑定个人域名如何实现https访问</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-11-26 12:24:29"><i class="far fa-calendar-alt fa-fw"></i> Created 2019-11-26</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-09-06 09:25:42"><i class="fas fa-history fa-fw"></i> Updated 2021-09-06</span></time></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i><span>Word count:</span><span class="word-count">348</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>Reading time: 1 min</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="far fa-eye fa-fw post-meta__icon"></i><span>Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><p>当我们使用<code>github</code>+<code>hexo</code>+<code>personal domain</code>做自己的博客时，会发现只有http访问，不能进行https访问，关于个人域名的申请，请参考<a href="https://jums.club/personal-domain-for-github-page/">这篇博客</a>，这里介绍一个网站<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">cloudflare</a>，他是国外的一个提供网站安全管理、性能优化及相关的技术支持的网站，<code>github</code>服务器在国外，所以有时候可能会被墙，这个时候<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">cloudflare</a>就发挥作用了。</p>
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><h3 id="2-解决问题"><a href="#2-解决问题" class="headerlink" title="2 解决问题"></a>2 解决问题</h3><p>首先去<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">cloudflare</a>注册一个账号，建议用邮箱注册。然后去首页添加自己的域名，如下所示：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191126125256.png" alt="add site"><br>然后在点击SSL/TLS按钮将加密模式选为<strong>flexible</strong>：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191126125421.png" alt="flexible"><br>再然后就是点击page ranks按钮添加对应的域名，一个是www，另一个是域名本身，如下：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191126125633.png" alt="page ranks"><br>再然后点击DNS按钮，填上下图所示的信息，你的域名本身以及带www的域名：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191126125913.png" alt="dns"><br>最后，修改域名提供商上的nameserver地址，我是用的<a href="https://jums.club/personal-domain-for-github-page/">腾讯云域名</a>，如下所示：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191126130329.png" alt="alert nameserver">   </p>
-<h3 id="3-查看邮箱邮件"><a href="#3-查看邮箱邮件" class="headerlink" title="3 查看邮箱邮件"></a>3 查看邮箱邮件</h3><p>当你设置完之后，过一会（官方说是72小时内）你会收到一封邮件，内容如下：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191126130752.png" alt="status active"><br>还有收到一封欢迎加入cloudflare的邮件，如下：<br><img src= "/img/loading.gif" data-src="https://jums.club/images/article/20191126130859.png" alt="welcome to cloudflare"></p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src= "/img/loading.gif" data-src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
-</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">CrazyJums</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://jums.club/use-cloudfree-make-your-hexo-to-https/">http://jums.club/use-cloudfree-make-your-hexo-to-https/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/problem-solved/">problem solved</a><a class="post-meta__tags" href="/tags/hexo/">hexo</a></div><div class="post_share"><div class="social-share" data-image="https://jums.club/images/article2/array_map_walk.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><button class="reward-button"><i class="fas fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://jums.club/images/wechatpay.jpg" alt="微信" onclick="window.open('https://jums.club/images/wechatpay.jpg')"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://jums.club/images/alipay.jpg" alt="支付宝" onclick="window.open('https://jums.club/images/alipay.jpg')"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></button></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/markdownPad2-break/"><img class="prev-cover" data-src="https://jums.club/images/article/5494434-5949697f2f2ba48c.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">markdownPad2下载以及破解</div></div></a></div><div class="next-post pull-right"><a href="/hexo-editor/"><img class="next-cover" data-src="https://jums.club/images/article/main.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">hexo编辑器之HexoEditor安装以及闭坑教程</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/config-ssh-for-github/" title="hexo绑定个人域名之后，不能访问，已经解决"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/github_coding.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2019-11-24</div><div class="relatedPosts_title">hexo绑定个人域名之后，不能访问，已经解决</div></div></a></div><div class="relatedPosts_item"><a href="/error-by-hexo-d-person-domain/" title="解决【hexo博客绑定个人域名之后，每次hexo d之后，页面总是失效，需要重新配置】"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/hexo.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2019-11-24</div><div class="relatedPosts_title">解决【hexo博客绑定个人域名之后，每次hexo d之后，页面总是失效，需要重新配置】</div></div></a></div><div class="relatedPosts_item"><a href="/fatal-remote-origin-already-exists/" title="解决【hexo博客绑定个人域名之后，每次hexo d之后，页面总是失效，需要重新配置】"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/hexo.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2019-11-24</div><div class="relatedPosts_title">解决【hexo博客绑定个人域名之后，每次hexo d之后，页面总是失效，需要重新配置】</div></div></a></div><div class="relatedPosts_item"><a href="/github-page-speed-access/" title="如何加速访问GitHub page页面"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/hexo.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-01-01</div><div class="relatedPosts_title">如何加速访问GitHub page页面</div></div></a></div><div class="relatedPosts_item"><a href="/npm-npmr-content/" title="npm/npmr文件的原始内容"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/npm.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2019-11-25</div><div class="relatedPosts_title">npm/npmr文件的原始内容</div></div></a></div><div class="relatedPosts_item"><a href="/pug-how-to-add-google-ad/" title="hexo主题如何添加谷歌广告，非Next主题教程，pug框架"><img class="relatedPosts_cover" data-src="https://jums.club/images/article/hexo.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-01-01</div><div class="relatedPosts_title">hexo主题如何添加谷歌广告，非Next主题教程，pug框架</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var requestSetting = function (from,set) {
-  var from = from
-  var setting = set.split(',').filter(function(item){
-  return from.indexOf(item) > -1
-  });
-  setting = setting.length == 0 ? from :setting;
-  return setting
+  isToc: true,
+  postUpdate: '2021-09-06 09:25:42'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">228</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">62</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://jums.club/images/article/6f42d391efe1d98e9ccf32f0d0df5d22.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">CrazyJums</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">hexo绑定个人域名如何实现https访问<a class="post-edit-link" href="null_posts/use-cloudfree-make-your-hexo-to-https.md" title="Edited on" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2019-11-26T04:24:29.000Z" title="Created 2019-11-26 12:24:29">2019-11-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-09-06T01:25:42.676Z" title="Updated 2021-09-06 09:25:42">2021-09-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">348</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>1min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="hexo绑定个人域名如何实现https访问"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/use-cloudfree-make-your-hexo-to-https/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/use-cloudfree-make-your-hexo-to-https/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="1-发现问题"><a href="#1-发现问题" class="headerlink" title="1 发现问题"></a>1 发现问题</h3><p>当我们使用<code>github</code>+<code>hexo</code>+<code>personal domain</code>做自己的博客时，会发现只有http访问，不能进行https访问，关于个人域名的申请，请参考<a href="https://jums.club/personal-domain-for-github-page/">这篇博客</a>，这里介绍一个网站<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">cloudflare</a>，他是国外的一个提供网站安全管理、性能优化及相关的技术支持的网站，<code>github</code>服务器在国外，所以有时候可能会被墙，这个时候<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">cloudflare</a>就发挥作用了。</p>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><h3 id="2-解决问题"><a href="#2-解决问题" class="headerlink" title="2 解决问题"></a>2 解决问题</h3><p>首先去<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">cloudflare</a>注册一个账号，建议用邮箱注册。然后去首页添加自己的域名，如下所示：<br><img src="https://jums.club/images/article/20191126125256.png" alt="add site"><br>然后在点击SSL/TLS按钮将加密模式选为<strong>flexible</strong>：<br><img src="https://jums.club/images/article/20191126125421.png" alt="flexible"><br>再然后就是点击page ranks按钮添加对应的域名，一个是www，另一个是域名本身，如下：<br><img src="https://jums.club/images/article/20191126125633.png" alt="page ranks"><br>再然后点击DNS按钮，填上下图所示的信息，你的域名本身以及带www的域名：<br><img src="https://jums.club/images/article/20191126125913.png" alt="dns"><br>最后，修改域名提供商上的nameserver地址，我是用的<a href="https://jums.club/personal-domain-for-github-page/">腾讯云域名</a>，如下所示：<br><img src="https://jums.club/images/article/20191126130329.png" alt="alert nameserver">   </p>
+<h3 id="3-查看邮箱邮件"><a href="#3-查看邮箱邮件" class="headerlink" title="3 查看邮箱邮件"></a>3 查看邮箱邮件</h3><p>当你设置完之后，过一会（官方说是72小时内）你会收到一封邮件，内容如下：<br><img src="https://jums.club/images/article/20191126130752.png" alt="status active"><br>还有收到一封欢迎加入cloudflare的邮件，如下：<br><img src="https://jums.club/images/article/20191126130859.png" alt="welcome to cloudflare"></p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">CrazyJums</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://jums.club/use-cloudfree-make-your-hexo-to-https/">http://jums.club/use-cloudfree-make-your-hexo-to-https/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/problem-solved/">problem solved</a><a class="post-meta__tags" href="/tags/hexo/">hexo</a></div><div class="post_share"><div class="social-share" data-image="https://jums.club/images/article/6f42d391efe1d98e9ccf32f0d0df5d22.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> Donate</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/wechatpay.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li><li class="reward-item"><a href="/images/bitcoin.jpg" target="_blank"><img class="post-qr-code-img" src="/images/bitcoin.jpg" alt="bitcoin"/></a><div class="post-qr-code-desc">bitcoin</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/markdownPad2-break/"><img class="prev-cover" src="https://jums.club/images/article/5494434-5949697f2f2ba48c.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">markdownPad2下载以及破解</div></div></a></div><div class="next-post pull-right"><a href="/hexo-editor/"><img class="next-cover" src="https://jums.club/images/article/main.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">hexo编辑器之HexoEditor安装以及闭坑教程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/config-ssh-for-github/" title="hexo绑定个人域名之后，不能访问，已经解决"><img class="cover" src="https://jums.club/images/article/github_coding.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-11-24</div><div class="title">hexo绑定个人域名之后，不能访问，已经解决</div></div></a></div><div><a href="/error-by-hexo-d-person-domain/" title="解决【hexo博客绑定个人域名之后，每次hexo d之后，页面总是失效，需要重新配置】"><img class="cover" src="https://jums.club/images/article/hexo.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-11-24</div><div class="title">解决【hexo博客绑定个人域名之后，每次hexo d之后，页面总是失效，需要重新配置】</div></div></a></div><div><a href="/fatal-remote-origin-already-exists/" title="解决【hexo博客绑定个人域名之后，每次hexo d之后，页面总是失效，需要重新配置】"><img class="cover" src="https://jums.club/images/article/hexo.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-11-24</div><div class="title">解决【hexo博客绑定个人域名之后，每次hexo d之后，页面总是失效，需要重新配置】</div></div></a></div><div><a href="/github-page-speed-access/" title="如何加速访问GitHub page页面"><img class="cover" src="https://jums.club/images/article/hexo.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-01-01</div><div class="title">如何加速访问GitHub page页面</div></div></a></div><div><a href="/npm-npmr-content/" title="npm/npmr文件的原始内容"><img class="cover" src="https://jums.club/images/article/npm.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-11-25</div><div class="title">npm/npmr文件的原始内容</div></div></a></div><div><a href="/pug-how-to-add-google-ad/" title="hexo主题如何添加谷歌广告，非Next主题教程，pug框架"><img class="cover" src="https://jums.club/images/article/hexo.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-01-01</div><div class="title">hexo主题如何添加谷歌广告，非Next主题教程，pug框架</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">CrazyJums</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">228</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">62</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/crazyjums"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/crazyjums" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://jums.club/images/mywechat.jpg" target="_blank" title="Wechat"><i class="fa fa-comments"></i></a><a class="social-icon" href="https://blog.csdn.net/qq_33521184" target="_blank" title="Blog"><i class="fa fa-bold"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">如果有疑问可以微信我：crazyjumsz</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%8F%91%E7%8E%B0%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">1 发现问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">2 解决问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%9F%A5%E7%9C%8B%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">3 查看邮箱邮件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="toc-number">4.</span> <span class="toc-text">写在最后</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/array-walk-and-array-map-diff/" title="PHP中array_walk和array_map的区别？"><img src="https://jums.club/images/article2/array_map_walk.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PHP中array_walk和array_map的区别？"/></a><div class="content"><a class="title" href="/array-walk-and-array-map-diff/" title="PHP中array_walk和array_map的区别？">PHP中array_walk和array_map的区别？</a><time datetime="2022-01-06T12:39:23.000Z" title="Created 2022-01-06 20:39:23">2022-01-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/php-use-redis-scan-bug/" title="php使用redis的scan命令时遇到的坑"><img src="https://jums.club/images/article2/redis_scan.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="php使用redis的scan命令时遇到的坑"/></a><div class="content"><a class="title" href="/php-use-redis-scan-bug/" title="php使用redis的scan命令时遇到的坑">php使用redis的scan命令时遇到的坑</a><time datetime="2022-01-05T04:15:54.000Z" title="Created 2022-01-05 12:15:54">2022-01-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/php-dist-prod-and-test/" title="php区分线上环境和测试环境"><img src="https://jums.club/images/article2/v2-358b5d13d1655b793a9cc4853d9cb750_b.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="php区分线上环境和测试环境"/></a><div class="content"><a class="title" href="/php-dist-prod-and-test/" title="php区分线上环境和测试环境">php区分线上环境和测试环境</a><time datetime="2021-11-30T03:18:35.000Z" title="Created 2021-11-30 11:18:35">2021-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/vue-tutorials/" title="vue教程"><img src="https://jums.club/images/article2/vue.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue教程"/></a><div class="content"><a class="title" href="/vue-tutorials/" title="vue教程">vue教程</a><time datetime="2021-11-27T07:23:44.000Z" title="Created 2021-11-27 15:23:44">2021-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/php-zhuanpan/" title="php实现转盘游戏后台奖品按照概率发放"><img src="https://jums.club/images/article2/zhuanpantupian-40233437_3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="php实现转盘游戏后台奖品按照概率发放"/></a><div class="content"><a class="title" href="/php-zhuanpan/" title="php实现转盘游戏后台奖品按照概率发放">php实现转盘游戏后台奖品按照概率发放</a><time datetime="2021-11-18T06:44:59.000Z" title="Created 2021-11-18 14:44:59">2021-11-18</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://jums.club/images/article/6f42d391efe1d98e9ccf32f0d0df5d22.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2022 By CrazyJums</div><div class="footer_custom_text">独立思考、不盲从、不撒谎</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '2lPeEraOnOk7GF6ou1WWs6BP-gzGzoHsz',
+      appKey: 'nXeW1bmcRE4TDrorjmdqj0ML',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
 }
 
-var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
-var requiredFields = requestSetting(['nick','mail'],'false')
-
-window.valine = new Valine({
-  el:'#vcomment',
-  appId: '2lPeEraOnOk7GF6ou1WWs6BP-gzGzoHsz',
-  appKey: 'nXeW1bmcRE4TDrorjmdqj0ML',
-  placeholder: 'Please leave your footprints',
-  avatar: 'monsterid',
-  meta: guestInfo,
-  pageSize: '10',
-  lang: 'en',
-  recordIP: false,
-  serverURLs: '',
-  emojiCDN: '',
-  emojiMaps: "",
-  enableQQ: false,
-  requiredFields: requiredFields
-});</script></div></article></main><footer id="footer" style="background-image: url(https://jums.club/images/article/6f42d391efe1d98e9ccf32f0d0df5d22.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2022 By CrazyJums</div><div class="footer_custom_text">独立思考、不盲从、不撒谎</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button id="readmode" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button class="translate_chn_to_cht" id="translateLink" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="Setting"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="scroll_to_comment fas fa-comments"></i></a><button class="close" id="mobile-toc-button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script id="ribbon_piao" mobile="true" src="/js/third-party/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script><script>if (document.getElementsByClassName('mermaid').length) {
-  loadScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',function () {
-    mermaid.initialize({
-      theme: 'default',
-  })
-})
-}</script><script>var endLoading = function () {
-  document.body.style.overflow = 'auto';
-  document.getElementById('loading-box').classList.add("loaded")
-}
-window.addEventListener('load',endLoading)</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({{ JSON.stringify(config) }});
 </script>
