@@ -485,14 +485,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/vim-tutoraials/</loc>
+    <loc>http://jums.club/virtualenv-start/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/virtualenv-start/</loc>
+    <loc>http://jums.club/vim-tutoraials/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -534,14 +534,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/unicode-error-sloved/</loc>
+    <loc>http://jums.club/typra-usage/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/typra-usage/</loc>
+    <loc>http://jums.club/unicode-error-sloved/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -856,14 +856,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/nsq-and-java/</loc>
+    <loc>http://jums.club/personal-domain-for-github-page/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/personal-domain-for-github-page/</loc>
+    <loc>http://jums.club/nsq-and-java/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -912,14 +912,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/message-queue/</loc>
+    <loc>http://jums.club/memery-leak/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/memery-leak/</loc>
+    <loc>http://jums.club/message-queue/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -996,14 +996,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/jvm-param-info/</loc>
+    <loc>http://jums.club/jvm-reference/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/jvm-reference/</loc>
+    <loc>http://jums.club/jvm-param-info/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1045,14 +1045,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/java-scanner/</loc>
+    <loc>http://jums.club/java-reflect/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/java-reflect/</loc>
+    <loc>http://jums.club/java-scanner/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1094,13 +1094,6 @@
   </url>
   
   <url>
-    <loc>http://jums.club/java-heap-overflow-thread/</loc>
-    
-    <lastmod>2021-09-06</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jums.club/java-inner-class/</loc>
     
     <lastmod>2021-09-06</lastmod>
@@ -1108,7 +1101,7 @@
   </url>
   
   <url>
-    <loc>http://jums.club/java-class-method/</loc>
+    <loc>http://jums.club/java-heap-overflow-thread/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1116,6 +1109,13 @@
   
   <url>
     <loc>http://jums.club/java-gc/</loc>
+    
+    <lastmod>2021-09-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/java-class-method/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1157,13 +1157,6 @@
   </url>
   
   <url>
-    <loc>http://jums.club/install-mysql-on-linux/</loc>
-    
-    <lastmod>2021-09-06</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jums.club/is-match/</loc>
     
     <lastmod>2021-09-06</lastmod>
@@ -1171,7 +1164,7 @@
   </url>
   
   <url>
-    <loc>http://jums.club/http-error-code/</loc>
+    <loc>http://jums.club/install-mysql-on-linux/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1179,6 +1172,13 @@
   
   <url>
     <loc>http://jums.club/https-theory/</loc>
+    
+    <lastmod>2021-09-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/http-error-code/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1213,14 +1213,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/how-to-use-github-API/</loc>
+    <loc>http://jums.club/how-to-use-python-command-param/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/how-to-use-python-command-param/</loc>
+    <loc>http://jums.club/how-to-use-github-API/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1276,14 +1276,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/hexo-search-function/</loc>
+    <loc>http://jums.club/hexo-hot/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/hexo-hot/</loc>
+    <loc>http://jums.club/hexo-search-function/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1311,14 +1311,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/google-logo-color-code/</loc>
+    <loc>http://jums.club/github-project/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/github-project/</loc>
+    <loc>http://jums.club/google-logo-color-code/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1332,14 +1332,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/github-how-to-create-two-more-page/</loc>
+    <loc>http://jums.club/github-more-than-100/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/github-more-than-100/</loc>
+    <loc>http://jums.club/github-how-to-create-two-more-page/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1374,14 +1374,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/git-delete-file-s/</loc>
+    <loc>http://jums.club/git-connect-to-github/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/git-connect-to-github/</loc>
+    <loc>http://jums.club/git-delete-file-s/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1409,14 +1409,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/error-by-hexo-d-person-domain/</loc>
+    <loc>http://jums.club/enum-singleton/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/enum-singleton/</loc>
+    <loc>http://jums.club/error-by-hexo-d-person-domain/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1521,14 +1521,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/computer-around-ebook/</loc>
+    <loc>http://jums.club/conclusion-hexo-1/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/conclusion-hexo-1/</loc>
+    <loc>http://jums.club/computer-around-ebook/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1549,14 +1549,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/change-file-name-by-python/</loc>
+    <loc>http://jums.club/charles-https-with-ios/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/charles-https-with-ios/</loc>
+    <loc>http://jums.club/change-file-name-by-python/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1719,20 +1719,6 @@
   </url>
   
   <url>
-    <loc>http://jums.club/tags/Python/</loc>
-    <lastmod>2022-01-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://jums.club/tags/code/</loc>
-    <lastmod>2022-01-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://jums.club/tags/TensorFlow/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
@@ -1747,7 +1733,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/tags/%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://jums.club/tags/Python/</loc>
+    <lastmod>2022-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jums.club/tags/code/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1761,7 +1754,7 @@
   </url>
   
   <url>
-    <loc>http://jums.club/tags/PHP/</loc>
+    <loc>http://jums.club/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1782,6 +1775,13 @@
   </url>
   
   <url>
+    <loc>http://jums.club/tags/PHP/</loc>
+    <lastmod>2022-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://jums.club/tags/summary/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
@@ -1796,14 +1796,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/tags/MySQL/</loc>
+    <loc>http://jums.club/tags/Leetcode/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://jums.club/tags/Leetcode/</loc>
+    <loc>http://jums.club/tags/MySQL/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1838,14 +1838,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/tags/GitHub/</loc>
+    <loc>http://jums.club/tags/tool/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://jums.club/tags/tool/</loc>
+    <loc>http://jums.club/tags/GitHub/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
