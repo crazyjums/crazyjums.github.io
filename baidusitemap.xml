@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://jums.club/php-avoid-try-catch/</loc>
+    <lastmod>2022-01-17</lastmod>
+  </url>
+  <url>
     <loc>http://jums.club/diff-v-bind-and-v-model/</loc>
     <lastmod>2022-01-17</lastmod>
   </url>
@@ -325,11 +329,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/sql-tutorials/</loc>
+    <loc>http://jums.club/ssh-connect-to-github/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/ssh-connect-to-github/</loc>
+    <loc>http://jums.club/sql-tutorials/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -437,11 +441,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/postman-tutoraials/</loc>
+    <loc>http://jums.club/postman-caton/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/postman-caton/</loc>
+    <loc>http://jums.club/postman-tutoraials/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -481,11 +485,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/mysql-to-another-disk/</loc>
+    <loc>http://jums.club/next-change-copyright/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/next-change-copyright/</loc>
+    <loc>http://jums.club/mysql-to-another-disk/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -545,11 +549,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/jvm-param-info/</loc>
+    <loc>http://jums.club/jvm-reference/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/jvm-reference/</loc>
+    <loc>http://jums.club/jvm-param-info/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -557,11 +561,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/jvm-info/</loc>
+    <loc>http://jums.club/jmm/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/jmm/</loc>
+    <loc>http://jums.club/jvm-info/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -657,11 +661,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/html-lunfan-effect/</loc>
+    <loc>http://jums.club/how-to-write-a-document-for-your-project/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/how-to-write-a-document-for-your-project/</loc>
+    <loc>http://jums.club/html-lunfan-effect/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -889,11 +893,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/awesome-spider-project/</loc>
+    <loc>http://jums.club/awk-cases/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/awk-cases/</loc>
+    <loc>http://jums.club/awesome-spider-project/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
