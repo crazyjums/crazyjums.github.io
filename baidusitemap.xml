@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://jums.club/docker-tutorials/</loc>
+    <lastmod>2022-01-18</lastmod>
+  </url>
+  <url>
     <loc>http://jums.club/git-tutoraials/</loc>
     <lastmod>2022-01-17</lastmod>
   </url>
@@ -165,10 +169,6 @@
     <lastmod>2021-09-22</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/docker-tutorials/</loc>
-    <lastmod>2021-09-22</lastmod>
-  </url>
-  <url>
     <loc>http://jums.club/dip/</loc>
     <lastmod>2021-09-22</lastmod>
   </url>
@@ -257,11 +257,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/vim-tutoraials/</loc>
+    <loc>http://jums.club/virtualenv-start/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/virtualenv-start/</loc>
+    <loc>http://jums.club/vim-tutoraials/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -361,15 +361,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/sloved-hexo-title/</loc>
-    <lastmod>2021-09-06</lastmod>
-  </url>
-  <url>
     <loc>http://jums.club/slove-windows-account-error/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/sava-our-life/</loc>
+    <loc>http://jums.club/sloved-hexo-title/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -377,15 +373,19 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
+    <loc>http://jums.club/sava-our-life/</loc>
+    <lastmod>2021-09-06</lastmod>
+  </url>
+  <url>
     <loc>http://jums.club/restful-introduction/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/redis-tutorials/</loc>
+    <loc>http://jums.club/redis-start-error/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/redis-start-error/</loc>
+    <loc>http://jums.club/redis-tutorials/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -441,11 +441,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/postman-caton/</loc>
+    <loc>http://jums.club/postman-tutoraials/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/postman-tutoraials/</loc>
+    <loc>http://jums.club/postman-caton/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -485,11 +485,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/mysql-to-another-disk/</loc>
+    <loc>http://jums.club/next-change-copyright/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/next-change-copyright/</loc>
+    <loc>http://jums.club/mysql-to-another-disk/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -613,11 +613,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/java-class-method/</loc>
+    <loc>http://jums.club/java-gc/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/java-gc/</loc>
+    <loc>http://jums.club/java-class-method/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -757,19 +757,19 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/git-error-1/</loc>
-    <lastmod>2021-09-06</lastmod>
-  </url>
-  <url>
     <loc>http://jums.club/git-error-2/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/git-connect-to-github/</loc>
+    <loc>http://jums.club/git-error-1/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
     <loc>http://jums.club/git-delete-file-s/</loc>
+    <lastmod>2021-09-06</lastmod>
+  </url>
+  <url>
+    <loc>http://jums.club/git-connect-to-github/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -817,11 +817,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/crack-vmware-pro/</loc>
+    <loc>http://jums.club/crack-pycharm-perfessional/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/crack-pycharm-perfessional/</loc>
+    <loc>http://jums.club/crack-vmware-pro/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
