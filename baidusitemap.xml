@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://jums.club/linux-for-lnmp/</loc>
+    <lastmod>2022-01-21</lastmod>
+  </url>
+  <url>
+    <loc>http://jums.club/diff-cgi-fastcgi-php-cgi-php-fpm/</loc>
+    <lastmod>2022-01-20</lastmod>
+  </url>
+  <url>
     <loc>http://jums.club/docker-tutorials/</loc>
     <lastmod>2022-01-19</lastmod>
   </url>
@@ -35,10 +43,6 @@
   <url>
     <loc>http://jums.club/php-use-redis-scan-bug/</loc>
     <lastmod>2022-01-05</lastmod>
-  </url>
-  <url>
-    <loc>http://jums.club/linux-for-lnmp/</loc>
-    <lastmod>2021-12-17</lastmod>
   </url>
   <url>
     <loc>http://jums.club/php-dist-prod-and-test/</loc>
@@ -229,11 +233,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/wps-set-cascade-number/</loc>
+    <loc>http://jums.club/write-blog-via-github/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/write-blog-via-github/</loc>
+    <loc>http://jums.club/wps-set-cascade-number/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -285,11 +289,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/unicode-error-sloved/</loc>
+    <loc>http://jums.club/typra-usage/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/typra-usage/</loc>
+    <loc>http://jums.club/unicode-error-sloved/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -369,11 +373,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/sava-our-life/</loc>
+    <loc>http://jums.club/sleep-wait/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/sleep-wait/</loc>
+    <loc>http://jums.club/sava-our-life/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -393,19 +397,19 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/re-sub/</loc>
-    <lastmod>2021-09-06</lastmod>
-  </url>
-  <url>
     <loc>http://jums.club/redirecting-forword/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/python-tab-error/</loc>
+    <loc>http://jums.club/re-sub/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
     <loc>http://jums.club/qing-yu-nian-resource/</loc>
+    <lastmod>2021-09-06</lastmod>
+  </url>
+  <url>
+    <loc>http://jums.club/python-tab-error/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -441,11 +445,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/postman-caton/</loc>
+    <loc>http://jums.club/postman-tutoraials/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/postman-tutoraials/</loc>
+    <loc>http://jums.club/postman-caton/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -549,11 +553,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/jvm-param-info/</loc>
+    <loc>http://jums.club/jvm-reference/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/jvm-reference/</loc>
+    <loc>http://jums.club/jvm-param-info/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -613,11 +617,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/java-class-method/</loc>
+    <loc>http://jums.club/java-gc/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/java-gc/</loc>
+    <loc>http://jums.club/java-class-method/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -641,19 +645,19 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/is-match/</loc>
-    <lastmod>2021-09-06</lastmod>
-  </url>
-  <url>
     <loc>http://jums.club/install-mysql-on-linux/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/http-error-code/</loc>
+    <loc>http://jums.club/is-match/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
     <loc>http://jums.club/https-theory/</loc>
+    <lastmod>2021-09-06</lastmod>
+  </url>
+  <url>
+    <loc>http://jums.club/http-error-code/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -709,11 +713,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/hexo-search-function/</loc>
+    <loc>http://jums.club/hexo-hot/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/hexo-hot/</loc>
+    <loc>http://jums.club/hexo-search-function/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -741,11 +745,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/github-how-to-create-two-more-page/</loc>
+    <loc>http://jums.club/github-more-than-100/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/github-more-than-100/</loc>
+    <loc>http://jums.club/github-how-to-create-two-more-page/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -773,11 +777,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/fatal-remote-origin-already-exists/</loc>
+    <loc>http://jums.club/fliplo-clock-app/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/fliplo-clock-app/</loc>
+    <loc>http://jums.club/fatal-remote-origin-already-exists/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -845,11 +849,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/computer-around-ebook/</loc>
+    <loc>http://jums.club/conclusion-hexo-1/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/conclusion-hexo-1/</loc>
+    <loc>http://jums.club/computer-around-ebook/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -893,11 +897,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/awk-cases/</loc>
+    <loc>http://jums.club/awesome-spider-project/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/awesome-spider-project/</loc>
+    <loc>http://jums.club/awk-cases/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
@@ -913,11 +917,11 @@
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/HashMap-and-HashTable/</loc>
+    <loc>http://jums.club/How-to-connect-remote-redis-server/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
-    <loc>http://jums.club/How-to-connect-remote-redis-server/</loc>
+    <loc>http://jums.club/HashMap-and-HashTable/</loc>
     <lastmod>2021-09-06</lastmod>
   </url>
   <url>
