@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Before you start work, you should know ... | CrazyJums</title><meta name="keywords" content="Linux,Redis,MySQL,Git"><meta name="author" content="CrazyJums"><meta name="copyright" content="CrazyJums"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Linux可以掌握常用工具的日常使用场景：   awk统计ip   awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，$NF）、BEGIN、END、FILENAME、ARGC、ARGV   printf：格式化输出   print：正常输出   模式匹配：匹配字符使用&#x2F;[string]&#x2F;括起来   匹配所有行中只要含root的行：awk &#39;&#x2F;root&#x2F; &amp;#12">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Before you start work, you should know ... | CrazyJums</title><meta name="keywords" content="Linux,Redis,MySQL,Git"><meta name="author" content="CrazyJums"><meta name="copyright" content="CrazyJums"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Linux可以掌握常用工具的日常使用场景：    awk统计ip    awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，$NF）、BEGIN、END、FILENAME、ARGC、ARGV    printf：格式化输出    print：正常输出    模式匹配：匹配字符使用&#x2F;[string]&#x2F;括起来   匹配所有行中只要含root的行：awk &#39;&#x2F;root&#x2F;">
 <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta property="og:type" content="article">
 <meta property="og:title" content="Before you start work, you should know ...">
 <meta property="og:url" content="http://jums.club/brfore-work/index.html">
 <meta property="og:site_name" content="CrazyJums">
-<meta property="og:description" content="Linux可以掌握常用工具的日常使用场景：   awk统计ip   awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，$NF）、BEGIN、END、FILENAME、ARGC、ARGV   printf：格式化输出   print：正常输出   模式匹配：匹配字符使用&#x2F;[string]&#x2F;括起来   匹配所有行中只要含root的行：awk &#39;&#x2F;root&#x2F; &amp;#12">
+<meta property="og:description" content="Linux可以掌握常用工具的日常使用场景：    awk统计ip    awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，$NF）、BEGIN、END、FILENAME、ARGC、ARGV    printf：格式化输出    print：正常输出    模式匹配：匹配字符使用&#x2F;[string]&#x2F;括起来   匹配所有行中只要含root的行：awk &#39;&#x2F;root&#x2F;">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://jums.club/images/article/apps.46003.14259451864568504.ad5e5d07-0fbb-46ed-b9b6-a1b781645691.jpg">
 <meta property="article:published_time" content="2021-06-24T04:50:35.000Z">
@@ -168,23 +168,29 @@ gtag('config', 'UA-153513094-1');
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">232</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">63</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://jums.club/images/article/apps.46003.14259451864568504.ad5e5d07-0fbb-46ed-b9b6-a1b781645691.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">CrazyJums</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Before you start work, you should know ...<a class="post-edit-link" href="https://github.com/crazyjums/blog3/edit/master/source/_posts/brfore-work.md" title="Edited on" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-06-24T04:50:35.000Z" title="Created 2021-06-24 12:50:35">2021-06-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-09-22T01:48:22.855Z" title="Updated 2021-09-22 09:48:22">2021-09-22</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">6.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>30min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Before you start work, you should know ..."><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/brfore-work/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/brfore-work/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><p>可以掌握常用工具的日常使用场景：</p>
+    })(window)</script><meta name="generator" content="Hexo 5.4.1"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">232</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">63</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://jums.club/images/article/apps.46003.14259451864568504.ad5e5d07-0fbb-46ed-b9b6-a1b781645691.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">CrazyJums</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Before you start work, you should know ...<a class="post-edit-link" href="https://github.com/crazyjums/blog3/edit/master/source/_posts/brfore-work.md" title="Edited on" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-06-24T04:50:35.000Z" title="Created 2021-06-24 12:50:35">2021-06-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-09-22T01:48:22.855Z" title="Updated 2021-09-22 09:48:22">2021-09-22</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">6.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>31min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Before you start work, you should know ..."><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/brfore-work/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/brfore-work/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><p>可以掌握常用工具的日常使用场景：</p>
 <!-- hexo-inject:begin --><!-- hexo-inject:end --><ul>
-<li><input disabled="" type="checkbox"> <p>awk统计ip</p>
+<li><p><input disabled="" type="checkbox"> 
+awk统计ip</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> <p>awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，<code>$NF</code>）、BEGIN、END、FILENAME、ARGC、ARGV</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+awk基本内置变量：FS、OFS、RS、ORS、NR、NF（输出最后一个字段，<code>$NF</code>）、BEGIN、END、FILENAME、ARGC、ARGV</p>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>printf：格式化输出</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+printf：格式化输出</p>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>print：正常输出</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+print：正常输出</p>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>模式匹配：匹配字符使用<code>/[string]/</code>括起来</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+模式匹配：匹配字符使用<code>/[string]/</code>括起来</p>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> 匹配所有行中只要含<code>root</code>的行：<code>awk &#39;/root/ &#123;print $0&#125; 1.txt&#39;</code></li>
 <li><input checked="" disabled="" type="checkbox"> <code>^</code>符号表示开头，比如：<code>awk &#39;/^root/ &#123;print $0&#125; 1.txt&#39;</code>，该语句输出<code>1.txt</code>文件中的所有以<code>root</code>开头的行</li>
 </ul>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>运算符匹配：</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+运算符匹配：</p>
 <blockquote>
 <p><code>&gt;</code>、<code>&lt;</code>、<code>&gt;=</code>、<code>&lt;=</code>、<code>==</code>、<code>!=</code>、<code>~</code>（匹配正则表达式）、<code>!~</code>（不匹配正则表达式）</p>
 <ul>
@@ -192,7 +198,8 @@ gtag('config', 'UA-153513094-1');
 </ul>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>布尔运算符：</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+布尔运算符：</p>
 <blockquote>
 <p><code>&amp;&amp;</code>，与符号用于连接多个匹配关系：<code>$3&gt;50 &amp;&amp; $3&lt;100</code>，即第三个变量大于50且小于100</p>
 <p><code>||</code>，或符号</p>
@@ -202,7 +209,8 @@ gtag('config', 'UA-153513094-1');
 </li>
 </ul>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>grep</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+grep</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://man7.org/linux/man-pages/man1/grep.1.html">grep</a>, egrep, fgrep - print lines that match patterns. Search for content in a file.</p>
 <p>Basic usage:</p>
@@ -210,50 +218,48 @@ gtag('config', 'UA-153513094-1');
 <li><p>grep “search_content” filename</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> [root@192 pig]<span class="comment"># grep &quot;this&quot; 1.txt </span></span><br><span class="line">1 this is a line</span><br><span class="line">2 this is the no.2 line</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>grep <code>-c</code> “search_content” filename   //count the [search content] in filename</p>
+<li><p>grep <code>-c</code> “search_content” filename   &#x2F;&#x2F;count the [search content] in filename</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -c &quot;this&quot; 1.txt </span></span><br><span class="line">2</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>grep <code>-i</code> “search_content” filename   //ignore case</p>
+<li><p>grep <code>-i</code> “search_content” filename   &#x2F;&#x2F;ignore case</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -i &quot;this&quot; 1.txt </span></span><br><span class="line">1 this is a line</span><br><span class="line">2 this is the no.2 line</span><br><span class="line">This is me.</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>grep <code>-n</code>  “search_content” filename   //show line number</p>
+<li><p>grep <code>-n</code>  “search_content” filename   &#x2F;&#x2F;show line number</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -n &quot;this&quot; 1.txt </span></span><br><span class="line">1:1 this is a line</span><br><span class="line">2:2 this is the no.2 line</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>grep <code>-v</code> “search_content” filename   //match all strings in reverse</p>
+<li><p>grep <code>-v</code> “search_content” filename   &#x2F;&#x2F;match all strings in reverse</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -v &quot;this&quot; 1.txt </span></span><br><span class="line">how are you now.</span><br><span class="line">I am fine, thank you.</span><br><span class="line">This is me.</span><br><span class="line">[root@192 pig]<span class="comment"># cat 1.txt </span></span><br><span class="line">1 this is a line</span><br><span class="line">2 this is the no.2 line</span><br><span class="line">how are you now.</span><br><span class="line">I am fine, thank you.</span><br><span class="line">This is me.</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>union the parameters together</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -ic &quot;this&quot; 1.txt </span></span><br><span class="line">3</span><br></pre></td></tr></table></figure>
-
-</li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@192 pig]<span class="comment"># grep -ic &quot;this&quot; 1.txt </span></span><br><span class="line">3</span><br></pre></td></tr></table></figure></li>
 </ul>
 <p>Regular Match:</p>
 <ul>
 <li><p><code>*</code>: Refers to match one character zero or more times</p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628162948.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628162948.png"></p>
 </li>
 <li><p><code>.</code>: When you use it only, it means match all strings. If you use it with search content, it means any character.</p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628162911.png" alt=""></p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628163024.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628162911.png"></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628163024.png"></p>
 </li>
 <li><p><code>&#123;n,m&#125;</code>: Match a character between <code>n</code> and <code>m</code> times.</p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628163822.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628163822.png"></p>
 </li>
 <li><p><code>^</code>: Start character.</p>
 </li>
-<li><p><code>$</code>: End character.    //Use <code>^</code> and <code>$</code> can match the IP address specifically.</p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628163947.png" alt=""></p>
+<li><p><code>$</code>: End character.    &#x2F;&#x2F;Use <code>^</code> and <code>$</code> can match the IP address specifically.</p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628163947.png"></p>
 </li>
 <li><p><code>^$</code>: This means match a empty line.</p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628164225.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628164225.png"></p>
 </li>
 <li><p><code>\b</code>: Bountdary match.</p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628165211.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628165211.png"></p>
 </li>
 <li><p><code>-B</code>: None boundary match. </p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628165538.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628165538.png"></p>
 </li>
-<li><p><code>[]</code>: range matge. For example, [0-9] refers to all digits between 0 and 9.    //[a-z]. [A-Z]. [0-9]</p>
+<li><p><code>[]</code>: range matge. For example, [0-9] refers to all digits between 0 and 9.    &#x2F;&#x2F;[a-z]. [A-Z]. [0-9]</p>
 </li>
 <li><p><code>\w</code>: Refers to <code>[0-9a-zA-Z]</code>.</p>
 </li>
@@ -264,18 +270,19 @@ gtag('config', 'UA-153513094-1');
 <ul>
 <li><code>?</code>: Match the previous character zero or one time.</li>
 </ul>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628170307.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628170307.png"></p>
 <ul>
 <li><p><code>+</code>: Match the previous character one or more times.</p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628170521.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628170521.png"></p>
 </li>
 <li><p><code>()</code>: It’s a selection, offen use with <code>|</code> together, <code>|</code> means or.</p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628171103.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210628171103.png"></p>
 </li>
 </ul>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>find</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+find</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://man7.org/linux/man-pages/man1/find.1.html">find</a> - search for files in a directory hierarchy</p>
 <p><a target="_blank" rel="noopener" href="https://www.linuxcool.com/find">find tutorials in chinese</a></p>
@@ -349,18 +356,18 @@ gtag('config', 'UA-153513094-1');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ find -<span class="built_in">type</span> f </span><br></pre></td></tr></table></figure>
 </li>
 <li><p><code>find -exec</code> or <code>find -ok</code>, execute a command after find. The  template  is <code>-exex &#123;&#125; \;</code>, You should know there is a space between <code>&#123;&#125;</code> and <code>\;</code>.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ find -<span class="built_in">type</span> d -empty -<span class="built_in">exec</span> touch /2.txt &#123;&#125; \;   // find a enpty directory, and touch a file named 2.txt</span><br><span class="line">$ $ find -<span class="built_in">type</span> d -empty -ok touch /2.txt &#123;&#125; \;   // when you use <span class="string">&quot;ok&quot;</span> instead of <span class="string">&quot;exec&quot;</span>, it will <span class="built_in">let</span> you confirm and execute.</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ find -<span class="built_in">type</span> d -empty -<span class="built_in">exec</span> <span class="built_in">touch</span> /2.txt &#123;&#125; \;   // find a enpty directory, and <span class="built_in">touch</span> a file named 2.txt</span><br><span class="line">$ $ find -<span class="built_in">type</span> d -empty -ok <span class="built_in">touch</span> /2.txt &#123;&#125; \;   // when you use <span class="string">&quot;ok&quot;</span> instead of <span class="string">&quot;exec&quot;</span>, it will <span class="built_in">let</span> you confirm and execute.</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629115716.png" alt=""></p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629115748.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629115716.png"></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629115748.png"></p>
 </li>
 <li><p><code>-size</code>, Find files by size. </p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629120948.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629120948.png"></p>
 </li>
 <li><p><code>-user</code>. Find by owner. </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ find /directory -user [uesr name]</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629121218.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629121218.png"></p>
 </li>
 <li><p><code>-group</code>. Find by group.</p>
 </li>
@@ -370,10 +377,11 @@ gtag('config', 'UA-153513094-1');
 <p><code>locate</code> command is faster than <code>find</code>, because <code>locate</code> is find from a database, but this database need manual to update.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// install locate</span><br><span class="line">$ sudo yum install mlocate</span><br><span class="line">// update database</span><br><span class="line">$ updatedb</span><br><span class="line">// find a file</span><br><span class="line">$ locate /etc/my</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629123141.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629123141.png"></p>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>curl</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+curl</p>
 <blockquote>
 <p>curl means client URL tool, curl in short.</p>
 <p><a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2019/09/curl-reference.html">curl tutorials in chinese</a></p>
@@ -396,9 +404,11 @@ gtag('config', 'UA-153513094-1');
 </ul>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>了解：logrotate，rsync</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+了解：logrotate，rsync</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> <p>掌握ansible基本用法：主要用于批量查日志，执行命令。</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+掌握ansible基本用法：主要用于批量查日志，执行命令。</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://ansible-tran.readthedocs.io/en/latest/index.html">Ansible中文权威指南</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/chusiang/automate-with-ansible">automate-with-ansible</a></p>
@@ -409,16 +419,16 @@ gtag('config', 'UA-153513094-1');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen</span><br><span class="line">$ ssh-copy-id [ip_address]</span><br><span class="line">$ ansible -m ping</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><code>ansible-playbook</code>: execute a script.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ansible-playbook hello.yml</span><br><span class="line">$ cat hello.yml</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ansible-playbook hello.yml</span><br><span class="line">$ <span class="built_in">cat</span> hello.yml</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629153439.png" alt=""></p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629153459.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629153439.png"></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629153459.png"></p>
 </li>
 <li><p><code>ansible-vault</code>: encrypt or decrypt a file, to ensure the secrity of the file.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ansible-vault encrypt hello.yml</span><br><span class="line">$ ansible-vault decrypt hello.yml</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><code>ansible-console</code>: A interact command line of ansible.</p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629154046.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629154046.png"></p>
 </li>
 </ul>
 <p>Ansible Module:</p>
@@ -431,10 +441,10 @@ gtag('config', 'UA-153513094-1');
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ansible [host group] -m [module name] -a <span class="string">&quot;[command line]&quot;</span></span><br><span class="line">$ ansible webserver -m <span class="built_in">command</span>/shell -a <span class="string">&quot;ls /etc&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629162327.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629162327.png"></p>
 <p><strong>Change default module:</strong></p>
 <p><a target="_blank" rel="noopener" href="https://hoxis.github.io/ansible-commands-modules-command-shell-raw.html">A tutorials of ansible module</a></p>
-<p>change config file(/etc/ansible/ansible.cfg), enable the line and change it.</p>
+<p>change config file(&#x2F;etc&#x2F;ansible&#x2F;ansible.cfg), enable the line and change it.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">module_name = <span class="built_in">command</span>  // change it to shell</span><br><span class="line">module_name = shell</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><code>script</code>: Run a script on the remote hosts</p>
@@ -443,30 +453,31 @@ gtag('config', 'UA-153513094-1');
 <li><p><code>copy</code>: Copy files from current host to remote hosts.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ansible [host group] -m copy -a <span class="string">&quot;src=/etc/systemfig dest=data/os.txt&quot;</span> owner=[user name] mode=600</span><br><span class="line">$ ansible webserver -m copy -a <span class="string">&quot;src=/home/centos/pig/1.txt dest=/home/root123/2.txt owner=root123 mode=600&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629164240.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629164240.png"></p>
 </li>
 <li><p><code>fetch</code>: Fetch a file from remote hosts. This <code>must</code> be a file, not a directory. Like <code>copy</code>.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ansible all -m fetch -a <span class="string">&quot;src=/etc/os-release dest=/home/centos/pig/tem&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629164945.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629164945.png"></p>
 </li>
 <li><p><code>file</code>: change file’s attributes, create a empty file.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ansible webserver -m file -a <span class="string">&quot;path=/home/root123/new.txt state=touch&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629165604.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629165604.png"></p>
 </li>
 <li><p><code>unarchive</code>: unzip a file.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ansible webserver -m unarchive -a <span class="string">&quot;src=./etc.tar.gz dest=/home/root123/ owner=root123 mode=600&quot;</span>   // push the zip file to the remote hosts and unzip it.</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629170702.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210629170702.png"></p>
 </li>
 </ul>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>rsync</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+rsync</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://linux.die.net/man/1/rsync">rsync</a> – a fast, versatile, remote (and local) file-copying tool</p>
-<p>The <code>rsync</code> can replace the command <code>cp</code> in linux, for example, you can use <code>rsync -r source destination</code> to replace <code>cp -r source destination</code>.</p>
+<p>The <code>rsync</code> can replace the command <code>cp</code> in linux, for example, you can use <code>rsync -r source destination</code> to replace <code>cp -r source destination </code>.</p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1qZ4y137En?from=search&seid=10542537430323288651">video tutorials</a></p>
 <p>sync local file:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rsync -a <span class="built_in">source</span> destination</span><br></pre></td></tr></table></figure>
@@ -481,16 +492,19 @@ gtag('config', 'UA-153513094-1');
 </li>
 </ul>
 </li>
-<li><input disabled="" type="checkbox"> <p>掌握ansible基本用法：主要用于批量查日志，执行命令。</p>
+<li><p><input disabled="" type="checkbox"> 
+掌握ansible基本用法：主要用于批量查日志，执行命令。</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://ansible-tran.readthedocs.io/en/latest/index.html">Ansible中文权威指南</a></p>
 </blockquote>
 </li>
 </ul>
 <h1 id="Http："><a href="#Http：" class="headerlink" title="Http："></a>Http：</h1><ul>
-<li><input checked="" disabled="" type="checkbox"> <p>常用header: Host</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+常用header: Host</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> <p>请求：request</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+请求：request</p>
 <table>
 <thead>
 <tr>
@@ -502,7 +516,7 @@ gtag('config', 'UA-153513094-1');
 <tbody><tr>
 <td align="left">Accept</td>
 <td align="left">指定客户端能够接收的内容类型</td>
-<td align="left">Accept: text/plain, text/html</td>
+<td align="left">Accept: text&#x2F;plain, text&#x2F;html</td>
 </tr>
 <tr>
 <td align="left">Accept-Charset</td>
@@ -527,7 +541,7 @@ gtag('config', 'UA-153513094-1');
 <tr>
 <td align="left">Authorization</td>
 <td align="left">HTTP授权的授权证书</td>
-<td align="left">Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</td>
+<td align="left">Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ&#x3D;&#x3D;</td>
 </tr>
 <tr>
 <td align="left">Cache-Control</td>
@@ -542,7 +556,7 @@ gtag('config', 'UA-153513094-1');
 <tr>
 <td align="left">Cookie</td>
 <td align="left">HTTP请求发送时，会把保存在该请求域名下的所有cookie值一起发送给web服务器。</td>
-<td align="left">Cookie: $Version=1; Skin=new;</td>
+<td align="left">Cookie: $Version&#x3D;1; Skin&#x3D;new;</td>
 </tr>
 <tr>
 <td align="left">Content-Length</td>
@@ -552,7 +566,7 @@ gtag('config', 'UA-153513094-1');
 <tr>
 <td align="left">Content-Type</td>
 <td align="left">请求的与实体(body)对应的MIME信息</td>
-<td align="left">Content-Type: application/x-www-form-urlencoded</td>
+<td align="left">Content-Type: application&#x2F;x-www-form-urlencoded</td>
 </tr>
 <tr>
 <td align="left">Date</td>
@@ -612,12 +626,12 @@ gtag('config', 'UA-153513094-1');
 <tr>
 <td align="left">Proxy-Authorization</td>
 <td align="left">连接到代理的授权证书</td>
-<td align="left">Proxy-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</td>
+<td align="left">Proxy-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ&#x3D;&#x3D;</td>
 </tr>
 <tr>
 <td align="left">Range</td>
 <td align="left">只请求实体的一部分，指定范围</td>
-<td align="left">Range: bytes=500-999</td>
+<td align="left">Range: bytes&#x3D;500-999</td>
 </tr>
 <tr>
 <td align="left">Referer</td>
@@ -627,22 +641,22 @@ gtag('config', 'UA-153513094-1');
 <tr>
 <td align="left">TE</td>
 <td align="left">客户端愿意接受的传输编码，并通知服务器接受接受尾加头信息</td>
-<td align="left">TE: trailers,deflate;q=0.5</td>
+<td align="left">TE: trailers,deflate;q&#x3D;0.5</td>
 </tr>
 <tr>
 <td align="left">Upgrade</td>
 <td align="left">向服务器指定某种传输协议以便服务器进行转换（如果支持）</td>
-<td align="left">Upgrade: HTTP/2.0, SHTTP/1.3, IRC/6.9, RTA/x11</td>
+<td align="left">Upgrade: HTTP&#x2F;2.0, SHTTP&#x2F;1.3, IRC&#x2F;6.9, RTA&#x2F;x11</td>
 </tr>
 <tr>
 <td align="left">User-Agent</td>
 <td align="left">User-Agent的内容包含发出请求的用户信息</td>
-<td align="left">User-Agent: Mozilla/5.0 (Linux; X11)</td>
+<td align="left">User-Agent: Mozilla&#x2F;5.0 (Linux; X11)</td>
 </tr>
 <tr>
 <td align="left">Via</td>
 <td align="left">通知中间网关或代理服务器地址，通信协议</td>
-<td align="left">Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)</td>
+<td align="left">Via: 1.0 fred, 1.1 nowhere.com (Apache&#x2F;1.1)</td>
 </tr>
 <tr>
 <td align="left">Warning</td>
@@ -651,7 +665,8 @@ gtag('config', 'UA-153513094-1');
 </tr>
 </tbody></table>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>相应：response</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+相应：response</p>
 <table>
 <thead>
 <tr>
@@ -698,22 +713,22 @@ gtag('config', 'UA-153513094-1');
 <tr>
 <td align="left">Content-Location</td>
 <td align="left">请求资源可替代的备用的另一地址</td>
-<td align="left">Content-Location: /index.htm</td>
+<td align="left">Content-Location: &#x2F;index.htm</td>
 </tr>
 <tr>
 <td align="left">Content-MD5</td>
 <td align="left">返回资源的MD5校验值</td>
-<td align="left">Content-MD5: Q2hlY2sgSW50ZWdyaXR5IQ==</td>
+<td align="left">Content-MD5: Q2hlY2sgSW50ZWdyaXR5IQ&#x3D;&#x3D;</td>
 </tr>
 <tr>
 <td align="left">Content-Range</td>
 <td align="left">在整个返回体中本部分的字节位置</td>
-<td align="left">Content-Range: bytes 21010-47021/47022</td>
+<td align="left">Content-Range: bytes 21010-47021&#x2F;47022</td>
 </tr>
 <tr>
 <td align="left">Content-Type</td>
 <td align="left">返回内容的MIME类型</td>
-<td align="left">Content-Type: text/html; charset=utf-8</td>
+<td align="left">Content-Type: text&#x2F;html; charset&#x3D;utf-8</td>
 </tr>
 <tr>
 <td align="left">Date</td>
@@ -753,7 +768,7 @@ gtag('config', 'UA-153513094-1');
 <tr>
 <td align="left">refresh</td>
 <td align="left">应用于重定向或一个新的资源被创造，在5秒之后重定向（由网景提出，被大部分浏览器支持）</td>
-<td align="left">Refresh: 5; url=<a target="_blank" rel="noopener" href="https://honglu.me/archives/">http://honglu.me/archives/</a></td>
+<td align="left">Refresh: 5; url&#x3D;<a target="_blank" rel="noopener" href="https://honglu.me/archives/">http://honglu.me/archives/</a></td>
 </tr>
 <tr>
 <td align="left">Retry-After</td>
@@ -763,12 +778,12 @@ gtag('config', 'UA-153513094-1');
 <tr>
 <td align="left">Server</td>
 <td align="left">web服务器软件名称</td>
-<td align="left">Server: Apache/1.3.27 (Unix) (Red-Hat/Linux)</td>
+<td align="left">Server: Apache&#x2F;1.3.27 (Unix) (Red-Hat&#x2F;Linux)</td>
 </tr>
 <tr>
 <td align="left">Set-Cookie</td>
 <td align="left">设置Http Cookie</td>
-<td align="left">Set-Cookie: UserID=JohnDoe; Max-Age=3600; Version=1</td>
+<td align="left">Set-Cookie: UserID&#x3D;JohnDoe; Max-Age&#x3D;3600; Version&#x3D;1</td>
 </tr>
 <tr>
 <td align="left">Trailer</td>
@@ -788,7 +803,7 @@ gtag('config', 'UA-153513094-1');
 <tr>
 <td align="left">Via</td>
 <td align="left">告知代理客户端响应是通过哪里发送的</td>
-<td align="left">Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)</td>
+<td align="left">Via: 1.0 fred, 1.1 nowhere.com (Apache&#x2F;1.1)</td>
 </tr>
 <tr>
 <td align="left">Warning</td>
@@ -804,17 +819,18 @@ gtag('config', 'UA-153513094-1');
 </li>
 </ul>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>跨域 Cookie</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+跨域 Cookie</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000039227924">COOKIE跨域获取问题</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pA411u7Ji?from=search&seid=5785122887893488786">video tutorials in chinese</a></p>
 <p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS"> What does CORS means</a></p>
 <p><a target="_blank" rel="noopener" href="https://auth0.com/blog/cors-tutorial-a-guide-to-cross-origin-resource-sharing/">CORS tutorials: A guide to cross-origin resource sharing</a></p>
-<p>网址形式如下：<a target="_blank" rel="noopener" href="https://www.baidu.com:80/index.html，其中，`https`是协议，`www`是子域名，`baidu.com`是根域名，`80`是端口号，`index.html`是资源文件。">https://www.baidu.com:80/index.html，其中，`https`是协议，`www`是子域名，`baidu.com`是根域名，`80`是端口号，`index.html`是资源文件。</a></p>
+<p>网址形式如下：<a target="_blank" rel="noopener" href="https://www.baidu.com:80/index.html%EF%BC%8C%E5%85%B6%E4%B8%AD%EF%BC%8C%60https%60%E6%98%AF%E5%8D%8F%E8%AE%AE%EF%BC%8C%60www%60%E6%98%AF%E5%AD%90%E5%9F%9F%E5%90%8D%EF%BC%8C%60baidu.com%60%E6%98%AF%E6%A0%B9%E5%9F%9F%E5%90%8D%EF%BC%8C%6080%60%E6%98%AF%E7%AB%AF%E5%8F%A3%E5%8F%B7%EF%BC%8C%60index.html%60%E6%98%AF%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E3%80%82">https://www.baidu.com:80/index.html，其中，`https`是协议，`www`是子域名，`baidu.com`是根域名，`80`是端口号，`index.html`是资源文件。</a></p>
 <blockquote>
-<p><strong>同源策略</strong>是指在<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/排版引擎">Web浏览器</a>中，允许某个网页<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/腳本">脚本</a>访问另一个网页的数据，但前提是这两个网页必须有相同的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/统一资源标志符">URI</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/主機名稱">主机名</a>和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/通訊埠">端口号</a>，一旦两个网站满足上述条件，这两个网站就被认定为具有相同来源。此策略可防止某个网页上的恶意<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/脚本">脚本</a>通过该页面的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/文档对象模型">文档对象模型</a>访问另一网页上的敏感数据。</p>
-<p>同源策略对<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Web应用程序">Web应用程序</a>具有特殊意义，因为Web应用程序广泛依赖于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Cookie">HTTP cookie</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/同源策略#cite_note-httpcookierfc-1">[1]</a>来维持用户<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/会话">会话</a>，所以必须将不相关网站严格分隔，以防止丢失数据泄露。</p>
-<p>值得注意的是同源策略仅适用于脚本，这意味着某网站可以通过相应的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/HTML标签">HTML标签</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/同源策略#cite_note-2">[2]</a>访问不同来源网站上的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/图像">图像</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/CSS">CSS</a>和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/動態加載">动态加载</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/脚本">脚本</a>等资源。而<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/跨站请求伪造">跨站请求伪造</a>就是利用同源策略不适用于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/HTML标签">HTML标签</a>的缺陷。</p>
+<p><strong>同源策略</strong>是指在<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%8E%92%E7%89%88%E5%BC%95%E6%93%8E">Web浏览器</a>中，允许某个网页<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%85%B3%E6%9C%AC">脚本</a>访问另一个网页的数据，但前提是这两个网页必须有相同的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E6%A0%87%E5%BF%97%E7%AC%A6">URI</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%B8%BB%E6%A9%9F%E5%90%8D%E7%A8%B1">主机名</a>和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%80%9A%E8%A8%8A%E5%9F%A0">端口号</a>，一旦两个网站满足上述条件，这两个网站就被认定为具有相同来源。此策略可防止某个网页上的恶意<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%84%9A%E6%9C%AC">脚本</a>通过该页面的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%96%87%E6%A1%A3%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B">文档对象模型</a>访问另一网页上的敏感数据。</p>
+<p>同源策略对<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Web%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F">Web应用程序</a>具有特殊意义，因为Web应用程序广泛依赖于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Cookie">HTTP cookie</a>[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5#cite_note-httpcookierfc-1">1]</a>来维持用户<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BC%9A%E8%AF%9D">会话</a>，所以必须将不相关网站严格分隔，以防止丢失数据泄露。</p>
+<p>值得注意的是同源策略仅适用于脚本，这意味着某网站可以通过相应的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/HTML%E6%A0%87%E7%AD%BE">HTML标签</a>[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5#cite_note-2">2]</a>访问不同来源网站上的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9B%BE%E5%83%8F">图像</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/CSS">CSS</a>和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8B%95%E6%85%8B%E5%8A%A0%E8%BC%89">动态加载</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%84%9A%E6%9C%AC">脚本</a>等资源。而<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0">跨站请求伪造</a>就是利用同源策略不适用于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/HTML%E6%A0%87%E7%AD%BE">HTML标签</a>的缺陷。</p>
 </blockquote>
 <p>在<code>协议</code>、<code>域名（包括根域名和子域名）</code>、<code>端口号</code>三者其中任何一项不一致的情况下，两个网址就不能进行互相通信，只有这三者都相同的情况下才可以进行通信，否则就叫<strong>跨域</strong>。</p>
 <ul>
@@ -830,9 +846,7 @@ gtag('config', 'UA-153513094-1');
 <p><strong>figure it out</strong></p>
 <ul>
 <li><p>set the header like this: </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Access-Control-Allow-Origin: *  <span class="comment"># if a request can be made from any originAccess-Control-Allow-Origin: https://example.com # the origin that is allowed to make the request</span></span><br></pre></td></tr></table></figure>
-
-</li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Access-Control-Allow-Origin: *  <span class="comment"># if a request can be made from any originAccess-Control-Allow-Origin: https://example.com # the origin that is allowed to make the request</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 <p><strong>Two type of CORS Request</strong></p>
 <ul>
@@ -840,14 +854,12 @@ gtag('config', 'UA-153513094-1');
 </li>
 <li><p>preflight request(<code>OPTIONS</code>)</p>
 <p>A preflight request example:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Requestcurl -i -X OPTIONS localhost:3001/api/ping \-H &#x27;Access-Control-Request-Method: GET&#x27; \-H &#x27;Access-Control-Request-Headers: Content-Type, Accept&#x27; \-H &#x27;Origin: http://localhost:3000&#x27;</span></span><br></pre></td></tr></table></figure>
-
-
-</li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Requestcurl -i -X OPTIONS localhost:3001/api/ping \-H &#x27;Access-Control-Request-Method: GET&#x27; \-H &#x27;Access-Control-Request-Headers: Content-Type, Accept&#x27; \-H &#x27;Origin: http://localhost:3000&#x27;</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>https原理</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+https原理</p>
 <p>HTTP协议是一种不安全的传输协议，所有数据在传输过程都是明文传输，很容易被第三方截获，造成数据不安全。</p>
 <p>HTTPS使用混合加密协议对数据进行加密，即对称加密和非对称加密：</p>
 <p>对称加密和非对称加密的优缺点：</p>
@@ -857,11 +869,11 @@ gtag('config', 'UA-153513094-1');
 </ul>
 <p><img src="https://segmentfault.com/img/bVbClUj" alt="https://segmentfault.com/img/bVbClUj"></p>
 <blockquote>
-<p><strong>Hypertext Transfer Protocol Secure</strong> (<strong>HTTPS</strong>) is an extension of the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">Hypertext Transfer Protocol</a> (HTTP). It is used for <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Secure_communications">secure communication</a> over a <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Network_operating_system">computer network</a>, and is widely used on the Internet.<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-1">[1]</a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-2">[2]</a> In HTTPS, the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Communication_protocol">communication protocol</a> is encrypted using <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Transport_Layer_Security">Transport Layer Security</a> (TLS) or, formerly, Secure Sockets Layer (SSL). The protocol is therefore also referred to as <strong>HTTP over TLS</strong>,<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-3">[3]</a> or <strong>HTTP over SSL</strong>.</p>
-<p>The principal motivations for HTTPS are <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Authentication">authentication</a> of the accessed <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Website">website</a>, and protection of the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Information_privacy">privacy</a> and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Data_integrity">integrity</a> of the exchanged data while in transit. It protects against <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attacks</a>, and the bidirectional <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation">encryption</a> of communications between a client and server protects the communications against <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Eavesdropping">eavesdropping</a> and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tamper-evident#Tampering">tampering</a>.<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-httpse-4">[4]</a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-5">[5]</a> The authentication aspect of HTTPS requires a trusted third party to sign server-side <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Public_key_certificate">digital certificates</a>. This was historically an expensive operation, which meant fully authenticated HTTPS connections were usually found only on secured payment transaction services and other secured corporate information systems on the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>. In 2016, a campaign by the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Electronic_Frontier_Foundation">Electronic Frontier Foundation</a> with the support of web browser developers led to the protocol becoming more prevalent.<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-6">[6]</a> HTTPS is now used more often by web users than the original non-secure HTTP, primarily to protect page authenticity on all types of websites; secure accounts; and to keep user communications, identity, and web browsing private.<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-7">[7]</a></p>
+<p><strong>Hypertext Transfer Protocol Secure</strong> (<strong>HTTPS</strong>) is an extension of the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">Hypertext Transfer Protocol</a> (HTTP). It is used for <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Secure_communications">secure communication</a> over a <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Network_operating_system">computer network</a>, and is widely used on the Internet.[<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-1">1]</a>[<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-2">2]</a> In HTTPS, the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Communication_protocol">communication protocol</a> is encrypted using <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Transport_Layer_Security">Transport Layer Security</a> (TLS) or, formerly, Secure Sockets Layer (SSL). The protocol is therefore also referred to as <strong>HTTP over TLS</strong>,[<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-3">3]</a> or <strong>HTTP over SSL</strong>.</p>
+<p>The principal motivations for HTTPS are <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Authentication">authentication</a> of the accessed <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Website">website</a>, and protection of the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Information_privacy">privacy</a> and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Data_integrity">integrity</a> of the exchanged data while in transit. It protects against <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attacks</a>, and the bidirectional <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation">encryption</a> of communications between a client and server protects the communications against <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Eavesdropping">eavesdropping</a> and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tamper-evident#Tampering">tampering</a>.[<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-httpse-4">4]</a>[<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-5">5]</a> The authentication aspect of HTTPS requires a trusted third party to sign server-side <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Public_key_certificate">digital certificates</a>. This was historically an expensive operation, which meant fully authenticated HTTPS connections were usually found only on secured payment transaction services and other secured corporate information systems on the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>. In 2016, a campaign by the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Electronic_Frontier_Foundation">Electronic Frontier Foundation</a> with the support of web browser developers led to the protocol becoming more prevalent.[<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-6">6]</a> HTTPS is now used more often by web users than the original non-secure HTTP, primarily to protect page authenticity on all types of websites; secure accounts; and to keep user communications, identity, and web browsing private.[<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTTPS#cite_note-7">7]</a></p>
 </blockquote>
 <p><code>HTTPS=HTTP+TLS/SSL</code></p>
-<p><img src="https://segmentfault.com/img/bVbClUl" alt=""></p>
+<p><img src="https://segmentfault.com/img/bVbClUl"></p>
 <p>数字正式在HTTPS中相当于非对称加密算法的私钥和公钥的分配这么一个工作。</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000021494676">HTTPS 详解一：附带最精美详尽的 HTTPS 原理图</a></p>
@@ -869,10 +881,11 @@ gtag('config', 'UA-153513094-1');
 </li>
 </ul>
 <h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h1><ul>
-<li><input disabled="" type="checkbox"> <p>hash,zset,set,string 等数据类型的常用指令和时间复杂度</p>
+<li><p><input disabled="" type="checkbox"> 
+hash,zset,set,string 等数据类型的常用指令和时间复杂度</p>
 <blockquote>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> <strong>string</strong>: </li>
+<li><input checked="" disabled="" type="checkbox"> <strong>string</strong>:</li>
 </ul>
 <p>add a key-value type data, use <code>set key value</code> command</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">set</span> name zhangsanOK</span><br></pre></td></tr></table></figure>
@@ -915,7 +928,7 @@ gtag('config', 'UA-153513094-1');
 </tr>
 <tr>
 <td align="left">6</td>
-<td><a target="_blank" rel="noopener" href="https://www.runoob.com/redis/strings-mget.html">MGET key1 [key2..]</a> 获取所有(一个或多个)给定 key 的值。</td>
+<td>[MGET key1 <a target="_blank" rel="noopener" href="https://www.runoob.com/redis/strings-mget.html">key2..]</a> 获取所有(一个或多个)给定 key 的值。</td>
 <td></td>
 </tr>
 <tr>
@@ -945,12 +958,12 @@ gtag('config', 'UA-153513094-1');
 </tr>
 <tr>
 <td align="left">12</td>
-<td><a target="_blank" rel="noopener" href="https://www.runoob.com/redis/strings-mset.html">MSET key value [key value …]</a> 同时设置一个或多个 key-value 对。</td>
+<td>[MSET key value <a target="_blank" rel="noopener" href="https://www.runoob.com/redis/strings-mset.html">key value …]</a> 同时设置一个或多个 key-value 对。</td>
 <td></td>
 </tr>
 <tr>
 <td align="left">13</td>
-<td><a target="_blank" rel="noopener" href="https://www.runoob.com/redis/strings-msetnx.html">MSETNX key value [key value …]</a> 同时设置一个或多个 key-value 对，当且仅当所有给定 key 都不存在。</td>
+<td>[MSETNX key value <a target="_blank" rel="noopener" href="https://www.runoob.com/redis/strings-msetnx.html">key value …]</a> 同时设置一个或多个 key-value 对，当且仅当所有给定 key 都不存在。</td>
 <td></td>
 </tr>
 <tr>
@@ -991,21 +1004,27 @@ gtag('config', 'UA-153513094-1');
 </tbody></table>
 </blockquote>
 </li>
-<li><input disabled="" type="checkbox"> <p>掌握正确的redis分布式锁。</p>
+<li><p><input disabled="" type="checkbox"> 
+掌握正确的redis分布式锁。</p>
 </li>
 </ul>
 <h1 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h1><ul>
-<li><input disabled="" type="checkbox"> <p>了解索引结构</p>
+<li><p><input disabled="" type="checkbox"> 
+了解索引结构</p>
 </li>
-<li><input disabled="" type="checkbox"> <p>常用索引优化技巧</p>
+<li><p><input disabled="" type="checkbox"> 
+常用索引优化技巧</p>
 </li>
 </ul>
 <h1 id="其他："><a href="#其他：" class="headerlink" title="其他："></a>其他：</h1><ul>
-<li><input checked="" disabled="" type="checkbox"> <p>markdown语法和 typora 使用</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+markdown语法和 typora 使用</p>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>git command</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+git command</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> <p>add files to the remote repository</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+add files to the remote repository</p>
 <blockquote>
 <p>4 steps when you <code>git</code> files to the remote repository:</p>
 <ol>
@@ -1016,7 +1035,8 @@ gtag('config', 'UA-153513094-1');
 </ol>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>merge </p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+merge </p>
 <blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge &lt;branch name&gt;  <span class="comment"># when you are in a branch, this command means merge &lt;branch name&gt; to this branch Jums@Computer MINGW64 ~/OneDrive/learngit (master) # current branch is master, merge &lt;topic&gt; to master$ git merge topicAuto-merging readme.mdCONFLICT (content): Merge conflict in readme.mdAuto-merging 2.pyCONFLICT (content): Merge conflict in 2.pyRemoving 1.pyAutomatic merge failed; fix conflicts and then commit the result.</span></span><br></pre></td></tr></table></figure>
 
@@ -1027,13 +1047,15 @@ gtag('config', 'UA-153513094-1');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add [file name]$ git commit -m <span class="string">&quot;&quot;</span>  <span class="comment"># you can&#x27;t add the [file name] here, or you will get a error</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>rebase</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+rebase</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://git-scm.com/docs/git-rebase">git-rebase</a> - Reapply commits on top of another base tip</p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19B4y1u7vm?from=search&amp;seid=7525997366811669539">https://www.bilibili.com/video/BV19B4y1u7vm?from=search&amp;seid=7525997366811669539</a>    (video tutroials)</p>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>reset </p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+reset </p>
 <blockquote>
 <p>对提交的版本进行回退，可以根据<code>git  log</code>命令查看已经提交的版本，然后可以根据指定<code>commit id</code>或者<code>HEAD</code>回退到不同的版本，</p>
 <p><code>git log</code>信息如下：</p>
@@ -1041,7 +1063,7 @@ gtag('config', 'UA-153513094-1');
 
 <p><code>HEAD</code>表示当前的版本号，如果需要回退到上一个版本号，则可以使用<code>HEAD^</code>、上上一个版本号则是<code>HEAD^^</code>、往上倒100个可以在<code>HEAD</code>后面写上100个<code>^</code>符号，当然也可以写成<code>HEAD~100</code>。</p>
 <p><code>HEAD</code>在<code>git</code>中其实是一个指针，指向不同的版本号，回退也就是将<code>HEAD</code>指针重新指向了不同的版本信息。</p>
-<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210621152126.png" alt=""></p>
+<p><img src="https://jums.club/images/article/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210621152126.png"></p>
 <p>除了使用<code>HEAD</code>之外，还可以使用<code>commit id</code>进行回退，每一次版本提交都有一个宇宙唯一的<code>commit id</code>，指定该<code>commit id</code>的前几位就行，<code>git</code>会自行查找。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard HEAD~2HEAD is now at 1f7990b first time to commit$ git reset --hard 466755HEAD is now at 466755c add a second title</span><br></pre></td></tr></table></figure>
 
@@ -1054,7 +1076,8 @@ gtag('config', 'UA-153513094-1');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull git@github.com:crazyjums/learngit.git masterFrom github.com:crazyjums/learngit * branch            master     -&gt; FETCH_HEADAuto-merging readme.mdCONFLICT (content): Merge conflict <span class="keyword">in</span> readme.mdAutomatic merge failed; fix conflicts and <span class="keyword">then</span> commit the result.</span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>revert </p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+revert </p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://git-scm.com/docs/git-revert">git-revert</a> - Revert some existing commits</p>
 <p>sounds like the <code>git reset</code> command, but this command can remain the trackability information, when you wana go back to the history version in <code>master</code> branch, you should use <code>git revert</code> command instead of <code>git reset</code>.</p>
@@ -1062,7 +1085,8 @@ gtag('config', 'UA-153513094-1');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git revert HEAD^  <span class="comment"># go back to last version$ git revert HEAD~[number]  # go back to previous version# you can see the trackability information at `git revert`:commit d567e6e3e14165ffa8febd4c62bac2fa413a1509Author: crazyjums &lt;crazyjums@gmail.com&gt;Date:   Thu Jun 24 11:33:43 2021 +0800 Revert &quot;add a txt file by jums&quot; This reverts commit db298e7bb373711438efdab0e64bbab72b5b5cac.</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>checkout </p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+checkout </p>
 <blockquote>
 <p>git-checkout - Switch branches or restore working tree files</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout &lt;branch name&gt;  <span class="comment"># swtich to a new branch</span></span><br></pre></td></tr></table></figure>
@@ -1070,7 +1094,8 @@ gtag('config', 'UA-153513094-1');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ASUS@ZHG_ASUS MINGW64 ~/OneDrive/learngit (master)$ git checkout new_branchSwitched to branch <span class="string">&#x27;new_branch&#x27;</span>ASUS@ZHG_ASUS MINGW64 ~/OneDrive/learngit (new_branch)</span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>stash </p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+stash </p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://git-scm.com/docs/git-stash">git-stash</a> - Stash the changes in a dirty working directory away</p>
 <p>应用场景：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/tocy/p/git-stash-reference.html">https://www.cnblogs.com/tocy/p/git-stash-reference.html</a></p>
@@ -1082,7 +1107,8 @@ gtag('config', 'UA-153513094-1');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git stash list  <span class="comment"># display all stash version$ git stash pop   # get the top of the stash stack version$ git stask apply [version number]# when there is a lot of stash versions, you can use this command to specify the version number$ git stash   # save current working area to the stash version$ git stash save [a stash name]  # the same as the &quot;git stash&quot;, but this version will get a nick name you named it.$ git stash drop  # delete the top of stash stack&#x27;s version$ git stash show [version number]   # use this command to view specific information of the working area</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>cherry-pick</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+cherry-pick</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://git-scm.com/docs/git-cherry-pick">git-cherry-pick</a> - Apply the changes introduced by some existing commits</p>
 <p>应用场景：在多分支的分布式开发过程中，在合并代码时分两种情况，一种是将另一个分支中的所有代码都合并带当前分支中来，此时可以使用<code>git merge &lt;branch name&gt;</code>命令实现；还有一种情况是只需要将另一个分支中的部分代码合并到当前分支中来，这个时候就需要使用<code>git cherry-pick &lt;commitHash&gt;</code>命令来实现了，即将另一个分支的部分<code>commit</code>提交到当前的分支中。</p>
@@ -1100,20 +1126,22 @@ gtag('config', 'UA-153513094-1');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git cherry-pick -e [commit-id] <span class="comment"># now it will jump to editing interface</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>branch</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+branch</p>
 <blockquote>
 <p>branche是git tree中的分支，其中主分支是master</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch &lt;branch name&gt; <span class="comment"># create a new branch $ git push origin &lt;branch name&gt; # push the new branch to remote repository$ git branch -d &lt;branch name&gt; # delete the local branch$ git push origin :&lt;branch name&gt; # delete the remote repository branch$ git chechout &lt;branch name&gt; # swtich to &lt;branch name&gt; branch$ git branch -a # show all branch of your repository</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>delete file from remote repository</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+delete file from remote repository</p>
 <blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rm &lt;file name&gt; or &lt;dic name&gt;$ git commit -m <span class="string">&quot;&quot;</span>$ git push origin &lt;branch name&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> &lt;file name&gt; or &lt;dic name&gt;$ git commit -m <span class="string">&quot;&quot;</span>$ git push origin &lt;branch name&gt;</span><br></pre></td></tr></table></figure></blockquote>
 </li>
 </ul>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>ssh 秘钥登陆原理</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+ssh 秘钥登陆原理</p>
 <p>在远程连接Linux系统时，通常会采用SSH协议作为底层的安全协议，连接的格式如下：<code>ssh user@hostAddr</code></p>
 <p>加密方式同样采用的混合加密技术，即对称加密和非对称加密的混合使用</p>
 <ul>
@@ -1124,7 +1152,8 @@ gtag('config', 'UA-153513094-1');
 <li><input checked="" disabled="" type="checkbox"> <a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">SSH原理与运用（一）：远程登录</a></li>
 </ul>
 </li>
-<li><input checked="" disabled="" type="checkbox"> <p>了解postman 使用</p>
+<li><p><input checked="" disabled="" type="checkbox"> 
+了解postman 使用</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://www.postman.com/">官网地址</a>，<a target="_blank" rel="noopener" href="https://www.postman.com/downloads/">postman软件下载地址</a>，<a target="_blank" rel="noopener" href="https://learning.postman.com/docs/getting-started/introduction/">documentation</a></p>
 </blockquote>
