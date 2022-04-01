@@ -1,3 +1,4 @@
+http://jums.club/idea-project-error/
 http://jums.club/nginx-config-detail/
 http://jums.club/install-php-by-source-summary/
 http://jums.club/nginx-connect-to-php-fpm/
@@ -97,4 +98,3 @@ http://jums.club/c-malloc-new/
 http://jums.club/steam-speed/
 http://jums.club/b-tree-and-b-plus/
 http://jums.club/jmm/
-http://jums.club/sleep-wait/
