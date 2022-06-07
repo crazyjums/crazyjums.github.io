@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jums.club/git-change-commit-message/</loc>
+    
+    <lastmod>2022-06-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jums.club/install-php-by-source-summary/</loc>
     
     <lastmod>2022-04-09</lastmod>
@@ -548,14 +555,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/wps-set-cascade-number/</loc>
+    <loc>http://jums.club/write-blog-via-github/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/write-blog-via-github/</loc>
+    <loc>http://jums.club/wps-set-cascade-number/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -597,14 +604,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/virtualenv-start/</loc>
+    <loc>http://jums.club/vim-tutoraials/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/vim-tutoraials/</loc>
+    <loc>http://jums.club/virtualenv-start/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -758,14 +765,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/sql-optimazition/</loc>
+    <loc>http://jums.club/sql-select-optimization/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/sql-select-optimization/</loc>
+    <loc>http://jums.club/sql-optimazition/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -793,14 +800,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/sleep-wait/</loc>
+    <loc>http://jums.club/sava-our-life/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/sava-our-life/</loc>
+    <loc>http://jums.club/sleep-wait/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -835,13 +842,6 @@
   </url>
   
   <url>
-    <loc>http://jums.club/re-sub/</loc>
-    
-    <lastmod>2021-09-06</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://jums.club/redirecting-forword/</loc>
     
     <lastmod>2021-09-06</lastmod>
@@ -849,7 +849,7 @@
   </url>
   
   <url>
-    <loc>http://jums.club/qing-yu-nian-resource/</loc>
+    <loc>http://jums.club/re-sub/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -857,6 +857,13 @@
   
   <url>
     <loc>http://jums.club/python-tab-error/</loc>
+    
+    <lastmod>2021-09-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jums.club/qing-yu-nian-resource/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -877,14 +884,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/python-logging-error-sloved/</loc>
+    <loc>http://jums.club/python-namespace/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/python-namespace/</loc>
+    <loc>http://jums.club/python-logging-error-sloved/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -961,14 +968,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/personal-domain-for-github-page/</loc>
+    <loc>http://jums.club/nsq-and-java/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/nsq-and-java/</loc>
+    <loc>http://jums.club/personal-domain-for-github-page/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1150,14 +1157,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/java-reflect/</loc>
+    <loc>http://jums.club/java-scanner/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/java-scanner/</loc>
+    <loc>http://jums.club/java-reflect/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1248,14 +1255,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/java-abstract-interface/</loc>
+    <loc>http://jums.club/java-3-type-of-iterator/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/java-3-type-of-iterator/</loc>
+    <loc>http://jums.club/java-abstract-interface/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1276,14 +1283,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/http-error-code/</loc>
+    <loc>http://jums.club/https-theory/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/https-theory/</loc>
+    <loc>http://jums.club/http-error-code/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1437,14 +1444,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/github-how-to-create-two-more-page/</loc>
+    <loc>http://jums.club/github-more-than-100/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/github-more-than-100/</loc>
+    <loc>http://jums.club/github-how-to-create-two-more-page/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1493,14 +1500,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/fatal-remote-origin-already-exists/</loc>
+    <loc>http://jums.club/fliplo-clock-app/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/fliplo-clock-app/</loc>
+    <loc>http://jums.club/fatal-remote-origin-already-exists/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1570,14 +1577,14 @@
   </url>
   
   <url>
-    <loc>http://jums.club/crack-pycharm-perfessional/</loc>
+    <loc>http://jums.club/crack-vmware-pro/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jums.club/crack-vmware-pro/</loc>
+    <loc>http://jums.club/crack-pycharm-perfessional/</loc>
     
     <lastmod>2021-09-06</lastmod>
     
@@ -1754,7 +1761,7 @@
 
   <url>
     <loc>http://jums.club/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -1762,448 +1769,448 @@
   
   <url>
     <loc>http://jums.club/tags/deep-learning/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/Java/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/java-interview/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/Linux/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/Redis/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/program-language/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/JVM/</loc>
-    <lastmod>2022-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://jums.club/tags/Python/</loc>
-    <lastmod>2022-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://jums.club/tags/code/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/TensorFlow/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/problem-solved/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/hexo/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jums.club/tags/Python/</loc>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jums.club/tags/code/</loc>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/basic-knowledge/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/Markdown/</loc>
-    <lastmod>2022-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://jums.club/tags/MySQL/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/PHP/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/summary/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/spider/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jums.club/tags/MySQL/</loc>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/Leetcode/</loc>
-    <lastmod>2022-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://jums.club/tags/algorithm/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/Git/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jums.club/tags/algorithm/</loc>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/cpp/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/%E5%85%A8%E6%A0%88/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/Docker/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/GitHub/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/tool/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/share/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/software-cracking/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/cv/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/glossary/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/vue/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/Nginx/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/echarts/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/%E5%B0%8F%E5%B9%B8%E8%BF%90/</loc>
-    <lastmod>2022-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://jums.club/tags/Windows/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/local-search/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jums.club/tags/Windows/</loc>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/note/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/interview/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/computer-network/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/leetcode/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/dp/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/hard/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/js/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/tree/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/simple/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/database/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/matplotlib/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/play/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/music/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/middle/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/Postman/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/movie/</loc>
-    <lastmod>2022-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://jums.club/tags/thread/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/personal-opinion/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://jums.club/tags/software-download/</loc>
-    <lastmod>2022-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://jums.club/tags/sql-server/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <loc>http://jums.club/tags/thread/</loc>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/transfer-tool/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jums.club/tags/sql-server/</loc>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://jums.club/tags/software-download/</loc>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/game/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/steam/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/interview-question/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://jums.club/tags/Word/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
