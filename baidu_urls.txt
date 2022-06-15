@@ -1,3 +1,4 @@
+http://jums.club/a-java-bug-about-long-type/
 http://jums.club/git-change-commit-message/
 http://jums.club/php-upload-file/
 http://jums.club/phh-diff-and-919/
@@ -97,4 +98,3 @@ http://jums.club/tcp-ip-cwnd/
 http://jums.club/http-and-https/
 http://jums.club/cpp-point-reference/
 http://jums.club/cpp-struct-class/
-http://jums.club/c-malloc-new/
