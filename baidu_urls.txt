@@ -1,3 +1,4 @@
+http://jums.club/git-revoke-merge/
 http://jums.club/java-diff-between-interface-and-abstract-class/
 http://jums.club/java-default-keyword/
 http://jums.club/git-reset-to-specified-commit/
@@ -97,4 +98,3 @@ http://jums.club/java-lock-mechanism/
 http://jums.club/why-tcp-three-not-two/
 http://jums.club/stack-and-heap-java/
 http://jums.club/stack-and-heap/
-http://jums.club/tcp-and-udp/
