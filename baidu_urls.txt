@@ -1,3 +1,4 @@
+http://jums.club/how-to-register-chatgpt-account/
 http://jums.club/js-batch-download/
 http://jums.club/linux-rm-files-but-not-release-the-disk/
 http://jums.club/git-revoke-merge/
@@ -97,4 +98,3 @@ http://jums.club/enum-singleton/
 http://jums.club/java-polymorphism2/
 http://jums.club/java-polymorphism/
 http://jums.club/java-lock-mechanism/
-http://jums.club/why-tcp-three-not-two/
