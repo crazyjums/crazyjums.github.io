@@ -1,0 +1,422 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Linux定时任务教程 | CrazyJums</title><meta name="keywords" content="Linux,教程"><meta name="author" content="CrazyJums"><meta name="copyright" content="CrazyJums"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1 教程1.1 安装crontabs123yum install contabs  #通过yum安装systemctl enable crond  #设置开机启动systemctl start crond   #启动  1.2 查看crontab服务的状态：1service crond status   1.3 查看crontab的日志信息12tail -f &#x2F;var&#x2F;log&#x2F;cron  #cro">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta property="og:type" content="article">
+<meta property="og:title" content="Linux定时任务教程">
+<meta property="og:url" content="http://jums.club/linux-cron-tutorials/index.html">
+<meta property="og:site_name" content="CrazyJums">
+<meta property="og:description" content="1 教程1.1 安装crontabs123yum install contabs  #通过yum安装systemctl enable crond  #设置开机启动systemctl start crond   #启动  1.2 查看crontab服务的状态：1service crond status   1.3 查看crontab的日志信息12tail -f &#x2F;var&#x2F;log&#x2F;cron  #cro">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jums.club/images/article2/crontab-syntax-explained.png">
+<meta property="article:published_time" content="2021-09-08T08:28:08.000Z">
+<meta property="article:modified_time" content="2023-08-15T09:40:39.188Z">
+<meta property="article:author" content="CrazyJums">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jums.club/images/article2/crontab-syntax-explained.png"><link rel="shortcut icon" href="/images/favicon_64.ico"><link rel="canonical" href="http://jums.club/linux-cron-tutorials/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="yiOH4yHRf0eeVuko"/><meta name="qihu-site-verification" content="d182b3f28525f2db83acfaaf6e696dba"/><meta name="bing-site-verification" content="88688A1E5B9FE1F1F5EDAA94C73CD07D"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: '9335780214',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?109416411ccef2c884dd6e0306467b1d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-153513094-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-153513094-1');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: CrazyJums","link":"Link: ","source":"Source: CrazyJums","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Linux定时任务教程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-15 17:40:39'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">254</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">68</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://jums.club/images/article2/crontab-syntax-explained.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">CrazyJums</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/leetcode/"><i class="fa-fw fa fa-code"></i><span> LeetCode</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comments</span></a></div><div class="menus_item"><a class="site-page" href="/kbooks/"><i class="fa-fw fa fa-book"></i><span> Kbooks</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/media/"><i class="fa-fw fa fa-play"></i><span> Media</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Linux定时任务教程<a class="post-edit-link" href="https://github.com/crazyjums/blog3/edit/master/source/_posts/linux-cron-tutorials.md" title="Edited on" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-09-08T08:28:08.000Z" title="Created 2021-09-08 16:28:08">2021-09-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-08-15T09:40:39.188Z" title="Updated 2023-08-15 17:40:39">2023-08-15</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">4.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>14min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Linux定时任务教程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/linux-cron-tutorials/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/linux-cron-tutorials/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="1-教程"><a href="#1-教程" class="headerlink" title="1 教程"></a>1 教程</h2><h3 id="1-1-安装crontabs"><a href="#1-1-安装crontabs" class="headerlink" title="1.1 安装crontabs"></a>1.1 安装crontabs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install contabs  <span class="comment">#通过yum安装</span></span><br><span class="line">systemctl <span class="built_in">enable</span> crond  <span class="comment">#设置开机启动</span></span><br><span class="line">systemctl start crond   <span class="comment">#启动</span></span><br></pre></td></tr></table></figure>
+
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><h3 id="1-2-查看crontab服务的状态："><a href="#1-2-查看crontab服务的状态：" class="headerlink" title="1.2 查看crontab服务的状态："></a>1.2 查看crontab服务的状态：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service crond status</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://jums.club/images/article2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210908165057.png"></p>
+<h3 id="1-3-查看crontab的日志信息"><a href="#1-3-查看crontab的日志信息" class="headerlink" title="1.3 查看crontab的日志信息"></a>1.3 查看crontab的日志信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">tail</span> -f /var/log/cron  <span class="comment">#crontab的日志信息放在/var/log文件夹中</span></span><br><span class="line"><span class="built_in">cat</span>  /vat/log/cron</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://jums.club/images/article2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210908165524.png"></p>
+<blockquote>
+<p>在crontab定时执行脚本的过程中，可能会有文件权限的问题，比如：</p>
+<p><img src="https://jums.club/images/article2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210908165556.png"></p>
+<p>这个时候，需要给定时任务执行的脚本一个可执行的权限，修改权限的命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> 777 /home/centos/sh/test.sh  <span class="comment">#给所有权限</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="1-4-配置定时任务"><a href="#1-4-配置定时任务" class="headerlink" title="1.4 配置定时任务"></a>1.4 配置定时任务</h3><p>crontab的定时任务文件放在<code>/etc/crontab</code>文件中，直接使用<code>vim</code>修改即可：</p>
+<p><img src="https://jums.club/images/article2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210908165920.png"></p>
+<p><code>/etc/crontab</code>文件默认内容如下，其中也解释了每个符号代表什么意思：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">SHELL=/bin/bash</span><br><span class="line">PATH=/sbin:/bin:/usr/sbin:/usr/bin</span><br><span class="line">MAILTO=HOME=/</span><br><span class="line"># run-parts</span><br><span class="line">51 * * * * root run-parts /etc/cron.hourly</span><br><span class="line">24 7 * * * root run-parts /etc/cron.daily</span><br><span class="line">22 4 * * 0 root run-parts /etc/cron.weekly</span><br><span class="line">42 4 1 * * root run-parts /etc/cron.monthly</span><br></pre></td></tr></table></figure>
+
+<p>前四行是用来配置crond任务运行的环境变量，第一行<code>SHELL</code>变量指定了系统要使用哪个<code>shell</code>，这里是<code>bash</code>，第二行<code>PATH</code>变量指定了系统执行 命令的路径，第三行<code>MAILTO</code>变量指定了<code>crond</code>的任务执行信息将通过电子邮件发送给<code>root</code>用户，如果<code>MAILTO</code>变量的值为空，则表示不发送任务 执行信息给用户，第四行的<code>HOME</code>变量指定了在执行命令或者脚本时使用的主目录。第六至九行表示的含义将在下个小节详细讲述。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在以上各个字段中，还可以使用以下特殊字符：</span><br><span class="line">星号（*）：代表所有可能的值，例如month字段如果是星号，则表示在满足其它字段的制约条件后每月都执行该命令操作。</span><br><span class="line">逗号（,）：可以用逗号隔开的值指定一个列表范围，例如，“1,2,5,7,8,9”</span><br><span class="line">中杠（-）：可以用整数之间的中杠表示一个整数范围，例如“2-6”表示“2,3,4,5,6”</span><br><span class="line">正斜线（/）：可以用正斜线指定时间的间隔频率，例如“0-23/2”表示每两小时执行一次。同时正斜线可以和星号一起使用，例如*/10，如果用在minute字段，表示每十分钟执行一次。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">文件：</span><br><span class="line">/etc/cron.deny</span><br><span class="line">说明：</span><br><span class="line">该文件中所列用户不允许使用crontab命令</span><br><span class="line"></span><br><span class="line">文件：</span><br><span class="line">/etc/cron.allow</span><br><span class="line">说明：</span><br><span class="line">该文件中所列用户允许使用crontab命令</span><br><span class="line"></span><br><span class="line">文件：</span><br><span class="line">/var/spool/cron/</span><br><span class="line">说明：</span><br><span class="line">所有用户crontab文件存放的目录,以用户名命名</span><br><span class="line"></span><br><span class="line">crontab文件的含义：</span><br><span class="line">用户所建立的crontab文件中，每一行都代表一项任务，每行的每个字段代表一项设置，它的格式共分为六个字段，前五段是时间设定段，第六段是要执行的命令段，格式如下：</span><br><span class="line">minute hour day month week command</span><br><span class="line"></span><br><span class="line">其中：</span><br><span class="line">minute： 表示分钟，可以是从0到59之间的任何整数。</span><br><span class="line">hour：表示小时，可以是从0到23之间的任何整数。</span><br><span class="line">day：表示日期，可以是从1到31之间的任何整数。</span><br><span class="line">month：表示月份，可以是从1到12之间的任何整数。</span><br><span class="line">week：表示星期几，可以是从0到7之间的任何整数，这里的0或7代表星期日。</span><br><span class="line">command：要执行的命令，可以是系统命令，也可以是自己编写的脚本文件。</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://jums.club/images/article2/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210908165951.png"></p>
+<ul>
+<li>第一个位置：分钟（0-59）</li>
+<li>第二个位置：小时（0-23）</li>
+<li>第三个位置：天（1-31）</li>
+<li>第四个位置：月（1-12）</li>
+<li>第五个位置：星期（0-6）</li>
+<li>第六个位置：用户名</li>
+<li>第七个位置：需要定时执行的脚本或者命令</li>
+</ul>
+<h4 id="（1）修改定时任务："><a href="#（1）修改定时任务：" class="headerlink" title="（1）修改定时任务："></a>（1）修改定时任务：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e  <span class="comment">#该命令等同于  vim /etc/crontab</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="（2）查看定时任务"><a href="#（2）查看定时任务" class="headerlink" title="（2）查看定时任务"></a>（2）查看定时任务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -l  <span class="comment">#该命令等同于 cat /etc/crontab</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="（3）删除定时任务"><a href="#（3）删除定时任务" class="headerlink" title="（3）删除定时任务"></a>（3）删除定时任务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">crontab -r [user]  <span class="comment">#如果指定[user]，则默认删除当前用户的定时任务</span></span><br><span class="line"><span class="comment"># 其实是删除了/var/spool/cron目录下的定时任务文件，这个文件以当前用户命令</span></span><br><span class="line"><span class="comment"># 谨慎使用该命令</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-5-crontab命令详解"><a href="#1-5-crontab命令详解" class="headerlink" title="1.5 crontab命令详解"></a>1.5 crontab命令详解</h3><h4 id="1-5-1-命令格式"><a href="#1-5-1-命令格式" class="headerlink" title="1.5.1 命令格式"></a>1.5.1 命令格式</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">crontab [-u user] file</span><br><span class="line">crontab [-u user] [ -e | -l | -r ]</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-5-2-命令功能"><a href="#1-5-2-命令功能" class="headerlink" title="1.5.2 命令功能"></a>1.5.2 命令功能</h4><p>通过crontab 命令，我们可以在固定的间隔时间执行指定的系统指令或 shell script脚本。时间间隔的单位可以是分钟、小时、日、月、周及以上的任意组合。这个命令非常设合周期性的日志分析或数据备份等工作。</p>
+<h4 id="1-5-3-命令参数"><a href="#1-5-3-命令参数" class="headerlink" title="1.5.3 命令参数"></a>1.5.3 命令参数</h4><ul>
+<li><p><code>-u user</code>：用来设定某个用户的crontab服务，例如，“-u ixdba”表示设定ixdba用户的crontab服务，此参数一般有root用户来运行。</p>
+</li>
+<li><p><code>file</code>：file是命令文件的名字,表示将file做为crontab的任务列表文件并载入crontab。如果在命令行中没有指定这个文件，crontab命令将接受标准输入（键盘）上键入的命令，并将它们载入crontab。</p>
+</li>
+<li><p><code>-e</code>：编辑某个用户的crontab文件内容。如果不指定用户，则表示编辑当前用户的crontab文件。</p>
+</li>
+<li><p><code>-l</code>：显示某个用户的crontab文件内容，如果不指定用户，则表示显示当前用户的crontab文件内容。</p>
+</li>
+<li><p><code>-r</code>：从&#x2F;var&#x2F;spool&#x2F;cron目录中删除某个用户的crontab文件，如果不指定用户，则默认删除当前用户的crontab文件。</p>
+</li>
+<li><p><code>-i</code>：在删除用户的crontab文件时给确认提示。</p>
+</li>
+</ul>
+<h4 id="1-5-4-常用方法"><a href="#1-5-4-常用方法" class="headerlink" title="1.5.4 常用方法"></a>1.5.4 常用方法</h4><ol>
+<li><p>创建一个新的crontab文件</p>
+<p>在 考虑向cron进程提交一个crontab文件之前，首先要做的一件事情就是设置环境变量EDITOR。cron进程根据它来确定使用哪个编辑器编辑 crontab文件。99%的UNIX和LINUX用户都使用vi，如果你也是这样，那么你就编辑$ HOME目录下的<code>.profile</code>文件，在其 中加入这样一行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EDITOR=vi; <span class="built_in">export</span> EDITOR</span><br></pre></td></tr></table></figure>
+
+<p>然后保存并退出。不妨创建一个名为cron的文件，其中是用户名，例如， davecron。在该文件中加入如下的内容。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># (put your own initials here)echo the date to the console every</span></span><br><span class="line"><span class="comment"># 15minutes between 6pm and 6am</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0,15,30,45 18-06 * /bin/echo ‘<span class="built_in">date</span>’ &gt; /dev/console</span><br></pre></td></tr></table></figure>
+
+<p>保存并退出。确信前面5个域用空格分隔。</p>
+<p>在 上面的例子中，系统将每隔15分钟向控制台输出一次当前时间。如果系统崩溃或挂起，从最后所显示的时间就可以一眼看出系统是什么时间停止工作的。在有些 系统中，用<code>tty1</code>来表示控制台，可以根据实际情况对上面的例子进行相应的修改。为了提交你刚刚创建的crontab文件，可以把这个新创建的文件作为cron命令的参数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ crontab davecron</span><br></pre></td></tr></table></figure>
+
+<p>现在该文件已经提交给cron进程，它将每隔15分钟运行一次。</p>
+<p>同时，新创建文件的一个副本已经被放在<code>/var/spool/cron</code>目录中，文件名就是用户名(即dave)。</p>
+</li>
+<li><p>列出crontab文件</p>
+<p>为了列出crontab文件，可以用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ crontab -l</span><br><span class="line">0,15,30,45,18-06 * * * /bin/echo`<span class="built_in">date</span>`&gt; dev/tty1</span><br></pre></td></tr></table></figure>
+
+<p>你将会看到和上面类似的内容。可以使用这种方法在$ H O M E目录中对crontab文件做一备份：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ crontab -l &gt; <span class="variable">$HOME</span>/mycron</span><br></pre></td></tr></table></figure>
+
+<p>这样，一旦不小心误删了crontab文件，可以用上一节所讲述的方法迅速恢复。</p>
+</li>
+<li><p>编辑crontab文件</p>
+<p>如果希望添加、删除或编辑crontab文件中的条目，而E D I TO R环境变量又设置为<code>vi</code>，那么就可以用<code>vi</code>来编辑crontab文件，相应的命令为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ crontab -e</span><br></pre></td></tr></table></figure>
+
+<p>可以像使用v i编辑其他任何文件那样修改crontab文件并退出。如果修改了某些条目或添加了新的条目，那么在保存该文件时， <code>cron</code>会对其进行必要的完整性检查。如果其中的某个域出现了超出允许范围的值，它会提示你。</p>
+<p>我们在编辑crontab文件时，没准会加入新的条目。例如，加入下面的一条：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># DT:delete core files,at 3.30am on 1,7,14,21,26,26 days of each month</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">30 3 1,7,14,21,26 /bin/find -name “core’ -<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \;</span><br></pre></td></tr></table></figure>
+
+<p>现在保存并退出。最好在crontab文件的每一个条目之上加入一条注释，这样就可以知道它的功能、运行时间，更为重要的是，知道这是哪位用户的作业。</p>
+<p>现在让我们使用前面讲过的<code>crontab -l</code>命令列出它的全部信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ crontab -l</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># (crondave installed on Tue May 4 13:07:43 1999)</span><br><span class="line"># DT:ech the date to the console every 30 minites</span><br><span class="line">0,15,30,45 18-06 * * * /bin/echo`date`&gt; /dev/tty1</span><br><span class="line"># DT:delete core files,at 3.30am on 1,7,14,21,26,26 days of each month</span><br><span class="line">30 3 1,7,14,21,26 * * /bin/find -name “core’ -exec rm &#123;&#125; \;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除crontab文件</p>
+<p>要删除crontab文件，可以用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ crontab -r</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>恢复丢失的crontab文件</p>
+<p>如果不小心误删了crontab文件，假设你在自己的<code>$HOME</code>目录下还有一个备份，那么可以将其拷贝到<code>/var/spool/cron/</code>，其中是用户名。如果由于权限问题无法完成拷贝，可以用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ crontab</span><br></pre></td></tr></table></figure>
+
+<p>其中，是你在<code>$HOME</code>目录中副本的文件名。</p>
+<p>我建议你在自己的<code>$HOME</code>目录中保存一个该文件的副本。我就有过类似的经历，有数次误删了crontab文件（因为<code>r键</code>紧挨在<code>e键</code>的右边）。这就是为什么有些系统文档建议不要直接编辑crontab文件，而是编辑该文件的一个副本，然后重新提交新的文件。</p>
+<p>有些crontab的变体有些怪异，所以在使用crontab命令时要格外小心。如果遗漏了任何选项，crontab可能会打开一个空文件，或者看起来像是个空文件。这时敲<code>delete</code>键退出，不要按，否则你将丢失crontab文件。</p>
+</li>
+</ol>
+<h2 id="2-案例"><a href="#2-案例" class="headerlink" title="2 案例"></a>2 案例</h2><h3 id="（1）每5秒执行一次任务"><a href="#（1）每5秒执行一次任务" class="headerlink" title="（1）每5秒执行一次任务"></a>（1）每5秒执行一次任务</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">*/1 * * * * /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 5  &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 10 &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 15 &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 20 &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 25 &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 30 &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 35 &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 40 &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 45 &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 50 &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br><span class="line">*/1 * * * * sleep 55 &amp;&amp; /bin/date &gt;&gt;/tmp/date.txt</span><br></pre></td></tr></table></figure>
+
+<h3 id="（2）更多案例"><a href="#（2）更多案例" class="headerlink" title="（2）更多案例"></a>（2）更多案例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">实例1：每1分钟执行一次<span class="built_in">command</span></span><br><span class="line">命令：</span><br><span class="line">* * * * * <span class="built_in">command</span></span><br><span class="line"></span><br><span class="line">实例2：每小时的第3和第15分钟执行</span><br><span class="line">命令：</span><br><span class="line">3,15 * * * * <span class="built_in">command</span></span><br><span class="line"></span><br><span class="line">实例3：在上午8点到11点的第3和第15分钟执行</span><br><span class="line">命令：</span><br><span class="line">3,15 8-11 * * * <span class="built_in">command</span></span><br><span class="line"></span><br><span class="line">实例4：每隔两天的上午8点到11点的第3和第15分钟执行</span><br><span class="line">命令：</span><br><span class="line">3,15 8-11 */2 * * <span class="built_in">command</span></span><br><span class="line"></span><br><span class="line">实例5：每个星期一的上午8点到11点的第3和第15分钟执行</span><br><span class="line">命令：</span><br><span class="line">3,15 8-11 * * 1 <span class="built_in">command</span></span><br><span class="line"></span><br><span class="line">实例6：每晚的21:30重启smb</span><br><span class="line">命令：</span><br><span class="line">30 21 * * * /etc/init.d/smb restart</span><br><span class="line"></span><br><span class="line">实例7：每月1、10、22日的4 : 45重启smb</span><br><span class="line">命令：</span><br><span class="line">45 4 1,10,22 * * /etc/init.d/smb restart</span><br><span class="line"></span><br><span class="line">实例8：每周六、周日的1 : 10重启smb</span><br><span class="line">命令：</span><br><span class="line">10 1 * * 6,0 /etc/init.d/smb restart</span><br><span class="line"></span><br><span class="line">实例9：每天18 : 00至23 : 00之间每隔30分钟重启smb</span><br><span class="line">命令：</span><br><span class="line">0,30 18-23 * * * /etc/init.d/smb restart</span><br><span class="line"></span><br><span class="line">实例10：每星期六的晚上11 : 00 pm重启smb</span><br><span class="line">命令：</span><br><span class="line">0 23 * * 6 /etc/init.d/smb restart</span><br><span class="line"></span><br><span class="line">实例11：每一小时重启smb</span><br><span class="line">命令：</span><br><span class="line">* */1 * * * /etc/init.d/smb restart</span><br><span class="line"></span><br><span class="line">实例12：晚上11点到早上7点之间，每隔一小时重启smb</span><br><span class="line">命令：</span><br><span class="line">* 23-7/1 * * * /etc/init.d/smb restart</span><br><span class="line"></span><br><span class="line">实例13：每月的4号与每周一到周三的11点重启smb</span><br><span class="line">命令：</span><br><span class="line">0 11 4 * mon-wed /etc/init.d/smb restart</span><br><span class="line"></span><br><span class="line">实例14：一月一号的4点重启smb</span><br><span class="line">命令：</span><br><span class="line">0 4 1 jan * /etc/init.d/smb restart</span><br><span class="line"></span><br><span class="line">实例15：每小时执行/etc/cron.hourly目录内的脚本</span><br><span class="line">命令：</span><br><span class="line">01 * * * * root run-parts /etc/cron.hourly</span><br><span class="line">说明：</span><br><span class="line">run-parts这个参数了，如果去掉这个参数的话，后面就可以写要运行的某个脚本名，而不是目录名了</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-使用注意"><a href="#3-使用注意" class="headerlink" title="3 使用注意"></a>3 使用注意</h2><p>注意环境变量问题<br>有时我们创建了一个crontab，但是这个任务却无法自动执行，而手动执行这个任务却没有问题，这种情况一般是由于在crontab文件中没有配置环境变量引起的。</p>
+<p>在 crontab文件中定义多个调度任务时，需要特别注意的一个问题就是环境变量的设置，因为我们手动执行某个任务时，是在当前shell环境下进行的，程 序当然能找到环境变量，而系统自动执行任务调度时，是不会加载任何环境变量的，因此，就需要在crontab文件中指定任务运行所需的所有环境变量，这 样，系统执行任务调度时就没有问题了。</p>
+<p>不要假定cron知道所需要的特殊环境，它其实并不知道。所以你要保证在shelll脚本中提供所有必要的路径和环境变量，除了一些自动设置的全局变量。所以注意如下3点：</p>
+<ol>
+<li><p>脚本中涉及文件路径时写全局路径；</p>
+</li>
+<li><p>脚本执行要用到java或其他环境变量时，通过source命令引入环境变量，如：</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> start_cbp.sh</span><br><span class="line"><span class="comment">#!/bin/sh</span></span><br><span class="line"><span class="built_in">source</span> /etc/profile</span><br><span class="line"><span class="built_in">export</span> RUN_CONF=/home/d139/conf/platform/cbp/cbp_jboss.conf</span><br><span class="line">/usr/local/jboss-4.0.5/bin/run.sh -c mev &amp;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>当手动执行脚本OK，但是crontab死活不执行时。这时必须大胆怀疑是环境变量惹的祸，并可以尝试在crontab中直接引入环境变量解决问题。如：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 . /etc/profile;/bin/sh /var/www/java/audit_no_count/bin/restart_audit.sh</span><br></pre></td></tr></table></figure>
+
+<p>注意清理系统用户的邮件日志<br>每条任务调度执行完毕，系统都会将任务输出信息通过电子邮件的形式发送给当前系统用户，这样日积月累，日志信息会非常大，可能会影响系统的正常运行，因此，将每条任务进行重定向处理非常重要。</p>
+<p>例如，可以在crontab文件中设置如下形式，忽略日志输出：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 */3* /usr/local/apache2/apachectl restart &gt;/dev/null 2&gt;&amp;1</span><br></pre></td></tr></table></figure>
+
+<p><code>/dev/null 2&gt;&amp;1</code>表示先将标准输出重定向到&#x2F;dev&#x2F;null，然后将标准错误重定向到标准输出，由于标准输出已经重定向到了<code>/dev/null</code>，因此标准错误也会重定向到<code>/dev/null</code>，这样日志输出问题就解决了。</p>
+<p>系统级任务调度与用户级任务调度<br>系 统级任务调度主要完成系统的一些维护操作，用户级任务调度主要完成用户自定义的一些任务，可以将用户级任务调度放到系统级任务调度来完成（不建议这么 做），但是反过来却不行，root用户的任务调度操作可以通过<code>crontab –uroot –e</code>来设置，也可以将调度任务直接写入<code>/etc /crontab</code>文件，需要注意的是，如果要定义一个定时重启系统的任务，就必须将任务放到<code>/etc/crontab</code>文件，即使在root用户下创建一个 定时重启系统的任务也是无效的。</p>
+<p>其他注意事项<br>新创建的<code>cron job</code>，不会马上执行，至少要过2分钟才执行。如果重启cron则马上执行。</p>
+<p>当crontab突然失效时，可以尝试<code>/etc/init.d/crond restart</code>解决问题。或者查看日志看某个job有没有执行&#x2F;报错<code>tail -f /var/log/cron</code>。</p>
+<p>千万别乱运行<code>crontab -r</code>。它从Crontab目录（<code>/var/spool/cron</code>）中删除用户的Crontab文件。删除了该用户的所有crontab都没了。</p>
+<p>在crontab中<code>%</code>是有特殊含义的，表示换行的意思。如果要用的话必须进行转义<code>\%</code>，如经常用的<code>date &#39;+%Y%m%d&#39;</code>在crontab里是不会执行的，应该换成<code>date &#39;+\%Y\%m\%d&#39;</code>。</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/miracle-luna/p/11832609.html">Linux crontab 每5秒钟执行一次 shell 脚本 的方法</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.huaweicloud.com/articles/56b23efe03dc97883ccef09c6fe7e5c1.html">Linux定时任务Crontab命令详解</a></li>
+</ul>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">CrazyJums</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://jums.club/linux-cron-tutorials/">http://jums.club/linux-cron-tutorials/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a></div><div class="post_share"><div class="social-share" data-image="https://jums.club/images/article2/crontab-syntax-explained.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> Donate</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/wechatpay.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li><li class="reward-item"><a href="/images/bitcoin.jpg" target="_blank"><img class="post-qr-code-img" src="/images/bitcoin.jpg" alt="bitcoin"/></a><div class="post-qr-code-desc">bitcoin</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/useful-chrome-plugins/"><img class="prev-cover" src="https://jums.club/images/article2/微信截图_20210909195642.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">好用的chrome插件，方便开发</div></div></a></div><div class="next-post pull-right"><a href="/linux-for-lnmp/"><img class="next-cover" src="https://jums.club/images/article2/v2-950fa190584ed462ed4c61f9f5beccf5_1440w.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">在centos中安装LNMP开发环境</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/ansible-tutorials/" title="ansible入门快速上手使用教程"><img class="cover" src="https://jums.club/images/article2/GettingStartedWithAnsible.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-20</div><div class="title">ansible入门快速上手使用教程</div></div></a></div><div><a href="/vim-tutoraials/" title="vim入门教程"><img class="cover" src="https://jums.club/images/article2/Vim-For-New-Users-And-Beginner.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-21</div><div class="title">vim入门教程</div></div></a></div><div><a href="/How-to-connect-remote-redis-server/" title="How to connect remote redis server"><img class="cover" src="https://jums.club/images/article/banner-1544x500.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-30</div><div class="title">How to connect remote redis server</div></div></a></div><div><a href="/awk-cases/" title="awk常用案例"><img class="cover" src="https://jums.club/images/article2/v2-bedc10fa7a3460159d528bd7405571df_720w.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-31</div><div class="title">awk常用案例</div></div></a></div><div><a href="/brfore-work/" title="Before you start work, you should know ..."><img class="cover" src="https://jums.club/images/article/apps.46003.14259451864568504.ad5e5d07-0fbb-46ed-b9b6-a1b781645691.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-24</div><div class="title">Before you start work, you should know ...</div></div></a></div><div><a href="/diff-in-select-poll-epoll/" title="select、poll和epoll区别"><img class="cover" src="https://jums.club/images/article2/maxresdefault.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-23</div><div class="title">select、poll和epoll区别</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">CrazyJums</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">254</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">68</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/crazyjums"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/crazyjums" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://jums.club/images/mywechat.jpg" target="_blank" title="Wechat"><i class="fa fa-comments"></i></a><a class="social-icon" href="https://blog.csdn.net/qq_33521184" target="_blank" title="Blog"><i class="fa fa-bold"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">如果有疑问可以微信我：crazyjumsz</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%95%99%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">1 教程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%AE%89%E8%A3%85crontabs"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 安装crontabs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E6%9F%A5%E7%9C%8Bcrontab%E6%9C%8D%E5%8A%A1%E7%9A%84%E7%8A%B6%E6%80%81%EF%BC%9A"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 查看crontab服务的状态：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E6%9F%A5%E7%9C%8Bcrontab%E7%9A%84%E6%97%A5%E5%BF%97%E4%BF%A1%E6%81%AF"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 查看crontab的日志信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E9%85%8D%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.4.</span> <span class="toc-text">1.4 配置定时任务</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E4%BF%AE%E6%94%B9%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%EF%BC%9A"><span class="toc-number">1.4.1.</span> <span class="toc-text">（1）修改定时任务：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E6%9F%A5%E7%9C%8B%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.4.2.</span> <span class="toc-text">（2）查看定时任务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E5%88%A0%E9%99%A4%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.4.3.</span> <span class="toc-text">（3）删除定时任务</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-crontab%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.5.</span> <span class="toc-text">1.5 crontab命令详解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-1-%E5%91%BD%E4%BB%A4%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.5.1.</span> <span class="toc-text">1.5.1 命令格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-2-%E5%91%BD%E4%BB%A4%E5%8A%9F%E8%83%BD"><span class="toc-number">1.5.2.</span> <span class="toc-text">1.5.2 命令功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-3-%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0"><span class="toc-number">1.5.3.</span> <span class="toc-text">1.5.3 命令参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-4-%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.5.4.</span> <span class="toc-text">1.5.4 常用方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%A1%88%E4%BE%8B"><span class="toc-number">2.</span> <span class="toc-text">2 案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E6%AF%8F5%E7%A7%92%E6%89%A7%E8%A1%8C%E4%B8%80%E6%AC%A1%E4%BB%BB%E5%8A%A1"><span class="toc-number">2.1.</span> <span class="toc-text">（1）每5秒执行一次任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E6%9B%B4%E5%A4%9A%E6%A1%88%E4%BE%8B"><span class="toc-number">2.2.</span> <span class="toc-text">（2）更多案例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F"><span class="toc-number">3.</span> <span class="toc-text">3 使用注意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference"><span class="toc-number">4.</span> <span class="toc-text">Reference</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="toc-number">5.</span> <span class="toc-text">写在最后</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/shopping-by-cryptocurrency/" title="如何用加密货币购买苹果礼品卡（apple gift card）等商品"><img src="https://jums.club/images/article2/cryptocurrency.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何用加密货币购买苹果礼品卡（apple gift card）等商品"/></a><div class="content"><a class="title" href="/shopping-by-cryptocurrency/" title="如何用加密货币购买苹果礼品卡（apple gift card）等商品">如何用加密货币购买苹果礼品卡（apple gift card）等商品</a><time datetime="2023-08-05T10:31:03.000Z" title="Created 2023-08-05 18:31:03">2023-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/pandora-a-fake-chatgpt/" title="Pandora：一个让你呼吸顺畅的ChatGPT"><img src="https://jums.club/images/article2/chatgpt_is_block.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Pandora：一个让你呼吸顺畅的ChatGPT"/></a><div class="content"><a class="title" href="/pandora-a-fake-chatgpt/" title="Pandora：一个让你呼吸顺畅的ChatGPT">Pandora：一个让你呼吸顺畅的ChatGPT</a><time datetime="2023-05-31T07:01:08.000Z" title="Created 2023-05-31 15:01:08">2023-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/php-apcu/" title="PHP常用扩展， PHP用户级缓存——APCu原理以及用法"><img src="https://jums.club/images/article2/image-48.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PHP常用扩展， PHP用户级缓存——APCu原理以及用法"/></a><div class="content"><a class="title" href="/php-apcu/" title="PHP常用扩展， PHP用户级缓存——APCu原理以及用法">PHP常用扩展， PHP用户级缓存——APCu原理以及用法</a><time datetime="2023-02-20T04:54:57.000Z" title="Created 2023-02-20 12:54:57">2023-02-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/how-to-register-chatgpt-account/" title="如何注册chatgpt账号，保姆级教程"><img src="https://jums.club/images/article2/chatgpt-image.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何注册chatgpt账号，保姆级教程"/></a><div class="content"><a class="title" href="/how-to-register-chatgpt-account/" title="如何注册chatgpt账号，保姆级教程">如何注册chatgpt账号，保姆级教程</a><time datetime="2023-02-13T12:08:45.000Z" title="Created 2023-02-13 20:08:45">2023-02-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/js-batch-download/" title="循环window.location下载文件，每次只下载最后一个解决办法"><img src="https://jums.club/images/article2/2470434-20210908140923411-83563820.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="循环window.location下载文件，每次只下载最后一个解决办法"/></a><div class="content"><a class="title" href="/js-batch-download/" title="循环window.location下载文件，每次只下载最后一个解决办法">循环window.location下载文件，每次只下载最后一个解决办法</a><time datetime="2022-08-09T12:36:24.000Z" title="Created 2022-08-09 20:36:24">2022-08-09</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://jums.club/images/article2/crontab-syntax-explained.png')"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2023 By CrazyJums</div><div class="footer_custom_text">独立思考、不盲从、不撒谎</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '2lPeEraOnOk7GF6ou1WWs6BP-gzGzoHsz',
+      appKey: 'nXeW1bmcRE4TDrorjmdqj0ML',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end --></body></html>
