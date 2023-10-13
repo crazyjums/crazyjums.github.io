@@ -8,7 +8,7 @@
       <link href="/go-env-goinsecure/"/>
       <url>/go-env-goinsecure/</url>
       
-        <content type="html"><![CDATA[<h2 id="1-go-mod-tidy"><a href="#1-go-mod-tidy" class="headerlink" title="1 go mod tidy"></a>1 go mod tidy</h2><p><code>go mod tidy</code>默认情况下在拉取go的依赖包时都是走的https协议，但是go的私有git仓库都是只支持http协议，所以当你的<code>go.mod</code>里面有私有仓库的依赖时，在使用<code>go mod tidy</code>拉取依赖时，一定会遇到这么个问题，就是使用https协议去请求你的私有仓库的依赖，导致请求不同，拉取不到。</p><h2 id="解决方法1"><a href="#解决方法1" class="headerlink" title="解决方法1"></a>解决方法1</h2><p>通过设置git环境配置，强制让私有仓库的请求不走https协议，参考：<a href="https://blog.csdn.net/sky527759/article/details/124818233">https://blog.csdn.net/sky527759/article/details/124818233</a></p><h2 id="解决方法2"><a href="#解决方法2" class="headerlink" title="解决方法2"></a>解决方法2</h2><p>通过设置go的环境变量，<code>GOINSECURE</code>和<code>GOPRIVATE</code>，把这2个参数设置成私有仓库的域名即可：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go <span class="built_in">env</span> -w GOINSECURE=your.example.com GOPRIVATE=your.example.com</span><br></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="https://blog.csdn.net/sky527759/article/details/124818233">https://blog.csdn.net/sky527759/article/details/124818233</a></li></ol><h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="1-go-mod-tidy"><a href="#1-go-mod-tidy" class="headerlink" title="1 go mod tidy"></a>1 go mod tidy</h2><p><code>go mod tidy</code>默认情况下在拉取go的依赖包时都是走的https协议，但是go的私有git仓库都是只支持http协议，所以当你的<code>go.mod</code>里面有私有仓库的依赖时，在使用<code>go mod tidy</code>拉取依赖时，一定会遇到这么个问题，就是使用https协议去请求你的私有仓库的依赖，导致请求不同，拉取不到。</p><h2 id="2-解决方法1"><a href="#2-解决方法1" class="headerlink" title="2 解决方法1"></a>2 解决方法1</h2><p>通过设置git环境配置，强制让私有仓库的请求不走https协议，参考：<a href="https://blog.csdn.net/sky527759/article/details/124818233">https://blog.csdn.net/sky527759/article/details/124818233</a></p><h2 id="3-解决方法2"><a href="#3-解决方法2" class="headerlink" title="3 解决方法2"></a>3 解决方法2</h2><p>添加参数或环境变量。</p><h3 id="（1）使用-go-get-insecure"><a href="#（1）使用-go-get-insecure" class="headerlink" title="（1）使用 go get -insecure"></a>（1）使用 go get -insecure</h3><p>这种方式不推荐，原因如下</p><ol><li>添加 -insecure 参数即表示更新依赖时可以不去校验CA证书，但是这会带来一个问题：范围无法界定(overkill)，所有与要更新依赖相关联的依赖，均不会去做校验，可能会意外更新到不安全的依赖。</li><li>-insecure 仅支持 go get 命令，不支持 go mod 命令，因此使用 go mod 命令时是无法更新不支持https协议的私有库的。</li><li>添加 GOINSECURE 参数</li></ol><h3 id="（2）使用GOINSECURE环境变量"><a href="#（2）使用GOINSECURE环境变量" class="headerlink" title="（2）使用GOINSECURE环境变量"></a>（2）使用GOINSECURE环境变量</h3><p>推荐这种方式</p><p>在Go 1.14中增加了新的环境变量，用于指定哪些域名下的仓库不去校验CA证书。</p><p>通过设置go的环境变量，<code>GOINSECURE</code>和<code>GOPRIVATE</code>，把这2个参数设置成私有仓库的域名即可：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go <span class="built_in">env</span> -w GOINSECURE=your.example.com GOPRIVATE=your.example.com</span><br></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="https://blog.csdn.net/sky527759/article/details/124818233">https://blog.csdn.net/sky527759/article/details/124818233</a></li><li><a href="https://www.cnblogs.com/hiwz/p/12652153.html">https://www.cnblogs.com/hiwz/p/12652153.html</a></li></ol><h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>]]></content>
       
       
       
@@ -2792,9 +2792,9 @@
       
         <tags>
             
-            <tag> algorithm </tag>
-            
             <tag> cpp </tag>
+            
+            <tag> algorithm </tag>
             
         </tags>
       
@@ -3421,9 +3421,9 @@
             
             <tag> program language </tag>
             
-            <tag> problem solved </tag>
-            
             <tag> Python </tag>
+            
+            <tag> problem solved </tag>
             
         </tags>
       
@@ -3442,9 +3442,9 @@
       
         <tags>
             
-            <tag> problem solved </tag>
-            
             <tag> Python </tag>
+            
+            <tag> problem solved </tag>
             
         </tags>
       
@@ -3656,8 +3656,8 @@
     
     <entry>
       <title>如何使用readthedoc.org编写属于自己的说明文档</title>
-      <link href="/how-to-write-a-document-for-your-project/"/>
-      <url>/how-to-write-a-document-for-your-project/</url>
+      <link href="/html-lunfan-effect/"/>
+      <url>/html-lunfan-effect/</url>
       
         <content type="html"><![CDATA[<h3 id="1-网站"><a href="#1-网站" class="headerlink" title="1 网站"></a>1 网站</h3><p>访问<a href="https://readthedocs.org/">https://readthedocs.org/</a>使用<code>github</code>进行登录，然后倒入自己需要撰写说明文档的项目。如下：<br><img src="https://jums.club/images/article/20200302133939.png" alt="import project">   </p><h3 id="2-创建index-rst-or-README-rst文件"><a href="#2-创建index-rst-or-README-rst文件" class="headerlink" title="2 创建index.rst or README.rst文件"></a>2 创建index.rst or README.rst文件</h3><p>在自己的<code>github</code>项目中，创建你的说明文件，里面放的是你的说明文档的内容，将文件命名为<code>index.rst</code>or<code>README.rst</code>即可。</p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>]]></content>
       
@@ -3675,8 +3675,8 @@
     
     <entry>
       <title>如何使用readthedoc.org编写属于自己的说明文档</title>
-      <link href="/html-lunfan-effect/"/>
-      <url>/html-lunfan-effect/</url>
+      <link href="/how-to-write-a-document-for-your-project/"/>
+      <url>/how-to-write-a-document-for-your-project/</url>
       
         <content type="html"><![CDATA[<h3 id="1-网站"><a href="#1-网站" class="headerlink" title="1 网站"></a>1 网站</h3><p>访问<a href="https://readthedocs.org/">https://readthedocs.org/</a>使用<code>github</code>进行登录，然后倒入自己需要撰写说明文档的项目。如下：<br><img src="https://jums.club/images/article/20200302133939.png" alt="import project">   </p><h3 id="2-创建index-rst-or-README-rst文件"><a href="#2-创建index-rst-or-README-rst文件" class="headerlink" title="2 创建index.rst or README.rst文件"></a>2 创建index.rst or README.rst文件</h3><p>在自己的<code>github</code>项目中，创建你的说明文件，里面放的是你的说明文档的内容，将文件命名为<code>index.rst</code>or<code>README.rst</code>即可。</p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>]]></content>
       
@@ -3735,7 +3735,7 @@
       <link href="/git-connect-to-github/"/>
       <url>/git-connect-to-github/</url>
       
-        <content type="html"><![CDATA[<h3 id="1-生产自己的公钥和私钥"><a href="#1-生产自己的公钥和私钥" class="headerlink" title="1 生产自己的公钥和私钥"></a>1 生产自己的公钥和私钥</h3><p>首先生成一个rsa的私钥和公钥<br>ssh-keygen -t rsa -C “<a href="mailto:&#49;&#53;&#57;&#53;&#x30;&#48;&#57;&#51;&#50;&#49;&#x34;&#64;&#49;&#54;&#x33;&#46;&#99;&#111;&#109;">&#49;&#53;&#57;&#53;&#x30;&#48;&#57;&#51;&#50;&#49;&#x34;&#64;&#49;&#54;&#x33;&#46;&#99;&#111;&#109;</a>“  &#x2F;&#x2F;你的github邮箱帐号，如下：<br><img src="https://jums.club/images/article/1212206-20190330101656413-693026470.png" alt="gen key">   </p><p>执行完该语句之后，会在默认的目录中产生连个文件，我这里的默认目录是（&#x2F;Users&#x2F;jums&#x2F;.ssh），产生的两个文件如下：<br><img src="https://jums.club/images/article/1212206-20190330101839703-1841460597.png" alt="see what it is"></p><p>我们将公钥中的内容提取出来，公钥文件是id_rsa.pub，将公钥放到github网站中:<br><img src="https://jums.club/images/article/1212206-20190330101954804-1835035642.png" alt="the public key">   </p><h3 id="2-配置GitHub"><a href="#2-配置GitHub" class="headerlink" title="2 配置GitHub"></a>2 配置GitHub</h3><p>我们进入到我们的github账号中，进入settings设置中：<br><img src="https://jums.club/images/article/1212206-20190330102235916-125105233.png" alt="settings">   </p><p>找到SSH AND GPG KEYS选项:<br><img src="https://jums.club/images/article/1212206-20190330102303458-1606971343.png" alt="ssh keys">   </p><p>进入到该界面选择NEW SSH KEY那个绿色的按钮:<br><img src="https://jums.club/images/article/1212206-20190330102320633-775203946.png" alt="create ssh keys">   </p><p>点击之后，进入到该界面，我们随便去一个名字，我们将刚才的公钥拷贝到下面的key那一栏中，可以不用把最后自己的邮箱帐号拷贝进来：<br><img src="https://jums.club/images/article/1212206-20190330102354411-507958863.png" alt="copy your public key"></p><h3 id="3-测试"><a href="#3-测试" class="headerlink" title="3 测试"></a>3 测试</h3><p>这些设置完毕之后，我们可以在git bash命令行工具中测试一下，使用ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#109;">&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#109;</a>命令进行测试:   </p><p><img src="https://jums.club/images/article/1212206-20190330102704798-1744561875.png">   </p><blockquote><p>警告来可以不用看，如果显示成这样，那就算是连接成功了。</p></blockquote><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号">   </p>]]></content>
+        <content type="html"><![CDATA[<h3 id="1-生产自己的公钥和私钥"><a href="#1-生产自己的公钥和私钥" class="headerlink" title="1 生产自己的公钥和私钥"></a>1 生产自己的公钥和私钥</h3><p>首先生成一个rsa的私钥和公钥<br>ssh-keygen -t rsa -C “<a href="mailto:&#x31;&#x35;&#57;&#53;&#x30;&#48;&#57;&#x33;&#x32;&#x31;&#52;&#x40;&#49;&#54;&#51;&#46;&#x63;&#111;&#x6d;">&#x31;&#x35;&#57;&#53;&#x30;&#48;&#57;&#x33;&#x32;&#x31;&#52;&#x40;&#49;&#54;&#51;&#46;&#x63;&#111;&#x6d;</a>“  &#x2F;&#x2F;你的github邮箱帐号，如下：<br><img src="https://jums.club/images/article/1212206-20190330101656413-693026470.png" alt="gen key">   </p><p>执行完该语句之后，会在默认的目录中产生连个文件，我这里的默认目录是（&#x2F;Users&#x2F;jums&#x2F;.ssh），产生的两个文件如下：<br><img src="https://jums.club/images/article/1212206-20190330101839703-1841460597.png" alt="see what it is"></p><p>我们将公钥中的内容提取出来，公钥文件是id_rsa.pub，将公钥放到github网站中:<br><img src="https://jums.club/images/article/1212206-20190330101954804-1835035642.png" alt="the public key">   </p><h3 id="2-配置GitHub"><a href="#2-配置GitHub" class="headerlink" title="2 配置GitHub"></a>2 配置GitHub</h3><p>我们进入到我们的github账号中，进入settings设置中：<br><img src="https://jums.club/images/article/1212206-20190330102235916-125105233.png" alt="settings">   </p><p>找到SSH AND GPG KEYS选项:<br><img src="https://jums.club/images/article/1212206-20190330102303458-1606971343.png" alt="ssh keys">   </p><p>进入到该界面选择NEW SSH KEY那个绿色的按钮:<br><img src="https://jums.club/images/article/1212206-20190330102320633-775203946.png" alt="create ssh keys">   </p><p>点击之后，进入到该界面，我们随便去一个名字，我们将刚才的公钥拷贝到下面的key那一栏中，可以不用把最后自己的邮箱帐号拷贝进来：<br><img src="https://jums.club/images/article/1212206-20190330102354411-507958863.png" alt="copy your public key"></p><h3 id="3-测试"><a href="#3-测试" class="headerlink" title="3 测试"></a>3 测试</h3><p>这些设置完毕之后，我们可以在git bash命令行工具中测试一下，使用ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;">&#103;&#105;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;</a>命令进行测试:   </p><p><img src="https://jums.club/images/article/1212206-20190330102704798-1744561875.png">   </p><blockquote><p>警告来可以不用看，如果显示成这样，那就算是连接成功了。</p></blockquote><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号">   </p>]]></content>
       
       
       
@@ -4220,9 +4220,9 @@
             
             <tag> program language </tag>
             
-            <tag> problem solved </tag>
-            
             <tag> Python </tag>
+            
+            <tag> problem solved </tag>
             
         </tags>
       
@@ -4308,9 +4308,9 @@
       
         <tags>
             
-            <tag> problem solved </tag>
-            
             <tag> Python </tag>
+            
+            <tag> problem solved </tag>
             
         </tags>
       
@@ -4362,8 +4362,8 @@
     
     <entry>
       <title>Python使用命令行参数的用法</title>
-      <link href="/how-to-use-python-command-param/"/>
-      <url>/how-to-use-python-command-param/</url>
+      <link href="/how-to-use-setuptools/"/>
+      <url>/how-to-use-setuptools/</url>
       
         <content type="html"><![CDATA[<h3 id="方法一（sys）"><a href="#方法一（sys）" class="headerlink" title="方法一（sys）"></a>方法一（<code>sys</code>）</h3><p>直接看代码： </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python    </span></span><br><span class="line"><span class="comment"># -*- coding: UTF-8 -*-     </span></span><br><span class="line"><span class="keyword">import</span> sys    </span><br><span class="line">    </span><br><span class="line"><span class="built_in">print</span> (<span class="string">&#x27;参数个数为:&#x27;</span>, <span class="built_in">len</span>(sys.argv), <span class="string">&#x27;个参数。&#x27;</span>)    </span><br><span class="line"><span class="built_in">print</span> (<span class="string">&#x27;参数列表:&#x27;</span>, <span class="built_in">str</span>(sys.argv))    </span><br></pre></td></tr></table></figure><p>运行结果：<br><img src="https://jums.club/images/article/20191228112401.png" alt="方法一运行结果">    </p><h3 id="方法二（argparse）"><a href="#方法二（argparse）" class="headerlink" title="方法二（argparse）"></a>方法二（<code>argparse</code>）</h3><p>还是一样，直接看代码：    </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">parser = argparse.ArgumentParser(description=<span class="string">&quot;给Markdown文件中的每一行末尾，添加三个空格和换行符&quot;</span>)    </span><br><span class="line">parser.add_argument(<span class="string">&quot;-f&quot;</span>, <span class="string">&quot;--filename&quot;</span>, default=<span class="literal">None</span>)    </span><br><span class="line">args = parser.parse_args()    </span><br><span class="line">filename = args.filename    </span><br><span class="line"><span class="built_in">print</span>(filename)    </span><br></pre></td></tr></table></figure><p>运行结果：<br><img src="https://jums.club/images/article/20191228112638.png" alt="方法二运行结果">    </p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>]]></content>
       
@@ -4383,8 +4383,8 @@
     
     <entry>
       <title>Python使用命令行参数的用法</title>
-      <link href="/how-to-use-setuptools/"/>
-      <url>/how-to-use-setuptools/</url>
+      <link href="/how-to-use-python-command-param/"/>
+      <url>/how-to-use-python-command-param/</url>
       
         <content type="html"><![CDATA[<h3 id="方法一（sys）"><a href="#方法一（sys）" class="headerlink" title="方法一（sys）"></a>方法一（<code>sys</code>）</h3><p>直接看代码： </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python    </span></span><br><span class="line"><span class="comment"># -*- coding: UTF-8 -*-     </span></span><br><span class="line"><span class="keyword">import</span> sys    </span><br><span class="line">    </span><br><span class="line"><span class="built_in">print</span> (<span class="string">&#x27;参数个数为:&#x27;</span>, <span class="built_in">len</span>(sys.argv), <span class="string">&#x27;个参数。&#x27;</span>)    </span><br><span class="line"><span class="built_in">print</span> (<span class="string">&#x27;参数列表:&#x27;</span>, <span class="built_in">str</span>(sys.argv))    </span><br></pre></td></tr></table></figure><p>运行结果：<br><img src="https://jums.club/images/article/20191228112401.png" alt="方法一运行结果">    </p><h3 id="方法二（argparse）"><a href="#方法二（argparse）" class="headerlink" title="方法二（argparse）"></a>方法二（<code>argparse</code>）</h3><p>还是一样，直接看代码：    </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">parser = argparse.ArgumentParser(description=<span class="string">&quot;给Markdown文件中的每一行末尾，添加三个空格和换行符&quot;</span>)    </span><br><span class="line">parser.add_argument(<span class="string">&quot;-f&quot;</span>, <span class="string">&quot;--filename&quot;</span>, default=<span class="literal">None</span>)    </span><br><span class="line">args = parser.parse_args()    </span><br><span class="line">filename = args.filename    </span><br><span class="line"><span class="built_in">print</span>(filename)    </span><br></pre></td></tr></table></figure><p>运行结果：<br><img src="https://jums.club/images/article/20191228112638.png" alt="方法二运行结果">    </p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>]]></content>
       
@@ -4582,7 +4582,7 @@
       <link href="/markdownPad2-break/"/>
       <url>/markdownPad2-break/</url>
       
-        <content type="html"><![CDATA[<h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1 下载"></a>1 下载</h3><p>链接：<a href="https://pan.baidu.com/s/1vsP_eEaiepAzuJKYnfTvNg" title="https://pan.baidu.com/s/1vsP_eEaiepAzuJKYnfTvNg">https://pan.baidu.com/s/1vsP_eEaiepAzuJKYnfTvNg</a><br>提取码：3em7</p><h3 id="2-MarkdownPad2破解"><a href="#2-MarkdownPad2破解" class="headerlink" title="2 MarkdownPad2破解"></a>2 MarkdownPad2破解</h3><p>点击<code>Enter Key</code> 进入输入邮箱和<code>License key</code></p><p>Email address:<br><a href="mailto:&#83;&#111;&#97;&#114;&#x33;&#54;&#x30;&#x40;&#x6c;&#105;&#x76;&#101;&#46;&#99;&#x6f;&#109;">&#83;&#111;&#97;&#114;&#x33;&#54;&#x30;&#x40;&#x6c;&#105;&#x76;&#101;&#46;&#99;&#x6f;&#109;</a></p><p>License key :  </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</span><br></pre></td></tr></table></figure><h3 id="3-HTML渲染器下载"><a href="#3-HTML渲染器下载" class="headerlink" title="3 HTML渲染器下载"></a>3 HTML渲染器下载</h3><p>链接：<a href="https://pan.baidu.com/s/1GULFGwC8yLKlYa-9CIjmSQ">https://pan.baidu.com/s/1GULFGwC8yLKlYa-9CIjmSQ</a><br>提取码：43ja</p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1 下载"></a>1 下载</h3><p>链接：<a href="https://pan.baidu.com/s/1vsP_eEaiepAzuJKYnfTvNg" title="https://pan.baidu.com/s/1vsP_eEaiepAzuJKYnfTvNg">https://pan.baidu.com/s/1vsP_eEaiepAzuJKYnfTvNg</a><br>提取码：3em7</p><h3 id="2-MarkdownPad2破解"><a href="#2-MarkdownPad2破解" class="headerlink" title="2 MarkdownPad2破解"></a>2 MarkdownPad2破解</h3><p>点击<code>Enter Key</code> 进入输入邮箱和<code>License key</code></p><p>Email address:<br><a href="mailto:&#83;&#x6f;&#97;&#114;&#51;&#x36;&#48;&#x40;&#108;&#x69;&#x76;&#101;&#x2e;&#x63;&#111;&#x6d;">&#83;&#x6f;&#97;&#114;&#51;&#x36;&#48;&#x40;&#108;&#x69;&#x76;&#101;&#x2e;&#x63;&#111;&#x6d;</a></p><p>License key :  </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</span><br></pre></td></tr></table></figure><h3 id="3-HTML渲染器下载"><a href="#3-HTML渲染器下载" class="headerlink" title="3 HTML渲染器下载"></a>3 HTML渲染器下载</h3><p>链接：<a href="https://pan.baidu.com/s/1GULFGwC8yLKlYa-9CIjmSQ">https://pan.baidu.com/s/1GULFGwC8yLKlYa-9CIjmSQ</a><br>提取码：43ja</p><h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>欢迎大家关注鄙人的公众号【麦田里的守望者zhg】，让我们一起成长，谢谢。<br><img src="https://jums.club/images/wechataccount.jpg" alt="微信公众号"></p>]]></content>
       
       
       
