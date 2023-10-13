@@ -1,3 +1,5 @@
+http://jums.club/go-env-goinsecure/
+http://jums.club/just-read-this-blog-to-learn-consul/
 http://jums.club/shopping-by-cryptocurrency/
 http://jums.club/pandora-a-fake-chatgpt/
 http://jums.club/php-apcu/
@@ -96,5 +98,3 @@ http://jums.club/matplotlib-annotate/
 http://jums.club/us-apple-id-recharge/
 http://jums.club/backpackage-question/
 http://jums.club/HashMap-and-HashTable/
-http://jums.club/ArrayList-and-LinkedList/
-http://jums.club/enum-singleton/
