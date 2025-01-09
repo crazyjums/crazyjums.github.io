@@ -1,3 +1,6 @@
+http://jums.club/fork-git-repo-and-align-with-source-repo/
+http://jums.club/go-channel-timeout-quit/
+http://jums.club/websocket-demo/
 http://jums.club/go-env-goinsecure/
 http://jums.club/just-read-this-blog-to-learn-consul/
 http://jums.club/shopping-by-cryptocurrency/
@@ -95,6 +98,3 @@ http://jums.club/subplot-legend/
 http://jums.club/tensorflow-to-use-gpu/
 http://jums.club/why-singleton-need-first-check/
 http://jums.club/matplotlib-annotate/
-http://jums.club/us-apple-id-recharge/
-http://jums.club/backpackage-question/
-http://jums.club/HashMap-and-HashTable/
